@@ -1,0 +1,93 @@
+{% if site.data.start.navigation %} 
+    <a href="courses" on-click="_expandClicked" class="layout horizontal section-header start">
+        <div class="flex">Start</div>
+        <paper-icon-button icon="icons:stars" ></paper-icon-button>
+    </a>
+    <iron-collapse>
+    {% for section in site.data.start.navigation %}
+        <div class="nav-section">
+            <a href="{{ section.path }}">{{ section.title }}</a> 
+        </div>
+    {% endfor %} 
+    </iron-collapse>
+{% endif %}
+
+{% if site.data.courses.navigation %} 
+    <a href="courses" on-click="_expandClicked" class="layout horizontal section-header courses">
+        <div class="flex">Courses</div>
+        <paper-icon-button icon="icons:stars"></paper-icon-button>
+    </a>
+    <iron-collapse>
+    {% for section in site.data.courses.navigation %}
+        <div class="nav-section">
+            <div class="nav-section-header">{{ section.title }}</div>
+        
+            {% if section.sub[0] %} 
+                {% for doc in section.sub %}
+                    {% if doc.disabled %}
+                       <span class="inactive-nav-item">{{ doc.title }}</span>
+                    {% else if %}
+                        <a href="{{ doc.path }}">{{ doc.title }}</a> 
+                    {% endif %}
+                {% endfor %} 
+            {% endif %}
+        </div>
+
+    {% endfor %} 
+    </iron-collapse>
+{% endif %}
+
+{% if site.data.thesis.navigation %} 
+    <a href="thesis" on-click="_expandClicked" class="layout horizontal section-header thesis">
+        <div class="flex">Thesis</div>
+        <paper-icon-button icon="icons:stars"></paper-icon-button>
+    </a>
+    <iron-collapse>
+    {% for section in site.data.thesis.navigation %}
+        <div class="nav-section">
+            <div class="nav-section-header">{{ section.title }}</div>
+        
+            {% if section.sub[0] %} 
+                {% for doc in section.sub %}
+                    <a href="{{ doc.path }}">{{ doc.title }}</a> 
+                {% endfor %} 
+            {% endif %}
+        </div>
+
+    {% endfor %} 
+    </iron-collapse>
+{% endif %}
+
+{% if site.data.docs.navigation %} 
+    <a href="docs" on-click="_expandClicked" class="layout horizontal section-header docs">
+        <div class="flex">Docs</div>
+        <paper-icon-button icon="icons:stars"></paper-icon-button>
+    </a>
+    <iron-collapse>
+        
+    {% for section in site.data.docs.navigation %}
+        <div class="nav-section">
+            <div class="nav-section-header">{{ section.title }}</div>
+        
+            {% if section.sub[0] %} 
+                {% for doc in section.sub %}
+                    <a href="{{ doc.path }}">{{ doc.title }}</a> 
+                    
+                    {% if doc.sub[0] %}
+                        <div class="nav-subdoc">
+                        {% for subdoc in doc.sub %}
+                            <a href="{{ subdoc.path }}">{{ subdoc.title }}</a> 
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                    
+                {% endfor %} 
+            {% endif %}
+        </div>
+    {% endfor %}
+    </iron-collapse>
+{% endif %}
+
+    <a href="https://winf-hsos.blogspot.de" target="_blank" class="layout horizontal section-header blog">
+        <div class="flex">Blog</div>
+    </a>

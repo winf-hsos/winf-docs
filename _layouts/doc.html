@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <!-- This is just so that we can later read it from the document -->
+        <meta name="subtitle" content="{{ page.subtitle }}">
+    </head>
+    <body>
+            
+            {{ content }} 
+            
+           
+            
+            {% if page.prev-item or page.next-item %}
+            
+                {% assign thisSplitUrl = page.url | split: '/' %}
+                {% assign thisPosCategoryName = thisSplitUrl.size | minus: 2 %}
+                {% assign thisCategoryName = thisSplitUrl[thisPosCategoryName] %}
+                        
+                
+
+                {% assign thisCollection = site.collections | where: "label", page.collection | first %}
+
+                {% for item in thisCollection.docs %}
+                        {% assign splitUrl = item.url | split: '/' %}
+                        
+                        {% assign posFileName = splitUrl.size | minus: 1 %}
+                        {% assign compareFileName = splitUrl[posFileName] %}
+                        
+                        {% assign posCategoryName = splitUrl.size | minus: 2 %}
+                        {% assign compareCategoryName = splitUrl[posCategoryName] %}
+                        
+                        
+                        {% if compareFileName == page.prev-item and compareCategoryName == thisCategoryName %}
+                            {% assign previousDoc = item %}
+                        {% endif %}
+                        
+                        {% if compareFileName == page.next-item and compareCategoryName == thisCategoryName %}
+                            {% assign nextDoc = item %}
+                        {% endif %}
+
+                {% endfor %}
+      
+                
+                {% assign lenNext = nextDoc.url | size | minus: 1 %}
+                {% assign nextPath = nextDoc.url | slice: 0, lenNext %}
+                {% assign lenPrev = previousDoc.url | size | minus: 1 %}
+                {% assign prevPath = previousDoc.url | slice: 0, lenPrev %}
+                
+                
+                 <next-previous-buttons next-text="{{ nextDoc.title }}" next-path="{{ nextPath | remove_first: "/content" }}" prev-text="{{ previousDoc.title }}" prev-path="{{ prevPath | remove_first: "/content" }}"></next-previous-buttons>
+            {% endif  %}
+        
+    </body>
+    
+</html>

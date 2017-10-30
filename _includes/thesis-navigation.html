@@ -1,0 +1,14 @@
+{% if site.data.thesis.navigation %} 
+    {% for section in site.data.thesis.navigation %}
+        <div class="nav-section">
+            <div class="nav-section-header">{{ section.title }}</div>
+        
+            {% if section.sub[0] %} 
+                {% for doc in section.sub %}
+                    <a class="nav-link" href="{{ doc.path }}">{{ doc.title }}</a> 
+                {% endfor %} 
+            {% endif %}
+        </div>
+
+    {% endfor %} 
+{% endif %}

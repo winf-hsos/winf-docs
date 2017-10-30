@@ -1,0 +1,10 @@
+_site/
+_slides/
+_decks/
+bower_components/
+reveal/
+templates/
+.firebaserc
+firebase.json
+polymer.json
+bower.json

@@ -1,0 +1,11 @@
+<div class="wrapper on-slide">
+    {% if page.heading %}
+    <h1>{{ page.heading}}</h1>
+    <hr>
+    {% endif %}
+    <pre>
+    <code data-trim>
+    {{ content  | strip | escape }}
+    </code>
+    </pre>
+</div>

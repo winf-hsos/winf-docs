@@ -1,0 +1,25 @@
+{
+    "einstieg_css": {
+        "title": "Einstieg in CSS",
+        "author": "Peter Müller",
+        "year": 2016,
+        "publisher": "Rheinwerk Computing",
+        "isbn": "978-3-8362-3683-6"
+    },
+
+    "html5_und_css3": {
+        "title": "HTML5 und CSS3",
+        "author": "Jürgen Wolf",
+        "year": 2016,
+        "publisher": "Rheinwerk Computing",
+        "isbn": "978-3-8362-4158-8"
+    },
+
+    "schroedinger_lernt_html5": {
+        "title": "Schrödinger lernt HTML5, CSS3 & JavaScript",
+        "author": "Kai Günster",
+        "year": 2017,
+        "publisher": "Rheinwerk Computing",
+        "isbn": "978-3-8362-4257-8"
+    }
+}

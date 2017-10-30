@@ -1,0 +1,137 @@
+{
+    "navigation": [
+
+        {
+            "title": "Home",
+            "sub": [{
+                    "title": "Overview",
+                    "path": "/docs/home/overview"
+                },
+
+                {
+                    "title": "About",
+                    "path": "/docs/home/about"
+                }
+            ]
+
+        },
+
+        {
+            "title": "Development Tools",
+            "sub": [{
+                    "title": "Git",
+                    "path": "/docs/dev/git",
+                    "sub" : [{
+                        "title": "Check In A New Project",
+                        "path": "/docs/dev/git/check_in_a_new_project"
+                    },
+                    {
+                        "title": "Tag a Code Version",
+                        "path": "/docs/dev/git/tag_a_code_version"
+                    },
+                    
+                    ]
+                },
+
+                {
+                    "title": "Cloud9",
+                    "path": "/docs/dev/c9"
+                }
+            ]
+
+        },
+
+
+        {
+            "title": "Web & Programming",
+            "sub": [
+
+                {
+                    "title": "JavaScript",
+                    "path": "/docs/programming/javascript"
+                },
+                {
+                    "title": "HTML",
+                    "path": "/docs/programming/html5"
+                },
+                {
+                    "title": "CSS",
+                    "path": "/docs/programming/css"
+                },
+                {
+                    "title": "Polymer 2.0",
+                    "path": "/docs/programming/polymer"
+                }
+            ]
+        },
+
+        {
+            "title": "Cloud Platforms",
+            "sub": [
+
+                {
+                    "title": "Google Firebase",
+                    "path": "/docs/platforms/firebase"
+                },
+
+                {
+                    "title": "Databricks",
+                    "path": "/docs/platforms/databricks"
+                }
+            ]
+
+        },
+
+        {
+            "title": "Internet of Things",
+            "sub": [
+
+                {
+                    "title": "Tinkerforge",
+                    "path": "/docs/iot/tinkerforge"
+                },
+
+                {
+                    "title": "Raspberry Pi",
+                    "path": "/docs/iot/raspberrypi"
+                }
+            ]
+        },
+
+        {
+            "title": "Databases & Analytics",
+            "sub": [
+                
+                {
+                    "title": "PowerPivot",
+                    "path": "/docs/db/powerpivot"
+                },
+                {
+                    "title": "Tableau",
+                    "path": "/docs/db/tableau"
+                },
+
+                {
+                    "title": "Microsoft SQL Server",
+                    "path": "/docs/db/sqlserver"
+                },
+
+                {
+                    "title": "Apache Spark",
+                    "path": "/docs/db/spark"
+                },
+
+                {
+                    "title": "Spark SQL",
+                    "path": "/docs/db/spark-sql"
+                }
+
+
+            ]
+        }
+
+
+
+    ]
+
+}

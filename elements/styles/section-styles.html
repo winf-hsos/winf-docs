@@ -1,0 +1,178 @@
+---
+title: Test
+---
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="section-styles">
+  <template>
+    <style>
+
+   :host {
+         display: block;
+         height: 100%;
+         /*width: 100%;*/
+          --nav-color: {{ site.color_grey_light }};
+          --nav-text_color: {{ site.color_grey_dark }};
+          --btn-background: {{ site.color_grey_light }};
+          --btn-color: #000;
+       }
+       
+       :host(start-section) {
+           background-color: {{ site.color_grey_light }};
+       }
+
+       :host(docs-section) {
+           --header-color: {{ site.color_green }};
+       }
+       
+       :host(courses-section) {
+           --header-color: {{ site.color_blue }};
+       }
+       
+       :host(thesis-section) {
+           --header-color: {{ site.color_red }};
+       }
+       
+       :host(blog-section) {
+           --header-color: {{ site.color_yellow }};
+       }
+       
+       hr {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+       }
+       
+      .agenda-icon {
+        --iron-icon-height: 20px;
+        --iron-icon-width: 20px;
+        margin-left: 8px;
+       }
+
+       .container {
+           min-height: 100vh;
+       }
+       
+       .nav {
+         width: 256px;
+         min-width: 256px;
+         z-index: 2;
+         padding-top: 0px;
+         background-color: var(--nav-color);
+         color: var(--nav-text_color);
+         overflow-x: hidden;
+         overflow-y: auto;
+       }
+
+       .nav-section a {
+         display: block;
+         padding: 0 12px;
+         text-decoration: none;
+         color: var(--nav-text_color);
+         line-height: 40px;
+       }
+       
+      .nav-subdoc a {
+         display: block;
+         padding: 0 24px;
+         text-decoration: none;
+         color: var(--nav-text_color);
+         
+         line-height: 30px;
+           
+       }
+      
+       
+       .inactive-nav-item {
+           display: block;
+           padding: 0 12px;
+           line-height: 40px;
+       }
+
+       .nav-section a[selected] {
+         color: var(--header-color);
+         font-weight: bold;
+        }
+
+       .nav-section {
+         display: block;
+
+         text-decoration: none;
+         color: #ACB2B8;
+         line-height: 32px;
+
+         padding-top: 8px;
+         padding-bottom: 8px;
+         border-bottom: 1px solid #ACB2B8;
+       }
+
+       .nav-section-header {
+         color: var(--nav-text_color);
+         padding: 0 12px;
+         font-weight: bold;
+       }
+       
+       .main-content {
+         width: 100%;
+         height: 100%;
+         margin-left: 16px;
+         margin-right: 16px;
+         
+       }
+      
+       header {
+         width: 100%;
+         background: var(--header-color);
+         color: white;
+         height: 130px;
+         line-height: 130px;
+
+       }
+
+       header h1 {
+         font-family: 'Roboto Slab', 'Roboto', 'Noto', sans-serif;
+         color: #fff;
+         font-size: 32px;
+         font-weight: 400;
+         border-bottom: none;
+         margin: 0px 16px;
+         padding: 0px 0px;
+       }
+       
+       
+       .headers {
+       vertical-align: middle;
+       display: inline-block;
+       line-height: normal;
+       }
+       
+       
+       header h2 {
+         font-family: 'Roboto', 'Noto', sans-serif;
+         color: #fff;
+         font-size: 20px;
+         font-weight: 100;
+         border-bottom: none;
+         margin: 0px 16px;
+         padding: 0px 0px;
+       }
+
+       @media (max-width: 640px) {
+         .nav {
+           display: none;
+         }
+
+         .main-content {
+           margin-left: 8px;
+         }
+
+         header {
+           height: 100px;
+           line-height: 100px;
+         }
+       }
+      
+      </style>
+  </template>
+</dom-module>

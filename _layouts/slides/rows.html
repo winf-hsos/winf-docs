@@ -1,0 +1,27 @@
+{% assign rowSplit = content | split: '<!-- row -->' %}
+
+<!-- Determine text sizes for row and cols -->
+{% assign textsize = page.textsize | default: "normal" %}
+
+{% if page.heading %}
+<div class="flex-wrapper">
+    <div class="wrapper title">
+        <h1>{{ page.heading}}</h1>
+    </div>
+</div>
+{% endif %}
+
+
+{% for row in rowSplit %}
+    {% if row.size > 0 %}
+    <div class="wrapper row">
+        <span class="text-{{ textsize }}">
+        {{ row }}     
+        </span>
+    </div>
+    {% endif %}
+{% endfor %}
+
+
+
+

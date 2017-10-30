@@ -1,0 +1,56 @@
+{
+    "navigation": [{
+            "title": "General",
+            "sub": [
+                {
+                    "title": "Prerequisites",
+                    "path": "/thesis/prerequisites"
+                },
+                {
+                    "title": "Evaluation Criteria",
+                    "path": "/thesis/criteria"
+                },
+               
+                {
+                    "title": "Process",
+                    "path": "/thesis/process"
+                },
+                
+                {
+                    "title": "Tips for Better Writing",
+                    "path": "/thesis/tips"
+                }
+            ]
+
+        },
+        {
+            "title": "Bachelor Thesis",
+            "sub": [{
+                    "title": "Topics",
+                    "path": "/thesis/bachelor-topics"
+                },
+
+                {
+                    "title": "Finished",
+                    "path": "/thesis/bachelor-finished"
+                }
+            ]
+
+        },
+
+        {
+            "title": "Master Thesis",
+            "sub": [{
+                    "title": "Topics",
+                    "path": "/thesis/master-topics"
+                },
+
+                {
+                    "title": "Finished",
+                    "path": "/thesis/master-finished"
+                }
+            ]
+
+        }
+    ]
+}

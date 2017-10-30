@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Week {{ page.week }}</title>
+        <!-- This is just so that we can later read it from the document -->
+        <meta name="subtitle" content="{{ page.subtitle }}">
+    </head>
+    <body>
+        <week-tabs-element>
+            
+            {% assign split1 = content | split: '<!-- content -->' %}
+            {% assign split2 = split1[1] | split: '<!-- end-content -->' %}
+            {% assign block = split2[0] | strip %}
+            <span slot="content" hide="{% if block.size > 0 %}false{% else %}true{% endif %}">
+                {{ block }}
+            
+            <!--    
+            {% assign slides = site.decks | where: "week", page.week | where: "course", page.course %}
+            
+            {% if slides.size > 0 %}
+                
+                <h2>Slides</h2>
+                <ul>
+                {% assign sorted_slides = slides | sort: "order" %}
+                {% for deck in sorted_slides %}
+                <li>{{ deck.title }}&nbsp;(<a href="{{ deck.url }}" target="_blank">Present</a>&nbsp;|&nbsp;<a href="{{ deck.url }}?print-pdf" target="_blank">Print</a>)</li>
+                
+                {% endfor %}
+                </ul>
+
+            {% endif %}
+            -->
+            </span>
+            
+            {% assign split1 = content | split: '<!-- activities -->' %}
+            {% assign split2 = split1[1] | split: '<!-- end-activities -->' %}
+            {% assign block = split2[0] | strip %}
+            <span slot="activities" hide="{% if block.size > 0 %}false{% else %}true{% endif %}">
+                {{ block }}
+            </span>
+            
+            {% assign split1 = content | split: '<!-- project -->' %}
+            {% assign split2 = split1[1] | split: '<!-- end-project -->' %}
+            {% assign block = split2[0] | strip %}
+            <span slot="project" hide="{% if block.size > 0 %}false{% else %}true{% endif %}">
+                <h2>Project Work</h2>
+                {{ block }}
+            </span>
+            
+            {% assign split1 = content | split: '<!-- exercises -->' %}
+            {% assign split2 = split1[1] | split: '<!-- end-exercises -->' %}
+            {% assign block = split2[0] | strip %}
+            <span slot="exercises" hide="{% if block.size > 0 %}false{% else %}true{% endif %}">
+                <h2>Exercises</h2>
+                {{ block }}
+            </span>
+            
+            {% assign split1 = content | split: '<!-- quiz -->' %}
+            {% assign split2 = split1[1] | split: '<!-- end-quiz -->' %}
+            {% assign block = split2[0] | strip %}
+            <span slot="quiz" hide="{% if block.size > 0 %}false{% else %}true{% endif %}">
+                <h2>Quiz</h2>
+                {{ block }}
+            </span>
+            
+            {% assign split1 = content | split: '<!-- reading -->' %}
+            {% assign split2 = split1[1] | split: '<!-- end-reading -->' %}
+            {% assign block = split2[0] | strip %}
+            <span slot="reading" hide="{% if block.size > 0 %}false{% else %}true{% endif %}">
+                {{ block }}
+            </span>
+            
+            <span slot="navigation">
+            {% if page.prev-item or page.next-item %}
+            
+                {% assign thisSplitUrl = page.url | split: '/' %}
+                {% assign thisPosCategoryName = thisSplitUrl.size | minus: 2 %}
+                {% assign thisCategoryName = thisSplitUrl[thisPosCategoryName] %}
+
+                {% assign thisCollection = site.collections | where: "label", page.collection | first %}
+
+                {% for item in thisCollection.docs %}
+                
+                        {% assign splitUrl = item.url | split: '/' %}
+                        
+                        {% assign posCategoryName = splitUrl.size | minus: 2 %}
+                        {% assign compareCategoryName = splitUrl[posCategoryName] %}
+                        
+                        
+                        {% if page.prev-item and item.week == page.prev-item and compareCategoryName == thisCategoryName %}
+                            {% assign previousDoc = item %}
+                        {% endif %}
+                        
+                        {% if page.next-item and item.week == page.next-item and compareCategoryName == thisCategoryName %}
+                            {% assign nextDoc = item %}
+                        {% endif %}
+
+                {% endfor %}
+      
+                
+                {% assign lenNext = nextDoc.url | size | minus: 1 %}
+                {% assign nextPath = nextDoc.url | slice: 0, lenNext %}
+                {% assign lenPrev = previousDoc.url | size | minus: 1 %}
+                {% assign prevPath = previousDoc.url | slice: 0, lenPrev %}
+                
+                <next-previous-buttons next-text="Week {{ nextDoc.week }}" next-path="{{ nextPath | remove_first: "/content" }}" prev-text="Week {{ previousDoc.week }}" prev-path="{{ prevPath | remove_first: "/content" }}"></next-previous-buttons>
+            {% endif  %}
+            </span>
+      
+
+
+        </week-tabs-element>
+
+
+    </body>
+    
+</html>

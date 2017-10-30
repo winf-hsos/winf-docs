@@ -1,0 +1,141 @@
+---
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-icons/social-icons.html">
+<link rel="import" href="../bower_components/iron-icons/maps-icons.html">
+<link rel="import" href="styles/shared-styles.html">
+
+<dom-module id="week-tabs-element">
+  
+<template>
+  <style include="iron-flex iron-flex-alignment ">
+  
+  :host {
+  --paper-tabs-selection-bar-color: var(--header-color);
+  --paper-tab-ink: var(--header-color);
+  }
+  
+  iron-icon {
+  --iron-icon-height: 20px;
+  --iron-icon-width: 20px;
+  margin-right: 8px;
+  }
+  
+  paper-tab[disabled] iron-icon {
+    color: {{ site.color_grey }};
+  }
+  
+  paper-tab[disabled] {
+    color: {{ site.color_grey }};
+  }
+  
+  
+   @media (max-width: 900px) {
+        .tab-head {
+          display: none;
+        }
+         iron-icon {
+           margin-right: 0px;
+         }
+      }
+
+  </style>
+
+{% raw %}
+<paper-tabs attr-for-selected="id" selected="{{selected}}">
+  <paper-tab id="activities"><iron-icon icon="social:group"></iron-icon><span class="tab-head">Activities</span></paper-tab>
+  <paper-tab id="content"><iron-icon icon="favorite"></iron-icon><span class="tab-head">Content</span></paper-tab>
+  <paper-tab id="project"><iron-icon icon="icons:group-work"></iron-icon><span class="tab-head">Project</span></paper-tab>
+  <paper-tab id="exercises"><iron-icon icon="maps:directions-run"></iron-icon><span class="tab-head">Exercises</span></paper-tab>
+  <paper-tab id="quiz"><iron-icon icon="icons:question-answer"></iron-icon><span class="tab-head">Quiz</span></paper-tab>
+  <paper-tab id="reading"><iron-icon icon="social:whatshot"></iron-icon><span class="tab-head">Material</span></paper-tab>
+</paper-tabs>
+
+
+<iron-pages attr-for-selected="tab" selected="{{selected}}">
+  <div tab="content"><slot name="content"></slot></div>
+  <div tab="reading"><slot name="reading"></slot></div>
+  <div tab="activities"><slot name="activities"></slot></div>
+  <div tab="exercises"><slot name="exercises"></slot></div>
+  <div tab="quiz"><slot name="quiz"></slot></div>
+  <div tab="project"><slot name="project"></slot></div>
+</iron-pages>
+
+<slot name="navigation"></slot>
+
+{% endraw %}
+
+<iron-meta id="meta" key="selected-tab"></iron-meta>
+ 
+</template>
+
+  <script>
+    /* global Polymer */
+    class WeekTabsElement extends Polymer.Element {
+        static get is() { return 'week-tabs-element'; }
+        
+        static get properties() {
+            return {
+                selected: {
+                    type: String,
+                    observer: '_selectedChanged'
+                }
+            };
+        }
+        
+        _selectedChanged(selected) {
+          
+          this.$.meta.value = selected;
+        }
+        
+        ready() {
+          super.ready();
+          
+          this.selected = this.$.meta.value || "activities";
+          
+          // Check if reading should be disabled
+          
+          if(this.querySelectorAll('[slot="reading"]')[0].getAttribute("hide") == "true") {
+            this.$.reading.setAttribute("disabled", "");
+            this.selected = this.selected == "reading" ? "content" : this.selected;
+          }
+          
+          // Check if quiz should be disabled
+          if(this.querySelectorAll('[slot="quiz"]')[0].getAttribute("hide") == "true") {
+            this.$.quiz.setAttribute("disabled", "");
+            this.selected = this.selected == "quiz" ? "content" : this.selected;
+          }
+          
+           // Check if exercises should be disabled
+          if(this.querySelectorAll('[slot="exercises"]')[0].getAttribute("hide") == "true") {
+            this.$.exercises.setAttribute("disabled", "");
+            this.selected = this.selected == "exercises" ? "content" : this.selected;
+          }
+          
+          // Check if project should be disabled
+          if(this.querySelectorAll('[slot="project"]')[0].getAttribute("hide") == "true") {
+            this.$.project.setAttribute("disabled", "");
+            this.selected = this.selected == "project" ? "content" : this.selected;
+          }
+          
+          // Check if content should be disabled
+          if(this.querySelectorAll('[slot="content"]')[0].getAttribute("hide") == "true") {
+            this.$.content.setAttribute("disabled", "");
+            this.selected = this.selected == "content" ? "" : this.selected;
+          }
+          
+          // Check if activities should be disabled
+          if(this.querySelectorAll('[slot="activities"]')[0].getAttribute("hide") == "true") {
+            this.$.activities.setAttribute("disabled", "");
+            this.selected = this.selected == "activities" ? "content" : this.selected;
+          }
+          
+          
+          
+        }
+  
+    }
+
+    window.customElements.define(WeekTabsElement.is, WeekTabsElement);
+  </script>
+</dom-module>

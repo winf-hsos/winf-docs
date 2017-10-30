@@ -1,0 +1,62 @@
+---
+title: Thesis Section
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+<link rel="import" href="section-mixin.html">
+<link rel="import" href="thesis-list.html">
+
+<dom-module id="thesis-section">
+  
+<template>
+    <style include="shared-styles section-styles docs-styles syntax-styles iron-flex iron-flex-alignment "></style>
+  
+  
+  {% raw %}  
+  <app-route
+      route="{{route}}"
+      pattern="/:site"
+      data="{{routeData}}"
+      tail="{{subroute}}"></app-route>
+  {% endraw %}
+  
+  <header>
+    <div class="headers">
+      <h1>[[title]]</h1>
+      <h2>[[subtitle]]</h2>
+    </div>
+  </header>
+  
+  <div class="layout horizontal container">
+    
+    <div class="nav">
+      {% include thesis-navigation.html %}
+    </div>
+  
+    <div class="main-content flex" id="content"></div>
+  
+  </div>
+  
+      <iron-ajax id="ajax" url="[[path]]" handle-as="document" on-response="_handleResponse" on-error="_handleError"></iron-ajax>
+  
+  </template>
+
+  <script>
+    /* global Polymer */
+    /* global SectionMixin */
+    class ThesisSection extends SectionMixin(Polymer.Element) {
+        static get is() { return 'thesis-section'; }
+
+        constructor() {
+            super();
+            this.defaultPath = '/thesis/prerequisites';
+            this.sectionName = 'thesis';
+        }
+    }
+
+    window.customElements.define(ThesisSection.is, ThesisSection);
+  </script>
+</dom-module>

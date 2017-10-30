@@ -1,0 +1,49 @@
+{% assign rowSplit1 = content | split: '<!-- row -->' %}
+{% assign rowSplit2 = rowSplit1[1] | split: '<!-- endrow -->' %}
+{% assign row = rowSplit2[0] %}
+{% assign columns = rowSplit2[1] | split: '<!-- column -->' %}
+
+<!-- Determine text sizes for row and cols -->
+{% assign textsize-col-right = page.textsize-col-right | default: "normal" %}
+{% assign textsize-col-left = page.textsize-col-left | default: "normal" %}
+{% assign textsize-row = page.textsize-row | default: "normal" %}
+
+{% if page.heading %}
+<div class="flex-wrapper">
+    <div class="wrapper title">
+        <h1>{{ page.heading}}</h1>
+    </div>
+</div>
+{% endif %}
+
+<div class="flex-wrapper">
+    <div class="wrapper on-slide">
+        {% if page.title-row %}
+        <span class="text-title">{{ page.title-row }}</span>
+        <hr>
+        {% endif %}
+        <span class="text-{{ textsize-row }}">
+        {{ row }}
+        </span>
+    </div>
+</div>
+
+<div class="flex-wrapper">
+
+    <div class="wrapper col">
+        <span class="text-title">{{ page.title-col-left }}</span>
+        <hr>
+        <span class="text-{{ textsize-col-left }}">
+        {{ columns[1] }}        
+        </span>
+    </div>
+    
+    <div class="wrapper col">
+        <span class="text-title">{{ page.title-col-right }}</span>
+        <hr>
+        <span class="text-{{ textsize-col-right }}">
+        {{ columns[2] }}
+        </span>
+    </div>
+
+</div>

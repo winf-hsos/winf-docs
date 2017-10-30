@@ -1,0 +1,38 @@
+---
+title: Thesis List
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+<link rel="import" href="thesis-element.html">
+
+<dom-module id="thesis-list">
+  
+<template>
+  <style include="shared-styles section-styles docs-styles syntax-styles iron-flex iron-flex-alignment "></style>
+ 
+ {% for thesis in site.data.finished_thesis.finished %}
+ 
+ <thesis-element>
+   <span slot="thesis-title">{{ thesis.title }}</span>
+   <span slot="thesis-author">{{ thesis.author }}</span>
+   <span slot="thesis-date">{{ thesis.submissiondate }}</span>
+ </thesis-element>
+ 
+ 
+ {% endfor %}
+ 
+ 
+</template>
+
+  <script>
+    /* global Polymer */
+    class ThesisList extends Polymer.Element {
+        static get is() { return 'thesis-list'; }
+    }
+
+    window.customElements.define(ThesisList.is, ThesisList);
+  </script>
+</dom-module>

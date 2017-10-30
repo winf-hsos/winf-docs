@@ -1,0 +1,66 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+<link rel="import" href="section-mixin.html">
+
+<dom-module id="thesis-element">
+  
+<template>
+  <style include="shared-styles section-styles docs-styles syntax-styles iron-flex iron-flex-alignment ">
+    :host {
+      margin-top: 16px;
+    }
+  
+    ::slotted([slot=thesis-title]) {
+      
+    }
+  
+    ::slotted([slot=thesis-author]) {
+      
+    }
+    
+    ::slotted([slot=thesis-date]) {
+      
+    }
+  
+    .heading {
+      font-weight: bold;
+    }
+    
+    .column {
+      margin-left: 16px;
+    }
+    
+  </style>
+ 
+  <div class="layout horizontal wrap">
+    
+    <div class="layout vertical column">
+      <span class="heading">Title</span>
+      <slot name="thesis-title"></slot>
+    </div>
+    <div class="layout vertical column">
+      <span class="heading">Author</span>
+      <slot name="thesis-author"></slot>
+    </div>
+    <div class="layout vertical column">
+      <span class="heading">Date of Submission</span>
+      <slot name="thesis-date"></slot>
+    </div>
+  
+  </div>
+  
+</template>
+
+  <script>
+    /* global Polymer */
+    class ThesisElement extends Polymer.Element {
+        static get is() { return 'thesis-element'; }
+
+    }
+
+    window.customElements.define(ThesisElement.is, ThesisElement);
+  </script>
+</dom-module>

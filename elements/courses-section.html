@@ -1,0 +1,66 @@
+---
+title: Courses Section
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+<link rel="import" href="section-mixin.html">
+<link rel="import" href="week-tabs-element.html">
+
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+
+
+<dom-module id="courses-section">
+  
+<template>
+    <style include="shared-styles section-styles docs-styles syntax-styles iron-flex iron-flex-alignment "></style>
+  
+  
+  {% raw %}  
+  <app-route
+      route="{{route}}"
+      pattern="/:site"
+      data="{{routeData}}"
+      tail="{{subroute}}"></app-route>
+  {% endraw %}
+  
+  <header>
+    <div class="headers">
+    <h1>[[title]]</h1>
+    <h2>[[subtitle]]</h2>
+    </div>
+    
+  </header>
+  
+  <div class="layout horizontal container">
+    
+    <div class="nav">
+      {% include courses-navigation.html %}
+    </div>
+  
+    <div class="main-content flex" id="content"></div>
+  
+  </div>
+  
+      <iron-ajax id="ajax" url="[[path]]" handle-as="document" on-response="_handleResponse" on-error="_handleError"></iron-ajax>
+  
+  </template>
+
+  <script>
+    /* global Polymer */
+    /* global SectionMixin */
+    class CoursesSection extends SectionMixin(Polymer.Element) {
+        static get is() { return 'courses-section'; }
+
+        constructor() {
+            super();
+            this.defaultPath = '/concept/overview';
+            this.sectionName = 'courses';
+        }
+    }
+
+    window.customElements.define(CoursesSection.is, CoursesSection);
+  </script>
+</dom-module>

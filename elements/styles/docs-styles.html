@@ -1,0 +1,86 @@
+---
+---
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="docs-styles">
+    <template>
+    <style>
+
+   :host {
+        font-size: 16px;
+        font-family: 'Roboto', 'Noto', sans-serif;
+        line-height: 24px;
+        font-weight: 300;
+        --h1-color: {{ site.color_grey_dark }};
+    }
+    
+    :host(docs-section) {
+      --section-color: {{ site.color_green }};
+      --link-color: {{ site.color_green }};
+    }
+    
+    :host(courses-section) {
+      --section-color: {{ site.color_blue }};
+      --link-color: {{ site.color_blue }};
+    }
+    
+    :host(thesis-section) {
+      --section-color: {{ site.color_red }};
+      --link-color: {{ site.color_red }};
+    }  
+    
+    :host(blog-section) {
+      --section-color: {{ site.color_yellow }};
+      --link-color: {{ site.color_yellow }};
+    }
+
+    
+    h1 {
+      margin: 16px 0;
+      color: var(--h1-color);
+      font-size: 22px;
+      padding-bottom: 8px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: var(--section-color);
+    }
+    
+    h2 {
+      display: block;
+      font-size: 1.17em;
+      font-weight: bold;
+    }
+    
+    #markdown-toc::before {
+        content: "Contents";
+        font-weight: bold;
+      }
+  
+      ul#markdown-toc {
+        list-style-type: none;
+        margin: 16px 0 16px 0;
+        padding: 0 0 0 0;
+      }
+      
+      #markdown-toc a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+      
+      td, th {
+        padding: 8px;
+      }
+      
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+      
+      img[alt=svg] { max-width: 700px; width: 100%; }
+      img[alt=svg_small] { max-width: 250px; width: 100%; }
+      img[alt=screenshot]{ max-width: 700px; width: 100%; }
+      
+      </style>
+  </template>
+</dom-module>

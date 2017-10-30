@@ -1,0 +1,3 @@
+{% assign book = site.data.books[include.key] %}
+<book-element title="{{ book.title }}" author="{{ book.author }}" year="{{ book.year}}" isbn="{{ book.isbn }}" publisher="{{ book.publisher }}" what="{{ include.what }}" key="{{ include.key }}"></book-element>
+

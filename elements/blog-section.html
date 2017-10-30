@@ -1,0 +1,101 @@
+---
+title: Blog Section
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="blog-overview.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+<link rel="import" href="section-mixin.html">
+
+<dom-module id="blog-section">
+  
+  <template>
+    <style include="shared-styles section-styles docs-styles syntax-styles iron-flex iron-flex-alignment ">
+        #content {
+            padding: 8px 16px;
+        }
+    </style>
+  
+  {% raw %}  
+  <app-route
+      route="{{route}}"
+      pattern="/:site"
+      data="{{routeData}}"
+      tail="{{subroute}}"></app-route>
+  {% endraw %}
+  
+  <header>
+    <h1>[[title]]</h1>
+  </header>
+  
+  <div class="layout horizontal container">
+      
+        <iron-pages selected="[[theBlog]]" attr-for-selected="name">
+            <blog-overview name="overview"></blog-overview>
+            <div name="post" id="content"></div>
+        </iron-pages>
+
+
+  </div>
+  
+  <iron-ajax id="ajax" url="[[path]]" handle-as="document" on-response="_handleResponse" on-error="_handleError"></iron-ajax>
+  
+  </template>
+
+  <script>
+    /* global Polymer */
+    /* global SectionMixin */
+    class BlogSection extends SectionMixin(Polymer.Element) {
+        static get is() { return 'blog-section'; }
+
+        static get properties() {
+            return {
+              theBlog:  {
+                type: String,
+                value: 'overview',
+                observer: '_theBlogChanged'
+              }
+            };
+        }
+
+        constructor() {
+            super();
+            this.defaultPath = '/blog';
+            this.sectionName = 'blog';
+            
+            this.title = (this.title ? this.title : 'Blog');
+        }
+        
+        _theBlogChanged(theBlog) {
+            console.log(this.theBlog);
+        }
+        
+       _routeChanged(route) {
+
+         if (this.route.prefix == '/' + this.sectionName) {
+
+           if (!this.routeData.site || this.routeData.site == "") {
+             console.log("Blog was chosen, but no post selected");
+             this.theBlog = 'overview';
+             this.title = 'Blog';
+           }
+           else {
+             console.log("Blog was chosen, and the following post selected: " + this.routeData.site);
+             this._loadPage(this.route.path);
+             this.theBlog = 'post';
+             
+           }
+         }
+
+       }
+
+
+
+    }
+
+    window.customElements.define(BlogSection.is, BlogSection);
+  </script>
+</dom-module>

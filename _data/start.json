@@ -1,0 +1,10 @@
+{
+    "navigation": [
+    
+        {
+            "title": "Home",
+            "path": "/start/home"
+        }
+      
+    ]
+}

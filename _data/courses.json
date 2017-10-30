@@ -1,0 +1,161 @@
+{
+    "navigation": [
+
+        {
+            "title": "Concept",
+            "sub": [{
+                    "title": "Courses Overview",
+                    "path": "/courses/concept/overview"
+                },
+
+                {
+                    "title": "FAQ",
+                    "path": "/courses/concept/faq"
+                }
+            ]
+
+        },
+
+        {
+            "title": "Web Engineering",
+            "sub": [{
+                    "title": "Curriculum",
+                    "path": "/courses/webengineering/curriculum"
+                },
+
+                {
+                    "title": "Week 1 - Websites",
+                    "path": "/courses/webengineering/week1"
+                },
+
+                {
+                    "title": "Week 2 - HTML & CSS I",
+                    "path": "/courses/webengineering/week2"
+                },
+
+                {
+                    "title": "Week 3 - HTML & CSS II",
+                    "path": "/courses/webengineering/week3"
+                },
+
+                {
+                    "title": "Week 4 - Frameworks",
+                    "path": "/courses/webengineering/week4"
+                },
+
+                {
+                    "title": "Week 5 - JavaScript",
+                    "path": "/courses/webengineering/week5",
+                    "disabled": true
+                },
+
+                {
+                    "title": "Week 6 - Dynamic Websites",
+                    "path": "/courses/webengineering/week6",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 7 - Cloud Platforms",
+                    "path": "/courses/webengineering/week7",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 8 - Databases",
+                    "path": "/courses/webengineering/week8",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 9 - User",
+                    "path": "/courses/webengineering/week9",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 10 - Option 1",
+                    "path": "/courses/webengineering/week10",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 11 - Option 2",
+                    "path": "/courses/webengineering/week11",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 12 - Option 3",
+                    "path": "/courses/webengineering/week12",
+                    "disabled": true
+                }
+            ]
+
+        },
+
+        {
+            "title": "Data Management",
+            "sub": [{
+                    "title": "Curriculum",
+                    "path": "/courses/im/curriculum"
+                },
+
+                {
+                    "title": "Week 1 - Power Pivot",
+                    "path": "/courses/im/week1"
+                },
+
+                {
+                    "title": "Week 2 - Sources & Formats",
+                    "path": "/courses/im/week2"
+                },
+                {
+                    "title": "Week 3 - Modeling Data",
+                    "path": "/courses/im/week3"
+                },
+                {
+                    "title": "Week 4 - Relational Databases",
+                    "path": "/courses/im/week4"
+                },
+                {
+                    "title": "Week 5 - SQL",
+                    "path": "/courses/im/week5",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 6 - Types of Databases",
+                    "path": "/courses/im/week6",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 7 - Data Visualization",
+                    "path": "/courses/im/week7",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 8 - Cloud Platforms",
+                    "path": "/courses/im/week8",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 9 - Big Data",
+                    "path": "/courses/im/week9",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 10 - Data Processing",
+                    "path": "/courses/im/week10",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 11 - Advanced Analytics ",
+                    "path": "/courses/im/week11",
+                    "disabled": true
+                },
+                {
+                    "title": "Week 12 - Option",
+                    "path": "/courses/im/week12",
+                    "disabled": true
+                }
+            ]
+
+        }
+
+
+    ]
+}

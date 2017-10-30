@@ -1,0 +1,79 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/image-mask/image-mask.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+
+<dom-module id="book-element">
+  
+<template>
+  <style include="shared-styles section-styles iron-flex iron-flex-alignment ">
+    :host {
+      box-sizing: border-box;
+      width: 100%;
+    }
+    
+    .book-container {
+      margin-bottom: 16px;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .book-container .title {
+      font-weight: bold;
+    }
+    
+    image-mask {
+      margin-left: 12px;
+    }
+  </style>
+ 
+ <div class="layout horizontal book-container">
+ <div class="layout vertical flex">
+ <div class="title">{{heading}}</div>
+   <div>"[[title]]" by [[author]], [[publisher]], [[year]].</div>
+   <div>ISBN: [[isbn]]</div>
+ </div>
+ 
+ <image-mask shape="circle" size="60" src="/img/book_covers/[[key]].jpg" title="[[title]]"></image-mask>
+ </div>
+ 
+</template>
+
+  <script>
+    /* global Polymer */
+    class BookElement extends Polymer.Element {
+        static get is() { return 'book-element'; }
+        
+        static get properties() {
+            return {
+              title: String,
+              author: String,
+              year: Number,
+              isbn: String,
+              publisher: String,
+              what: String,
+              key: String,
+              heading: {
+                type: String,
+                computed: 'computeHeading(what)'
+              }
+            };
+        }
+  
+    
+      computeHeading(what) {
+        if(what)
+        return what + " of the book:";
+        
+        return "Recommended Book:";
+      }
+    
+    }
+
+    window.customElements.define(BookElement.is, BookElement);
+  </script>
+</dom-module>

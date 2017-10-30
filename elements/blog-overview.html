@@ -1,0 +1,38 @@
+---
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+
+<dom-module id="blog-overview">
+  
+  <template>
+      <style include="shared-styles section-styles docs-styles syntax-styles iron-flex iron-flex-alignment "></style>
+      
+      <ul>
+      {% for post in site.blog %}
+          <li>
+            <a href="{{ post.url | remove_first:'/content' }}">{{ post.title }}</a>
+          </li>
+      {% endfor %}
+  </ul>
+    
+    
+    </template>
+
+  <script>
+    /* global Polymer */
+    class BlogOverview extends Polymer.Element {
+        static get is() { return 'blog-overview'; }
+
+        static get properties() {
+            return {};
+        }
+
+    }
+
+    window.customElements.define(BlogOverview.is, BlogOverview);
+  </script>
+</dom-module>

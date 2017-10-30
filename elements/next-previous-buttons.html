@@ -1,0 +1,77 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+
+<dom-module id="next-previous-buttons">
+  
+<template>
+  <style include="iron-flex iron-flex-alignment">
+  
+  .buttons {
+      padding: 24px 0px;
+  }
+  
+  paper-button {
+      margin: 0px 0px;
+      background: var(--btn-background);
+      color: var(--btn-color);
+  }
+      
+  </style>
+ 
+ <div class="layout horizontal buttons">
+     <span class="flex"><paper-button id="prevBtn" on-tap="_prev" style="margin-right: 16px" raised><iron-icon style="margin-right: 8px" icon="arrow-back"></iron-icon>[[prevText]]</paper-button></span>
+     <span ><paper-button id="nextBtn" on-tap="_next" raised>[[nextText]]<iron-icon style="margin-left: 8px" icon="arrow-forward"></iron-icon></paper-button></span>
+ </div>
+
+ 
+</template>
+
+  <script>
+    /* global Polymer */
+    class NextPreviousButtons extends Polymer.Element {
+        static get is() { return 'next-previous-buttons'; }
+        
+        static get properties() {
+            return {
+              nextPath: String,
+              nextText: String,
+              prevPath: String,
+              prevText: String
+            };
+        }
+        
+        constructor() {
+            super();
+            
+            
+        }
+        
+        ready(){
+            super.ready();
+
+            if(this.nextPath === "") {
+                this.$.nextBtn.style.display = 'none';
+            }
+            
+             if(this.prevPath === "") {
+                this.$.prevBtn.style.display = 'none';
+            }
+            
+        }
+        
+        _next() {
+            this.dispatchEvent(new CustomEvent('navigate', { bubbles: true, composed: true, detail: { path: this.nextPath } }));
+        }
+        
+        _prev() {
+            this.dispatchEvent(new CustomEvent('navigate', { bubbles: true, composed: true, detail: { path: this.prevPath } }));
+        }
+          
+
+    
+    }
+
+    window.customElements.define(NextPreviousButtons.is, NextPreviousButtons);
+  </script>
+</dom-module>

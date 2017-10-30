@@ -1,0 +1,390 @@
+---
+title: Doc Shell
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/app-route/app-location.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
+<link rel="import" href="../bower_components/iron-selector/iron-selector.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-meta/iron-meta.html">
+
+<link rel="import" href="my-icons.html">
+<link rel="import" href="start-section.html">
+<link rel="import" href="docs-section.html">
+<link rel="import" href="courses-section.html">
+<link rel="import" href="thesis-section.html">
+<link rel="import" href="blog-section.html">
+
+<link rel="import" href="book-element.html">
+<link rel="import" href="next-previous-buttons.html">
+
+<link rel="import" href="styles/shared-styles.html">
+
+
+<dom-module id="app-shell">
+  <template>
+    <style include="shared-styles iron-flex iron-flex-alignment">
+      :host {
+        display: block;
+      }
+
+      app-header {
+        color: #000;
+        background-color: #fff;
+      }
+
+      app-drawer {
+        --app-drawer-scrim-background: rgba(48, 62, 77, 0.5);
+        --app-drawer-content-container: {
+          background-color: #fff;
+          color: {{ site.color_grey_dark }};
+          /* padding-top: 170px;*/
+        }
+
+        top: 0px;
+        bottom: 0px;
+        z-index: 4;
+      }
+
+      app-header paper-icon-button {
+        --paper-icon-button-ink-color: white;
+      }
+
+      iron-pages {
+        background-color: #ffffff;
+      }
+      
+      .section-header paper-icon-button {
+        --paper-icon-button-ink-color: #fff;
+        color: {{ site.color_grey_dark }};
+      }
+
+      .drawer-toggle {
+        display: none;
+      }
+
+      .drawer {
+        height: 100%;
+      }
+
+      .header {
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+      
+      a.section-header {
+        text-decoration: none;
+        line-height: 40px;
+        background-color: {{ site.color_grey }};
+        border-bottom: 1px solid {{ site.color_grey_dark}};
+        background-color: #fff;
+      }
+      
+      a.section-header.docs {
+        background-color: #fff;
+      }
+      
+      a.section-header.docs paper-icon-button {
+        color: {{ site.color_green}};;
+      }
+      
+      a.section-header.thesis {
+        background-color: #fff;
+      }
+      
+      a.section-header.thesis paper-icon-button {
+        color: {{ site.color_red}};;
+      }
+
+      a.section-header.courses {
+        background-color: #fff;
+      }
+      
+      a.section-header.courses paper-icon-button {
+        color: {{ site.color_blue}};;
+      }
+
+
+      .section-header div {
+        color: {{ site.color_grey_dark }};
+        padding: 0 12px;
+        font-weight: bold;
+      }
+
+      .nav-section a {
+        display: block;
+        padding: 0 12px;
+        text-decoration: none;
+        color: {{ site.color_grey_dark }};
+        line-height: 40px;
+      }
+      
+      .nav-subdoc a {
+         display: block;
+         padding: 0 24px;
+         text-decoration: none;
+         color: {{ site.color_grey_dark }};
+         line-height: 40px;
+           
+       }
+
+      .nav-section a[selected] {
+         font-weight: bold;
+      }
+      
+      .nav-section {
+        display: block;
+
+        text-decoration: none;
+        color: #ACB2B8;
+        background-color: {{ site.color_grey_light }};
+        line-height: 32px;
+
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid {{ site.color_grey_dark }};
+      }
+
+      .nav-section-header {
+        color: {{ site.color_grey_dark }};
+        padding: 0 12px;
+        font-weight: bold;
+      }
+
+      .nav {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 256px;
+        z-index: 3;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .content {
+        height: 100%;
+        margin-top: 64px;
+      }
+
+      .top-navigation {
+        display: block;
+      }
+
+      .sections-tabs {
+        height: 100%;
+        display: block;
+      }
+
+      .sections-tabs a {
+        text-decoration: none;
+        color: {{ site.color_grey_dark }};
+        margin: 0 8px;
+        font-size: 16px;
+        padding-top: 24px;
+        padding-bottom: 15.8px;
+        box-sizing: border-box;
+      }
+
+      .sections-tabs a.iron-selected {
+        border-bottom: 6px solid {{ site.color_grey_dark }};
+
+      }
+      
+      .inactive-nav-item {
+           display: block;
+           padding: 0 12px;
+           line-height: 40px;
+       }
+
+      #title {
+        min-width: 180px;
+      }
+      
+      #title a {
+        text-decoration: none;
+        color: {{ site.color_grey_dark }};
+      }
+      
+      #title img {
+        margin-right: 8px;
+      }
+
+      @media (max-width: 640px) {
+        .drawer,
+        .drawer-toggle {
+          display: block;
+        }
+
+        #title {
+          margin-left: 8px;
+        }
+      }
+
+      @media (max-width: 570px) {
+        .top-navigation {
+          display: none;
+        }
+      }
+    </style>
+
+    {% raw %}
+      <app-location route="{{route}}"></app-location>
+      <app-route
+          route="{{route}}"
+          pattern="/:section"
+          data="{{routeData}}"
+          tail="{{subroute}}"></app-route>
+    {% endraw %}
+    
+
+        <app-header slot="header" class="header" shadow reveals snaps>
+          <app-toolbar>
+
+              <paper-icon-button class="drawer-toggle" icon="my-icons:menu" on-tap="_toggleDrawer"></paper-icon-button>
+            
+              <div id="title" main-title>
+                <a href="start/home">
+                  <img src="/svg/winf_logo.svg" height="14px">
+                  <span>{{ site.title }}</span>
+                </a>
+              </div>
+              
+              <div class="flex"></div>
+              
+              <nav class="top-navigation">
+                <iron-selector class="sections-tabs" attr-for-selected="name" activate-event="" selected="[[routeData.section]]">
+                  
+                  <a href="/start/home" name="start">Start</a>
+                  <a href="/courses/concept/overview" name="courses">Courses</a>
+                  <a href="/thesis/prerequisites" name="thesis">Thesis</a>
+                  <a href="/docs/home/overview" name="docs">Docs</a>
+                  <!-- <a href="https://winf-hsos.blogspot.de" target="_blank">Blog</a> -->
+      
+                </iron-selector>
+             </nav>
+
+          </app-toolbar>
+        </app-header>
+        
+        <app-drawer id="drawer" class="drawer" slot="drawer">
+          <div class="nav">
+                <!-- This will soon become the overall navigation, containing all menus -->
+                {% include overall-navigation.html %}
+          </div>
+        </app-drawer>
+
+        <iron-pages selected="[[routeData.section]]" attr-for-selected="name" on-navigate="_navigate">
+          {% raw %}
+            <start-section name="start" class="content" route="{{subroute}}"></start-section>
+            <docs-section name="docs" class="content" route="{{subroute}}"></docs-section>
+            <courses-section name="courses" class="content" route="{{subroute}}"></courses-section>
+            <thesis-section name="thesis" class="content" route="{{subroute}}"></thesis-section>
+            <!--
+            <blog-section name="blog" class="content" route="{{subroute}}"></blog-section>
+            -->
+          {% endraw %}
+        </iron-pages>
+
+        
+
+  </template>
+
+  <script>
+  /* global Polymer */
+    class AppShell extends Polymer.Element {
+
+      static get is() { return 'app-shell'; }
+
+      static get properties() {
+        return {
+        
+          section: {
+            type: String,
+            observer: '_sectionChanged'
+          },
+          
+          route: {
+            type: Object
+          },
+          
+          rootPattern: String,
+          routeData: Object,
+          subroute: String,
+          docTitle: String,
+          path: String
+
+        };
+      }
+      
+      static get observers() {
+        return [
+          '_routeChanged(route.*)'
+        ]
+      }
+      
+      _navigate(e) {
+        this.set('route.path', e.detail.path);
+      }
+
+      _routeChanged() {
+        // The default site to be shown
+        if (!this.route.path || this.route.path == "" || this.route.path == "/") {
+          this.set('route.path', "/start/home");
+          return;
+        }
+
+        // Close a non-persistent drawer when the page & route are changed.
+        if (!this.$.drawer.persistent) {
+          this.$.drawer.close();
+        }
+
+        // Clear active highlights
+        var allLinks = this.shadowRoot.querySelectorAll("a");
+
+        for (var i = 0; i < allLinks.length; i++) {
+          allLinks[i].removeAttribute("selected");
+        }
+
+        // Set new active link
+        var linkPath = this.route.path;
+        var activeLink = this.shadowRoot.querySelector("[href='" + linkPath + "']");
+        if (activeLink)
+          activeLink.setAttribute("selected", "");
+      }
+      
+      _toggleDrawer() {
+        this.$.drawer.toggle();
+      }
+      
+      _expandClicked(event) {
+        var navLink = Polymer.dom(event).localTarget.parentNode;
+        var navCollapse = navLink.nextElementSibling;
+        navCollapse.toggle();
+        
+        // Don't actually click the link.
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
+
+    }
+
+    window.customElements.define(AppShell.is, AppShell);
+  </script>
+</dom-module>

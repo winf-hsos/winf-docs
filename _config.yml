@@ -1,0 +1,55 @@
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: winf-hsos
+description: > # this means to ignore newlines until "baseurl:"
+ Documentation from the courses on Wirtschaftsinformatik at the University of Applied Sciences in Osnabrück
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://example.com" # the base hostname & protocol for your site
+twitter_username: nicolasmeseth
+github_username:  nmeseth
+semester: "WS 2017/18"
+currentweek: 4
+
+# Colors
+color_green: "#92EF03"
+color_green_light: "#DFFF50"
+color_blue: "#04A8B0"
+color_blue_light: "#51F5FD"
+color_yellow: "#FFE004"
+color_red: "#DE036B"
+color_red_light: "#FF50B8"
+color_grey: "#DDDDDD"
+color_grey_light: "#FAFAFA"
+color_grey_dark: "#404040"
+
+# Build settings
+
+markdown: kramdown
+highlighter: rouge
+
+exclude: [Gemfile, Gemfile.lock, serve.txt, README.md, bower.json, templates]
+
+collections:
+  blog:
+    output: true
+    permalink: content/:collection/:path/
+  start:
+    output: true
+    permalink: content/:collection/:path/
+  docs:
+    output: true
+    permalink: content/:collection/:path/
+  courses:
+    output: true
+    permalink: content/:collection/:path/
+  thesis:
+    output: true
+    permalink: content/:collection/:path/
+  slides: 
+    output: true
+    permalink: content/:collection/:path/
+  decks:
+    output: true
+    permalink: content/:collection/:path/

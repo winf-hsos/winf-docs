@@ -1,0 +1,124 @@
+<script>
+    /* global Polymer */
+    SectionMixin = function(superClass) {
+        return class extends superClass {
+            constructor() {
+                super();
+
+                // app-route doesn't handle clicking on the TOC anchors.
+                window.addEventListener('hashchange', this._locationChanged.bind(this));
+                window.addEventListener('location-changed', this._locationChanged.bind(this));
+
+            }
+
+            static get properties() {
+                return {
+                    route: {
+                        type: Object
+                    },
+
+                    title: String,
+                    subtitle: String,
+                    defaultPath: {
+                        type: String
+                    },
+                    sectionName: {
+                        type: String
+                    }
+                };
+            }
+
+            static get observers() {
+                return [
+                    '_routeChanged(route.*)'
+                ]
+            }
+
+            _routeChanged(route) {
+                if (this.route.prefix == '/' + this.sectionName) {
+                    this._loadPage(this.route.path);
+                }
+            }
+
+            _loadPage(path) {
+                this.path = "/content" + this.route.prefix + path + "/index.html";
+                //console.log("Loading from path: " + this.path);
+                this.$.ajax.generateRequest();
+            }
+
+            _handleResponse(response) {
+                var doc = response.detail.response;
+                this.title = doc.title;
+
+                if (doc.head.querySelector("[name=subtitle]")) {
+                    this.subtitle = doc.head.querySelector("[name=subtitle]").content;
+                }
+
+                var docBody = doc.querySelector('body').children;
+                var fragment = document.createDocumentFragment();
+
+                for (var i = 0; i < docBody.length; i++) {
+                    var child = docBody[i].cloneNode(true);;
+                    fragment.appendChild(child);
+                }
+
+                var docContent = this.$.content;
+                docContent.innerHTML = '';
+
+                docContent.appendChild(document.importNode(fragment, true));
+
+                // Scroll to an anchor, if we have one.
+                if (window.location.hash) {
+                    this._locationChanged();
+                }
+                else {
+                    Polymer.Async.microTask.run(this._resetScrollPosition);
+                }
+
+                // Clear active highlights
+                var allLinks = this.shadowRoot.querySelectorAll("a");
+
+                for (var i = 0; i < allLinks.length; i++) {
+                    allLinks[i].removeAttribute("selected");
+                }
+
+                // Set new active link
+                var linkPath = this.route.prefix + this.route.path;
+                var activeLink = this.shadowRoot.querySelector("[href='" + linkPath + "']");
+                if (activeLink)
+                    activeLink.setAttribute("selected", "");
+            }
+
+            _handleError(error) {
+                console.log("Error loading ajax: " + error);
+                this.set('route.path', this.defaultPath);
+            }
+
+            _locationChanged() {
+                var hash = window.location.hash;
+
+                if (hash) {
+                    var el = this.shadowRoot.querySelector(hash);
+                    if (el) {
+                        el.scrollIntoView();
+                    }
+                }
+            }
+
+            _resetScrollPosition() {
+
+                var hash = window.location.hash;
+                if (hash) {
+                    var elem = document.querySelector(hash);
+                    if (elem) {
+                        elem.scrollIntoView();
+                        return;
+                    }
+                }
+                Polymer.AppLayout.scroll();
+            }
+
+
+        }
+    }
+</script>

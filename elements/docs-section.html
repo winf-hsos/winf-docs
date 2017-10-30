@@ -1,0 +1,67 @@
+---
+title: Documentation Section
+---
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="styles/docs-styles.html">
+<link rel="import" href="styles/syntax-styles.html">
+<link rel="import" href="styles/shared-styles.html">
+<link rel="import" href="styles/section-styles.html">
+<link rel="import" href="section-mixin.html">
+
+<dom-module id="docs-section">
+  
+  <template>
+    <style include="shared-styles section-styles docs-styles syntax-styles iron-flex iron-flex-alignment "></style>
+  
+  {% raw %}  
+  <app-route
+      route="{{route}}"
+      pattern="/:site"
+      data="{{routeData}}"
+      tail="{{subroute}}"></app-route>
+  {% endraw %}
+  
+  <header>
+    <div class="headers">
+      <h1>[[title]]</h1>
+      <h2>[[subtitle]]</h2>
+    </div>
+  </header>
+  
+  <div class="layout horizontal container">
+    
+    <div class="nav">
+      {% include docs-navigation.html %}
+    </div>
+  
+    <div class="main-content flex" id="content"></div>
+  
+  </div>
+  
+  <iron-ajax id="ajax" url="[[path]]" handle-as="document" on-response="_handleResponse" on-error="_handleError"></iron-ajax>
+  
+  </template>
+
+  <script>
+    /* global Polymer */
+    /* global SectionMixin */
+    class DocsSection extends SectionMixin(Polymer.Element) {
+        static get is() { return 'docs-section'; }
+
+        static get properties() {
+            return {
+            };
+        }
+
+        constructor() {
+            super();
+            this.defaultPath = '/home/overview';
+            this.sectionName = 'docs';
+        }
+
+
+    }
+
+    window.customElements.define(DocsSection.is, DocsSection);
+  </script>
+</dom-module>

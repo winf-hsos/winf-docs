@@ -1,0 +1,18 @@
+{% if site.data.courses.navigation %} 
+    {% for section in site.data.courses.navigation %}
+        <div class="nav-section">
+            <div class="nav-section-header">{{ section.title }}</div>
+        
+            {% if section.sub[0] %} 
+                {% for course in section.sub %}
+                    {% if course.disabled %}
+                       <span class="inactive-nav-item">{{ course.title }}</span>
+                    {% else if %}
+                        <a class="nav-link" href="{{ course.path }}">{{ course.title }}</a> 
+                    {% endif %}
+                {% endfor %} 
+            {% endif %}
+        </div>
+
+    {% endfor %} 
+{% endif %}
