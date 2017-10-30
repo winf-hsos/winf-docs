@@ -60,7 +60,7 @@ Finally, push:
 
 ```git push -u origin master```
 
-Git will ask for your username and password. After you have input them, the files will be pushed to your GitHub repository. Check this by refreshing your GitHub repo page.
+Git asks for your username and password. After you have input both, the files are be pushed to your GitHub repository. Check this by refreshing your GitHub repo page.
 
 Don't forget to post the link to your GitHub repository to your group's channel on Slack!
 
