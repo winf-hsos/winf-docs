@@ -1,0 +1,2 @@
+# Deduktiv vs. Induktiv
+
