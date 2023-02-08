@@ -13,10 +13,10 @@ description: >-
 | 3    | Number systems, binary system                              | Reacting to keyboard input, functions                                    |
 | 4    | Analog vs. digital (1), discretizing analog signals, noise | Programming a sensor, callback functions                                 |
 | 5    | Analog vs. digital (2), data transmission, OSI-model       | Developing a physical data transmission protocol, rule-based programming |
-| 6    | Creating and sending bits                                  |                                                                          |
-| 7    | Encoding messages in bits, ASCII code                      |                                                                          |
-| 8    | Decoding bits using code systems                           |                                                                          |
-| 9    |                                                            |                                                                          |
-| 10   |                                                            |                                                                          |
-| 11   |                                                            |                                                                          |
+| 6    | Creating and sending bits, measuring information           | Sending a byte over LiFi                                                 |
+| 7    | Encoding messages as bits, ASCII code                      | Sending messages over LiFi                                               |
+| 8    | Decoding bits using code systems                           | Receiving messages over LiFi                                             |
+| 9    | Representing images in computers                           | Sending and receiving an image over LiFi                                 |
+| 10   | Rules-based vs. machine learning                           | Improving the LiFi throughput with machine learning                      |
+| 11   | Security of data exchange                                  | Encrypting LiFi communication                                            |
 | 12   |                                                            |                                                                          |
