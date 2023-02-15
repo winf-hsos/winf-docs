@@ -21,14 +21,14 @@ The breadth of tasks computers can perform is already astonishing by itself, but
 
 To understand how computers work, we first must understand how a number system with only ones and zeroes works:
 
-{% content-ref url="../../the-project/the-binary-system.md" %}
-[the-binary-system.md](../../the-project/the-binary-system.md)
+{% content-ref url="../../lifi-project/the-binary-system.md" %}
+[the-binary-system.md](../../lifi-project/the-binary-system.md)
 {% endcontent-ref %}
 
 Understanding code systems gives us an idea how computers represent other things than 0 and 1:
 
-{% content-ref url="../../the-project/code-systems.md" %}
-[code-systems.md](../../the-project/code-systems.md)
+{% content-ref url="../../lifi-project/code-systems.md" %}
+[code-systems.md](../../lifi-project/code-systems.md)
 {% endcontent-ref %}
 
 Now that we know how computers represent different things, let's learn how they can process information. For that, we need a few very small and simple devices:
