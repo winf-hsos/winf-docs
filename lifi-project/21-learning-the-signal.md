@@ -1,3 +1,3 @@
-# 21 - Learning Signals ⭐
+# 21 - Learning the Signal
 
 ## K-Nearest Neighbors (KNN)
