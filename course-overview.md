@@ -1,7 +1,7 @@
 ---
 description: >-
-  By solving the LiFi-project, you will learn the basics of digital computers
-  and digitalization. Moreover, you will learn basic programming skills.
+  This course has a tight curriculum and requires you to stay up to the tasks.
+  There are 12 mandatory exercises you need to submit.
 ---
 
 # Course Overview
