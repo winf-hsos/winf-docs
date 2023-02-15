@@ -22,7 +22,15 @@ The tests give us confidence that all devices are intact, everything is wired co
 The following code contains the full smoke test for our program-based version:
 
 ```python
-...
+HOST = "localhost"
+PORT = 4223
+UID = "xxxxx" # Change to the UID of your Master Brick
+
+from tinkerforge.bricklet_rgb_led import BrickletRGBLED
+
+ipcon = IPConnection()
+master = BrickMaster(UID, ipcon)
+ipcon.connect(HOST, PORT)
 ```
 
 You are running this code during your first exercise. In the following, we examine the different parts of the code a bit closer and introduce our first concepts in programming.
