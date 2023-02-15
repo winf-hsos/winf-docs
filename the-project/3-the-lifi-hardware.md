@@ -1,12 +1,6 @@
 # 3 - The LiFi Hardware
 
-## Components
-
-* RGB LED
-* Color sensor
-* Master Brick
-* OLED display
-* Rotary Encoder
+##
 
 ## Connecting to the Hardware
 

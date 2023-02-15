@@ -6,6 +6,7 @@
 ## The Project
 
 * [1 - Development Environment](the-project/1-development-environment.md)
+* [2 - Hardware Assembly ⭐](the-project/2-hardware-assembly.md)
 * [2 - Our First Program ⭐](the-project/2-our-first-program.md)
 * [3 - The LiFi Hardware](the-project/3-the-lifi-hardware.md)
 * [4 - Programming the LED ⭐](the-project/4-programming-the-led.md)
