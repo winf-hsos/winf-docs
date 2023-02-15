@@ -12,7 +12,7 @@ description: >-
 
 The term [LiFi](https://en.wikipedia.org/wiki/Li-Fi) is short for Light-Fidelty and describes a technology to transmit information through the use of light. LiFi uses the visible light spectrum to create a signal using simple devices such as light-emitting diodes (LEDs). The light is received by a photodetector that can sense the light emitted by the LED. Through variation of the light's characteristic over time, be it the wavelength or the illuminance, we can encode and transmit data.
 
-You are part of an interdisciplinary research & development (R\&D) team of engineers at a high-tech company that develops and produces robots for applications in food & agriculture. The company sees great potential in the LiFi technology for the fast and secure exchange of information between robots and other peripherals.
+You are part of an interdisciplinary research & development (R\&D) team of engineers at a high-tech company that develops and produces robots for applications in food & agriculture. The company sees great potential in the LiFi technology for the fast and secure exchange of information between robots and other peripherals. A special use case are environments where radio frequency signals disturb the microorganisms or other sensitive electronic devices.
 
 ## The goal
 
