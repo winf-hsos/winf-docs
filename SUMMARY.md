@@ -26,7 +26,7 @@
 * [19 - Representing Images](lifi-project/19-representing-images.md)
 * [20 - Send Images over LiFi](lifi-project/20-send-images-over-lifi.md)
 * [21 - Learning the Signal](lifi-project/21-learning-the-signal.md)
-* [22 - Encrypted LiFi ⭐](lifi-project/22-encrypted-lifi.md)
+* [22 - Encrypted LiFi](lifi-project/24-encrypted-lifi.md)
 
 ***
 
