@@ -1,5 +1,7 @@
-# 9 - Analog vs. Digital
+# 10 - Analog vs. Digital
 
-## Discretizing Analog Signals
+## Discretizing analog signals
+
+### Analog-to-digital-converter
 
 ## Noise

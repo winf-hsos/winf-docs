@@ -6,6 +6,8 @@ description: >-
 
 # The LiFi-Project
 
+<figure><img src=".gitbook/assets/lifi_project_teaser.jpg" alt=""><figcaption><p>An early LiFi prototype device.</p></figcaption></figure>
+
 ## The project setup
 
 The term [LiFi](https://en.wikipedia.org/wiki/Li-Fi) is short for Light-Fidelty and describes a technology to transmit information through the use of light. LiFi uses the visible light spectrum to create a signal using simple devices such as light-emitting diodes (LEDs). The light is received by a photodetector that can sense the light emitted by the LED. Through variation of the light's characteristic over time, be it the wavelength or the illuminance, we can encode and transmit data.
