@@ -7,7 +7,20 @@ description: >-
 
 # 4 - The LED
 
-## Programming the LED
+{% hint style="info" %}
+This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+{% endhint %}
+
+## Summary
+
+In this section, you'll learn:
+
+* How to connect the LED from a Python program.
+* How to set the LED to a specific color.
+* How to turn off the LED.
+* How LEDs work on a basic level
+
+## Turning on the LED from Python
 
 Let's dive right into some code. To start with, we will set the RGB LED to a green color and explain how that works from Python.
 
@@ -41,7 +54,7 @@ ipcon.disconnect()
 ```
 {% endcode %}
 
-In summary, the code creates a new IP-connection (line 8) and connects using the host and port information (line 9) that we stored as <mark style="background-color:green;">**constants**</mark> (lines 1 & 2). In line 11, we create a new LED <mark style="background-color:green;">**object**</mark> by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark> along with the IP-connection. Afterward, the <mark style="background-color:green;">**variable**</mark> `led` should hold a reference to our LED hardware device that is connected to our computer. With that reference, we can access one of the LED's main functionalities: setting its color to any vale using the <mark style="background-color:green;">**RGB code**</mark>. In the example, we set it to green (line 16).
+In summary, the code creates a new IP-connection (line 8) and connects using the host and port information (line 9) that we stored as <mark style="background-color:green;">**constants**</mark> (lines 1 & 2). In line 11, we create a new LED <mark style="background-color:green;">**object**</mark> by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark> along with the IP-connection. Afterward, the <mark style="background-color:green;">**variable**</mark> `led` should hold a reference to our LED hardware device that is connected to our computer. With that reference, we can access one of the LED's main functionalities: setting its color to any vale using the <mark style="background-color:green;">**RGB code**</mark>. The RGB code will be addressed in detail in the next section about [code-systems.md](code-systems.md "mention"). In the example, we set the LED's color to green (line 16).
 
 ### How to get a device's UID?
 
@@ -107,7 +120,7 @@ Voilà! The LED lights up in green color.
 
 <figure><img src="../.gitbook/assets/rgb_led_green.jpg" alt=""><figcaption><p>The RGB LED set to the RGB value R = 0, G = 255, B = 0.</p></figcaption></figure>
 
-### Typical Errors
+### Common Errors
 
 In the following, I want to address frequent errors and their solutions when running a Python program from a terminal.
 
@@ -138,7 +151,21 @@ Your program runs, but after a couple of seconds, you get a rather large error m
 tinkerforge.ip_connection.Error: Did not receive response for function 255 in time (-1)
 ```
 
-This usually means that you entered the wrong UID and the program can't connect to the LED. [Double-check your LED's UID using the Brick Viewer](4-the-led.md#how-to-get-a-devices-uid) and correct any misspellings.
+This usually means that you entered the wrong UID and the program can't connect to the LED. [Double-check your LED's UID using the Brick Viewer](the-led.md#how-to-get-a-devices-uid) and correct any misspellings.
+
+## Turning the LED off again
+
+When the program exits, which it immediately does after it has executed each of the code lines in our program one by one, the LED remains in a green-colored state. This is because nobody told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses any key on the keyboard. The program should then turn the LED off and only then exit the program.
+
+### Getting input from the keyboard
+
+Asking the user for input is a common task in programming. In Python, we can prompt the user for input from the keyboard using the function with the same name:
+
+```python
+input("Press any key to exit the program")
+```
+
+If you add this line at the end of your program, it won't exit unless you hit a key.
 
 ## The light-emitting diode (LED)
 

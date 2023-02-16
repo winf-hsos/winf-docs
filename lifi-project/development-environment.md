@@ -10,6 +10,16 @@ description: >-
 This section is relevant for [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf).
 {% endhint %}
 
+## Summary
+
+In this section, you'll learn:
+
+* Which software you need for the LiFi-project.
+* How you can test the hardware components with the Brick Viewer from Tinkerforge.
+* What an integrated development environment (IDE) is and why it is important.
+* What Python is, and why we choose it as our programming language in this project.
+* What Git is and why it is a useful tool in software projects.
+
 ## Brick Viewer and Brick Daemon
 
 For the LiFi-project, your team uses hardware from a small German start-up company called [Tinkerforge](http://tinkerforge.com/). To jump-start working with the hardware components, Tinkerforge provides two pieces of software, both are open source:
