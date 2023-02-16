@@ -83,7 +83,7 @@ To clear any existing intervals if a timer is currently running, we call `stopTi
 
 In line 11, we set the progress bar to 100%, which makes it blue all the way. Since the timer is counting down, the progress bar will become smaller over time instead of bigger.
 
-![The timer is initialized with 100% width when the timer is set.](<../../../../.gitbook/assets/image (2).png>)
+![The timer is initialized with 100% width when the timer is set.](<../../../../.gitbook/assets/image (2) (1).png>)
 
 Finally, we log the information that the timer was set to the console (line 14).
 

@@ -45,6 +45,6 @@ Nach ein paar Minuten ist die Erweiterung fertig installiert. Ihr könnt nun mit
 
 Zuerst müsst ihr euch anmelden, am einfachsten geht das über den Browser. Nachdem ihr euch angemeldet habt, könnt ihr mit dem Befehl _Glitch: Open Project_ ein Projekt aus eurem Glitch-Account direkt in VS Code öffnen und editieren.
 
-![](<../../../.gitbook/assets/image (1).png>)
+![](<../../../.gitbook/assets/image (1) (1).png>)
 
 Das war es schon! Nachdem wir den Glitch-Account haben und mit Visual Studio Code zusätzlich einen lokalen Editor installiert haben können wir loslegen. Schauen wir uns im ersten Schritt an, was wir erreichen wollen.
