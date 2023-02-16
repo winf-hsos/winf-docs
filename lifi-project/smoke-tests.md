@@ -6,6 +6,10 @@ description: >-
 
 # 3 - Smoke Tests
 
+{% hint style="info" %}
+This section is relevant for [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf).
+{% endhint %}
+
 ## What does a smoke test do?
 
 The term <mark style="background-color:green;">**smoke test**</mark> in industrial engineering and software development describes an attempt to run a new system for the first time to see whether there are any major issues. The term 'smoke test' likely originated in the plumbing industry, where smoke was blown into a new pipe system to detect any leaks. For us, the smoke test means that we connect the hardware stack to a computer and test whether all components and their functionalities are working. For this purpose, we can use the [Brick Viewer from Tinkerforge](https://www.tinkerforge.com/en/doc/Software/Brickv.html), which we installed in the [previous section](development-environment.md). Or we can use the Tinkerforge Python <mark style="background-color:green;">**API**</mark> and perform the same smoke test from a program.
@@ -33,7 +37,7 @@ master = BrickMaster(UID, ipcon)
 ipcon.connect(HOST, PORT)
 ```
 
-You are running this code during your first exercise. In the following, we examine the different parts of the code a bit closer and introduce our first concepts in programming.
+You are running this code during your first exercise. In the following, we examine the different parts of the code a bit closer and introduce our first concepts in programming. Don't worry, we will learn about each concept in more detail later on. This is just to give you a rough overview of how the smoke test program works.
 
 ### Five basic concepts in programming
 

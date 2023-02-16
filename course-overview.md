@@ -12,7 +12,7 @@ description: >-
 
 | Week | Topic(s)                                                                                                                                                                                                            | Programming task(s)                                                                                                                                                                                                              |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | [Set up development environment](lifi-project/development-environment.md)                                                                                                                                           | [Our First Program](broken-reference), [Variables](lifi-project/3-smoke-tests.md#variables)                                                                                                                                      |
+| 1    | [Set up development environment](lifi-project/development-environment.md)                                                                                                                                           | [Our First Program](broken-reference), [Variables](lifi-project/smoke-tests.md#variables)                                                                                                                                        |
 | 2    | [The LiFi Hardware](broken-reference), [Code Systems](lifi-project/code-systems.md), [RGB-Code](lifi-project/code-systems.md#the-rgb-code)                                                                          | [Connecting to the Hardware](broken-reference), [Programming the LED](lifi-project/4-the-led.md), [Random Numbers](lifi-project/4-the-led.md#random-numbers), [Control Structures](lifi-project/4-the-led.md#control-structures) |
 | 3    | [The Binary System](lifi-project/the-binary-system.md)                                                                                                                                                              | [Keyboard Input](lifi-project/8-keyboard-input.md), [Functions](lifi-project/8-keyboard-input.md#functions)                                                                                                                      |
 | 4    | [Analog vs. Digital](lifi-project/10-analog-vs.-digital.md), [Discretizing Analog Signals](lifi-project/10-analog-vs.-digital.md#discretizing-analog-signals), [Noise](lifi-project/10-analog-vs.-digital.md#noise) | [Programming a Sensor](lifi-project/9-the-color-sensor.md), [Callback Functions](lifi-project/9-the-color-sensor.md#callback-functions)                                                                                          |
@@ -28,6 +28,10 @@ description: >-
 ## List of exercises
 
 * [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf)
+
+## Important terms and concepts
+
+You will notice that some words in this course are highlighted in <mark style="background-color:green;">**bold green color**</mark>. I use this formatting to point you to important terms and concepts that you should know and be able to explain. It is not necessarily explained in the same section or in this course at all. If you can't find anything here directly or in the provided literature, make sure you do your research and ask questions during sessions.
 
 ## Learning Objectives
 

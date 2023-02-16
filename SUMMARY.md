@@ -7,7 +7,7 @@
 
 * [1 - Hardware Assembly](lifi-project/hardware-assembly.md)
 * [2 - Development Environment](lifi-project/development-environment.md)
-* [3 - Smoke Tests](lifi-project/3-smoke-tests.md)
+* [3 - Smoke Tests](lifi-project/smoke-tests.md)
 * [4 - The LED](lifi-project/4-the-led.md)
 * [5 - Code Systems](lifi-project/code-systems.md)
 * [6 - Morse Code with Light](lifi-project/6-morse-code-with-light.md)

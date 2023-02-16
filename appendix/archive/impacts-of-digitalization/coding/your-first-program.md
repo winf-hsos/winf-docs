@@ -29,7 +29,7 @@ In the first block of this lesson, let's try so solve the challenge 1 from the f
 * :link: [Link to exercise](https://docs.google.com/document/d/17BBJRldzIrdq5jnDmUSDkimjx9JojQvF-uQrGkkoLv8/preview)
 * :link: [Link to PDF version](https://docs.google.com/document/d/17BBJRldzIrdq5jnDmUSDkimjx9JojQvF-uQrGkkoLv8/export?format=pdf) :arrow\_down:&#x20;
 
-!["Hello World" in Node.js](<../../../../.gitbook/assets/image (45).png>)
+!["Hello World" in Node.js](<../../../../.gitbook/assets/image (45) (1).png>)
 
 ### :three: Hardware Assembly and Test
 
