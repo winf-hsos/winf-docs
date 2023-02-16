@@ -167,6 +167,14 @@ input("Press any key to exit the program")
 
 If you add this line at the end of your program, it won't exit unless you hit a key.
 
+## Asking the LED for its current color
+
+<mark style="background-color:yellow;">TODO</mark>
+
+```
+led.get_rgb_value()
+```
+
 ## The light-emitting diode (LED)
 
 <mark style="background-color:green;">**LED**</mark> is the abbreviation for <mark style="background-color:green;">**light-emitting-diode**</mark>. It produces light when current flows through a sandwich of semiconductor materials. The material on the one side of the sandwich is altered such that at some locations, electrons are missing and so-called electron-holes are created. This side is called the p-type region, because of its positive charge due to the lack of electrons. The material on the other side, which is called the n-type region, has been altered in the opposite way. Here, there is an excess of free electrons, hence the name n-type (negative). When electric current is applied (turning the LED on), the semiconductor materials turn into conductors and the free electrons can travel to the other side and fill the holes. When that happens, energy is released in the form of photons - or light.
