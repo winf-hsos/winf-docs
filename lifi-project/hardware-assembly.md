@@ -6,6 +6,10 @@ description: >-
 
 # 1 - Hardware Assembly
 
+{% hint style="info" %}
+This section is relevant for [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf).
+{% endhint %}
+
 ## Components
 
 * RGB LED
