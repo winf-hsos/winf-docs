@@ -25,6 +25,10 @@ description: >-
 | 11   | [Secure Data Exchange](broken-reference)                                                                                                                                                                            | [Encrypted LiFi](lifi-project/24-encrypted-lifi.md)                                                                                                                                                                              |
 | 12   |                                                                                                                                                                                                                     |                                                                                                                                                                                                                                  |
 
+## List of exercises
+
+* [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf)
+
 ## Learning Objectives
 
 The LiFi-project covers many **aspects of the digital world and its interfaces to the analog world**. In fact, it was designed so that it touches many things that I would otherwise have introduced in my lectures. Occasionally, this may seem a bit artificial, but I believe the topics are much better understood when introduced during a real-world project.
