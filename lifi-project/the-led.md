@@ -108,7 +108,7 @@ Unfortunately, not all terminals are equal, and there are different types. When 
 2. In the appearing search bar, type "Select default profile" and click on the first result.
 3. From the list, choose "Command Prompt".
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
 
 Now try to open another terminal as described above. It should now be of the new default type "Command Prompt". Finally, type the command to run your program into the terminal and hit enter:
 
@@ -134,7 +134,7 @@ can't open file '...\led.py': [Errno 2] No such file or directory
 
 Python is telling you it can't find the file you specified, in this case `led.py`. In most cases, this is because you are not in the same directory as the file you are trying to run. The current directory is displayed in your terminal, usually right before the cursor:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 In my example, I am in the directory `C:\code\iot`, and if I run `python led.py`, the Python command will assume the file is in the current directory. You can check this on Windows by typing the command `dir`, on Mac and Linus the equivalent command is `ls`. Both will print all files and directories that are in the current directory.&#x20;
 

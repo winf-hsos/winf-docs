@@ -12,7 +12,7 @@
 * [5 - Code Systems](lifi-project/code-systems.md)
 * [6 - Morse Code](lifi-project/morse-code.md)
 * [7 - The Binary System](lifi-project/the-binary-system.md)
-* [8 - Keyboard Input](lifi-project/8-keyboard-input.md)
+* [8 - Human Input](lifi-project/human-input.md)
 * [9 - The Color Sensor](lifi-project/9-the-color-sensor.md)
 * [10 - Analog vs. Digital](lifi-project/10-analog-vs.-digital.md)
 * [11 - Data Transmission](lifi-project/11-data-transmission.md)
