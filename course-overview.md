@@ -28,6 +28,7 @@ description: >-
 ## List of exercises
 
 * [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf)
+* [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
 
 ## Important terms and concepts
 
