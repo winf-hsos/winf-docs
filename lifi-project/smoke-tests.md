@@ -24,14 +24,18 @@ This section introduces a program for the smoke test, which we go through step-b
 
 ## What does a smoke test do?
 
-The term <mark style="background-color:green;">**smoke test**</mark> in industrial engineering and software development describes an attempt to run a new system for the first time to see whether there are any major issues. The term 'smoke test' likely originated in the plumbing industry, where smoke was blown into a new pipe system to detect any leaks. For us, the smoke test means that we connect the hardware stack to a computer and test whether all components and their functionalities are working. For this purpose, we can use the [Brick Viewer from Tinkerforge](https://www.tinkerforge.com/en/doc/Software/Brickv.html), which we installed in the [previous section](development-environment.md). Or we can use the Tinkerforge Python <mark style="background-color:green;">**API**</mark> and perform the same smoke test from a program.
+The term <mark style="background-color:green;">**smoke test**</mark> in industrial engineering and software development describes the attempt to run a new system for the first time to see whether there are any major issues. The term 'smoke test' likely originated in the plumbing industry, where smoke was blown into a new pipe system to detect any leaks. For us, the smoke test means that we connect the hardware stack to a computer and test whether all components are working as expected. For this purpose, we can use the [Brick Viewer from Tinkerforge](https://www.tinkerforge.com/en/doc/Software/Brickv.html), which we installed in the [previous section](development-environment.md). Or we can use the Tinkerforge Python <mark style="background-color:green;">**API**</mark> and perform a smoke test from a program.
 
-We'll perform two similar smoke tests in this section:
+We'll perform two smoke tests in this section:
 
 1. Connect to the hardware kit from the Tinkerforge Brick Viewer and test the device's most important functions.
-2. Connect to the hardware kit from a Python program and test at least of each device's functions.
+2. Connect to the hardware kit from a Python program and test each device's individual functions as well as their interactions.
 
 The tests give us confidence that all devices are intact, everything is wired correctly, all the identifiers were collected properly, and our development environment is installed and configured. If the test result is positive, that is.
+
+## The UI-based smoke test
+
+<mark style="background-color:orange;">TODO</mark>
 
 ## The program-based smoke test
 
