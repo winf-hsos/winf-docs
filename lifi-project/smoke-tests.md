@@ -172,7 +172,7 @@ A program is a set of instructions for a computer to execute. A program is writt
 
 When a computer executes a program, it steps through the program from top to bottom and executes the instructions line-by-line. Most of the time, that is. Some constructs such as <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark>, which you'll learn about soon, make the computer deviate from this linear execution of the program.
 
-We said that a program contains instructions, which is another word for telling the computer what to do. In programming, there are different types of instructions, and each is useful to solve problems. In a program, we use instructions to tell a computer to:
+We said that a program contains instructions, which is another word for telling the computer what to do. In programming, there are different types of instructions, and in combination they are useful to solve problems. In a program, we use instructions to tell a computer to:
 
 * Remember things.
 * Calculate things.
