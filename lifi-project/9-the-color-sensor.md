@@ -1,4 +1,4 @@
-# 9 - The Color Sensor ⭐
+# 10 - Sensing Color
 
 ## How do sensors work?
 

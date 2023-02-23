@@ -1,4 +1,4 @@
-# 10 - Data Transmission
+# 12 - Data Transmission
 
 ## The OSI-Model
 

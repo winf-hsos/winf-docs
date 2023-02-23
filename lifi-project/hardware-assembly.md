@@ -21,13 +21,12 @@ In this section, you'll learn:
 
 The hardware kit contains the following components:
 
-* 1 x [ESP32 Brick](https://www.tinkerforge.com/en/shop/esp32-brick.html)
+* 1 x [Master Brick 3.1](https://www.tinkerforge.com/en/shop/bricks/master-brick.html)
 * 1 x [RGB LED Bricklet 2.0](https://www.tinkerforge.com/en/shop/rgb-led-v2-bricklet.html)
 * 1 x [Color Bricklet 2.0](https://www.tinkerforge.com/en/shop/color-v2-bricklet.html)
 * 1 x [OLED 128x64 Bricklet 2.0](https://www.tinkerforge.com/en/shop/oled-128x64-v2-bricklet.html)
 * 1 x [Rotary Encoder Bricklet 2.0](https://www.tinkerforge.com/en/shop/rotary-encoder-v2-bricklet.html)
-* 1 x [Distance IR 4-30cm Bricklet 2.0](https://www.tinkerforge.com/en/shop/distance-ir-4-30cm-v2-bricklet.html)
-* 5 x [Bricklet Cable 15cm (7p-7p)](https://www.tinkerforge.com/en/shop/bricklet-cable-15cm-7p-7p.html)
+* 4 x [Bricklet Cable 15cm (7p-7p)](https://www.tinkerforge.com/en/shop/bricklet-cable-15cm-7p-7p.html)
 * 1 x [USB-A to USB-C Cable 100cm](https://www.tinkerforge.com/en/shop/accessories/cable/usb-a-to-usb-c-cable-100cm.html)
 * 2 x [Mounting Plate 22x10](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-plate-22x10.html)
 * 6 x [Mounting Kit 12 mm](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html)

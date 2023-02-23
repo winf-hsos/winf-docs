@@ -1,4 +1,4 @@
-# 10 - Analog vs. Digital
+# 11 - Analog vs. Digital
 
 ## Discretizing analog signals
 
