@@ -16,6 +16,6 @@ You are part of an interdisciplinary research & development (R\&D) team of engin
 
 ## The goal
 
-Your task is to develop a working prototype for a LiFi communication device that can be built into the company's next generation of robots. The two main components of the device are a [small LED](https://www.tinkerforge.com/en/doc/Hardware/Bricklets/RGB\_LED\_V2.html) and a [color sensor](https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Color\_V2.html). The LED can light up in any of the roughly 16 million colors of the RGB coding system. The color sensor can measure the intensity of the 3 RGB color channels as well as the brightness of the light. A so-called [Master Brick](https://www.tinkerforge.com/en/doc/Hardware/Bricks/Master\_Brick.html) is responsible to control both components.
+Your task is to develop a working prototype for a LiFi communication device that can be built into the company's next generation of robots. The two main components of the device are a [small LED](https://www.tinkerforge.com/en/doc/Hardware/Bricklets/RGB\_LED\_V2.html) and a [color sensor](https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Color\_V2.html). The LED can light up in any of the roughly 16 million colors of the RGB coding system. The color sensor can measure the intensity of the 3 RGB color channels as well as the brightness of the light. A so-called [Master Brick](https://www.tinkerforge.com/en/doc/Hardware/Bricks/Master\_Brick.html) is responsible for controlling both components.
 
 That's all for now! More details follow once you take your first steps.

@@ -1,5 +1,19 @@
+---
+description: >-
+  Here you find all relevant literature, which includes books and online
+  resources, for the LiFi-project.
+---
+
 # Literature
+
+## Books
 
 * Petzold, Charles. _Code: The Hidden Language of Computer Hardware and Software_. 2nd ed., Microsoft Press, 2022.
 * Scott, John C. _But How Do It Know?: The Basic Principles of Computers for Everyone_. John C. Scott, 2009.
 * _How Technology Works: The Facts Visually Explained_. Dorling Kindersley Ltd, 2019.
+
+## Online resources
+
+The LiFi-code GitHub repository contains all code examples for this project and more. I recommend you check out the repository, so you can run the examples on your local computer. You find the instructions for the necessary software in [development-environment.md](lifi-project/development-environment.md "mention").
+
+{% embed url="https://github.com/winf-hsos/LiFi-code" %}
