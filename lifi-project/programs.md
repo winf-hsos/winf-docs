@@ -21,9 +21,9 @@ This section introduces a program for the smoke test, which we go through step-b
 
 A program is a set of instructions for a computer to execute. A program is written as plain text, and all we need is a basic text editor, although we prefer a complete [development-environment.md](development-environment.md "mention").&#x20;
 
-When a computer executes a program, it steps through the program from top to bottom and executes the instructions line-by-line. Most of the time, that is. Some constructs such as <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark>, which you'll learn about soon, make the computer deviate from this linear execution of the program.
+When a computer executes a program, it steps through the program from top to bottom and executes the instructions line-by-line. Not always, that is. Some constructs such as <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> make the computer deviate from this linear execution of the program. You'll learn about them soon.
 
-We said that a program contains instructions, which is another word for telling the computer what to do. In programming, there are different types of instructions, and in combination they are useful to solve problems. In a program, we use instructions to tell a computer to:
+<mark style="background-color:green;">**Instruction**</mark> is another word for telling the computer what to do. There are different types of instructions, and they are used in combination to solve problems. In a program, we use instructions to tell a computer to:
 
 * Remember things.
 * Calculate things.
