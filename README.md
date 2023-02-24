@@ -30,4 +30,4 @@ If the answer is yes, then the following questions arise:
 
 We are faced with a significant limitation, as we are required to address these questions using the hardware provided to us, which consists of an LED, color sensor, rotary encoder with button functionality, and a 128 by 64 pixel OLED display.
 
-In this project, you will find answers to all of the above questions! Curious? Let's go!
+By the end of this project, you will have solved the engineering problem and found answers to all of the above questions! And as a welcome side effect, you'll know a lot about the digital world and gained some basic programming skills. Sounds good? Let's go!
