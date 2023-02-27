@@ -98,3 +98,7 @@ You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ nu
 
 * How many codes do I need? That is, how many things do I need to represent with that code? In RGB code, that is 16,777,216 colors that need to be encoded.
 * How many bits do we need to represent the number of different codes? In RGB code, that is 24 bits or 3 bytes.
+
+## What about communication?
+
+The LiFi-project is about communication, so we ought to look at a code system that was designed for that purpose and see whether it can help us solve our problem. You have probably heard about the [Morse code](morse-code.md) before.&#x20;

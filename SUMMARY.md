@@ -17,7 +17,6 @@
 * [10 - Sensing Color](lifi-project/9-the-color-sensor.md)
 * [11 - Analog vs. Digital](lifi-project/10-analog-vs.-digital.md)
 * [12 - Data Transmission](lifi-project/11-data-transmission.md)
-* [13 - The Physical Layer](lifi-project/12-the-physical-layer.md)
 * [14 - Measuring Information](lifi-project/13-measuring-information.md)
 * [15 - Send Bytes Over LiFi](lifi-project/14-send-bytes-over-lifi.md)
 * [16 - Encoding Text](lifi-project/15-encoding-text.md)

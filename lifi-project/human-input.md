@@ -9,7 +9,7 @@ description: >-
 
 ## The Rotary Encoder
 
-The rotary encoder is a typical control for human input in many hardware devices. The user can turn the knob in both directions, which changes a value represented by the control. Turning it right increases the value, while turning it left decreases it. In addition, the rotary encoder has the functionality of a button. When the user presses the knob, we can perform some action based on that <mark style="background-color:green;">**event**</mark>.
+The rotary encoder is a typical control for human input in many hardware devices. The user can turn the knob in both directions, which changes a value represented by the control. Turning it right increases the value, while turning it left decreases it. In addition, the rotary encoder has the functionality of a button. When the user presses the knob, this fires an <mark style="background-color:green;">**event**</mark>, and we can perform some action based on that event.
 
 <img src="../.gitbook/assets/image (1) (2).png" alt="" data-size="original">
 
@@ -48,6 +48,8 @@ def count_changed(count):
 rotary.register_callback(BrickletRotaryEncoderV2.CALLBACK_COUNT, count_changed)
 rotary.set_count_callback_configuration(10, True, "x", 0, 0)
 ```
+
+## Is this a sensor?
 
 ## Further reading
 
