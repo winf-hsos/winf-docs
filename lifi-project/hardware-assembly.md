@@ -33,4 +33,13 @@ The hardware kit contains the following components:
 
 ## Assembly Instructions
 
-<mark style="background-color:yellow;">TODO</mark>
+### 1. Parts overview
+
+Let's get an overview of the different parts first.
+
+### 1. Mounting the Master Brick
+
+In the first step, we mount the **Master Brick** to the first **Mounting Plate 22x10**. For that, we use the four of the **10 mm spacers** included in the **Mounting Kits**.&#x20;
+
+![](<../.gitbook/assets/image (3).png>)
+

@@ -5,7 +5,7 @@ description: >-
   concepts.
 ---
 
-# 4 - The LED
+# 5 - The LED
 
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
@@ -60,7 +60,7 @@ In summary, the code creates a new IP-connection (line 8) and connects using the
 
 So to connect to a device, we need its unique identifier, or UID. How can you find the UID of your LED? That's easy - we can use the Brick Viewer we installed previously in the section [development-environment.md](development-environment.md "mention"). Once connected, the UID shows up in the second column of the list of connected devices under the "Setup" tab. My RGB LED Bricklet has the UID "ATk".
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption><p>You can find the UID for every device in the Brick Viewer.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45) (2).png" alt=""><figcaption><p>You can find the UID for every device in the Brick Viewer.</p></figcaption></figure>
 
 We can now replace the value "xxx" in line 3 with the actual value "ATk":
 
@@ -134,7 +134,7 @@ can't open file '...\led.py': [Errno 2] No such file or directory
 
 Python is telling you it can't find the file you specified, in this case `led.py`. In most cases, this is because you are not in the same directory as the file you are trying to run. The current directory is displayed in your terminal, usually right before the cursor:
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 In my example, I am in the directory `C:\code\iot`, and if I run `python led.py`, the Python command will assume the file is in the current directory. You can check this on Windows by typing the command `dir`, on Mac and Linus the equivalent command is `ls`. Both will print all files and directories that are in the current directory.&#x20;
 

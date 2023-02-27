@@ -5,13 +5,13 @@ description: >-
   both.
 ---
 
-# 8 - Human Input
+# 9 - Human Input
 
 ## The Rotary Encoder
 
 The rotary encoder is a typical control for human input in many hardware devices. The user can turn the knob in both directions, which changes a value represented by the control. Turning it right increases the value, while turning it left decreases it. In addition, the rotary encoder has the functionality of a button. When the user presses the knob, we can perform some action based on that <mark style="background-color:green;">**event**</mark>.
 
-<img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (1) (2).png" alt="" data-size="original">
 
 ### Initialize the rotary encoder
 

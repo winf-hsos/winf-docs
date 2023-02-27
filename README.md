@@ -16,7 +16,7 @@ As part of an interdisciplinary R\&D team at a high-tech company that develops r
 
 ## An engineering problem
 
-The LiFi-project is a typical engineering problem. It involves hardware and software, and the goal is  to combine both to solve a problem. The key question of this project is
+The LiFi-project is a typical engineering problem. It involves hardware and software, and the goal is  to combine both to solve a problem. The key question of this project is:
 
 * **Can we transmit information using an LED and a color sensor?** (Spoiler alert: _Yes_)
 
@@ -27,7 +27,8 @@ If the answer is yes, then the following questions arise:
 * **How reliable is the data transfer?**
 * **Over what distance can we transfer data?**
 * **Under what environmental conditions does the setup work properly?**
+* **How can we make our data transfer secure?**
 
 We are faced with a significant limitation, as we are required to address these questions using the hardware provided to us, which consists of an LED, color sensor, rotary encoder with button functionality, and a 128 by 64 pixel OLED display.
 
-By the end of this project, you will have solved the engineering problem and found answers to all of the above questions! And as a welcome side effect, you'll know a lot about the digital world and gained some basic programming skills. Sounds good? Let's go!
+By the end of this project, you will have solved the engineering problem and found answers to all of the above questions! And as a welcome side effect, you'll know a lot about the digital world and gain basic programming skills. Sounds good? Let's go!
