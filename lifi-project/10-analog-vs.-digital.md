@@ -5,3 +5,7 @@
 ### Analog-to-digital-converter
 
 ## Noise
+
+## Digitizing light
+
+## Digitizing sound
