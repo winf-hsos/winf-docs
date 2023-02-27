@@ -5,3 +5,7 @@
 ## How do sensors work?
 
 ## Callback Functions
+
+## Further reading
+
+* How technology works, chapter "Waves" on pages 136/137.
