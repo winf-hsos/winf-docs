@@ -19,11 +19,11 @@ This section introduces a program for the smoke test, which we go through step-b
 
 ### Instructions
 
-A program is a set of instructions for a computer to execute. A program is written as plain text, and all we need is a basic text editor, although we prefer a complete [development-environment.md](development-environment.md "mention").&#x20;
+A program is a set of instructions for a computer to execute. A program is written as plain text, and all we need is a basic text editor, although in the LiFi-project, we prefer a [complete development environment](development-environment.md).&#x20;
 
-When a computer executes a program, it steps through the program from top to bottom and executes the instructions line-by-line. Not always, that is. Some constructs such as <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> make the computer deviate from this linear execution of the program. You'll learn about them soon.
+When a computer runs a program, it goes through the program one line at a time and does what each line - or <mark style="background-color:green;">**instruction**</mark> - tells it to do. However, sometimes the program has special instructions called <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> that make the computer do things in a different order. These instructions can make the computer repeat certain actions many times, or skip over certain lines of code altogether. Don't worry if you don't understand these concepts yet, we'll be talking more about them soon.
 
-<mark style="background-color:green;">**Instruction**</mark> is another word for telling the computer what to do. There are different types of instructions, and they are used in combination to solve problems. In a program, we use instructions to tell a computer to:
+An instruction is telling the computer what to do. There are different types of instructions, and they are used in combination to solve problems. In a program, we use instructions to tell a computer to:
 
 * Remember things.
 * Calculate things.
@@ -43,7 +43,7 @@ The above list of things a computer can do translate into five general types of 
 
 The great news is: Once you understand the concept behind each of them, you can read and write almost any program, no matter the complexity. These concepts are the DNA of every program. Of course, it takes practice. And you may still have to look up specific keywords for the language you are programming in. But that's where [Google](https://app.gitbook.com/u/5a55d1d8d10859002f1ae2f5), [Stackoverflow](https://stackoverflow.com/) or [ChatGPT](https://chat.openai.com/chat) come in. Seriously, they are every programmer's best buddies. Learn to use them.
 
-#### 1. Variables
+### 1. Variables
 
 Think of a variable as a container with a label on it. You can put things into the container and at any time you can ask for the content of the container, given you know the container's label. You can change the content of the container as you like at any time.
 
@@ -65,10 +65,10 @@ We are more or less free in choosing a variable's name. There are only few rules
 * Variable names should be speaking so that we can infer what the variable's original intentional use was (_convention_).
 * When a variable name is composed of more than one word, we use an underscore to connect the two (or more) words (as in `last_name`). An alternative would be so-called camel-casing, where the two words are not separated, but a new word starts with a capital letter (e.g., `lastName`). Camel-casing is not conventional in Python.
 
-#### 2. Expressions
+### 2. Expressions
 
-#### 3. Loops
+### 3. Loops
 
-#### 4. Control structures
+### 4. Control structures
 
-#### 5. Functions
+### 5. Functions
