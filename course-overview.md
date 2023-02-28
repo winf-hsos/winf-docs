@@ -1,7 +1,8 @@
 ---
 description: >-
-  This course has a tight curriculum and requires you to stay up to the tasks.
-  There are 12 mandatory exercises you need to submit.
+  This course has a packed curriculum, so I need you to stay up to the tasks.
+  There are 9 mandatory exercises you need to submit on a weekly or bi-weekly
+  basis.
 ---
 
 # Course Overview
