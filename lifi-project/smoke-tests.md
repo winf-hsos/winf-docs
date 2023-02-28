@@ -7,7 +7,7 @@ description: >-
 # 3 - Smoke Test
 
 {% hint style="info" %}
-This section is relevant for [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf).
+This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
 {% endhint %}
 
 ## Summary
@@ -34,7 +34,7 @@ The tests give us confidence that all devices are intact, everything is wired co
 
 ## The Program-Based Smoke Test
 
-The following code contains the full smoke test for our program-based version. It looks quite overwhelming for our first program, doesn't it? But don't worry: It looks shocking now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
+The following code contains the full smoke test for our program-based version. It looks quite overwhelming for our first program, doesn't it? But don't worry: It looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
 
 For now, we will only run the code to see how the components work and interact from a Python program. We will briefly try to understand parts of the code, but we are not shooting at the whole program (yet).
 
@@ -157,6 +157,6 @@ ipcon.disconnect()
 
 </details>
 
-Running this code is a task during [your first exercise](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf). In the next section [programs.md](programs.md "mention"), we examine parts of the code a bit closer and introduce our the five types concepts in programming. Don't worry, we will learn about each concept in more detail later on. The next section should give you a first overview of how the smoke test program works. Or any program, for that matter.
+Running this code is a task during [your first exercise](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf). In the next section [programs.md](programs.md "mention"), we examine parts of the code a bit closer and introduce five concepts in programming. Don't worry, we will learn about each concept in more detail later on. The next section should give you a first overview of how the smoke test program works. Or any program you will ever encounter, for that matter.
 
 ##
