@@ -1,2 +1,0 @@
-# 17 - Encoding Text
-

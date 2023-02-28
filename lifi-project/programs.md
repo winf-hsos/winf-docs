@@ -1,4 +1,4 @@
-# 4 - Programs
+# 4 - Programs ⭐
 
 {% hint style="info" %}
 This section is relevant for [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf).
@@ -11,11 +11,11 @@ In this section, you'll learn:
 * What a program is and what our first program looks like.
 * What the five types of instructions are that make up every program.
 
-## Code for this section
+## Code For This Section
 
 This section introduces a program for the smoke test, which we go through step-by-step. You can find [the program code on GitHub](https://github.com/winf-hsos/LiFi-code/blob/main/examples/smoke\_test.py), and I recommend you check out the entire [LiFi-code repository](https://github.com/winf-hsos/LiFi-code) with all examples in this course.
 
-## What is a program?
+## What Is A Program?
 
 ### Instructions
 

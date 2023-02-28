@@ -28,11 +28,11 @@ We'll perform two smoke tests in this section:
 
 The tests give us confidence that all devices are intact, everything is wired correctly, all the identifiers were collected properly, and our development environment is installed and configured. If the test result is positive, that is.
 
-## The UI-based smoke test
+## The UI-Based Smoke Test
 
 <mark style="background-color:orange;">TODO</mark>
 
-## The program-based smoke test
+## The Program-Based Smoke Test
 
 The following code contains the full smoke test for our program-based version. It looks quite overwhelming for our first program, doesn't it? But don't worry: It looks shocking now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
 

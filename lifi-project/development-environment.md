@@ -46,10 +46,10 @@ You can download and install Visual Studio Code for any operating system from th
 
 {% embed url="https://code.visualstudio.com/download" %}
 
-## Python as our programming language
+## Python
 
 {% embed url="https://www.python.org/downloads/" %}
 
-## Git to manage our code&#x20;
+## Git
 
 {% embed url="https://git-scm.com/downloads" %}

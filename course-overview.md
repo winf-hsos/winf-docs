@@ -10,35 +10,19 @@ description: >-
 
 In this course, we aim to answer three key questions, as illustrated below. For each question, we need to understand specific subtopics that are shown underneath. I will remind you of the relevant subtopic as we move through each section of the course. This approach will help you keep track of our progress and maintain a clear understanding of where we are in the broader context.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>The key questions we address in the LiFi-project.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption><p>The key questions we address in the LiFi-project.</p></figcaption></figure>
 
-## Overview by Week
+## Overview By Week
 
-<mark style="background-color:orange;">TODO: Update table</mark>
+<mark style="background-color:orange;">TODO: Weekly plan</mark>
 
-| Week | Topic(s)                                                                                                                                                                                                            | Programming task(s)                                                                                                                                                                                                        |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | [Set up development environment](lifi-project/development-environment.md)                                                                                                                                           | [Our First Program](broken-reference), [Variables](lifi-project/smoke-tests.md#variables)                                                                                                                                  |
-| 2    | [The LiFi Hardware](broken-reference), [Code Systems](lifi-project/code-systems.md), [RGB-Code](lifi-project/code-systems.md#the-rgb-code)                                                                          | [Connecting to the Hardware](broken-reference), [Programming the LED](lifi-project/the-led.md), [Random Numbers](lifi-project/the-led.md#random-numbers), [Control Structures](lifi-project/the-led.md#control-structures) |
-| 3    | [The Binary System](lifi-project/the-binary-system.md)                                                                                                                                                              | [Keyboard Input](<lifi-project/human-input (1).md>), [Functions](<lifi-project/human-input (1).md#functions>)                                                                                                              |
-| 4    | [Analog vs. Digital](lifi-project/10-analog-vs.-digital.md), [Discretizing Analog Signals](lifi-project/10-analog-vs.-digital.md#discretizing-analog-signals), [Noise](lifi-project/10-analog-vs.-digital.md#noise) | [Programming a Sensor](lifi-project/9-the-color-sensor.md), [Callback Functions](lifi-project/9-the-color-sensor.md#callback-functions)                                                                                    |
-| 5    | [Data Transmission](broken-reference), [The OSI-Model](broken-reference)                                                                                                                                            | [The Physical Layer](broken-reference), [Rule-based Programming](broken-reference)                                                                                                                                         |
-| 6    | [Measuring Information](lifi-project/13-measuring-information.md)                                                                                                                                                   | [Send Bytes Over LiFi](lifi-project/14-send-bytes-over-lifi.md)                                                                                                                                                            |
-| 7    | [Encoding Text](lifi-project/15-encoding-text.md), [ASCII Code](lifi-project/15-encoding-text.md#ascii-code), [Unicode (UTF-8)](lifi-project/15-encoding-text.md#unicode-utf-8)                                     | [Send Text Over LiFi](lifi-project/16-send-text-over-lifi.md)                                                                                                                                                              |
-| 8    | [Decoding Bits](lifi-project/17-decoding-bits.md)                                                                                                                                                                   | [Receive Text over LiFi](lifi-project/18-receive-text-over-lifi.md)                                                                                                                                                        |
-| 9    | [Representing Images](lifi-project/19-representing-images.md)                                                                                                                                                       | [Send Images over LiFi](lifi-project/20-send-images-over-lifi.md)                                                                                                                                                          |
-| 10   | [Machine Learning](lifi-project/21-learning-the-signal.md)                                                                                                                                                          | [Learning Signals](broken-reference)                                                                                                                                                                                       |
-| 11   | [Secure Data Exchange](broken-reference)                                                                                                                                                                            | [Encrypted LiFi](lifi-project/24-encrypted-lifi.md)                                                                                                                                                                        |
-| 12   |                                                                                                                                                                                                                     |                                                                                                                                                                                                                            |
-
-## List of exercises
+## List of Exercises
 
 * [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf)
 * [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
-
-## Important terms and concepts
-
-You will notice that some words in this course are highlighted in <mark style="background-color:green;">**bold green color**</mark>. I use this formatting to point you to important terms and concepts that you should know and be able to explain. It is not necessarily explained in the same section or in this course at all. If you can't find anything here directly or in the provided literature, make sure you do your research and ask questions during sessions.
+* [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf)
+* [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf)
+* [Exercise 5: Messages at the Speed of Light](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/05\_exercise\_messages\_speed\_of\_light.pdf)
 
 ## Learning Objectives
 
@@ -48,8 +32,10 @@ When we introduce the digital world, we will inevitably talk about **how digital
 
 At the same time, you will learn how to write programs with the Python programming language. The goal of the project is not to learn Python particularly. We could have used a different programming language for that matter. Rather, the goal is to learn **the basics of programming and algorithmic thinking**, which are universal and can be applied beyond Python or even programming.  In the end, programming is **solving problems**.
 
-## Concept
+## Examination
 
-### Examination
+You will be faced with several exercises throughout this course that you need to solve together with a partner. You need to submit your code solution by a fixed deadline. The exercises are reviewed, and you can either pass or fail them. There are [7 exercises in total](course-overview.md#list-of-exercises), and you need to successfully pass 6 of them to be allowed to participate in the oral exams at the end of the semester. More details are provided at the beginning of the semester.
 
-The sections marked with a ⭐ contain a programming exercise that you need to solve together with a partner. You need to submit your code solution by a fixed deadline. The exact deadlines will be communicated at the beginning of the semester. The exercises are reviewed, and you can either pass or fail them. There are 12 exercises in total, and you need to successfully pass 10 of them to be allowed to participate in the oral exams at the end of the semester.
+## Important Terms And Concepts
+
+You will notice that some words in this course are highlighted in <mark style="background-color:green;">**bold green color**</mark>. I use this formatting to point you to important terms and concepts that you should know and be able to explain. It is not necessarily explained in the same section or in this course at all. If you can't find anything here directly or in the provided literature, make sure you do your research and ask questions during sessions.

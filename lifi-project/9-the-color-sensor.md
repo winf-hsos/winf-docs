@@ -10,12 +10,12 @@ description: >-
 This section is relevant for [Exercise 4: Digitizing the Pyhsical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The electromagnetic spectrum illustrated. Source <a href="https://xkcd.com/273/">https://xkcd.com/273</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>The electromagnetic spectrum illustrated. Source <a href="https://xkcd.com/273/">https://xkcd.com/273</a></p></figcaption></figure>
 
-## How do sensors work?
+## How Do Sensors Work?
 
 ## Callback Functions
 
-## Further reading
+## Further Reading
 
 * How technology works, chapter "Waves" on pages 136/137.

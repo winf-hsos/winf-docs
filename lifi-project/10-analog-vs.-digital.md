@@ -1,15 +1,15 @@
-# 13 - Digitization
+# 13 - Digitization ⭐
 
 {% hint style="info" %}
 This section is relevant for [Exercise 4: Digitizing the Pyhsical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 {% endhint %}
 
-## Discretizing analog signals
+## Discretizing Analog Signals
 
-### Analog-to-digital-converter
+### Analog-To-Digital-Converter
 
 ## Noise
 
-## Digitizing light
+## Digitizing Light
 
-## Digitizing sound
+## Digitizing Sound

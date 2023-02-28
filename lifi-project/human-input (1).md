@@ -16,7 +16,7 @@ The rotary encoder is a typical control for human input in many hardware devices
 
 <img src="../.gitbook/assets/image (1) (2).png" alt="" data-size="original">
 
-### Initialize the rotary encoder
+### Initialize The Rotary Encoder
 
 As with all devices, we first need to establish a connection and store a reference to the device on a variable. We can do this with the following lines. I assume you have already created the IP-connection and executed `connect()`:
 
@@ -29,7 +29,7 @@ rotary = BrickletRotaryEncoderV2("xxx", ipcon)
 
 Make sure you replace the UID with [your device's UID](the-led.md#how-to-get-a-devices-uid) before you go any further in this section.&#x20;
 
-### Reading the current value
+### Reading The Current Value
 
 Once we have a reference to the device stored on the variable `rotary`, we have access to the device's functions. To learn which functions the device has, we can consult the [official Python API documentation on the Tinkerforge website](https://www.tinkerforge.com/en/doc/Software/Bricklets/RotaryEncoderV2\_Bricklet\_Python.html).
 
@@ -40,7 +40,7 @@ count = rotary.get_count()
 print(count)
 ```
 
-### Getting new values in real-time
+### Getting New Values In Real-Time
 
 ```python
 rotary = BrickletRotaryEncoderV2(UID, ipcon)
@@ -52,8 +52,8 @@ rotary.register_callback(BrickletRotaryEncoderV2.CALLBACK_COUNT, count_changed)
 rotary.set_count_callback_configuration(10, True, "x", 0, 0)
 ```
 
-## Is this a sensor?
+## Is This A Sensor?
 
-## Further reading
+## Further Reading
 
 * [Python API documentation for the Rotary Encoder Bricklet 2.0](https://www.tinkerforge.com/de/doc/Software/Bricklets/RotaryEncoderV2\_Bricklet\_Python.html#api)
