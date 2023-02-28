@@ -23,6 +23,10 @@ In this course, we aim to answer three key questions, as illustrated below. For 
 * [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf)
 * [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf)
 * [Exercise 5: Messages at the Speed of Light](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/05\_exercise\_messages\_speed\_of\_light.pdf)
+* [Exercise 6: Back to SMS](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/06\_exercise\_back\_to\_sms.pdf)
+* [Exercise 7: Pixel By Pixel](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/07\_exercise\_pixel\_by\_pixel.pdf)
+* [Exercise 8: No More Rules!](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/08\_exercise\_no\_more\_rules.pdf)
+* [Exercise 9: Our Secret Code](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/09\_exercise\_our\_secret\_code.pdf)
 
 ## Learning Objectives
 
