@@ -10,7 +10,7 @@ description: >-
 
 In this course, we aim to answer three key questions, as illustrated below. For each question, we need to understand specific subtopics that are shown underneath. I will remind you of the relevant subtopic as we move through each section of the course. This approach will help you keep track of our progress and maintain a clear understanding of where we are in the broader context.
 
-<figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption><p>The key questions we address in the LiFi-project.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption><p>The key questions we address in the LiFi-project.</p></figcaption></figure>
 
 ## Overview By Week
 
