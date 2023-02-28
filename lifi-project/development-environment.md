@@ -7,7 +7,7 @@ description: >-
 # 2 - Development Environment
 
 {% hint style="info" %}
-This section is relevant for [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf).
+This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
 {% endhint %}
 
 ## Summary
@@ -16,7 +16,7 @@ In this section, you'll learn:
 
 * Which software you need for the LiFi-project.
 * How you can test the hardware components with the Brick Viewer from Tinkerforge.
-* What an integrated development environment (IDE) is and why it is important.
+* What an integrated development environment (IDE) is and why it is useful.
 * What Python is, and why we choose it as our programming language in this project.
 * What Git is and why it is a useful tool in software projects.
 
@@ -48,8 +48,14 @@ You can download and install Visual Studio Code for any operating system from th
 
 ## Python
 
+Python is a widely-adopted programming language that is especially well suited for first-time-programmers. Download and install Python in the latest version from the following website:
+
 {% embed url="https://www.python.org/downloads/" %}
 
 ## Git
 
+In software development, we often work in teams and need to share code with our team members. This is similar to when you want to work on a text document or a spreadsheet together with your classmates. It would be nice to have a tool that helps you with that. Git is that tool, and you'll use it in this course primarily to get the example code for the LiFi-project from the provided [GitHub repository](https://github.com/winf-hsos/LiFi-code). Download and install Git on your computer:&#x20;
+
 {% embed url="https://git-scm.com/downloads" %}
+
+If you have successfully installed all software listed above, you are done with this section. We will test wether everything works using a so-called <mark style="background-color:green;">**smoke test**</mark>.

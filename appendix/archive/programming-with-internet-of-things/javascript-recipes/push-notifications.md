@@ -17,7 +17,7 @@ Watch this video where I walk you through the process of setting up IFTTT and in
 
 Type "webhook" into the search field in the upper left corner and hit enter. In the results, click on the services tab and click on the box with the label "Webhooks".
 
-![](<../../../../.gitbook/assets/image (53).png>)
+![](<../../../../.gitbook/assets/image (53) (1).png>)
 
 In the opening page, you should a "settings" symbol in the upper right corner. Click this symbol to activate or deactivate your webhook-URL. Copy the URL into your browser to open the documentation page.
 

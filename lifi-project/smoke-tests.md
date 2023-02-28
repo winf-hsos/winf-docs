@@ -7,7 +7,7 @@ description: >-
 # 3 - Smoke Test
 
 {% hint style="info" %}
-This section is relevant for [Exercise 1: Hardware Assembly, Development Environment, and Smoke Test](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf).
+This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
 {% endhint %}
 
 ## Summary
@@ -15,7 +15,8 @@ This section is relevant for [Exercise 1: Hardware Assembly, Development Environ
 In this section, you'll learn:
 
 * How you can test the hardware components required for the LiFi-project.
-* What a smoke test is in (software) engineering and why it's important.
+* How the Brick Viewer works and how you can test the hardware components with it.
+* What a smoke test is in engineering and why it's important.
 
 ## What does a smoke test do?
 
@@ -30,11 +31,27 @@ The tests give us confidence that all devices are intact, everything is wired co
 
 ## The UI-Based Smoke Test
 
-<mark style="background-color:orange;">TODO</mark>
+We perform the first smoke test using the Brick Viewer software from Tinkerforge. You should have installed this software [in the previous section](development-environment.md#brick-viewer-and-brick-daemon), along with the Brick Daemon. Both are required for this smoke test to work.
+
+To perfom the UI-based smoke test, follow theses steps:
+
+### 1. Open Brick Viewer And Connect
+
+Open the Brick Viewer software on your computer. On Windows, I find it easiest to type in "Brickv" in the search field. You should also find it somehwere in your start menu. Once the software is open, check the left-hand side and find the host and port settings. They should look as follows.
+
+<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption><p>The Brick Viewer on start-up.</p></figcaption></figure>
+
+If the host is "localhost" and the ports is the default of 4223, you can click the large "Connect" button above it. Make sure you connect your hardware kit to your computer using the 1m USB cable first.
+
+### 2. Check if all devices were found
+
+If the connection was successfull, you should see a list of devices that are connected to your Master Brick 3.1 (<mark style="background-color:yellow;">TODO: replace screenshot with new version</mark>). The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them. The firmware version in the last column could also be different.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## The Program-Based Smoke Test
 
-The following code contains the full smoke test for our program-based version. It looks quite overwhelming for our first program, doesn't it? But don't worry: It looks shocking now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
+The following code contains the full smoke test for our program-based version. It looks quite overwhelming for our first program, doesn't it? But don't worry: It looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
 
 For now, we will only run the code to see how the components work and interact from a Python program. We will briefly try to understand parts of the code, but we are not shooting at the whole program (yet).
 
@@ -157,6 +174,6 @@ ipcon.disconnect()
 
 </details>
 
-Running this code is a task during [your first exercise](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_hardware\_assembly.pdf). In the next section [programs.md](programs.md "mention"), we examine parts of the code a bit closer and introduce our the five types concepts in programming. Don't worry, we will learn about each concept in more detail later on. The next section should give you a first overview of how the smoke test program works. Or any program, for that matter.
+Running this code is a task during [your first exercise](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf). In the next section [programs.md](programs.md "mention"), we examine parts of the code a bit closer and introduce five concepts in programming. Don't worry, we will learn about each concept in more detail later on. The next section should give you a first overview of how the smoke test program works. Or any program you will ever encounter, for that matter.
 
 ##

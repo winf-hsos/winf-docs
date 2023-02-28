@@ -5,7 +5,7 @@ description: >-
   concepts.
 ---
 
-# 5 - The LED
+# 5 - The LED ⚡
 
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
@@ -102,7 +102,7 @@ python led.py
 
 How do we get access to a terminal? We can do this directly in Visual Studio Code: in the main top menu of Visual Studio Code, click on "Terminal" and then "New Terminal".  A new black pane opens, usually in the lower-right corner of Visual Studio Code. This is the terminal, and if you have ever worked with the command line (or terminal) in Windows or Mac, you might recognize it.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>A command line terminal in Visual Studio Code.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>A command line terminal in Visual Studio Code.</p></figcaption></figure>
 
 Unfortunately, not all terminals are equal, and there are different types. When you open a new terminal in Visual Studio Code, it will open the default type that is currently configured. On Windows, this is often the so-called PowerShell. We want to change this and set the default to the Windows command line (or _cmd_). The easiest way to set the default terminal is:
 
