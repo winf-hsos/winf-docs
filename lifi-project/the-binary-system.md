@@ -4,9 +4,15 @@ description: >-
   with only ones and zeroes works.
 ---
 
-# The Binary System
+# 8 - The Binary System
 
-## Key Points
+{% hint style="info" %}
+This section is relevant for [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf).
+{% endhint %}
+
+## Summary
+
+In this section, you'll learn:
 
 * The number system we use in our daily lives is the system to the base 10, or the _decimal system_ (_decimus_ is Latin for "tenth").
 * The fact that we use the decimal system does not mean other systems do not exists. In fact, every other number system to other bases exists as well, and we can convert numbers between different systems.
