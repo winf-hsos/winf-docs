@@ -39,8 +39,14 @@ At the same time, you will learn how to write programs with the Python programmi
 
 ## Examination
 
-You will be faced with several exercises throughout this course that you need to solve together with a partner. You need to submit your code solution by a fixed deadline. The exercises are reviewed, and you can either pass or fail them. There are [7 exercises in total](course-overview.md#list-of-exercises), and you need to successfully pass 6 of them to be allowed to participate in the oral exams at the end of the semester. More details are provided at the beginning of the semester.
+You will be faced with several exercises throughout this course. You must solve each exercise together with a partner and submit your code solution by a fixed deadline. The exercises are reviewed, and you can either pass or fail them. There are [9 exercises in total](course-overview.md#list-of-exercises), and you need to successfully pass 8 of them to participate in the oral exams at the end of the semester. More details are provided at the beginning of the semester.
+
+An exercise subsumes 3 sections of this course. The section marked with a ⭐ indicate the end of such a 3-section-block. To successfully solve the exercise posted at the end of the ⭐-section, you need to have worked through all previous sections.&#x20;
 
 ## Important Terms And Concepts
 
 You will notice that some words in this course are highlighted in <mark style="background-color:green;">**bold green color**</mark>. I use this formatting to point you to important terms and concepts that you should know and be able to explain. It is not necessarily explained in the same section or in this course at all. If you can't find anything here directly or in the provided literature, make sure you do your research and ask questions during sessions.
+
+## Introduction Of Hardware
+
+We use four different hardware devices during the LiFi-project. They are each introduced in dedicated sections of the course. Those sections are marked with a ⚡, so you can find them easily.
