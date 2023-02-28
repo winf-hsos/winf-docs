@@ -43,11 +43,11 @@ Open the Brick Viewer software on your computer. On Windows, I find it easiest t
 
 If the host is "localhost" and the ports is the default of 4223, you can click the large "Connect" button above it. Make sure you connect your hardware kit to your computer using the 1m USB cable first.
 
-### 2. Check if all devices were found
+### 2. Check If All Devices Were Found
 
-If the connection was successfull, you should see a list of devices that are connected to your Master Brick 3.1 (<mark style="background-color:yellow;">TODO: replace screenshot with new version</mark>). The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them. The firmware version in the last column could also be different.
+If the connection was successfull, you should see a list of devices that are connected to your Master Brick 3.1 (<mark style="background-color:yellow;">TODO: replace screenshot with new version</mark>). The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them. The firmware version in the last column could also be slightly different.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
 
 ## The Program-Based Smoke Test
 
