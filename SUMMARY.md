@@ -25,7 +25,7 @@
 * [18 - Processing Text](lifi-project/processing-text.md)
 * [19 - Text Messages ⭐](lifi-project/16-send-text-over-lifi.md)
 * [20 - Digital Images](lifi-project/digital-images.md)
-* [21 - Need more Speed](lifi-project/need-more-speed.md)
+* [21 - Need more Speed?](lifi-project/need-more-speed.md)
 * [22 - Binary Images ⭐](lifi-project/binary-images.md)
 * [23 - Too Noisy](lifi-project/23-too-noisy.md)
 * [24 - Learning the Signal](lifi-project/24-learning-the-signal.md)
