@@ -11,6 +11,12 @@ In this section, you'll learn:
 * What a program is and what our first program looks like.
 * What the five types of instructions are that make up every program.
 
+This section concerns the question of how we can solve problems with digital computers adds to your understanding of programming.&#x20;
+
+
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="This section helps you learn more about programming." class="gitbook-drawing">
+
 ## Code For This Section
 
 This section introduces a program for the smoke test, which we go through step-by-step. You can find [the program code on GitHub](https://github.com/winf-hsos/LiFi-code/blob/main/examples/smoke\_test.py), and I recommend you check out the entire [LiFi-code repository](https://github.com/winf-hsos/LiFi-code) with all examples in this course.

@@ -1,8 +1,7 @@
 ---
 description: >-
   This course has a packed curriculum, so I need you to stay up to the tasks.
-  There are 9 mandatory exercises you need to submit on a weekly or bi-weekly
-  basis.
+  There are exercises you need to submit on a bi-weekly basis.
 ---
 
 # Course Overview
@@ -11,13 +10,23 @@ description: >-
 
 In this course, we aim to answer three key questions, as illustrated below. For each question, we need to understand specific subtopics that are shown underneath. I will remind you of the relevant subtopic as we move through each section of the course. This approach will help you keep track of our progress and maintain a clear understanding of where we are in the broader context.
 
-<img src=".gitbook/assets/file.excalidraw (1).svg" alt="The key questions we address in the LiFi-project." class="gitbook-drawing">
+<img src=".gitbook/assets/file.excalidraw.svg" alt="The key questions we address in the LiFi-project." class="gitbook-drawing">
 
 ## Overview By Week
 
 <mark style="background-color:orange;">TODO: Weekly plan</mark>
 
-## List of Exercises
+## Learning Objectives
+
+The LiFi-project covers many **aspects of the digital world and its interfaces to the analog world**. In fact, it was designed so that it touches many things that I would otherwise have introduced in my lectures. Occasionally, this may seem a bit artificial, but I believe the topics are much better understood when introduced during a real-world project.
+
+When we introduce the digital world, we will inevitably talk about **how digital computers work** on a very high level. I want you to acquire an understanding of how these universal machines can do so many tasks with such high precision and speed.
+
+At the same time, you will learn how to write programs with the Python programming language. The goal of the project is not to learn Python particularly. We could have used a different programming language for that matter. Rather, the goal is to learn **the basics of programming and algorithmic thinking**, which are universal and can be applied beyond Python or even programming.  In the end, programming is **solving problems**.
+
+## Exercises
+
+To complete this project, you must solve the exercises listed below. Each exercise usually subsumes 3 sections of this course. The sections marked with a ⭐ indicate the end of such a 3-section-block. To successfully solve the exercise posted at the end of the ⭐-section, you need to have worked through all previous sections.
 
 * [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf)
 * [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
@@ -28,20 +37,6 @@ In this course, we aim to answer three key questions, as illustrated below. For 
 * [Exercise 7: Pixel By Pixel](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/07\_exercise\_pixel\_by\_pixel.pdf)
 * [Exercise 8: No More Rules!](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/08\_exercise\_no\_more\_rules.pdf)
 * [Exercise 9: Our Secret Code](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/09\_exercise\_our\_secret\_code.pdf)
-
-## Learning Objectives
-
-The LiFi-project covers many **aspects of the digital world and its interfaces to the analog world**. In fact, it was designed so that it touches many things that I would otherwise have introduced in my lectures. Occasionally, this may seem a bit artificial, but I believe the topics are much better understood when introduced during a real-world project.
-
-When we introduce the digital world, we will inevitably talk about **how digital computers work** on a very high level. I want you to acquire an understanding of how these universal machines can do so many tasks with such high precision and speed.
-
-At the same time, you will learn how to write programs with the Python programming language. The goal of the project is not to learn Python particularly. We could have used a different programming language for that matter. Rather, the goal is to learn **the basics of programming and algorithmic thinking**, which are universal and can be applied beyond Python or even programming.  In the end, programming is **solving problems**.
-
-## Examination
-
-You will be faced with several exercises throughout this course. You must solve each exercise together with a partner and submit your code solution by a fixed deadline. The exercises are reviewed, and you can either pass or fail them. There are [9 exercises in total](course-overview.md#list-of-exercises), and you need to successfully pass 8 of them to participate in the oral exams at the end of the semester. More details are provided at the beginning of the semester.
-
-An exercise subsumes 3 sections of this course. The section marked with a ⭐ indicate the end of such a 3-section-block. To successfully solve the exercise posted at the end of the ⭐-section, you need to have worked through all previous sections.&#x20;
 
 ## Important Terms And Concepts
 
