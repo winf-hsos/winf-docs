@@ -15,7 +15,7 @@ This section concerns the question of how we can solve problems with digital com
 
 
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="This section helps you learn more about programming." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="This section helps you learn more about programming." class="gitbook-drawing">
 
 ## Code For This Section
 

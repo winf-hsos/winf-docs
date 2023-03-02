@@ -25,6 +25,8 @@ Morse code is a useful system for communication in situations where speech or te
 
 <figure><img src="../.gitbook/assets/International_Morse_Code.svg" alt=""><figcaption><p>The international Morse code. Source: <a href="https://en.wikipedia.org/wiki/Morse_code">https://en.wikipedia.org/wiki/Morse_code</a> </p></figcaption></figure>
 
+## The Flashlight Game
+
 ## Further reading
 
 To explore this topic further, I recommend the following resources:
