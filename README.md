@@ -6,11 +6,13 @@ description: >-
 
 # The LiFi-Project
 
-<figure><img src=".gitbook/assets/lifi_project_teaser.jpg" alt=""><figcaption><p>An early LiFi prototype device.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/lifi_project_teaser_small.jpg" alt=""><figcaption><p>An early LiFi prototype device.</p></figcaption></figure>
 
 ## The project setup
 
 [LiFi](https://en.wikipedia.org/wiki/Li-Fi) is a technology that allows for the transmission of information through the use of light. It uses the visible light spectrum to create a signal that can be received by a photodetector, which senses the light emitted by an LED. By varying the characteristics of the light over time, such as the wavelength or the brightness, we can encode and transmit data. LiFi has great potential for use in environments where radio frequency signals may interfere with microorganisms or other sensitive electronic devices. Moreover, in contrast to Bluetooth or WiFi, LiFi could be used in robots that operate underwater.
+
+<img src=".gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
 As part of an interdisciplinary R\&D team at a high-tech company that develops robots for food and agriculture applications, your task is to develop a LiFi communication device that can be integrated into the company's next generation of robots. The device comprises two main components: [a small LED](https://www.tinkerforge.com/en/doc/Hardware/Bricklets/RGB\_LED\_V2.html) that can light up in any of the roughly 16 million colors of the RGB coding system, and a [color sensor](https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Color\_V2.html) that can measure the intensity of the three RGB color channels as well as the brightness of the light. These components are controlled by a [Master Brick](https://www.tinkerforge.com/en/doc/Hardware/Bricks/Master\_Brick.html), which is responsible for ensuring smooth communication between the robot and its peripherals.
 
