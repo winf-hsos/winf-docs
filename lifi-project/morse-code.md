@@ -2,7 +2,7 @@
 description: Morse code is another code system not related to digital computers. Or is it?
 ---
 
-# 7 - Morse Code
+# 7 - Morse Code ⭐
 
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
@@ -29,5 +29,6 @@ Morse code is a useful system for communication in situations where speech or te
 
 To explore this topic further, I recommend the following resources:
 
-* Chapter 2 from _Code: The Hidden Language of Computer Hardware and Software_
+* Chapter One "Best Friends" from _Code: The Hidden Language of Computer Hardware and Software_ by Charles Petzold.
+* Chapter Two "Codes And Combinations" from _Code: The Hidden Language of Computer Hardware and Software_ by Charles Petzold.
 * [The Wikipedia article on Morse code](https://en.wikipedia.org/wiki/Morse\_code)
