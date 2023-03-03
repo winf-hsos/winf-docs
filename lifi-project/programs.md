@@ -97,9 +97,11 @@ The great benefit of modules is that we can reuse and import them in different p
 
 ### Libraries
 
-Occasionally, you might be really proud of what your custom functions can do, and you believe they might even be helpful to another person with a similar problem. You can then go a step further and bundle your modules in a so-called <mark style="background-color:green;">**library**</mark>. This is what Tinkerforge did when they created their [Python-library](https://www.tinkerforge.com/en/doc/Software/API\_Bindings\_Python.html) to work with their hardware devices.&#x20;
+If you program for a longer time, you might at some point have written so many functions that it makes sense you create separate modules for them. You now have a set of Python-files, each containing functions that address a common problem or belong together in some other way. If in turn those modules somehow belong together because they too address a common, but larger issue, you can bundle those modules into a so-called <mark style="background-color:green;">**library**</mark>. Look at the example below, where the three modules `geometry.py`, `algebra.py`, and `arithemtic.py` each contain functions to solve specific problems from a particular domain. However, the modules share that they all solve mathematical problems. It therefore makes sense to group them into a library called `Math`.
 
-So, what's the difference between a module and a library? A module is a collection of functions that live in one Python-file. A library is a collection of related modules bundled together. So in that sense, a library is bigger than a module.
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="A library is a collection of related modules." class="gitbook-drawing">
+
+So, here is the difference between a module and a library: a module is a _collection of functions_ that live in one Python-file. A library is a _collection of related modules_ bundled together. So in that sense, a library is bigger than a module.
 
 ### GitHub and PyPI
 
