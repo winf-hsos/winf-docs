@@ -1,7 +1,7 @@
-# 4 - Programs ⭐
+# 5 - Program's Anatomy
 
 {% hint style="info" %}
-This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
+This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
 {% endhint %}
 
 ## Summary
@@ -81,7 +81,7 @@ We are more or less free in choosing a variable's name. There are only few rules
 
 ## Create Once, Use Often
 
-An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](programs.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
+An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](programs-anatomy.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
 
 ### Modules
 

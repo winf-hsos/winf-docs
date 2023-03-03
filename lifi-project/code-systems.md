@@ -1,4 +1,4 @@
-# 6 - Code Systems
+# 6 - Code Systems ⭐
 
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
@@ -11,6 +11,7 @@ In this section, you'll learn:
 * How colors can be specified using a code system called the <mark style="background-color:green;">**RGB code.**</mark>
 * Why the RGB code can represent 16,777,216 colors.
 * What a code system is and what it is made of.
+* How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
 
 ## The RGB Code
 
@@ -54,7 +55,7 @@ You will learn more about the hexadecimal system when we introduce [the-binary-s
 
 ## Other Code Systems
 
-Although in this project, we use code systems in the context of digital computers, code systems do not necessarily have any relation to ones and zeroes whatsoever. There were code systems invented long before the digital computer. The [Morse code](morse-code.md), which we'll explore in more detail in the next section, is a good example. And there are others, was well.
+Although in this project, we use code systems in the context of digital computers, code systems do not necessarily have any relation to ones and zeroes whatsoever. There were code systems invented long before the digital computer. The [Morse code](broken-reference), which we'll explore in more detail in the next section, is a good example. And there are others, was well.
 
 ### Braille Code
 
@@ -92,6 +93,16 @@ Notes are the basic symbols used to represent musical sounds in music notation. 
 * Accidentals: Accidentals are symbols that are used to modify the pitch of a note. The most common accidentals are the sharp (#), flat (b), and natural (♮) signs.
 * Dynamics: Dynamics are symbols that are used to indicate the volume or intensity of the music. Examples include p (piano, meaning soft), f (forte, meaning loud), and crescendo/decrescendo symbols that indicate a gradual increase or decrease in volume.
 
+## Morse Code
+
+Morse code is a system of communication that uses a series of short and long signals to represent letters, numbers, and punctuation. These signals can be transmitted using sound or light, such as through a telegraph, flashlight, or radio signal. Each signal in Morse code is known as a "dot" or a "dash", and they are combined to form the code for each letter or symbol.
+
+For example, the letter "A" in Morse code is represented by a short signal (dot) followed by a long signal (dash), which is written as ".-" (dot-dash). The letter "S" is represented by three short signals (dots), which is written as "..." (dot-dot-dot). Spaces between letters are represented by short pauses, while spaces between words are represented by longer pauses.
+
+Morse code is a useful system for communication in situations where speech or text-based messages may not be possible or practical. It was originally used for long-distance communication through telegraph lines, and later adapted for use in radio communication. Today, it is still used by some amateur radio operators and in certain specialized fields, such as aviation and emergency services.
+
+<figure><img src="../.gitbook/assets/International_Morse_Code.svg" alt=""><figcaption><p>The international Morse code. Source: <a href="https://en.wikipedia.org/wiki/Morse_code">https://en.wikipedia.org/wiki/Morse_code</a> </p></figcaption></figure>
+
 ## Code Systems In General
 
 You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ numbers and assigns to each a specific color. All other code systems work the same way. We have a code, which for computers is always a number, and we assign a meaning to this code. The two questions we need to ask are:
@@ -101,4 +112,14 @@ You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ nu
 
 ## What About Communication?
 
-The LiFi-project is about communication, so we ought to look at a code system that was designed for that purpose and see whether it can help us solve our problem. You have probably heard about the [Morse code](morse-code.md) before.&#x20;
+The LiFi-project is about communication, so we ought to look at a code system that was designed for that purpose and see whether it can help us solve our problem. You have probably heard about the [Morse code](broken-reference) before.&#x20;
+
+## The Flashlight Game
+
+## Further reading
+
+To explore this topic further, I recommend the following resources:
+
+* Chapter One "Best Friends" from _Code: The Hidden Language of Computer Hardware and Software_ by Charles Petzold.
+* Chapter Two "Codes And Combinations" from _Code: The Hidden Language of Computer Hardware and Software_ by Charles Petzold.
+* [The Wikipedia article on Morse code](https://en.wikipedia.org/wiki/Morse\_code)
