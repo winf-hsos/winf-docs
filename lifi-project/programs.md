@@ -15,7 +15,7 @@ This section concerns the question of how we can solve problems with digital com
 
 
 
-<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="This section helps you learn more about programming." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (1).svg" alt="This section helps you learn more about programming." class="gitbook-drawing">
 
 ## Code For This Section
 
@@ -59,7 +59,7 @@ We define a variable in Python by writing the desired name and assigning a value
 
 ```python
 last_name = "Meseth"
-first_name = "Nicolas"Pyth
+first_name = "Nicolas"
 age = 41
 ```
 
@@ -78,3 +78,47 @@ We are more or less free in choosing a variable's name. There are only few rules
 ### 4. Control structures
 
 ### 5. Functions
+
+## Create Once, Use Often
+
+An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](programs.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
+
+### Modules
+
+If we put all our custom created, useful functions into a file and call it, for example, `useful_function.py` ,we have created a so-called <mark style="background-color:green;">**module**</mark>.
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="A module is a collection of useful functions in a Python-file." class="gitbook-drawing">
+
+The great benefit of modules is that we can reuse and import them in different programs. These can be our programs or the program's from someone else. The latter requires that person to have a copy of our module:
+
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="A module can be imported by another program." class="gitbook-drawing">
+
+
+
+### Libraries
+
+Occasionally, you might be really proud of what your custom functions can do, and you believe they might even be helpful to another person with a similar problem. You can then go a step further and bundle your modules in a so-called <mark style="background-color:green;">**library**</mark>. This is what Tinkerforge did when they created their [Python-library](https://www.tinkerforge.com/en/doc/Software/API\_Bindings\_Python.html) to work with their hardware devices.&#x20;
+
+So, what's the difference between a module and a library? A module is a collection of functions that live in one Python-file. A library is a collection of related modules bundled together. So in that sense, a library is bigger than a module.
+
+### GitHub and PyPI
+
+When we're happy with our library, we can share it with the world. There are different options for that, but the online-platform <mark style="background-color:green;">**GitHub**</mark> is a great place to start. On GitHub, we can publish code and others can get inspired or re-use that code in their projects. The code examples for this course live on GitHub, too:
+
+{% embed url="https://github.com/winf-hsos/LiFi-code" %}
+
+Another way for everyone to use your library is to have it listed in the [Python Package Index (PyPI)](https://pypi.org/), which allows to download and install your library with one line on the command line:
+
+```
+pip install my_library
+```
+
+After this command ran successfully, one can import functions from the library in their programs like this:
+
+```python
+from my_library import calc_C
+```
+
+From now on, the function `calc_C` can be used in that program like any other function.
+
+It is important to note that a library can contain not just functions, but is often used to declare costant values, too. This is in fact a use case in our LiFi-project.

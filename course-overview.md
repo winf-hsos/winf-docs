@@ -10,7 +10,7 @@ description: >-
 
 In this course, we aim to answer three key questions, as illustrated below. For each question, we need to understand specific subtopics that are shown underneath. I will remind you of the relevant subtopic as we move through each section of the course. This approach will help you keep track of our progress and maintain a clear understanding of where we are in the broader context.
 
-<img src=".gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src=".gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
 
 ## Learning Objectives
 
@@ -38,6 +38,6 @@ To complete this project, you must solve the exercises listed below. Each exerci
 
 You will notice that some words in this course are highlighted in <mark style="background-color:green;">**bold green color**</mark>. I use this formatting to point you to important terms and concepts that you should know and be able to explain. It is not necessarily explained in the same section or in this course at all. If you can't find anything here directly or in the provided literature, make sure you do your research and ask questions during sessions.
 
-## Introduction Of Hardware
+## Introduction Of Hardware ⚡
 
 We use four different hardware devices during the LiFi-project. They are each introduced in dedicated sections of the course. Those sections are marked with a ⚡, so you can find them easily.
