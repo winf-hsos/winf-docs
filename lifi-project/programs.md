@@ -81,7 +81,7 @@ We are more or less free in choosing a variable's name. There are only few rules
 
 ## Create Once, Use Often
 
-An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](programs-anatomy.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
+An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](programs.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
 
 ### Modules
 

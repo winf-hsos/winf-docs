@@ -1,7 +1,7 @@
 ---
 description: >-
-  In this course, you learn about the basics of digitalization and programming
-  using the example of a research & development project.
+  In this course, you learn the basics of digitalization and programming using
+  the example of a research & development project.
 ---
 
 # The LiFi-Project

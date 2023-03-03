@@ -41,7 +41,7 @@ different colors. But why is it that for each basic color, we can specify the in
 
 Simply put, a byte is a sequence of eight digits that can be either 0 or 1. A digit that can either be 0 or 1 is called a <mark style="background-color:green;">**bit**</mark>, which is short for <mark style="background-color:green;">**binary digit**</mark>. So eight bits equal one byte.
 
-So, what about the 255? Well, that is the largest <mark style="background-color:green;">**decimal number**</mark> we can represent with one byte (or 8 bits). We'll discuss the [the-binary-system.md](the-binary-system.md "mention") in more detail later on, but here is the quick explanation: If we only had one bit, how many numbers could we represent with it? That's simple, only two: 0 and 1. But what if we had two bits? How many numbers can we represent then? We can figure this out by calculating the number of combinations we can create from two digits with two possible values: $$2 \times 2 = 4$$. What if we had three bits? Well: $$2 \times 2 \times 2 = 8$$. In general, for $$n$$ bits, we can calculate the number of combinations as $$2^n$$. Thus, the answer for eight bits (or one byte) is $$2^8 = 256$$. That means, we can represent numbers between 0 and 255, which makes 256 different values. And since the RGB code uses one byte for each of the three basic colors, the intensity can be a number between 0 and 255.
+So, what about the 255? Well, that is the largest <mark style="background-color:green;">**decimal number**</mark> we can represent with one byte (or 8 bits). We'll discuss the [binary-numbers.md](binary-numbers.md "mention") in more detail later on, but here is the quick explanation: If we only had one bit, how many numbers could we represent with it? That's simple, only two: 0 and 1. But what if we had two bits? How many numbers can we represent then? We can figure this out by calculating the number of combinations we can create from two digits with two possible values: $$2 \times 2 = 4$$. What if we had three bits? Well: $$2 \times 2 \times 2 = 8$$. In general, for $$n$$ bits, we can calculate the number of combinations as $$2^n$$. Thus, the answer for eight bits (or one byte) is $$2^8 = 256$$. That means, we can represent numbers between 0 and 255, which makes 256 different values. And since the RGB code uses one byte for each of the three basic colors, the intensity can be a number between 0 and 255.
 
 ### What Does The Weird Hashtag Mean?
 
@@ -49,7 +49,7 @@ Occasionally, you see colors being specified in a format that starts with a hash
 
 The color "#00FF00" corresponds to full green: the first two "00" digits represent the first byte, which in the RGB code stands for the intensity of red, which is zero here. The next two digits "FF" stand for the intensity of green, and "FF" is the largest possible value for a two-digit hexadecimal number. "FF" is 255 in decimal. The last pair "00" is for the intensity of blue, which is also zero.
 
-You will learn more about the hexadecimal system when we introduce [the-binary-system.md](the-binary-system.md "mention") alongside the general idea of <mark style="background-color:green;">**number systems**</mark>.
+You will learn more about the hexadecimal system when we introduce [binary-numbers.md](binary-numbers.md "mention") alongside the general idea of <mark style="background-color:green;">**number systems**</mark>.
 
 ## ASCII Code
 

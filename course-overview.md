@@ -1,7 +1,8 @@
 ---
 description: >-
-  This course has a packed curriculum, so I need you to stay up to the tasks.
-  There are exercises you need to submit on a bi-weekly basis.
+  This course has 27 sections on the digital world and programming. Every 3rd
+  section leads to an exercise you need to solve. With the last one, you finish
+  the LiFi-project.
 ---
 
 # Course Overview

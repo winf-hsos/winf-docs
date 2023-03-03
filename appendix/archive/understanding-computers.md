@@ -21,8 +21,8 @@ The breadth of tasks computers can perform is already astonishing by itself, but
 
 To understand how computers work, we first must understand how a number system with only ones and zeroes works:
 
-{% content-ref url="../../lifi-project/the-binary-system.md" %}
-[the-binary-system.md](../../lifi-project/the-binary-system.md)
+{% content-ref url="../../lifi-project/binary-numbers.md" %}
+[binary-numbers.md](../../lifi-project/binary-numbers.md)
 {% endcontent-ref %}
 
 Understanding code systems gives us an idea how computers represent other things than 0 and 1:

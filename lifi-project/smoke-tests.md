@@ -174,6 +174,6 @@ ipcon.disconnect()
 
 </details>
 
-Running this code is a task during [your first exercise](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf). In the next section [programs-anatomy.md](programs-anatomy.md "mention"), we examine parts of the code a bit closer and introduce five concepts in programming. Don't worry, we will learn about each concept in more detail later on. The next section should give you a first overview of how the smoke test program works. Or any program you will ever encounter, for that matter.
+Running this code is a task during [your first exercise](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf). In the next section [programs.md](programs.md "mention"), we examine parts of the code a bit closer and introduce five concepts in programming. Don't worry, we will learn about each concept in more detail later on. The next section should give you a first overview of how the smoke test program works. Or any program you will ever encounter, for that matter.
 
 ##
