@@ -93,7 +93,7 @@ Notes are the basic symbols used to represent musical sounds in music notation. 
 * Accidentals: Accidentals are symbols that are used to modify the pitch of a note. The most common accidentals are the sharp (#), flat (b), and natural (♮) signs.
 * Dynamics: Dynamics are symbols that are used to indicate the volume or intensity of the music. Examples include p (piano, meaning soft), f (forte, meaning loud), and crescendo/decrescendo symbols that indicate a gradual increase or decrease in volume.
 
-## Morse Code
+### Morse Code
 
 Morse code is a system of communication that uses a series of short and long signals to represent letters, numbers, and punctuation. These signals can be transmitted using sound or light, such as through a telegraph, flashlight, or radio signal. Each signal in Morse code is known as a "dot" or a "dash", and they are combined to form the code for each letter or symbol.
 
@@ -113,8 +113,6 @@ You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ nu
 ## What About Communication?
 
 The LiFi-project is about communication, so we ought to look at a code system that was designed for that purpose and see whether it can help us solve our problem. You have probably heard about the [Morse code](broken-reference) before.&#x20;
-
-## The Flashlight Game
 
 ## Further reading
 
