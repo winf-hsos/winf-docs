@@ -6,6 +6,8 @@ description: >-
 
 # 3 - Smoke Test ⭐
 
+<figure><img src="../.gitbook/assets/lifi_smoke_test.jpg" alt=""><figcaption><p>The LiFi prototype while running the program-based smoke test.</p></figcaption></figure>
+
 {% hint style="info" %}
 This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
 {% endhint %}
