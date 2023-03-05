@@ -14,12 +14,12 @@ This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/
 
 In this section, you'll learn:
 
-* What hardware components are required for the LiFi-project.
-* How the components must be assembled for the prototype device.
+* Which hardware components are required for the LiFi-project.
+* How the components must be assembled for the LiFi hardware prototype.
 
 ## List of components
 
-The hardware kit contains the following components:
+The LiFi hardware prototype contains the following components:
 
 * 1 x [Master Brick 3.1](https://www.tinkerforge.com/en/shop/bricks/master-brick.html)
 * 1 x [RGB LED Bricklet 2.0](https://www.tinkerforge.com/en/shop/rgb-led-v2-bricklet.html)
@@ -32,13 +32,15 @@ The hardware kit contains the following components:
 * 2 x [Mounting Plate 22x10](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-plate-22x10.html)
 * 4 x [Mounting Kit 12 mm](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html)
 
+Make sure your LiFi kit contains all of them in the required amount before you proceed with the following instructions.
+
 ## Assembly Instructions
 
 ### 1. Parts Overview
 
-The image below gives an overview of what's in the hardware kit. We'll need all of that for the assembly of the LiFi-prototype.
+The image below gives an overview of what's in the hardware kit. We'll need all of that for the assembly of the LiFi-prototype in the subsequent steps.
 
-**Update**: In contrast to the image below, in your hardware kit, there are only 4 Mounting Kits (the small plastic bags) instead of 6 and the 7-pole cables have different lengths (2 x 6 cm and 2 x 15 cm).
+**Update**: In contrast to the image below, in your hardware kit, there are only 4 mounting kits (the small plastic bags) instead of 6, and the 7-pole cables have different lengths (2 x 6 cm and 2 x 15 cm, instead of 4 x 15 cm as shown in the image).
 
 <figure><img src="../.gitbook/assets/0_lifi_hardware_overview.jpg" alt=""><figcaption><p>The hardware and screwdriver required to assemble to LiFi-prototype.</p></figcaption></figure>
 
