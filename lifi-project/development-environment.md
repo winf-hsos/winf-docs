@@ -22,7 +22,7 @@ In this section, you'll learn:
 * What Python is, and why we choose it as our programming language in this project.
 * What Git is and why it is a useful tool in software projects.
 
-<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
 ## Brick Viewer and Brick Daemon
 
