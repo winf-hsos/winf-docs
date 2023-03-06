@@ -114,7 +114,7 @@ You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ nu
 * How many codes do I need? That is, how many things do I need to represent with that code? In RGB code, that is 16,777,216 colors that need to be encoded.
 * How many bits do we need to represent the number of different codes? In RGB code, that is 24 bits or 3 bytes.
 
-<img alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The general schema how code systems work." class="gitbook-drawing">
 
 ## What About Communication?
 
