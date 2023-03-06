@@ -1,8 +1,6 @@
 # 5 - Program's Anatomy
 
-{% hint style="info" %}
-This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
-{% endhint %}
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="A schematic view of a program." class="gitbook-drawing">
 
 ## Summary
 
@@ -12,6 +10,10 @@ In this section, you'll learn:
 * What the five types of instructions are that make up every program.
 
 This section concerns the question of how we can solve problems with digital computers adds to your understanding of programming.&#x20;
+
+{% hint style="info" %}
+This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+{% endhint %}
 
 
 
@@ -87,7 +89,7 @@ An important principle in programming is "Don't Repeat Yourself". Code that we n
 
 If we put all our custom created, useful functions into a file and call it, for example, `useful_funcs.py` ,we have created a so-called <mark style="background-color:green;">**module**</mark>.
 
-<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="A module is a collection of useful functions in a Python-file." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (2).svg" alt="A module is a collection of useful functions in a Python-file." class="gitbook-drawing">
 
 The great benefit of modules is that we can reuse and import them in different programs. These can be our programs or the program's from someone else. The latter requires that person to have a copy of our module:
 

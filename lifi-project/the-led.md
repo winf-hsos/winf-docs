@@ -5,11 +5,9 @@ description: >-
   concepts.
 ---
 
-# 5 - The LED ⚡
+# 4 - The LED ⚡
 
-{% hint style="info" %}
-This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
-{% endhint %}
+## ![](<../.gitbook/assets/image (45).png>)
 
 ## Summary
 
@@ -20,7 +18,9 @@ In this section, you'll learn:
 * How to turn off the LED.
 * How LEDs work on a basic level
 
-## ![](<../.gitbook/assets/image (45).png>)
+{% hint style="info" %}
+This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+{% endhint %}
 
 ## Turning on the LED from Python
 

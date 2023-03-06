@@ -13,7 +13,7 @@ In this section, you'll learn:
 * What a code system is and what it is made of.
 * How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
 
 ## The RGB Code
 

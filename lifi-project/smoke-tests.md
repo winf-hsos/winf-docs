@@ -8,10 +8,6 @@ description: >-
 
 <figure><img src="../.gitbook/assets/lifi_smoke_test.jpg" alt=""><figcaption><p>The LiFi prototype while running the program-based smoke test.</p></figcaption></figure>
 
-{% hint style="info" %}
-This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
-{% endhint %}
-
 ## Summary
 
 In this section, you'll learn:
@@ -19,6 +15,10 @@ In this section, you'll learn:
 * How you can test the hardware components required for the LiFi-project.
 * How the Brick Viewer works and how you can test the hardware components with it.
 * What a smoke test is in engineering and why it's important.
+
+{% hint style="info" %}
+This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
+{% endhint %}
 
 ## What does a smoke test do?
 
