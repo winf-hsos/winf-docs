@@ -13,7 +13,7 @@ In this section, you'll learn:
 * What a code system is and what it is made of.
 * How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
 
 ## The RGB Code
 
@@ -29,7 +29,7 @@ It is now time to understand what these three numbers mean and what values we ca
 
 That was a lot! Let's unpack this.
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The schema of the RGB code system." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (3).svg" alt="The schema of the RGB code system." class="gitbook-drawing">
 
 ### Why \~16 Million Colors?
 
@@ -118,7 +118,7 @@ You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ nu
 * How many codes do I need? That is, how many things do I need to represent with that code? In RGB code, that is 16,777,216 colors that need to be encoded.
 * How many bits do we need to represent the number of different codes? In RGB code, that is 24 bits or 3 bytes.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="The general schema how code systems work." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The general schema how code systems work." class="gitbook-drawing">
 
 ## What About Communication?
 

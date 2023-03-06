@@ -6,6 +6,8 @@ description: >-
 
 # 2 - Development Environment
 
+
+
 {% hint style="info" %}
 This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
 {% endhint %}
@@ -19,6 +21,8 @@ In this section, you'll learn:
 * What an integrated development environment (IDE) is and why it is useful.
 * What Python is, and why we choose it as our programming language in this project.
 * What Git is and why it is a useful tool in software projects.
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
 ## Brick Viewer and Brick Daemon
 
