@@ -35,21 +35,21 @@ The tests give us confidence that all devices are intact, everything is wired co
 
 We perform the first smoke test using the Brick Viewer software from Tinkerforge. You should have installed this software [in the previous section](development-environment.md#brick-viewer-and-brick-daemon), along with the Brick Daemon. Both are required for this smoke test to work.
 
-To perfom the UI-based smoke test, follow theses steps:
+To perform the UI-based smoke test, follow these steps:
 
 ### 1. Open Brick Viewer And Connect
 
-Open the Brick Viewer software on your computer. On Windows, I find it easiest to type in "Brickv" in the search field. You should also find it somehwere in your start menu. Once the software is open, check the left-hand side and find the host and port settings. They should look as follows.
+Open the Brick Viewer software on your computer. On Windows, I find it easiest to type "Brickv" in the search field. You should also find it somewhere in your start menu. Once the software is open, check the left-hand side and find the host and port settings. They should look as follows.
 
 <figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption><p>The Brick Viewer on start-up.</p></figcaption></figure>
 
-If the host is "localhost" and the ports is the default of 4223, you can click the large "Connect" button above it. Make sure you connect your hardware kit to your computer using the 1m USB cable first.
+If the host is "localhost" and the port is the default of 4223, you can click the large "Connect" button above it. Make sure you connect your hardware kit to your computer using the 1m USB cable first.
 
 ### 2. Check If All Devices Were Found
 
-If the connection was successfull, you should see a list of devices that are connected to your Master Brick 3.1 (<mark style="background-color:yellow;">TODO: replace screenshot with new version</mark>). The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them. The firmware version in the last column could also be slightly different.
+If the connection was successful, you see a list of connected devices in the Brick Viewer's main area. The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them during [hardware assembly](hardware-assembly.md). The firmware version in the last column could also be slightly different, depending on when you take this course.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
 
 ## The Program-Based Smoke Test
 

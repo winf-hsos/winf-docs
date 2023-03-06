@@ -62,4 +62,4 @@ In software development, we often work in teams and need to share code with our 
 
 {% embed url="https://git-scm.com/downloads" %}
 
-If you have successfully installed all the software listed above, you are done with this section. Next, we will test whether everything works using a so-called <mark style="background-color:green;">**smoke test**</mark>.
+When you have successfully installed all the software listed above, you are done with this section. Next, you test whether everything works using a so-called <mark style="background-color:green;">**smoke test**</mark>.

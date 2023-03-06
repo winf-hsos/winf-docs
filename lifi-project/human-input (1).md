@@ -4,7 +4,7 @@ description: >-
   digital computer. It can be used for controlling various aspects of a system.
 ---
 
-# 9 - The Rotary Encoder
+# 8 - The Rotary Encoder ⚡
 
 {% hint style="info" %}
 This section is relevant for [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf).
@@ -14,7 +14,7 @@ This section is relevant for [Exercise 3: The Human Operator](https://github.com
 
 The rotary encoder is a typical control for human input in many hardware devices. The user can turn the knob in both directions, which changes a value represented by the control. Turning it right increases the value, while turning it left decreases it. In addition, the rotary encoder has the functionality of a button. When the user presses the knob, this fires an <mark style="background-color:green;">**event**</mark>, and we can perform some action based on that event.
 
-<img src="../.gitbook/assets/image (1) (2).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (1) (2) (1).png" alt="" data-size="original">
 
 ### Initialize The Rotary Encoder
 
