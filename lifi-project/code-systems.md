@@ -57,6 +57,10 @@ You will learn more about the hexadecimal system when we introduce [binary-numbe
 
 Although in this project, we use code systems in the context of digital computers, code systems do not necessarily have any relation to ones and zeroes whatsoever. There were code systems invented long before the digital computer. The [Morse code](broken-reference), which we'll explore in more detail in the next section, is a good example. And there are others, was well.
 
+### QR- And Barcodes
+
+
+
 ### Braille Code
 
 Braille is a system of raised dots that can be felt with the fingertips. It is used by people who are blind or visually impaired to read and write. Braille consists of six dots arranged in a pattern that represents a letter, number, or punctuation mark. The dots are arranged in two columns of three dots each, with each dot in a column numbered from one to three from top to bottom.
@@ -109,6 +113,8 @@ You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ nu
 
 * How many codes do I need? That is, how many things do I need to represent with that code? In RGB code, that is 16,777,216 colors that need to be encoded.
 * How many bits do we need to represent the number of different codes? In RGB code, that is 24 bits or 3 bytes.
+
+<img alt="" class="gitbook-drawing">
 
 ## What About Communication?
 
