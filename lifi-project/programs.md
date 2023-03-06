@@ -91,7 +91,7 @@ If we put all our custom created, useful functions into a file and call it, for 
 
 The great benefit of modules is that we can reuse and import them in different programs. These can be our programs or the program's from someone else. The latter requires that person to have a copy of our module:
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="A module can be imported by another program." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="A module can be imported by another program." class="gitbook-drawing">
 
 
 

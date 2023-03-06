@@ -13,6 +13,8 @@ In this section, you'll learn:
 * What a code system is and what it is made of.
 * How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
 
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+
 ## The RGB Code
 
 In the previous section about [the-led.md](the-led.md "mention"), we briefly touched the RGB code and used it to set the LED's color to green. We did this using a function provided by the Tinkerforge <mark style="background-color:green;">**API**</mark> called `set_rgb_value`. When calling this function, we passed three numbers to it:
@@ -27,9 +29,11 @@ It is now time to understand what these three numbers mean and what values we ca
 
 That was a lot! Let's unpack this.
 
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The schema of the RGB code system." class="gitbook-drawing">
+
 ### Why \~16 Million Colors?
 
-With the RGB code, we can represent exactly 16,777,216 different colors. That's what I meant above by saying "roughly 16 million". The reason is simple mathematics: A color in the RGB code is defined by a mix of the three basic color red, green, and blue. For each basic color, we can specify an intensity between 0 (none of that color) and 255 (full intensity). This makes 256 possible values for one basic color. Because we can combine all possible values of the three basic colors, and each results in a different color, the RGB code can represent
+With the RGB code, we can represent exactly $$16,777,216$$ different colors. That's what I meant above by saying "roughly 16 million". The reason is simple mathematics: A color in the RGB code is defined by a mix of the three basic colors red, green, and blue. For each basic color, we can specify an intensity between 0 (none of that color) and 255 (full intensity). This makes 256 possible values for one basic color. Because we can combine all possible values of the three basic colors, and each results in a different color, the RGB code can represent
 
 $$
 256 \times 256 \times 256 = 16,777,216
@@ -39,9 +43,9 @@ different colors. But why is it that for each basic color, we can specify the in
 
 ### What Is A Byte And Why 255?
 
-Simply put, a byte is a sequence of eight digits that can be either 0 or 1. A digit that can either be 0 or 1 is called a <mark style="background-color:green;">**bit**</mark>, which is short for <mark style="background-color:green;">**binary digit**</mark>. So eight bits equal one byte.
+Simply put, a byte is a sequence of eight digits that can be either 0 or 1. A digit that can either be 0 or 1 is called a <mark style="background-color:green;">**bit**</mark>, which is short for <mark style="background-color:green;">**binary digit**</mark>. So eight bits equal one <mark style="background-color:green;">**byte**</mark>.
 
-So, what about the 255? Well, that is the largest <mark style="background-color:green;">**decimal number**</mark> we can represent with one byte (or 8 bits). We'll discuss the [binary-numbers.md](binary-numbers.md "mention") in more detail later on, but here is the quick explanation: If we only had one bit, how many numbers could we represent with it? That's simple, only two: 0 and 1. But what if we had two bits? How many numbers can we represent then? We can figure this out by calculating the number of combinations we can create from two digits with two possible values: $$2 \times 2 = 4$$. What if we had three bits? Well: $$2 \times 2 \times 2 = 8$$. In general, for $$n$$ bits, we can calculate the number of combinations as $$2^n$$. Thus, the answer for eight bits (or one byte) is $$2^8 = 256$$. That means, we can represent numbers between 0 and 255, which makes 256 different values. And since the RGB code uses one byte for each of the three basic colors, the intensity can be a number between 0 and 255.
+So, what about the 255? Well, 255 is the largest <mark style="background-color:green;">**decimal number**</mark> we can represent with one byte (or 8 bits). We'll discuss the [binary-numbers.md](binary-numbers.md "mention") in more detail later on, but here is the quick explanation: If we only had one bit, how many numbers could we represent with it? That's simple, only two: 0 and 1. But what if we had two bits? How many numbers can we represent then? We can figure this out by calculating the number of permutations we can create from two digits with two possible values: $$2 \times 2 = 4$$. What if we had three bits? Well: $$2 \times 2 \times 2 = 8$$. In general, for $$n$$ bits, we can calculate the number of combinations as $$2^n$$. Thus, the answer for eight bits (or one byte) is $$2^8 = 256$$. That means, we can represent numbers between 0 and 255, which makes 256 different values. And since the RGB code uses one byte for each of the three basic colors, the intensity can be a number between 0 and 255.
 
 ### What Does The Weird Hashtag Mean?
 
@@ -114,7 +118,7 @@ You have just learned that the RGB code uses a total of $$2^{24}=16,777,216$$ nu
 * How many codes do I need? That is, how many things do I need to represent with that code? In RGB code, that is 16,777,216 colors that need to be encoded.
 * How many bits do we need to represent the number of different codes? In RGB code, that is 24 bits or 3 bytes.
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The general schema how code systems work." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="The general schema how code systems work." class="gitbook-drawing">
 
 ## What About Communication?
 

@@ -4,7 +4,7 @@ description: >-
   with only ones and zeroes works.
 ---
 
-# 8 - The Binary System
+# 7 - Binary Numbers
 
 {% hint style="info" %}
 This section is relevant for [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf).
@@ -21,7 +21,9 @@ In this section, you'll learn:
 * Regardless of how many symbols we have in a given system, representing numbers in a system follows the same approach. In a system to the base $$n$$, the first digit (also called least significant digit) represents the number $$n^0$$, which is always one. The second stands for $$n^1$$, the one after that for $$n^2$$ and so forth. So the octal number 10 is equal to the decimal number 8: $$1 \times 8^1 + 0 \times 8^0$$, and the octal number 110 would be the decimal number 72: $$1 \times 8^2 + 1 \times 8^1 + 0 \times 8^0$$&#x20;
 * We can apply the same approach for the binary system. The binary number 1100 is equivalent to the decimal number 12: $$1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 0 \times 2^0 = 1 \times 8 + 1 \times 4 = 12$$&#x20;
 
-## Material
+## The Decimal System
+
+## The Hexadecimal System
 
 ### Slides
 
