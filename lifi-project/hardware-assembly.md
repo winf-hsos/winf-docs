@@ -130,4 +130,6 @@ In this last step, you mount the RGB LED 2.0 to the Color Sensor so that the LED
 
 <figure><img src="../.gitbook/assets/11_led_in_front_of_sensor_2.jpg" alt=""><figcaption><p>Move the LED and attach it to the new set of spacers. Make sure the LED faces the color sensor.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/11_led_in_front_of_sensor_3.jpg" alt=""><figcaption><p>The distance achieved through the 3 spacers is a good configuration for the LED and the color sensor.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/11_led_in_front_of_sensor_3.jpg" alt=""><figcaption><p>The distance of the 3 spacers is a good configuration for the LED and the color sensor.</p></figcaption></figure>
+
+Alright, now we can move on to install and configure the software part of our project. In the next section, we'll set up our [development environment](development-environment.md).
