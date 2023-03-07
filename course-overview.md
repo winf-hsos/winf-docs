@@ -7,11 +7,11 @@ description: >-
 
 # Course Overview
 
+<img src=".gitbook/assets/file.excalidraw (3) (1).svg" alt="" class="gitbook-drawing">
+
 ## Key Questions
 
-In this course, we aim to answer three key questions, as illustrated below. For each question, we need to understand specific subtopics that are shown underneath. I will remind you of the relevant subtopic as we move through each section of the course. This approach will help you keep track of our progress and maintain a clear understanding of where we are in the broader context.
-
-<img src=".gitbook/assets/file.excalidraw (3) (1).svg" alt="" class="gitbook-drawing">
+In this course, we aim to answer three key questions, as illustrated above. For each question, we need to understand specific subtopics that are shown underneath. I will remind you of the relevant subtopic as we move through each section of the course. This approach will help you keep track of our progress and maintain a clear understanding of where we are in the big picture.
 
 ## Learning Objectives
 

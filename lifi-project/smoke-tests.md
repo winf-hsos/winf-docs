@@ -20,7 +20,7 @@ In this section, you'll learn:
 This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
 {% endhint %}
 
-## What does a smoke test do?
+## What's A Smoke Test For?
 
 The term <mark style="background-color:green;">**smoke test**</mark> in industrial engineering and software development describes the attempt to run a new system for the first time to see whether there are any major issues. The term 'smoke test' likely originated in the plumbing industry, where smoke was blown into a new pipe system to detect any leaks. For us, the smoke test means that we connect the hardware stack to a computer and test whether all components are working as expected. For this purpose, we can use the [Brick Viewer from Tinkerforge](https://www.tinkerforge.com/en/doc/Software/Brickv.html), which we installed in the [previous section](development-environment.md). Or we can use the Tinkerforge Python <mark style="background-color:green;">**API**</mark> and perform a smoke test from a program.
 
@@ -33,7 +33,7 @@ The tests give us confidence that all devices are intact, everything is wired co
 
 ## The UI-Based Smoke Test
 
-We perform the first smoke test using the Brick Viewer software from Tinkerforge. You should have installed this software [in the previous section](development-environment.md#brick-viewer-and-brick-daemon), along with the Brick Daemon. Both are required for this smoke test to work.
+We'll perform the first smoke test using the Brick Viewer software from Tinkerforge. You installed this software [in the previous section](development-environment.md#brick-viewer-and-brick-daemon), along with the Brick Daemon. Both are required for this smoke test to work.
 
 To perform the UI-based smoke test, follow these steps:
 
@@ -43,13 +43,36 @@ Open the Brick Viewer software on your computer. On Windows, I find it easiest t
 
 <figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption><p>The Brick Viewer on start-up.</p></figcaption></figure>
 
-If the host is "localhost" and the port is the default of 4223, you can click the large "Connect" button above it. Make sure you connect your hardware kit to your computer using the 1m USB cable first.
+If the host is "localhost" and the port is the default of 4223, you can click the large "Connect" button above it. Make sure you connect your hardware kit to your computer using the provided USB cable first.
 
 ### 2. Check If All Devices Were Found
 
 If the connection was successful, you see a list of connected devices in the Brick Viewer's main area. The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them during [hardware assembly](hardware-assembly.md). The firmware version in the last column could also be slightly different, depending on when you take this course.
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
+
+### 3. Test Each Device's Functionality
+
+The Brick Viewer is useful to explore the different devices and play around with their functionality. While you can do this all by yourself, the following lists give you some hints on what to try out:
+
+#### RGB LED Bricklet 2.0
+
+* Obviously, light up the LED in different colors. There are pre-defined colors that you can activate with a button. There is also the option to use sliders for the red, green, and blue parts as well as for the alternative HSL (hue, saturation, lightness) of the color. Why not try both?
+* Play around with the status LED of the RGB LED Bricklet. In what different ways can it be used? By the way, the status LED is something that every device has.
+
+#### Rotary Encoder Bricklet 2.0
+
+* Try turning the knob in both directions to see what it does.
+* Press down the knob and see where this is shown in the Brick Viewer.
+* Try resetting the count to 0.
+
+#### Color Bricklet 2.0
+
+* The color sensor is interesting to test together with the RGB LED. Set the RGB LED to different colors and check how the color is perceived by the color sensor.
+* Hold a light source close to the sensor (e.g., your smartphone LED) to see how this affects the different charts.
+* Can you find the little checkbox to enable the sensor's own white LED?
+
+
 
 ## The Program-Based Smoke Test
 
