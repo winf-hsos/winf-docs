@@ -1,7 +1,7 @@
 ---
 description: >-
-  Here you find all relevant literature, which includes books and online
-  resources, for the LiFi-project.
+  This section lists all relevant literature for the LiFi-project. This includes
+  books and online resources.
 ---
 
 # Literature
