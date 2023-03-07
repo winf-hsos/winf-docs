@@ -93,7 +93,21 @@ Open the file `examples/smoke_test.py`. For our first program, it looks quite ov
 
 For now, we will only _run_ the code to see how the components work and interact from a Python program. We won't explain any of the code yet. We'll learn the necessary concepts during this course, and we'll come back to this later when we already have a better understanding.
 
-Before you run the code, make sure you adjust the UID in the `examples/constants.py` file to reflect your devices. If you don't know how to get your UIDs, jump[ ahead to the next section](the-led.md#how-to-get-a-devices-uid) to find out. Now, run the code by typing the following command in a terminal in Visual Studio Code:
+Before you run the code, make sure you insert the UIDs for your hardware devices in the `examples/constants.py`. The UID is a unique identifier for each device that Tinkerforge produces. Your RGB LED will have a different UID than mine, and it will be different for everyone. For the smoke test to run (and for any program we want to use the devices with), we need to know the UID of our devices and add them to the `constants.py` module.&#x20;
+
+If you don't know how to get your UIDs, see if you can find them using the Brick Viewer. The file looks like this for my personal LiFi-prototype.
+
+```python
+HOST = "localhost"
+PORT = 4223
+UID_MASTER_BRICK = "5VjYhj"
+UID_RGB_LED = "ZFy"
+UID_OLED_DISPLAY = "25zw"
+UID_ROTARY_ENCODER = "XDR"
+UID_COLOR_SENSOR = "WbJ"
+```
+
+Now, run the code by typing the following command in a terminal in Visual Studio Code:
 
 ```
 python examples/smoke_test.py

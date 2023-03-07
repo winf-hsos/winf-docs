@@ -32,23 +32,21 @@ Let's dive right into some code. To start with, we will set the RGB LED to a gre
 
 The connection to the LED is established through the Master Brick to which you connected the LED with a 7-pole wire in section [hardware-assembly.md](hardware-assembly.md "mention"). Tinkerforge uses the <mark style="background-color:green;">**IP-protocol**</mark> to connect to devices. This protocol may sound familiar to you, as it is also widely used on the internet to connect computers around the world.
 
-Take a look at the code below, we'll explain in the following:
+Take a look at the code below, we'll explain in the following. You can find the code in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) under `examples/rgb_led.py`:
 
-{% code title="led.py" lineNumbers="true" %}
+{% code title="rgb_led.py" lineNumbers="true" %}
 ```python
-HOST = "localhost"
-PORT = 4223
-UID_LED = "xxx" # Change to the UID of your RGB LED
+import constants
 
 from tinkerforge.ip_connection import IPConnection
-from tinkerforge.bricklet_rgb_led import BrickletRGBLED
+from tinkerforge.bricklet_rgb_led_v2 import BrickletRGBLEDV2
 
 # Create IP-connection
 ipcon = IPConnection()
-ipcon.connect(HOST, PORT)
+ipcon.connect(constants.HOST, constants.PORT)
 
 # Create LED object
-led = BrickletRGBLED(UID_LED, ipcon)
+led = BrickletRGBLEDV2(constants.UID_RGB_LED, ipcon)
 
 # Set to full green color
 led.set_rgb_value(0, 255, 0)
@@ -58,46 +56,14 @@ ipcon.disconnect()
 ```
 {% endcode %}
 
-In summary, the code creates a new IP-connection (line 8) and connects using the host and port information (line 9) that we stored as <mark style="background-color:green;">**constants**</mark> (lines 1 & 2). In line 11, we create a new LED <mark style="background-color:green;">**object**</mark> by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark> along with the IP-connection. Afterward, the <mark style="background-color:green;">**variable**</mark> `led` should hold a reference to our LED hardware device that is connected to our computer. With that reference, we can access one of the LED's main functionalities: setting its color to any vale using the <mark style="background-color:green;">**RGB code**</mark>. The RGB code will be addressed in detail in the next section about [code-systems.md](code-systems.md "mention"). In the example, we set the LED's color to green (line 16).
-
-### How To Get A Device's UID?
-
-So to connect to a device, we need its unique identifier, or UID. How can you find the UID of your LED? That's easy - we can use the Brick Viewer we installed previously in the section [development-environment.md](development-environment.md "mention"). Once connected, the UID shows up in the second column of the list of connected devices under the "Setup" tab. My RGB LED Bricklet has the UID "ATk".
-
-<figure><img src="../.gitbook/assets/image (45) (2).png" alt=""><figcaption><p>You can find the UID for every device in the Brick Viewer.</p></figcaption></figure>
-
-We can now replace the value "xxx" in line 3 with the actual value "ATk":
-
-{% code title="led.py" lineNumbers="true" %}
-```python
-HOST = "localhost"
-PORT = 4223
-UID_LED = "ATk" # We changed only this value!
-
-from tinkerforge.ip_connection import IPConnection
-from tinkerforge.bricklet_rgb_led import BrickletRGBLED
-
-# Create IP-connection
-ipcon = IPConnection()
-ipcon.connect(HOST, PORT)
-
-# Create LED object
-led = BrickletRGBLED(UID_LED, ipcon)
-
-# Set to full green color
-led.set_rgb_value(0, 255, 0)
-
-# Disconnect
-ipcon.disconnect()
-```
-{% endcode %}
+In summary, the code creates a new IP-connection (line 7) and connects using the host and port information (line 8) that it has imported from the module `constants.py` (line 1). The file contains a set of so-called <mark style="background-color:green;">**constants**</mark> to hold the specific UID of everyone's devices. You should already have [replaced them for the program-based smoke test](smoke-tests.md#the-program-based-smoke-test). In line 11, we create a new LED <mark style="background-color:green;">**object**</mark> by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark> along with the IP-connection. Afterward, the <mark style="background-color:green;">**variable**</mark> `led` should hold a reference to our LED device that is connected to our computer. With that reference, we can access one of the LED's main functionalities: setting its color to any vale using the <mark style="background-color:green;">**RGB code**</mark>. The RGB code will be addressed in detail in the next section about [code-systems.md](code-systems.md "mention"). In the example, we set the LED's color to green (line 14). Finally, we disconnect from the devices (line 17).
 
 ### Executing A Python Program
 
-We are now ready to execute the program to see if it actually works. But how do we execute a Python program? With the installation of [#python-as-our-programming-language](development-environment.md#python-as-our-programming-language "mention"), we can run a command named `python` from our <mark style="background-color:green;">**terminal**</mark> (or command line). As the first <mark style="background-color:green;">**argument**</mark>, we need to specify the file that contains the program we want to execute. When we are in the folder where the program file is saved, we simply type the filename `led.py` after the `python` command and separate both with a space:
+We are now ready to execute the program to see if it actually works. But how do we execute a Python program? With the installation of [#python-as-our-programming-language](development-environment.md#python-as-our-programming-language "mention"), we can run a command named `python` from our <mark style="background-color:green;">**terminal**</mark> (or command line). As the first <mark style="background-color:green;">**argument**</mark>, we need to specify the file that contains the program we want to execute. When we are in the folder where the program file is located, we simply type the filename `rgb_led.py` after the `python` command and separate both with a space:
 
 ```bash
-python led.py
+python rgb_led.py
 ```
 
 ### Terminals In Visual Studio Code
@@ -133,19 +99,19 @@ In the following, I want to address frequent errors and their solutions when run
 You might encounter the following message after you hit enter:
 
 ```
-can't open file '...\led.py': [Errno 2] No such file or directory
+can't open file '...\rgb_led.py': [Errno 2] No such file or directory
 ```
 
-Python is telling you it can't find the file you specified, in this case `led.py`. In most cases, this is because you are not in the same directory as the file you are trying to run. The current directory is displayed in your terminal, usually right before the cursor:
+Python is telling you it can't find the file you specified, in this case `rgb_led.py`. In most cases, this is because you are not in the same directory as the file you are trying to run. The current directory is displayed in your terminal, usually right before the cursor:
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-In my example, I am in the directory `C:\code\iot`, and if I run `python led.py`, the Python command will assume the file is in the current directory. You can check this on Windows by typing the command `dir`, on Mac and Linus the equivalent command is `ls`. Both will print all files and directories that are in the current directory.&#x20;
+In my example, I am in the directory `C:\code\LiFi-code`, and if I run `python rgb_led.py`, the Python command will assume the file is in the current directory, which it isn't. You can check this on Windows by typing the command `dir`, on Mac and Linus the equivalent command is `ls`. Both will print all files and directories that are in the current directory.&#x20;
 
 So to solve the above problem, there are two possible solutions:
 
-* Change to the directory where the file `led.py` is saved. On Windows, Mac, and Linux, you can use the `cd` command for that. If you need help with this simple command, ask Google or the chatbot of your choice.
-* Move the file `led.py` to the correct directory. This makes sense if you accidentally saved in the wrong location on your computer.
+* Change to the directory where the file `rgb_led.py` is saved. On Windows, Mac, and Linux, you can use the `cd` command for that. If you need help with this simple command, ask Google or the chatbot of your choice.
+* Move the file `rgb_led.py` to the correct directory. This makes sense if you accidentally saved in the wrong location on your computer. In this case, the first option is better.
 
 #### Wrong UID
 
@@ -155,11 +121,11 @@ Your program runs, but after a couple of seconds, you get a rather large error m
 tinkerforge.ip_connection.Error: Did not receive response for function 255 in time (-1)
 ```
 
-This usually means that you entered the wrong UID and the program can't connect to the LED. [Double-check your LED's UID using the Brick Viewer](the-led.md#how-to-get-a-devices-uid) and correct any misspellings.
+This usually means that you entered the wrong UID and the program can't connect to the LED. Double-check your LED's UID using the Brick Viewer and correct any misspellings.
 
 ## Turning The LED Off Again
 
-When the program exits, which it immediately does after it has executed each of the code lines in our program one by one, the LED remains in a green-colored state. This is because nobody told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses any key on the keyboard. The program should then turn the LED off and only then exit the program.
+When the program exits, which it immediately does after it has executed each of the code lines in our program one by one, the LED remains in a green-colored state. This is because nobody told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses any key on the keyboard. Then, the program should turn the LED off and exit the program.
 
 ### Getting Input From The Keyboard
 
@@ -169,14 +135,35 @@ Asking the user for input is a common task in programming. In Python, we can pro
 input("Press any key to exit the program")
 ```
 
-If you add this line at the end of your program, it won't exit unless you hit a key.
+If you add this line at the end of your program, it won't exit unless you hit a key. Since a program is executed from top to bottom, we can place the code to turn the LED off directly behind the input prompt:
+
+```python
+# Switching the LED off
+led.set_rgb_value(0, 255, 0)
+```
+
+Why does this switch the LED off? As you will learn later, the RGB code with value set to zero encodes the color black. This effectively emits no light from the LED and turns it off.
 
 ## Asking For The Current Color
 
-<mark style="background-color:yellow;">TODO</mark>
+Imagine that we don't want to set the LED color to an absolute value, but we rather wish to increase the redness of the LED's light. Make it a bit warmer. In this case, we need to know the current value for the LED's redness to add, let's say, 10% intensity to it. We can ask the LED for its current color setting like this:
 
+```python
+current_rgb = led.get_rgb_value()
 ```
-led.get_rgb_value()
+
+But what exactly does the variable current\_rgb contain now? For a matter of fact, the RGB code is a set of three values between 0 and 255. We can find out by printing the variable's content to the console:
+
+```python
+print(current_rgb)
+# Output: RGBValue(r=0, g=255, b=0)
+```
+
+The value looks a bit strange, but it is nothing else than an object containing the three fields `r`, `g`, and `b`. In Python, we can access an object's field using the dot-notation:
+
+```python
+# Extract and store only the red part of the RGB code
+redness = current_rgb.r
 ```
 
 ## Actuators and Sensors
