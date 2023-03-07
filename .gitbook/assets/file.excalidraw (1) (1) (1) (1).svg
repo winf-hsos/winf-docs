@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.79998779296875 93.60000610351562" width="224.79998779296875" height="93.60000610351562">
+  <!-- svg-source:excalidraw -->
+  <!-- payload-type:application/vnd.excalidraw+json --><!-- payload-version:2 --><!-- payload-start -->eyJ2ZXJzaW9uIjoiMSIsImVuY29kaW5nIjoiYnN0cmluZyIsImNvbXByZXNzZWQiOnRydWUsImVuY29kZWQiOiJ4nM1VXW/aMFx1MDAxNH3nV6D0dUtcdTAwMWTH2EnfYFx1MDAxYlK1iUktU1VNezCJSVxcTFx1MDAxYzmmlFX899qGxVx0bFP7MGl+QPh+5J57fY79PFx1MDAxOFx1MDAwZVx1MDAwM72rWXA1XGbYU0ZcdTAwMDXPXHUwMDE13Vx1MDAwNu+s/ZGphsvKuKDbN3KjMlx1MDAxN1lqXTdXl5e0rsOC64WUqzCT60NcdTAwMWFcdTAwMTNszSrdmMDvZj9cdTAwMWM+u99OIcUyTatCMJfgXFy+XHUwMDE2xqfGmaxcXNlcYiE0XCJJhNI2gjdcdTAwMWZNOc1y415S0TDvsaZgOps/PExu6GJyM3soXHUwMDE339Dsfnznqy65XHUwMDEwt3onXHUwMDBlTdGs3KhcdTAwMGWmRiu5Ync816WtfmJv81x1MDAxYWmG5rOU3Fx1MDAxNGXFmqaXI2uacb2zNlx1MDAwMFrrYVxiV0NveTK7XHUwMDE4oTBcdTAwMDFcdTAwMDCgJIFJXHUwMDA0R63TpkOIwtSsOEkxSlBMRie4PkghlcV1XHUwMDAx3PLIXHUwMDE2NFtcdTAwMTVcdTAwMDZelbcxWtGqqaky5+XjtseOIUAhMaVcdTAwMTJCUpjipFOqZLwotYkhcYhtXHUwMDE1XHUwMDFjgXhcdTAwMTSNMPRomDtcdTAwMTVcdTAwMDRMXHUwMDBmKYlI67BcdTAwMTDq69zx40d3bFV+XHUwMDFj2y/CeMrER8veN2PjP51SrUu3XHUwMDFl5TR78lx1MDAxZHZcYkIpf/9VrJfz+Xaxm0o9vv+cxUFcdTAwMWK3P/7zODd1Tlx1MDAwZnyLMCHEXHUwMDFjQYQg8t1cdF6tjLPaXGLhbTJbeYpcdTAwMGU6jZxJo4ezo1xu8idRjEBcbmOIIHm1Jn7f8n+uXHRcdTAwMDRxSKwmIIFcYoNcdTAwMTT1RYFcdTAwMTLHVFx1MDAwNEGEMTA8/GeiQNG5XGIgPmV9lEBcdTAwMDJgZFx1MDAxNPFcdTAwMDba9zhzxu+/UTCOI4LeQEF/2LLSt/wnc2rvWad0zcWud16Om2Y+X/j0ujvAhpmK7oJOerFjwVx1MDAwYsvdIDM9MNWjtebmrWlcdTAwMDPWPM+7r0FmXHUwMDAwUPNNdf2aW1xcKl7wiop5XHUwMDE330Flg6N0XHUwMDAz81LdajO19nYx58HzY+t+UsEjZ9vJOSUulm7ZrzrlWpUwd1XtXHUwMDA3+1x1MDAxN6DA1X0ifQ==<!-- payload-end -->
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://unpkg.com/@excalidraw/excalidraw@0.14.2/dist/excalidraw-assets/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://unpkg.com/@excalidraw/excalidraw@0.14.2/dist/excalidraw-assets/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="224.79998779296875" height="93.60000610351562" fill="#ffffff"/><g stroke-linecap="round" transform="translate(10 10) rotate(0 102.39999389648438 36.80000305175781)"><path d="M18.4 0 M18.4 0 C70.08 0.84, 122.14 0.63, 186.4 0 M18.4 0 C82.88 -1.56, 147.87 -1.59, 186.4 0 M186.4 0 C197.47 1.55, 206.75 6.51, 204.8 18.4 M186.4 0 C200.5 2.06, 205.15 3.97, 204.8 18.4 M204.8 18.4 C205.69 29.34, 205.62 40.4, 204.8 55.2 M204.8 18.4 C204.55 30.68, 204.24 41.96, 204.8 55.2 M204.8 55.2 C206.37 69.2, 198.64 74.44, 186.4 73.6 M204.8 55.2 C204.23 69.37, 198.77 74.93, 186.4 73.6 M186.4 73.6 C127.06 71.87, 70.87 75.07, 18.4 73.6 M186.4 73.6 C144.95 72.95, 104.9 72.67, 18.4 73.6 M18.4 73.6 C6.07 74.1, -0.39 69.28, 0 55.2 M18.4 73.6 C3.94 71.6, -0.6 69.39, 0 55.2 M0 55.2 C0.7 42.82, 0.33 28.74, 0 18.4 M0 55.2 C-0.23 43.14, 0.47 31.12, 0 18.4 M0 18.4 C1.29 5.04, 6.5 0.04, 18.4 0 M0 18.4 C2.17 3.95, 4.92 -0.03, 18.4 0" stroke="#000000" stroke-width="1" fill="none"/></g><g transform="translate(91.89999389648438 33.80000305175781) rotate(0 20.5 13)"><text x="20.5" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr">LiFI</text></g></svg>

@@ -13,20 +13,22 @@ description: >-
 
 In this section, you'll learn:
 
-* How to connect the LED from a Python program.
-* How to set the LED to a specific color.
-* How to turn off the LED.
-* How LEDs work on a basic level
+* How to connect to the LED from a Python program.
+* [How to set the LED to a specific color](the-led.md#turning-on-the-led-from-python).
+* [How to turn off the LED](the-led.md#turning-the-led-off-again).
+* [How to ask the LED for its current color](the-led.md#asking-for-the-current-color).
+* [How LEDs work on a basic level](the-led.md#the-light-emitting-diode-led).
+* What the difference between an [actuator and a sensor](the-led.md#actuators-and-sensors) is.
 
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
 {% endhint %}
 
-## Turning on the LED from Python
+## Turning On The LED From Python
 
 Let's dive right into some code. To start with, we will set the RGB LED to a green color and explain how that works from Python.
 
-### Establish a connection
+### Establish A Connection
 
 The connection to the LED is established through the Master Brick to which you connected the LED with a 7-pole wire in section [hardware-assembly.md](hardware-assembly.md "mention"). Tinkerforge uses the <mark style="background-color:green;">**IP-protocol**</mark> to connect to devices. This protocol may sound familiar to you, as it is also widely used on the internet to connect computers around the world.
 
@@ -58,7 +60,7 @@ ipcon.disconnect()
 
 In summary, the code creates a new IP-connection (line 8) and connects using the host and port information (line 9) that we stored as <mark style="background-color:green;">**constants**</mark> (lines 1 & 2). In line 11, we create a new LED <mark style="background-color:green;">**object**</mark> by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark> along with the IP-connection. Afterward, the <mark style="background-color:green;">**variable**</mark> `led` should hold a reference to our LED hardware device that is connected to our computer. With that reference, we can access one of the LED's main functionalities: setting its color to any vale using the <mark style="background-color:green;">**RGB code**</mark>. The RGB code will be addressed in detail in the next section about [code-systems.md](code-systems.md "mention"). In the example, we set the LED's color to green (line 16).
 
-### How to get a device's UID?
+### How To Get A Device's UID?
 
 So to connect to a device, we need its unique identifier, or UID. How can you find the UID of your LED? That's easy - we can use the Brick Viewer we installed previously in the section [development-environment.md](development-environment.md "mention"). Once connected, the UID shows up in the second column of the list of connected devices under the "Setup" tab. My RGB LED Bricklet has the UID "ATk".
 
@@ -90,7 +92,7 @@ ipcon.disconnect()
 ```
 {% endcode %}
 
-### Executing a Python program
+### Executing A Python Program
 
 We are now ready to execute the program to see if it actually works. But how do we execute a Python program? With the installation of [#python-as-our-programming-language](development-environment.md#python-as-our-programming-language "mention"), we can run a command named `python` from our <mark style="background-color:green;">**terminal**</mark> (or command line). As the first <mark style="background-color:green;">**argument**</mark>, we need to specify the file that contains the program we want to execute. When we are in the folder where the program file is saved, we simply type the filename `led.py` after the `python` command and separate both with a space:
 
@@ -98,7 +100,7 @@ We are now ready to execute the program to see if it actually works. But how do 
 python led.py
 ```
 
-### Terminals in Visual Studio Code
+### Terminals In Visual Studio Code
 
 How do we get access to a terminal? We can do this directly in Visual Studio Code: in the main top menu of Visual Studio Code, click on "Terminal" and then "New Terminal".  A new black pane opens, usually in the lower-right corner of Visual Studio Code. This is the terminal, and if you have ever worked with the command line (or terminal) in Windows or Mac, you might recognize it.
 
@@ -126,7 +128,7 @@ Voilà! The LED lights up in green color.
 
 In the following, I want to address frequent errors and their solutions when running a Python program from a terminal.
 
-#### File not found
+#### File Not Found
 
 You might encounter the following message after you hit enter:
 
@@ -155,11 +157,11 @@ tinkerforge.ip_connection.Error: Did not receive response for function 255 in ti
 
 This usually means that you entered the wrong UID and the program can't connect to the LED. [Double-check your LED's UID using the Brick Viewer](the-led.md#how-to-get-a-devices-uid) and correct any misspellings.
 
-## Turning the LED off again
+## Turning The LED Off Again
 
 When the program exits, which it immediately does after it has executed each of the code lines in our program one by one, the LED remains in a green-colored state. This is because nobody told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses any key on the keyboard. The program should then turn the LED off and only then exit the program.
 
-### Getting input from the keyboard
+### Getting Input From The Keyboard
 
 Asking the user for input is a common task in programming. In Python, we can prompt the user for input from the keyboard using the function with the same name:
 
@@ -169,7 +171,7 @@ input("Press any key to exit the program")
 
 If you add this line at the end of your program, it won't exit unless you hit a key.
 
-## Asking the LED for its current color
+## Asking For The Current Color
 
 <mark style="background-color:yellow;">TODO</mark>
 
@@ -177,7 +179,9 @@ If you add this line at the end of your program, it won't exit unless you hit a 
 led.get_rgb_value()
 ```
 
-## The light-emitting diode (LED)
+## Actuators and Sensors
+
+## The Light-Emitting Diode (LED)
 
 In this section, you learned how to program an LED to light up or turn off. Let's take the chance and also learn a <mark style="background-color:green;">**bit**</mark> (no pun intended) about how an LED works.
 
@@ -185,8 +189,14 @@ In this section, you learned how to program an LED to light up or turn off. Let'
 
 The color of the light has to do with the amount of energy that is being released when the holes are filled. Changing the characteristics of the semiconductors by adding small parts of other materials, or by adding extra layers, an LED can be created that emits light in a specific color.
 
+## Further Reading
+
 I recommend the following resources for further reading:
 
 * Page 145 on "Electric Lighting" from the book _How Technology Works: The Facts Visually Explained_
 * [The Wikipedia entry on the "Light-emitting diode"](https://en.wikipedia.org/wiki/Light-emitting\_diode)
+
+Here is the link to the Python API documentation for the RGB LED:
+
+* [Python API documentation for the RGB LED Bricklet 2.0](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2\_Bricklet\_Python.html#rgb-led-v2-bricklet-python-api)
 

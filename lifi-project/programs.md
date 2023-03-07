@@ -1,19 +1,24 @@
 # 5 - Program's Anatomy
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="A schematic view of a program." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="A schematic view of a program." class="gitbook-drawing">
 
 ## Summary
 
 In this section, you'll learn:
 
 * What a program is and what our first program looks like.
-* What the five types of instructions are that make up every program.
-
-This section concerns the question of how we can solve problems with digital computers adds to your understanding of programming.&#x20;
+* What the five types of instructions are that make up every program:
+  * Variables
+  * Expressions
+  * Functions
+  * Loops
+  * Control Structures
 
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
 {% endhint %}
+
+This section concerns the question of how we can solve problems with digital computers adds to your understanding of programming.&#x20;
 
 
 

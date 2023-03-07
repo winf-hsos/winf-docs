@@ -13,7 +13,7 @@ In this section, you'll learn:
 * What a code system is and what it is made of.
 * How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
 
 ## The RGB Code
 
@@ -47,7 +47,7 @@ Simply put, a byte is a sequence of eight digits that can be either 0 or 1. A di
 
 So, what about the 255? Well, 255 is the largest <mark style="background-color:green;">**decimal number**</mark> we can represent with one byte (or 8 bits). We'll discuss the [binary-numbers.md](binary-numbers.md "mention") in more detail later on, but here is the quick explanation: If we only had one bit, how many numbers could we represent with it? That's simple, only two: 0 and 1. But what if we had two bits? How many numbers can we represent then? We can figure this out by calculating the number of permutations we can create from two digits with two possible values: $$2 \times 2 = 4$$. What if we had three bits? Well: $$2 \times 2 \times 2 = 8$$. In general, for $$n$$ bits, we can calculate the number of combinations as $$2^n$$. Thus, the answer for eight bits (or one byte) is $$2^8 = 256$$. That means, we can represent numbers between 0 and 255, which makes 256 different values. And since the RGB code uses one byte for each of the three basic colors, the intensity can be a number between 0 and 255.
 
-### What Does The Weird Hashtag Mean?
+### What Does The Hashtag Mean?
 
 Occasionally, you see colors being specified in a format that starts with a hashtag symbol followed by 6 numbers or letters. This is the RGB code expressed as a <mark style="background-color:green;">**hexadecimal number**</mark>. The <mark style="background-color:green;">**hexadecimal system**</mark> is often used to express the value of a byte because in this system we can write one byte with only two symbols. This makes it very compact.&#x20;
 

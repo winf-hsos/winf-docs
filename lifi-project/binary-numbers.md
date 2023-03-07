@@ -13,22 +13,3 @@ Welcome interesed student of the LiFi-project. I am glad you want to jump ahead,
 {% hint style="info" %}
 This section is relevant for [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf).
 {% endhint %}
-
-## Summary
-
-In this section, you'll learn:
-
-* The number system we use in our daily lives is the system to the base 10, or the _decimal system_ (_decimus_ is Latin for "tenth").
-* The fact that we use the decimal system does not mean other systems do not exist. In fact, every other number system to other bases exists as well, and we can convert numbers between different systems.
-* The word "decimal" or base ten implies that in that system, we have 10 symbols to represent numbers (0 - 9). Accordingly, the number system to the base 8, which is the _octal system_, has only eight symbols (0 - 7).
-* Computers use the binary system (_bīnārius_ is Latin for "consisting of two"), which has only two symbols: 0 and 1.
-* Regardless of how many symbols we have in a given system, representing numbers in a system follows the same approach. In a system to the base $$n$$, the first digit (also called least significant digit) represents the number $$n^0$$, which is always one. The second stands for $$n^1$$, the one after that for $$n^2$$ and so forth. So, the octal number 10 is equal to the decimal number 8: $$1 \times 8^1 + 0 \times 8^0$$, and the octal number 110 would be the decimal number 72: $$1 \times 8^2 + 1 \times 8^1 + 0 \times 8^0$$&#x20;
-* We can apply the same approach for the binary system. The binary number 1100 is equivalent to the decimal number 12: $$1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 0 \times 2^0 = 1 \times 8 + 1 \times 4 = 12$$&#x20;
-
-## The Decimal System
-
-## The Hexadecimal System
-
-## Further Reading & Watching
-
-{% embed url="https://youtu.be/thrx3SBEpL8" %}
