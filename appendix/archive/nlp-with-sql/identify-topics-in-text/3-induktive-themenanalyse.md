@@ -1,2 +1,0 @@
-# Inductive Topic Analysis
-

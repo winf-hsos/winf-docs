@@ -1,8 +1,20 @@
+---
+description: >-
+  Code systems allow us to make sense of the vast number of zeroes and ones a
+  computer stores and processes for us. Let's explore how they work
+---
+
 # 6 - Code Systems ⭐
+
+<img src="../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
 
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
 {% endhint %}
+
+> Bytes are dumb. They just contain patterns of ons and offs. If a byte contains 0100 0101, and you send it to the printer, it will print the letter ‘E.’ If you send it to the Instruction Register, the computer will execute a Jump instruction. If you send it to the Memory Address Register, it will select byte number 69 of the RAM. If you send it to one side of the Adder, it will add 69 to whatever is on the other side of the Adder. If you send it to the display screen, it will set three pixels on and five pixels off.
+>
+> Source: Scott, J Clark. But How Do It Know? - The Basic Principles of Computers for Everyone
 
 ## Summary
 
@@ -12,8 +24,6 @@ In this section, you'll learn:
 * Why the RGB code can represent 16,777,216 colors.
 * What a code system is and what it is made of.
 * How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
-
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
 
 ## The RGB Code
 
