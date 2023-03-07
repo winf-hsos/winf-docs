@@ -53,12 +53,12 @@ If the connection was successful, you see a list of connected devices in the Bri
 
 ### 3. Test Each Device's Functionality
 
-The Brick Viewer is useful to explore the different devices and play around with their functionality. While you can do this all by yourself, the following lists give you some hints on what to try out:
+The Brick Viewer is useful to explore the different devices and play around with their functionality. While you can do this all by yourself, the following lists give you some ideas on what to try out:
 
 #### RGB LED Bricklet 2.0
 
 * Obviously, light up the LED in different colors. There are pre-defined colors that you can activate with a button. There is also the option to use sliders for the red, green, and blue parts as well as for the alternative HSL (hue, saturation, lightness) of the color. Why not try both?
-* Play around with the status LED of the RGB LED Bricklet. In what different ways can it be used? By the way, the status LED is something that every device has.
+* Play around with the status LED of the RGB LED Bricklet. In what different ways can it be used? For the LiFi-project, what setting do you find most useful? By the way, the status LED is something that every device has.
 
 #### Rotary Encoder Bricklet 2.0
 
@@ -72,133 +72,31 @@ The Brick Viewer is useful to explore the different devices and play around with
 * Hold a light source close to the sensor (e.g., your smartphone LED) to see how this affects the different charts.
 * Can you find the little checkbox to enable the sensor's own white LED?
 
+#### OLED 128x64 Bricklet 2.0
 
+* The OLED allows for setting every single pixel manually, but there is a built-in shortcut for writing character digits, too. Use the latter and write your name on the first line of the display. Notice something weird?
+* Add your e-mail address to the second line.
+* Add your signature to the drawing pane and send it to the display.
+* What does the "Invert Pixels" checkbox do?
+
+You now have a feeling for each of the four devices. There is a fifth device, the Master Brick, but it is only here to manage the access to the other four.
+
+For the second part of the smoke test, I provide you with a Python script that you must download to your computer and then execute.
 
 ## The Program-Based Smoke Test
 
-The following code contains the full smoke test for our program-based version. It looks quite overwhelming for our first program, doesn't it? But don't worry: It looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
+The following link leads to the smoke test's code on GitHub. If you haven't done this already, it's now time to use your installation of Git to pull a copy of the repository to your computer.&#x20;
 
-For now, we will only run the code to see how the components work and interact from a Python program. We will briefly try to understand parts of the code, but we are not shooting at the whole program (yet).
+{% embed url="https://github.com/winf-hsos/LiFi-code/blob/main/examples/smoke_test.py" %}
 
-<details>
+Open the file `examples/smoke_test.py`. For our first program, it looks quite overwhelming, doesn't it? But don't worry: while it looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
 
-<summary>Full code for the program-based smoke test</summary>
+For now, we will only _run_ the code to see how the components work and interact from a Python program. We won't explain any of the code yet. We'll learn the necessary concepts during this course, and we'll come back to this later when we already have a better understanding.
 
-{% code title="smoke_test.py" lineNumbers="true" %}
-```python
-import constants
-import sys
-from time import time, sleep
+Before you run the code, make sure you adjust the UID in the `examples/constants.py` file to reflect your devices. If you don't know how to get your UIDs, jump[ ahead to the next section](the-led.md#how-to-get-a-devices-uid) to find out. Now, run the code by typing the following command in a terminal in Visual Studio Code:
 
-from colorama import just_fix_windows_console
-from colorama import Fore, Back, Style
-just_fix_windows_console()
-
-from tinkerforge.ip_connection import IPConnection
-from tinkerforge.brick_master import BrickMaster
-from tinkerforge.bricklet_rgb_led import BrickletRGBLED
-from tinkerforge.bricklet_rotary_encoder_v2 import BrickletRotaryEncoderV2
-from tinkerforge.bricklet_color_v2 import BrickletColorV2
-from tinkerforge.bricklet_oled_128x64 import BrickletOLED128x64
-
-ipcon = IPConnection() # Create IP connection
-ipcon.connect(constants.HOST, constants.PORT) # Connect to brickd
-
-# Create device instances
-led = BrickletRGBLED(constants.UID_RGB_LED, ipcon)
-rotary = BrickletRotaryEncoderV2(constants.UID_ROTARY_ENCODER, ipcon)
-oled = BrickletOLED128x64(constants.UID_OLED_DISPLAY, ipcon)
-color = BrickletColorV2(constants.UID_COLOR_SENSOR, ipcon)
-
-def update_oled_with_rgb_color(r, g, b):
-    # Write current RGB LED's color to the OLED display
-    oled.write_line(0, 0, "RGD LED Color:".ljust(26))
-    oled.write_line(1, 0, f"R = {r}, G = {g}, B = {b}".ljust(26))
-
-def update_oled_with_color_measurement(measured_r, measured_g, measured_b):
-    oled.write_line(3, 0, "Color Sensor:".ljust(26))
-    max_color_intensity = 65535
-    oled.write_line(4, 0, f"R = {measured_r / max_color_intensity * 255:.0f}, G = {measured_g / max_color_intensity * 255:.0f}, B = {measured_b / max_color_intensity * 255:.0f}".ljust(26))
-
-# Get the current color value of the RGB LED Bricklet
-current_rgb_colors = led.get_rgb_value()
-update_oled_with_rgb_color(current_rgb_colors.r, current_rgb_colors.g, current_rgb_colors.b)
-
-# Get and reset the current count for the Rotary Encoder Bricklet
-rotary.reset()
-current_rotary_count = rotary.get_count(reset=False)
-
-# Remember which color is currently controlled by the Rotary Encoder Bricklet (0 = "red", 1 = "green", 2 = "blue")
-current_controlled_rgb_color_index = 0
-
-# Set a callback function for the Rotary Encoder Bricklet
-def rotary_changed_callback(count):
-    if count == 0:
-        return
-    
-    # Get the current color from the RGB LED
-    current_rgb = led.get_rgb_value()
-    current_rgb_list = [current_rgb.r, current_rgb.g, current_rgb.b]
-
-    # Calculate the new RGB color from the Rotary Encoder's count
-    global current_controlled_rgb_color_index
-    current_rgb_list[current_controlled_rgb_color_index] += count
-
-    if current_rgb_list[current_controlled_rgb_color_index]  > 255:
-        current_rgb_list[current_controlled_rgb_color_index] = 255
-    elif current_rgb_list[current_controlled_rgb_color_index] < 0:
-        current_rgb_list[current_controlled_rgb_color_index] = 0
-
-    led.set_rgb_value(current_rgb_list[0], current_rgb_list[1], current_rgb_list[2])
-    update_oled_with_rgb_color(current_rgb_list[0], current_rgb_list[1], current_rgb_list[2])
-
-    rotary.get_count(True)
-
-def rotary_pressed():
-    global current_controlled_rgb_color_index
-    time_pressed = time()
-    
-    while rotary.is_pressed():
-        sleep(0.01)
-    
-        duration_pressed = time() - time_pressed
-        if duration_pressed >= 2:
-            led.set_rgb_value(0, 0, 0)
-            update_oled_with_rgb_color(0, 0, 0)
-            return
-
-    current_controlled_rgb_color_index += 1
-    if current_controlled_rgb_color_index > 2:
-        current_controlled_rgb_color_index = 0
-
-def rotary_released():
-    pass   
-
-rotary.register_callback(BrickletRotaryEncoderV2.CALLBACK_COUNT, rotary_changed_callback)
-rotary.set_count_callback_configuration(10, True, "x", 0, 0)
-
-rotary.register_callback(BrickletRotaryEncoderV2.CALLBACK_PRESSED, rotary_pressed)
-rotary.register_callback(BrickletRotaryEncoderV2.CALLBACK_RELEASED, rotary_released)
-
-# Set up callback functions for the Color Bricklet
-def color_changed(r, g, b, c):
-    update_oled_with_color_measurement(r, g, b)
-
-# Turn the status LED off to avoid inteference
-color.set_status_led_config(0)
-
-color.register_callback(BrickletColorV2.CALLBACK_COLOR, color_changed)
-color.set_color_callback_configuration(20, False)
-
-input("Please hit enter to exit")
-
-# Disconnect from Brick Daemon
-ipcon.disconnect()
 ```
-{% endcode %}
+python examples/smoke_test.py
+```
 
-</details>
-
-Running this code is a task during [your first exercise](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf). In the next section [programs.md](programs.md "mention"), we examine parts of the code a bit closer and introduce five concepts in programming. Don't worry, we will learn about each concept in more detail later on. The next section should give you a first overview of how the smoke test program works. Or any program you will ever encounter, for that matter.
-
-##
+If everything works, you should see a single line that reads "Please hit enter to exit". This means the program is running until you hit enter on your computer's keyboard. While the program is running, try to figure out what the smoke test does. Play around with the hardware and see how changes to the rotary encoder affect the other components. Another way is to have a look at the code, but it's understandable if that doesn't help you much at this point. We'll change that soon, and we start by introducing the LED and how to use it from a Python program in the next lesson of this course.
