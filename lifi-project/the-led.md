@@ -20,47 +20,74 @@ In this section, you'll learn:
 * [How LEDs work on a basic level](the-led.md#the-light-emitting-diode-led).
 * What the difference between an [actuator and a sensor](the-led.md#actuators-and-sensors) is.
 
+You can find the code example from this lesson in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`examples/rgb_led.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/rgb\_led.py).
+
 {% hint style="info" %}
 This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
 {% endhint %}
 
-## Turning On The LED From Python
+## Connect To The LED
 
-Let's dive right into some code. To start with, we will set the RGB LED to a green color and explain how that works from Python.
+To talk to any of the devices in our LiFi prototype, we first must establish an <mark style="background-color:green;">**IP-connection**</mark> to the Master Brick connected to our computer via the USB cable. Tinkerforge uses the <mark style="background-color:green;">**IP-protocol**</mark> to connect to devices. This protocol may sound familiar to you, as it is also widely used on the internet to connect computers around the world.&#x20;
 
-### Establish A Connection
+Once active, we can use the IP-connection to create a reference to a particular device by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark>.
 
-The connection to the LED is established through the Master Brick to which you connected the LED with a 7-pole wire in section [hardware-assembly.md](hardware-assembly.md "mention"). Tinkerforge uses the <mark style="background-color:green;">**IP-protocol**</mark> to connect to devices. This protocol may sound familiar to you, as it is also widely used on the internet to connect computers around the world.
+### Importing Modules
 
-Take a look at the code below, we'll explain in the following. You can find the code in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) under `examples/rgb_led.py`:
+We have already collected the UID for all of our devices in the previous smoke test. One important concept in programming is "Don't repeat yourself", and we should reuse the UID for this and all subsequent examples. We can do this by importing the `constants.py` file, which in Python we call a <mark style="background-color:green;">**module**</mark>:
 
-{% code title="rgb_led.py" lineNumbers="true" %}
 ```python
 import constants
+```
 
+Since we're at it, let's import the other two modules we need, or some specific elements from them:
+
+```python
 from tinkerforge.ip_connection import IPConnection
 from tinkerforge.bricklet_rgb_led_v2 import BrickletRGBLEDV2
+```
 
-# Create IP-connection
+This looks a bit different from the first import of the `constants`. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from certain Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require.
+
+You will learn more about modules in an [upcoming lesson](programs.md#create-once-use-often).
+
+### Create The Reference
+
+Now we have imported all the external stuff we need, and we proceed to create the IP-connection:
+
+```python
 ipcon = IPConnection()
 ipcon.connect(constants.HOST, constants.PORT)
+```
 
-# Create LED object
+You can see that the IP-connection required the information about the host and port to connect to. We saved this in the `constants`-module, too, so we can simply reference it here.
+
+With the active IP-connection, we can go ahead and instantiate the LED object:
+
+```python
 led = BrickletRGBLEDV2(constants.UID_RGB_LED, ipcon)
+```
 
+The LED is represented in our Python program through an instance of the Python class `BrickletRGBLEDV2`, which is provided by the Tinkerforge API. When we create (or instantiate) this object, we need to provide the UID and an active IP-connection. Because we want to access the LED later in our program, we store the object in a variable with the name `led`.&#x20;
+
+A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](programs.md#1.-variables).
+
+We now have a reference to the LED, which gives us access to all functionalities exposed by the [LED's API](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2\_Bricklet\_Python.html#rgb-led-v2-bricklet-python-api). Let's explore what they are.
+
+## Turning On The LED From Python
+
+One major function of an LED is to change its color. To start with, we will set the RGB LED to a green color:
+
+```python
 # Set to full green color
 led.set_rgb_value(0, 255, 0)
-
-# Disconnect
-ipcon.disconnect()
 ```
-{% endcode %}
 
-In summary, the code creates a new IP-connection (line 7) and connects using the host and port information (line 8) that it has imported from the module `constants.py` (line 1). The file contains a set of so-called <mark style="background-color:green;">**constants**</mark> to hold the specific UID of everyone's devices. You should already have [replaced them for the program-based smoke test](smoke-tests.md#the-program-based-smoke-test). In line 11, we create a new LED <mark style="background-color:green;">**object**</mark> by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark> along with the IP-connection. Afterward, the <mark style="background-color:green;">**variable**</mark> `led` should hold a reference to our LED device that is connected to our computer. With that reference, we can access one of the LED's main functionalities: setting its color to any vale using the <mark style="background-color:green;">**RGB code**</mark>. The RGB code will be addressed in detail in the next section about [code-systems.md](code-systems.md "mention"). In the example, we set the LED's color to green (line 14). Finally, we disconnect from the devices (line 17).
+The line above set the LED's color to green by using the corresponding <mark style="background-color:green;">**RGB code**</mark>. We'll address the RGB code in detail in the section about [code-systems.md](code-systems.md "mention"). To understand the above line of code, all we need to know is that the three parameters are for the red, green, and blue parts of the color. All parts are set to zero, except for the green part. The value 255 happens to be the largest value a part can have, so thus it resolves to pure, bright green.
 
-### Executing A Python Program
+## Running The Program
 
-We are now ready to execute the program to see if it actually works. But how do we execute a Python program? With the installation of [#python-as-our-programming-language](development-environment.md#python-as-our-programming-language "mention"), we can run a command named `python` from our <mark style="background-color:green;">**terminal**</mark> (or command line). As the first <mark style="background-color:green;">**argument**</mark>, we need to specify the file that contains the program we want to execute. When we are in the folder where the program file is located, we simply type the filename `rgb_led.py` after the `python` command and separate both with a space:
+We are now ready to execute the program to see if it actually works. But how do we execute a Python program? With the installation of [#python-as-our-programming-language](development-environment.md#python-as-our-programming-language "mention"), we can run a command named `python` from our <mark style="background-color:green;">**terminal**</mark> (or <mark style="background-color:green;">**command line**</mark>). As the first and only <mark style="background-color:green;">**argument**</mark>, we need to specify the file that contains the program we want to execute. When we are in the folder where the program file is located, we simply type the filename `rgb_led.py` after the `python` command and separate both with a space:
 
 ```bash
 python rgb_led.py
@@ -125,48 +152,70 @@ This usually means that you entered the wrong UID and the program can't connect 
 
 ## Turning The LED Off Again
 
-When the program exits, which it immediately does after it has executed each of the code lines in our program one by one, the LED remains in a green-colored state. This is because nobody told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses any key on the keyboard. Then, the program should turn the LED off and exit the program.
+When the program exits after it has executed every line of code in our program so far, the LED remains in a green-colored state. This is because nobody told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses ENTER on the keyboard. Then, the program should turn the LED off and exit the program.
 
 ### Getting Input From The Keyboard
 
 Asking the user for input is a common task in programming. In Python, we can prompt the user for input from the keyboard using the function with the same name:
 
 ```python
-input("Press any key to exit the program")
+input("Please hit ENTER to turn off the LED and exit the program")
 ```
 
 If you add this line at the end of your program, it won't exit unless you hit a key. Since a program is executed from top to bottom, we can place the code to turn the LED off directly behind the input prompt:
 
 ```python
-# Switching the LED off
 led.set_rgb_value(0, 255, 0)
 ```
 
-Why does this switch the LED off? As you will learn later, the RGB code with value set to zero encodes the color black. This effectively emits no light from the LED and turns it off.
+Why does this switch the LED off? As you will learn later, the RGB code with all parts set to zero encodes the color black. This effectively emits no light from the LED and thus turns it off.
 
 ## Asking For The Current Color
 
-Imagine that we don't want to set the LED color to an absolute value, but we rather wish to increase the redness of the LED's light. Make it a bit warmer. In this case, we need to know the current value for the LED's redness to add, let's say, 10% intensity to it. We can ask the LED for its current color setting like this:
+Imagine that we don't want to set the LED's color to an absolute value, but we rather wish to increase the redness of the LED's light. Make it a bit warmer. In this case, we need to know the current value for the LED's redness to add, let's say, 10% intensity to it. We can ask the LED for its current color setting like this:
 
 ```python
 current_rgb = led.get_rgb_value()
 ```
 
-But what exactly does the variable current\_rgb contain now? For a matter of fact, the RGB code is a set of three values between 0 and 255. We can find out by printing the variable's content to the console:
+But what exactly does the variable `current_rgb` contain at this point? We can find out by printing the variable's content to the console:
 
 ```python
 print(current_rgb)
 # Output: RGBValue(r=0, g=255, b=0)
 ```
 
-The value looks a bit strange, but it is nothing else than an object containing the three fields `r`, `g`, and `b`. In Python, we can access an object's field using the dot-notation:
+The value looks a bit strange, but it is nothing but an object containing the three fields `r`, `g`, and `b`. In Python, we can access an object's field using the dot-notation:
 
 ```python
-# Extract and store only the red part of the RGB code
 redness = current_rgb.r
 ```
 
+Now that we have the absolute value for the color's red part, we can add 10% with a simple expression:
+
+```python
+increased_redness = redness * 1.1
+```
+
+Because the RGB code can only have whole numbers, also called <mark style="background-color:green;">**integers**</mark>, we should round the result from the expression:
+
+```python
+increased_redness = round(redness * 1.1)
+```
+
+We can then use this new value for the LED, leaving all other parts as they were:
+
+```
+led.set_rgb_value(increased_redness, current_rgb.g, current_rgb.b)
+```
+
+Note that this doesn't have any effect if the red part was 0, because zero increased by 10% is still nothing.
+
 ## Actuators and Sensors
+
+{% hint style="warning" %}
+This part of the lesson is coming soon.
+{% endhint %}
 
 ## The Light-Emitting Diode (LED)
 
