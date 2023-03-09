@@ -8,8 +8,6 @@ description: >-
 
 <img src="../.gitbook/assets/file.excalidraw (2).svg" alt="Overview of the software components we need for the LiFi project." class="gitbook-drawing">
 
-
-
 ## Summary
 
 In this section, you'll learn:
@@ -52,9 +50,21 @@ You can download and install Visual Studio Code for any operating system from th
 
 ## Python
 
-Python is a widely adopted programming language that is especially well suited for first-time-programmers. Download and install Python in the latest version from the following website:
+Python is a widely adopted programming language that is especially well suited for first-time-programmers. To run Python programs on our computer, we must install it first. You can download Python in the latest version from the following website:
 
 {% embed url="https://www.python.org/downloads/" %}
+
+On Windows, Python comes as an executable file with the extension `.exe`. Save the file anywhere on your hard drive and double-click on it when the download has finished. When you do, the first window appears that looks similar to the one in the screenshot below:
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Make sure you check the two boxes during installation. The, click "Install Now".</p></figcaption></figure>
+
+Make sure you check the boxes "_Use admin privileges when installing py.exe_" and "_Add python.exe to PATH_". The former ensures that Python can write anywhere on your computer, which is important when you install packages later. The latter enables you to use Python from anywhere on your computer. We'll use Python mostly from the command line (or terminal), and with this setting, we can type `python` regardless of which folder we are in.
+
+Next, click "Install Now", no need to customize the installation. When the installation has finished, you see the following screen:
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>You successfully installed Python on your computer. Easy, wasn't it?</p></figcaption></figure>
+
+Click "Close" and you're done with this step.
 
 ## Git
 

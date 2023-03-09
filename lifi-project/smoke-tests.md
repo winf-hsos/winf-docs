@@ -49,7 +49,7 @@ If the host is "localhost" and the port is the default of 4223, you can click th
 
 If the connection was successful, you see a list of connected devices in the Brick Viewer's main area. The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them during [hardware assembly](hardware-assembly.md). The firmware version in the last column could also be slightly different, depending on when you take this course.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
 
 ### 3. Test Each Device's Functionality
 

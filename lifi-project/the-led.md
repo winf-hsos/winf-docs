@@ -78,7 +78,7 @@ Unfortunately, not all terminals are equal, and there are different types. When 
 2. In the appearing search bar, type "Select default profile" and click on the first result.
 3. From the list, choose "Command Prompt".
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
 
 Now try to open another terminal as described above. It should now be of the new default type "Command Prompt". Finally, type the command to run your program into the terminal and hit enter:
 
