@@ -6,7 +6,7 @@ description: >-
 
 # 2 - Development Environment
 
-<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="Overview of the software components we need for the LiFi project." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (3).svg" alt="Overview of the software components we need for the LiFi project." class="gitbook-drawing">
 
 ## Summary
 
