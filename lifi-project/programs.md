@@ -86,9 +86,9 @@ The illustration below is a schematic version of the same program and highlights
 
 <img src="../.gitbook/assets/file.excalidraw (4).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
 
-## Commands
+### Commands
 
-## Variables
+### Variables
 
 Think of a variable as a container with a label on it. You can put things into the container and at any time you can ask for the content of the container, given you know the container's label. You can change the content of the container as you like at any time.
 
@@ -108,13 +108,13 @@ We are more or less free in choosing a variable's name. There are only a few rul
 * Variable names should be speaking so that we can infer what the variable's original intentional use was (_convention_).
 * When a variable name is composed of more than one word, we use an underscore to connect the two (or more) words (as in `last_name`). An alternative would be so-called camel-casing, where the two words are not separated, but a new word starts with a capital letter (e.g., `lastName`). Camel-casing is not conventional in Python.
 
-## Loops
+### Loops
 
-## Control structures
+### Control structures
 
-## Functions
+### Functions
 
-## Expressions
+### Expressions
 
 ## Don't Repeat Yourself!
 
