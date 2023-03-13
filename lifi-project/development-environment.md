@@ -39,6 +39,7 @@ To edit a Python program, we could use any text editor already installed on our 
 
 What do we mean by that? Here are some of the features that an IDE like Visual Studio has and that you will soon learn to appreciate yourself:
 
+* <mark style="background-color:green;">**Syntax highlighting**</mark>: an IDE can recognize the programming language and highlight certain keywords of the language in bold or a specific color. This makes code much easier to read.
 * <mark style="background-color:green;">**Code completion**</mark>: when we type the first letters of a command, a good IDE can guess what this command is and complete the name for us. This saves us a lot of typing, and we do not have to remember all the commands.
 * <mark style="background-color:green;">**Code formatting**</mark>: while in some programming languages such as JavaScript, formatting our code is helpful to improve the readability, in Python the formatting is actually part of the syntax. This means that there is a difference in having an extra tab or not. An IDE knows how to format code in a specific programming languages and can either give us useful hints or format the code with the push of a button for us altogether.
 * <mark style="background-color:green;">**Warnings and errors**</mark>: a good IDE can warn us about mistakes we make before we run the code. For instance, when we mistype the name of a variable, we get a warning that this variable is unknown. Even better, we might get the option to correct the spelling error with a click.
