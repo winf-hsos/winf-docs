@@ -6,18 +6,18 @@ description: >-
 
 # 1 - Hardware Assembly
 
-<figure><img src="../.gitbook/assets/10_plug_in_cables.jpg" alt=""><figcaption><p>The assembled and wired LiFi prototype.</p></figcaption></figure>
+<details>
 
-## Summary
+<summary>Summary</summary>
 
 In this section, you'll learn:
 
 * Which hardware components are required for the LiFi-project.
 * How the components must be assembled for the LiFi hardware prototype.
 
-{% hint style="info" %}
-This section is relevant for [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
-{% endhint %}
+</details>
+
+<figure><img src="../.gitbook/assets/10_plug_in_cables.jpg" alt=""><figcaption><p>The assembled and wired LiFi prototype.</p></figcaption></figure>
 
 ## List Of Components
 
