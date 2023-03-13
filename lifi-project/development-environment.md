@@ -62,7 +62,7 @@ Make sure you check the boxes "_Use admin privileges when installing py.exe_" an
 
 Next, click "Install Now", no need to customize the installation. When the installation has finished, you see the following screen:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>You successfully installed Python on your computer. Easy, wasn't it?</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>You successfully installed Python on your computer. Easy, wasn't it?</p></figcaption></figure>
 
 Click "Close" and you're done with this step.
 

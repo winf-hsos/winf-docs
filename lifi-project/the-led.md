@@ -7,24 +7,26 @@ description: >-
 
 # 4 - The LED ⚡
 
-## ![](<../.gitbook/assets/image (45).png>)
+<details>
 
-## Summary
+<summary>Summary</summary>
 
-In this section, you'll learn:
+In this section, you'll learn how to work with the LED from a Python program:
 
-* How to connect to the LED from a Python program.
-* [How to set the LED to a specific color](the-led.md#turning-on-the-led-from-python).
-* [How to turn off the LED](the-led.md#turning-the-led-off-again).
-* [How to ask the LED for its current color](the-led.md#asking-for-the-current-color).
-* [How LEDs work on a basic level](the-led.md#the-light-emitting-diode-led).
-* What the difference between an [actuator and a sensor](the-led.md#actuators-and-sensors) is.
+* Set the LED to a specific color.
+* Turn off the LED.
+* Ask the LED for its current color.
+
+Moreover, you'll understand:
+
+* How LEDs work.
+* What the difference between an actuator and a sensor is.
 
 You can find the code example from this lesson in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`examples/rgb_led.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/rgb\_led.py).
 
-{% hint style="info" %}
-This section is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
-{% endhint %}
+</details>
+
+## <img src="../.gitbook/assets/image (45).png" alt="" data-size="original">
 
 ## Connect To The LED
 
@@ -47,7 +49,7 @@ from tinkerforge.ip_connection import IPConnection
 from tinkerforge.bricklet_rgb_led_v2 import BrickletRGBLEDV2
 ```
 
-This looks a bit different from the first import of the `constants`. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from certain Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require.
+This looks a bit different from the first import of the `constants` module. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from certain Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require. With `import constants`, we get everything from the module `constants`, which can be too much if the modules are large.
 
 You will learn more about modules in an [upcoming lesson](programs.md#create-once-use-often).
 
@@ -95,9 +97,9 @@ python rgb_led.py
 
 ### Terminals In Visual Studio Code
 
-How do we get access to a terminal? We can do this directly in Visual Studio Code: in the main top menu of Visual Studio Code, click on "Terminal" and then "New Terminal".  A new black pane opens, usually in the lower-right corner of Visual Studio Code. This is the terminal, and if you have ever worked with the command line (or terminal) in Windows or Mac, you might recognize it.
+How do we get access to a terminal? We can do this directly in Visual Studio Code: in the main top menu of Visual Studio Code, click on "Terminal" and then "New Terminal".  A new black pane opens, usually in the lower-right corner of Visual Studio Code. This is the terminal, and if you have worked with the command line (or terminal) in Windows or Mac before, you might recognize it.
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>A command line terminal in Visual Studio Code.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Unfortunately, not all terminals are equal, and there are different types. When you open a new terminal in Visual Studio Code, it will open the default type that is currently configured. On Windows, this is often the so-called PowerShell. We want to change this and set the default to the Windows command line (or _cmd_). The easiest way to set the default terminal is:
 
@@ -107,10 +109,10 @@ Unfortunately, not all terminals are equal, and there are different types. When 
 
 <figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
 
-Now try to open another terminal as described above. It should now be of the new default type "Command Prompt". Finally, type the command to run your program into the terminal and hit enter:
+Now try to open a new terminal as described above. It should now be of the new default type "Command Prompt". Finally, type the command to run your program into the terminal and hit enter:
 
 ```bash
-python led.py
+python rgb_led.py
 ```
 
 Voilà! The LED lights up in green color.
@@ -119,11 +121,11 @@ Voilà! The LED lights up in green color.
 
 ### Common Errors
 
-In the following, I want to address frequent errors and their solutions when running a Python program from a terminal.
+In the following, I want to address frequent errors and their solutions when running a Python program from a terminal. There is a great chance you might encounter the one or the other in your first attempts.
 
 #### File Not Found
 
-You might encounter the following message after you hit enter:
+You might see the following message after you hit enter:
 
 ```
 can't open file '...\rgb_led.py': [Errno 2] No such file or directory
@@ -133,12 +135,13 @@ Python is telling you it can't find the file you specified, in this case `rgb_le
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-In my example, I am in the directory `C:\code\LiFi-code`, and if I run `python rgb_led.py`, the Python command will assume the file is in the current directory, which it isn't. You can check this on Windows by typing the command `dir`, on Mac and Linus the equivalent command is `ls`. Both will print all files and directories that are in the current directory.&#x20;
+In my example, I am in the directory `C:\code\LiFi-code`, and if I run `python rgb_led.py`, the Python command will assume the file is in the current directory, which it isn't. It is one folder below in `examples\rgb_led.py`. You can check this on Windows by typing the command `dir`, and on Mac and Linux the equivalent command is `ls`. Both will print all files and directories that are in the current directory.&#x20;
 
-So to solve the above problem, there are two possible solutions:
+So to solve the above problem, there are three possible solutions:
 
-* Change to the directory where the file `rgb_led.py` is saved. On Windows, Mac, and Linux, you can use the `cd` command for that. If you need help with this simple command, ask Google or the chatbot of your choice.
-* Move the file `rgb_led.py` to the correct directory. This makes sense if you accidentally saved in the wrong location on your computer. In this case, the first option is better.
+1. Change to the directory `examples` where the file `rgb_led.py` is saved. On Windows, Mac, and Linux, you can use the `cd` command for that. If you need help with this simple command, ask Google or the chatbot of your choice.
+2. Give Python the full relative path. Instead of typing `python rgb_led.py` , you could specify the subfolder directly: `python examples\rgb_led.py`.&#x20;
+3. Move the file `rgb_led.py` to the directory you are currently in. This makes sense if you accidentally saved a file in the wrong location on your computer. In this case, the file is in the right directory.
 
 #### Wrong UID
 
@@ -148,11 +151,11 @@ Your program runs, but after a couple of seconds, you get a rather large error m
 tinkerforge.ip_connection.Error: Did not receive response for function 255 in time (-1)
 ```
 
-This usually means that you entered the wrong UID and the program can't connect to the LED. Double-check your LED's UID using the Brick Viewer and correct any misspellings.
+This usually means that you entered a wrong UID in your `constants.py` and the program can't connect to the LED. Double-check your LED's UID using the Brick Viewer, and correct any misspellings.
 
 ## Turning The LED Off Again
 
-When the program exits after it has executed every line of code in our program so far, the LED remains in a green-colored state. This is because nobody told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses ENTER on the keyboard. Then, the program should turn the LED off and exit the program.
+If we end the program after turning the LED to green, the LED remains in that state, even after the program has finished. This is because we haven't told it to do otherwise. Let's change our program so that it keeps the LED in the green-colored state until the user presses ENTER on the keyboard. Then, the program should turn the LED off and exit the program.
 
 ### Getting Input From The Keyboard
 
@@ -209,17 +212,23 @@ We can then use this new value for the LED, leaving all other parts as they were
 led.set_rgb_value(increased_redness, current_rgb.g, current_rgb.b)
 ```
 
-Note that this doesn't have any effect if the red part was 0, because zero increased by 10% is still nothing.
+Note that this doesn't have any effect if the red part was 0 because if we increase zero by 10%, we still have nothing.
 
 ## Actuators and Sensors
 
-{% hint style="warning" %}
-This part of the lesson is coming soon.
-{% endhint %}
+In the LiFi project, we are creating a <mark style="background-color:green;">**cyberphysical system**</mark>. This type of system is based on software and operates in the digital world, but it also interacts with the analog world through physical hardware. The hardware in a cyberphysical system can be classified into two types: <mark style="background-color:green;">**sensors**</mark> and <mark style="background-color:green;">**actuators**</mark>, depending on their function.
+
+Sensors convert energy from the analog world into digital form so that it can be processed by a computer. For example, the color sensor used in the LiFi project is equipped with photodiodes that are sensitive to photons. When a photon hits a photodiode, it creates a current that is measured and converted into a digital representation using an analog-to-digital converter (ADC). Unlike the analog world, which allows for any value, the digital world is limited to a discrete set of values.
+
+Actuators work in the opposite way. They take a discrete set of values, convert them into analog format, and release them as energy. An LED is an example of an actuator. It receives one of the roughly 16 million color values that the RGB code can represent and converts it into an electromagnetic wave with the appropriate frequency for that color. Other examples of actuators include servos and motors that create physical movement in the analog world, and speakers that produce sound waves in the air.
+
+The OLED display is another type of actuator, although it may be less obvious. In the LiFi project, it will display information in the form of light. By using sensors and actuators in combination, a cyberphysical system can interact with the physical world and achieve its intended purpose.
+
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The LED is an actuator because it acts in the analog world by emitting photons." class="gitbook-drawing">
 
 ## The Light-Emitting Diode (LED)
 
-In this section, you learned how to program an LED to light up or turn off. Let's take the chance and also learn a <mark style="background-color:green;">**bit**</mark> (no pun intended) about how an LED works.
+In this section, you learned how to program an LED to light up or turn off. Let's take the chance and learn a <mark style="background-color:green;">**bit**</mark> (no pun intended) about how the LED works.
 
 <mark style="background-color:green;">**LED**</mark> is the abbreviation for <mark style="background-color:green;">**light-emitting-diode**</mark>. It produces light when current flows through a sandwich of semiconductor materials. The material on the one side of the sandwich is altered such that at some locations, electrons are missing and so-called electron-holes are created. This side is called the p-type region, because of its positive charge due to the lack of electrons. The material on the other side, which is called the n-type region, has been altered in the opposite way. Here, there is an excess of free electrons, hence the name n-type (negative). When electric current is applied (turning the LED on), the semiconductor materials turn into conductors and the free electrons can travel to the other side and fill the holes. When that happens, energy is released in the form of photons - or light.
 
@@ -229,7 +238,8 @@ The color of the light has to do with the amount of energy that is being release
 
 I recommend the following resources for further reading:
 
-* Page 145 on "Electric Lighting" from the book _How Technology Works: The Facts Visually Explained_
+* Page 144/145 on "Electric Lighting" from the book _How Technology Works: The Facts Visually Explained._
+* Pages 152/153 on "Digital cameras" from the book _How Technology Works: The Facts Visually Explained_.
 * [The Wikipedia entry on the "Light-emitting diode"](https://en.wikipedia.org/wiki/Light-emitting\_diode)
 
 Here is the link to the Python API documentation for the RGB LED:
