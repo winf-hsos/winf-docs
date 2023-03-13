@@ -30,9 +30,9 @@ You can find the code example from this lesson in the [LiFi-code GitHub reposito
 
 ## Connect To The LED
 
-To talk to any of the devices in our LiFi prototype, we first must establish an <mark style="background-color:green;">**IP-connection**</mark> to the Master Brick connected to our computer via the USB cable. Tinkerforge uses the <mark style="background-color:green;">**IP-protocol**</mark> to connect to devices. This protocol may sound familiar to you, as it is also widely used on the internet to connect computers around the world.&#x20;
+To communicate with any of the devices in our LiFi prototype, we need to establish an <mark style="background-color:green;">**IP-connection**</mark> to the Master Brick, which is connected to our computer via a USB cable. Tinkerforge uses the <mark style="background-color:green;">**IP-protocol**</mark> to connect to devices, which you might recognize as the same protocol used on the internet to connect computers worldwide.
 
-Once active, we can use the IP-connection to create a reference to a particular device by passing the device's <mark style="background-color:green;">**unique identifier (UID)**</mark>.
+Once the connection is active, we can reference a specific device by passing its <mark style="background-color:green;">**unique identifier (UID)**</mark> over the IP-connection. This allows us to communicate with the device and control its behavior.
 
 ### Importing Modules
 
@@ -49,7 +49,7 @@ from tinkerforge.ip_connection import IPConnection
 from tinkerforge.bricklet_rgb_led_v2 import BrickletRGBLEDV2
 ```
 
-This looks a bit different from the first import of the `constants` module. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from certain Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require. With `import constants`, we get everything from the module `constants`, which can be too much if the modules are large.
+This looks a bit different from the first import of the `constants` module. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from two different Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require. With `import constants`, we get everything from the module `constants`, which can be too much if the modules are large.
 
 You will learn more about modules in an [upcoming lesson](programs.md#create-once-use-often).
 
