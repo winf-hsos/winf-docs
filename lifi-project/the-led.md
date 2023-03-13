@@ -28,6 +28,14 @@ You can find the code example from this lesson in the [LiFi-code GitHub reposito
 
 ## <img src="../.gitbook/assets/image (45).png" alt="" data-size="original">
 
+## Talking to Hardware
+
+The LED plays an important role in our LiFi project and the solution we're building. It acts as the sender for information we share between two robots, which requires a way to control the LED from a program. Luckily, the hardware manufacturer Tinkerforge has provided a way to do exactly that. They wrote an <mark style="background-color:green;">**application programming interface (API)**</mark> for their hardware devices for many modern programming languages, including Python.
+
+When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](smoke-tests.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
 ## Connect To The LED
 
 To communicate with any of the devices in our LiFi prototype, we need to establish an <mark style="background-color:green;">**IP-connection**</mark> to the Master Brick, which is connected to our computer via a USB cable. Tinkerforge uses the <mark style="background-color:green;">**IP-protocol**</mark> to connect to devices, which you might recognize as the same protocol used on the internet to connect computers worldwide.
