@@ -80,7 +80,7 @@ print(f"The square root of { number } is { a }")
 
 The program asks the user for a number and approximates the square root using the [Babylonian root extraction algorithm](https://en.wikipedia.org/wiki/Methods\_of\_computing\_square\_roots). We will talk more about algorithms later in this course. For now, all you need to know is that an <mark style="background-color:green;">**algorithm**</mark> is a recipe to solve a specific problem.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
 
 Try running the program from the command line in Visual Studio Code and enter a positive number. The program should output the approximate square root of that number. Run it again, but this time enter a negative number and see what happens.
 
@@ -124,7 +124,15 @@ We are more or less free in choosing a variable's name. There are a few rules an
 
 ### Loops
 
+In programming, a loop is a way to repeat a section of code multiple times until a certain condition is met. It is like a computerized version of a repetitive task that humans might do. Loops can save time and effort by automating repetitive tasks, and they are commonly used in programming to perform tasks such as iterating over data or waiting for user input.
 
+In the code example above, the <mark style="background-color:green;">**while-loop**</mark> is used to calculate the square root of a number. The loop starts with an initial guess for the square root, and then it repeatedly improves the guess until it is within a certain margin of error. The condition for the loop to continue is that the difference between the current guess and the previous guess is greater than a small threshold. The loop ends when the difference is smaller than the threshold, meaning that the guess has converged to the actual square root of the number.
+
+The while-loop is well suited if we can specify a condition that must be true to keep looping. Once that condition becomes false, the loop exits and the program continues with the next instruction. An alternative type of loop is the <mark style="background-color:green;">**for-loop**</mark>, which we can use when we can specify the number of times we want to loop through the code. We will use this type of loop later in this course.
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+Overall, loops are an essential type of instruction in any program that can help simplify complex tasks and automate repetitive processes.&#x20;
 
 ### Control structures
 

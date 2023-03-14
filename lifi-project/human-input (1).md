@@ -54,7 +54,7 @@ print(count)
 
 We can read the rotary encoder's value at any time in our program with the `get_count` function (see above). But that means we have to determine when and how often we check for changes. If we want to be informed about all changes immediately, we can use so-called <mark style="background-color:green;">**callback functions**</mark>, a concept typically applied when working with sensors.
 
-<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3) (3).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
 
 We can think of callback function like a phone number. Imagine you are awaiting an important package to be delivered to your home, but you cannot be there to receive it in person. Luckily, your roommate offered to accept it on your behalf. Because you want to get the information when the package has arrived right away, you ask your roommate to call you on your cellphone right after the delivery. You ask her to call you (back).
 
