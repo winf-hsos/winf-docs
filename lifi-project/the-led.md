@@ -11,7 +11,7 @@ description: >-
 
 <summary>Summary</summary>
 
-In this section, you'll learn how to work with the LED from a Python program:
+In this lesson, you'll learn how to work with the LED from a Python program:
 
 * Communicate with the hardware devices from our computer.
 * Set the LED to a specific color.

@@ -10,7 +10,7 @@ description: >-
 
 <summary>Summary</summary>
 
-In this section, you'll learn:
+In this lesson, you'll learn:
 
 * Which software you need for the LiFi-project.
 * How you can test the hardware components with the Brick Viewer from Tinkerforge.
@@ -73,4 +73,4 @@ In software development, we often work in teams and need to share code with our 
 
 {% embed url="https://git-scm.com/downloads" %}
 
-When you have successfully installed all the software listed above, you are done with this section. Next, you test whether everything works using a so-called <mark style="background-color:green;">**smoke test**</mark>.
+When you have successfully installed all the software listed above, you are done with this lesson. Next, you test whether everything works using a so-called <mark style="background-color:green;">**smoke test**</mark>.

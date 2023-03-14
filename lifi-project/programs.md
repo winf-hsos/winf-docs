@@ -4,19 +4,19 @@ description: >-
   But what exactly is an instruction? And what different kinds exist?
 ---
 
-# 5 - Program's Anatomy
+# 4 - Program's Anatomy
 
 <details>
 
 <summary>Summary</summary>
 
-In this section, you'll learn:
+In this lesson, you'll learn:
 
 * That a program is a set of instructions.
 * What the five types of instructions are that make up every program.
 * What an expression is and what types exist.
 
-This section concerns the question of how we can solve problems with digital computers adds to your understanding of programming.&#x20;
+This lesson concerns the question of how we can solve problems with digital computers adds to your understanding of programming.&#x20;
 
 </details>
 

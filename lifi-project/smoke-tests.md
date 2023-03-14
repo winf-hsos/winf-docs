@@ -10,7 +10,7 @@ description: >-
 
 <summary>Summary</summary>
 
-In this section, you'll learn:
+In this lesson, you'll learn:
 
 * How you can test the hardware components required for the LiFi-project.
 * How the Brick Viewer works and how you can test the hardware components with it.
@@ -22,9 +22,9 @@ In this section, you'll learn:
 
 ## What's A Smoke Test For?
 
-The term <mark style="background-color:green;">**smoke test**</mark> in industrial engineering and software development describes the attempt to run a new system for the first time to see whether there are any major issues. The term 'smoke test' likely originated in the plumbing industry, where smoke was blown into a new pipe system to detect any leaks. For us, the smoke test means that we connect the hardware stack to a computer and test whether all components are working as expected. For this purpose, we can use the [Brick Viewer from Tinkerforge](https://www.tinkerforge.com/en/doc/Software/Brickv.html), which we installed in the [previous section](development-environment.md). Or we can use the Tinkerforge Python <mark style="background-color:green;">**API**</mark> and perform a smoke test from a program.
+The term <mark style="background-color:green;">**smoke test**</mark> in industrial engineering and software development describes the attempt to run a new system for the first time to see whether there are any major issues. The term 'smoke test' likely originated in the plumbing industry, where smoke was blown into a new pipe system to detect any leaks. For us, the smoke test means that we connect the hardware stack to a computer and test whether all components are working as expected. For this purpose, we can use the [Brick Viewer from Tinkerforge](https://www.tinkerforge.com/en/doc/Software/Brickv.html), which we installed in the [previous lesson](development-environment.md). Or we can use the Tinkerforge Python <mark style="background-color:green;">**API**</mark> and perform a smoke test from a program.
 
-We'll perform two smoke tests in this section:
+We'll perform two smoke tests in this lesson:
 
 1. Connect to the hardware kit from the Tinkerforge Brick Viewer and test the device's functions.
 2. Connect to the hardware kit from a Python program and test each device's individual functions as well as their interactions.
@@ -33,7 +33,7 @@ The tests give us confidence that all devices are intact, everything is wired co
 
 ## The UI-Based Smoke Test
 
-We'll perform the first smoke test using the Brick Viewer software from Tinkerforge. You installed this software [in the previous section](development-environment.md#brick-viewer-and-brick-daemon), along with the Brick Daemon. Both are required for this smoke test to work.
+We'll perform the first smoke test using the Brick Viewer software from Tinkerforge. You installed this software [in the previous lesson](development-environment.md#brick-viewer-and-brick-daemon), along with the Brick Daemon. Both are required for this smoke test to work.
 
 To perform the UI-based smoke test, follow these steps:
 

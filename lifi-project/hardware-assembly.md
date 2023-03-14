@@ -10,7 +10,7 @@ description: >-
 
 <summary>Summary</summary>
 
-In this section, you'll learn:
+In this lesson, you'll learn:
 
 * Which hardware components are required for the LiFi-project.
 * How the components must be assembled for the LiFi hardware prototype.
