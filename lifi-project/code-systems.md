@@ -67,7 +67,7 @@ You will learn more about the hexadecimal system when we introduce [binary-numbe
 
 ## ASCII Code
 
-<img src="../.gitbook/assets/file.excalidraw (5) (1).svg" alt="The schema of the ASCII code system." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (5) (1) (1).svg" alt="The schema of the ASCII code system." class="gitbook-drawing">
 
 ## Other Code Systems
 
