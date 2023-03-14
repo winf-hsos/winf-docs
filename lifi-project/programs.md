@@ -26,7 +26,7 @@ A program is a set of instructions that are executed by a computer. A program is
 
 When a computer executes a program, it steps through the program one line at a time and does what each line - or <mark style="background-color:green;">**instruction**</mark> - tells it to do. However, sometimes the program has special instructions called <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> that make the computer do things in a different order. These instructions can make the computer repeat certain actions many times, or skip over certain lines of code altogether. Don't worry if you don't understand these concepts yet, we'll be talking more about them soon.
 
-<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (1).svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
 
 An instruction is telling the computer what to do. There are different types of instructions, and they are used in combination to solve problems. In a program, we use instructions to tell a computer to:
 
@@ -80,13 +80,13 @@ print(f"The square root of { number } is { a }")
 
 The program asks the user for a number and approximates the square root using the [Babylonian root extraction algorithm](https://en.wikipedia.org/wiki/Methods\_of\_computing\_square\_roots). We will talk more about algorithms later in this course. For now, all you need to know is that an <mark style="background-color:green;">**algorithm**</mark> is a recipe to solve a specific problem.
 
-<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3) (1).svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
 
 Try running the program from the command line in Visual Studio Code and enter a positive number. The program should output the approximate square root of that number. Run it again, but this time enter a negative number and see what happens.
 
 The illustration below is a schematic version of the same program and highlights the different types of instructions it contains. In the following, I walk you through each type of instruction and explain how it works.
 
-<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4) (1).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
 
 ### Commands
 
@@ -104,7 +104,7 @@ When we see a command in a Python program, we cannot say for sure which of the a
 
 Think of a variable as a box with a label on it. You can put things into the box, and at any time you can ask for its content, given you know the label. You can change the content of the box as you like at any time.
 
-<img src="../.gitbook/assets/file.excalidraw (6).svg" alt="Variables are like boxes with a label. We can put things into them and take them out as needed." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="Variables are like boxes with a label. We can put things into them and take them out as needed." class="gitbook-drawing">
 
 In a program, a variable is really a pointer to an address in the computer's <mark style="background-color:green;">**main memory**</mark>. By calling the variable by its name, you are taken to this particular location in the computer's memory, and you can access whatever has been stored there. You can also overwrite the memory location with a value of your choice. A memory address is simply a number that identifies a specific location in memory. Variables allow us to utilize the computer's memory to store and access things we need in our program.&#x20;
 
@@ -128,60 +128,89 @@ In programming, a loop is a way to repeat a section of code multiple times until
 
 In the code example above, the <mark style="background-color:green;">**while-loop**</mark> is used to calculate the square root of a number. The loop starts with an initial guess for the square root, and then it repeatedly improves the guess until it is within a certain margin of error. The condition for the loop to continue is that the difference between the current guess and the previous guess is greater than a small threshold. The loop ends when the difference is smaller than the threshold, meaning that the guess has converged to the actual square root of the number.
 
+```python
+while(abs(a - b) > 0.00001):
+    a = (a + b) / 2
+    b = number / a
+```
+
 The while-loop is well suited if we can specify a condition that must be true to keep looping. Once that condition becomes false, the loop exits and the program continues with the next instruction. An alternative type of loop is the <mark style="background-color:green;">**for-loop**</mark>, which we can use when we can specify the number of times we want to loop through the code. We will use this type of loop later in this course.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
 
 Overall, loops are an essential type of instruction in any program that can help simplify complex tasks and automate repetitive processes.&#x20;
 
-### Control structures
+### Control Structures
+
+An <mark style="background-color:green;">**if-statement**</mark> is a type of control structure in programming that allows a program to make decisions based on a condition. In the example code snippet, the if-statement is used to check whether the number entered by the user is negative or not:
+
+```python
+if number < 0:
+    print("Cannot extract roots from negative numbers.")
+    sys.exit()
+```
+
+Here, the condition being checked is whether the value of the `number` variable is less than zero. If the condition is true (i.e., if the number is negative), then the program will print a message saying that square roots cannot be extracted from negative numbers, and then exit the program using the `exit` function. If the condition is false (i.e., if the number is non-negative), then the program will skip over the if-statement and continue executing the rest of the code.
+
+An if-statement allows a program to make different decisions based on the values of certain variables or other conditions, which essential for controlling the flow of the program.
+
+<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="An if-statement is a type of control structure that branches a program into two or more blocks." class="gitbook-drawing">
 
 ### Functions
 
-### Expressions
+A function is a block of code that performs a specific task and can be reused throughout the same or even in other programs. It takes optional input parameters, processes them in a set of instructions, and returns a value or performs some action.
 
-## Don't Repeat Yourself!
+In the example program, we can extract the functionality of calculating the square root of a number and turn it into a function that we can reuse elsewhere in the program. Here's an example of how we can define and use the function:
 
-An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](programs.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
+{% code lineNumbers="true" %}
+```python
+import sys
 
-### Modules
+def extract_square_root(number):
 
-If we put all our custom created, useful functions into a file and call it, for example, `useful_funcs.py` ,we have created a so-called <mark style="background-color:green;">**module**</mark>.
+    if number < 0:
+        print("Cannot extract roots from negative numbers.")
+        sys.exit()
 
-<img src="../.gitbook/assets/file.excalidraw (2) (2).svg" alt="A module is a collection of useful functions in a Python-file." class="gitbook-drawing">
+    a = number / 2
+    b = number / a
 
-The great benefit of modules is that we can reuse and import them in different programs. These can be our programs or the program's from someone else. The latter requires that person to have a copy of our module:
+    while(abs(a - b) > 0.00001):
+        a = (a + b) / 2
+        b = number / a
 
-<img src="../.gitbook/assets/file.excalidraw (3) (2).svg" alt="A module can be imported by another program." class="gitbook-drawing">
+    return a
 
+print("I can calculate square roots!")
+number = input("A number, please: ")
+number = int(number)
 
+sqrt= extract_square_root(number)
 
-### Libraries
-
-If you program for a longer time, you might at some point have written so many functions that it makes sense you create separate modules for them. You now have a set of Python-files, each containing functions that address a common problem or belong together in some other way. If in turn those modules somehow belong together because they too address a common, but larger issue, you can bundle those modules into a so-called <mark style="background-color:green;">**library**</mark>. Look at the example below, where the three modules `geometry.py`, `algebra.py`, and `arithemtic.py` each contain functions to solve specific problems from a particular domain. However, the modules share that they all solve mathematical problems. It therefore makes sense to group them into a library called `Math`.
-
-<img src="../.gitbook/assets/file.excalidraw (1) (2).svg" alt="A library is a collection of related modules." class="gitbook-drawing">
-
-So, here is the difference between a module and a library: a module is a _collection of functions_ that live in one Python-file. A library is a _collection of related modules_ bundled together. So in that sense, a library is bigger than a module.
-
-### GitHub and PyPI
-
-When we're happy with our library, we can share it with the world. There are different options for that, but the online-platform <mark style="background-color:green;">**GitHub**</mark> is a great place to start. On GitHub, we can publish code and others can get inspired or re-use that code in their projects. The code examples for this course live on GitHub, too:
-
-{% embed url="https://github.com/winf-hsos/LiFi-code" %}
-
-Another way for everyone to use your library is to have it listed in the [Python Package Index (PyPI)](https://pypi.org/), which allows to download and install your library with one line on the command line:
-
+print(f"The square root of { number } is { sqrt}")
 ```
-pip install my_library
-```
+{% endcode %}
 
-After this command ran successfully, one can import functions from the library in their programs like this:
+In Python, functions are defined with the `def` command followed by the name of the function. We gave the function the name `extract_square_root`, and it takes one parameter, called `number`. If the function had more than one parameter, which is possible, we would list the parameter names as a comma-separated list.&#x20;
+
+Based on the parameter's value, the function performs the same steps as our code did before. But instead of printing the result to the console, the function uses a `return` statement to quit the function and return the result to the caller. The caller can be found in line 22, where we use the function as a command and store the result in a variable called `sqrt`. Finally, we print the result to the console (line 24).
+
+The main benefit of having a function to extract square roots is that we can simply ask the user for another number after we printed our first result:
 
 ```python
-from my_library import calc_C
+another_number = input("Give me more difficult number: ")
+sqrt = extract_square_root(another_number)
+print(f"The square root of { another_number } is { sqrt }")
 ```
 
-From now on, the function `calc_C` can be used in that program like any other function.
+### Expressions
 
-It is important to note that a library can contain not just functions, but is often used to declare costant values, too. This is in fact a use case in our LiFi-project.
+Expressions are different from instructions. An expression is merely a set of symbols that can be evaluated to get a result. The symbols used in an expression can be different things:
+
+* <mark style="background-color:green;">**Literal values**</mark>, such as the <mark style="background-color:green;">**integer numbers**</mark> `1`, `2`, `3`, or the <mark style="background-color:green;">**real numbers**</mark> `0.5` or `3.14`, or character strings like `"abc"` and `"xyz"`. A literal value can also be a so-called <mark style="background-color:green;">**boolean value**</mark>, which is either `True` or `False`.&#x20;
+* <mark style="background-color:green;">**Operators**</mark>, like the <mark style="background-color:green;">**arithmetic operators**</mark> `+`, `-`, `/` or `*`. A symbol can also be a <mark style="background-color:green;">**logical operator**</mark>, such as `==` (equals), `>` (larger than) or `<` (less than).
+* Functions that return a literal value. For example, the function `extract_square_root` from the example above, which returns a real number that represents the approximated square root.
+
+Instructions make use of expressions for different use cases. A command might require values for some parameters that we can specify using an expression. A while-loop requires an expression that evaluates to either `True` or `False`, thus, a <mark style="background-color:green;">**boolean expression**</mark>. The same is true for control structures like the if-statement.
+
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
