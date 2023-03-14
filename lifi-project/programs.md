@@ -16,7 +16,7 @@ In this lesson, you'll learn:
 * What the five types of instructions are that make up every program.
 * What an expression is and what types exist.
 
-This lesson concerns the question of how we can solve problems with digital computers adds to your understanding of programming.&#x20;
+This lesson concerns the question of how we can solve problems with digital computers and adds to your understanding of programming.&#x20;
 
 </details>
 
@@ -80,19 +80,33 @@ print(f"The square root of { number } is { a }")
 
 The program asks the user for a number and approximates the square root using the [Babylonian root extraction algorithm](https://en.wikipedia.org/wiki/Methods\_of\_computing\_square\_roots). We will talk more about algorithms later in this course. For now, all you need to know is that an <mark style="background-color:green;">**algorithm**</mark> is a recipe to solve a specific problem.
 
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
+
 Try running the program from the command line in Visual Studio Code and enter a positive number. The program should output the approximate square root of that number. Run it again, but this time enter a negative number and see what happens.
 
-The illustration below is a schematic version of the same program and highlights the different types of instructions it contains. In the following, I walk you through each instruction and explain how they work.
+The illustration below is a schematic version of the same program and highlights the different types of instructions it contains. In the following, I walk you through each type of instruction and explain how it works.
 
 <img src="../.gitbook/assets/file.excalidraw (4).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
 
 ### Commands
 
+Commands tell a computer to perform some action. A command can be some built-in action that the programming language, such as Python, inherently knows. The `import` command is an example of this type of command. It is just there and belongs to Pythons standard vocabulary.
+
+The second type of command are functions calls. We can further distinguish functions into different types, depending on their source:
+
+* A function can be imported from an <mark style="background-color:green;">**internal module**</mark>. An example is the `sys` module used in the program above.  The [`sys` module](https://docs.python.org/3/library/sys.html) allows accessing "_system-specific parameters and functions_", such as the `exit` function we applied above. Another example for an internal module is `time`. A list of all Python-internal modules can be found [online](https://docs.python.org/3/py-modindex.html).
+* Alternatively, a function can be imported from an <mark style="background-color:green;">**external module**</mark>. These are modules that don't belong to the internal core of the Python programming language, but are rather written and published by a third party. An example is the [Tinkerforge Python API](https://www.tinkerforge.com/en/doc/Software/API\_Bindings\_Python.html), which we'll learn about in the next lesson when we use it to control the LED.
+* A command can also be a function we wrote and call in our program. We call these functions custom- or <mark style="background-color:green;">**user-defined functions**</mark>.
+
+When we see a command in a Python program, we cannot say for sure which of the above types it is. Calling a function looks the same, regardless of where it was defined. There is a way to find out, though. You can move the cursor somewhere on the command's name and perform a right-click. Now, select the option "Go to Definition" or hit the F12 key. Visual Studio Code will take you to the place where the command - or the function behind the command - was defined.
+
 ### Variables
 
-Think of a variable as a container with a label on it. You can put things into the container and at any time you can ask for the content of the container, given you know the container's label. You can change the content of the container as you like at any time.
+Think of a variable as a box with a label on it. You can put things into the box, and at any time you can ask for its content, given you know the label. You can change the content of the box as you like at any time.
 
-In a program, a variable is actually a pointer to an address in the computer's main memory. By calling the variable by its name, you are taken to this particular location in the computer's memory, and you can access whatever has been stored there. You can also overwrite the memory location with a value of your choice. A memory address is simply a number that identifies a specific location in memory. Variables exist, so we can store and access things in memory from within our program.&#x20;
+<img src="../.gitbook/assets/file.excalidraw (6).svg" alt="Variables are like boxes with a label. We can put things into them and take them out as needed." class="gitbook-drawing">
+
+In a program, a variable is really a pointer to an address in the computer's <mark style="background-color:green;">**main memory**</mark>. By calling the variable by its name, you are taken to this particular location in the computer's memory, and you can access whatever has been stored there. You can also overwrite the memory location with a value of your choice. A memory address is simply a number that identifies a specific location in memory. Variables allow us to utilize the computer's memory to store and access things we need in our program.&#x20;
 
 We define a variable in Python by writing the desired name and assigning a value using the `=` symbol:
 
@@ -100,7 +114,7 @@ We define a variable in Python by writing the desired name and assigning a value
 a = number / 2
 ```
 
-We are more or less free in choosing a variable's name. There are only a few rules and some conventions:
+We are more or less free in choosing a variable's name. There are a few rules and some conventions:
 
 * Variable names should start with a small letter (_convention_).&#x20;
 * Variables names cannot start with a number (_rule_).
@@ -109,6 +123,8 @@ We are more or less free in choosing a variable's name. There are only a few rul
 * When a variable name is composed of more than one word, we use an underscore to connect the two (or more) words (as in `last_name`). An alternative would be so-called camel-casing, where the two words are not separated, but a new word starts with a capital letter (e.g., `lastName`). Camel-casing is not conventional in Python.
 
 ### Loops
+
+
 
 ### Control structures
 

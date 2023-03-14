@@ -35,7 +35,7 @@ The LED plays an important role in our LiFi project and the solution we're build
 
 When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](smoke-tests.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (7).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
 
 ## Connect To The LED
 
