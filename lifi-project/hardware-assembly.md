@@ -28,8 +28,8 @@ The LiFi hardware prototype contains the following components:
 * 1 x [Color Bricklet 2.0](https://www.tinkerforge.com/en/shop/color-v2-bricklet.html)
 * 1 x [OLED 128x64 Bricklet 2.0](https://www.tinkerforge.com/en/shop/oled-128x64-v2-bricklet.html)
 * 1 x [Rotary Encoder Bricklet 2.0](https://www.tinkerforge.com/en/shop/rotary-encoder-v2-bricklet.html)
-* 2 x [Bricklet Cable 15 cm (7p-7p)](https://www.tinkerforge.com/en/shop/bricklet-cable-15cm-7p-7p.html)
-* 2 x [Bricklet Cable 6 cm (7p-7p)](https://www.tinkerforge.com/en/shop/accessories/cable/bricklet-cable-6cm-7p-7p.html)
+* 3 x [Bricklet Cable 15 cm (7p-7p)](https://www.tinkerforge.com/en/shop/bricklet-cable-15cm-7p-7p.html)
+* 1 x [Bricklet Cable 6 cm (7p-7p)](https://www.tinkerforge.com/en/shop/accessories/cable/bricklet-cable-6cm-7p-7p.html)
 * 1 x [USB-A to USB-C Cable 100 cm](https://www.tinkerforge.com/en/shop/accessories/cable/usb-a-to-usb-c-cable-100cm.html)
 * 2 x [Mounting Plate 22x10](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-plate-22x10.html)
 * 4 x [Mounting Kit 12 mm](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html)
@@ -42,7 +42,7 @@ Make sure your LiFi kit contains all of them in the required amount before you p
 
 The image below gives an overview of what's in the hardware kit. We'll need all of that for the assembly of the LiFi-prototype in the subsequent steps.
 
-**Update**: In contrast to the image below, in your hardware kit, there are only 4 mounting kits (the small plastic bags) instead of 6, and the 7-pole cables have different lengths (2 x 6 cm and 2 x 15 cm, instead of 4 x 15 cm as shown in the image).
+**Update**: In contrast to the image below, in your hardware kit, there are only 4 mounting kits (the small plastic bags with screws in it) instead of 6, and the 7-pole cables have different lengths (1 x 6 cm and 3 x 15 cm, instead of 4 x 15 cm as shown in the image).
 
 <figure><img src="../.gitbook/assets/0_lifi_hardware_overview.jpg" alt=""><figcaption><p>The hardware and screwdriver required to assemble to LiFi-prototype.</p></figcaption></figure>
 
@@ -64,11 +64,9 @@ Add **four 10 mm spacers** on the first mounting plate in exactly the positions 
 
 ### 4. Attach Spacers To Mounting Plate 2
 
-Now, we add **four 10 mm spacers** to the second mounting plate in the configuration shown below. Note that this time, instead of screws, we use **four 12 mm spacers** which have a screw on one side. Do not use any plastic rings in this step.&#x20;
+Now, we add **four 10 mm spacers** to the second mounting plate in the configuration shown below. Note that this time, instead of screws, we use **four 12 mm spacers** which have a screw on one side. Do not use any plastic rings in this step.
 
-<figure><img src="../.gitbook/assets/3_spacers_for_rotary_oled.jpg" alt=""><figcaption><p>The 10 mm spacers attached via the 12 mm spacers that have a screw on one side.</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/3_spacers_for_rotary_oled._top_viewjpg.jpg" alt=""><figcaption><p>A top view of the position of the four spacer pairs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/new_step_4_attach_spacers_plate_2.jpg" alt=""><figcaption><p>The 10 mm spacers attached via the 12 mm spacers that have a screw on one side (plate 2).</p></figcaption></figure>
 
 ### 5. Install Master Brick 3.1&#x20;
 
@@ -76,7 +74,7 @@ Next, we mount the **Master Brick 3.1** to the **mounting plate 2** using two of
 
 In the same step, add **two 12 mm spacers** to the 10 mm spacers on the left side as well. Use **two plastic rings** here, too.
 
-<figure><img src="../.gitbook/assets/4_attach_master_brick.jpg" alt=""><figcaption><p>The Master Brick 3.1 mounted to two 10 mm spacers using 12 mm spacers.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/new_step_5_master_brick (1).jpg" alt=""><figcaption><p>The Master Brick 3.1 mounted to two 10 mm spacers using 12 mm spacers.</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/4_attach_master_brick_closeup.jpg" alt=""><figcaption><p>Use a 12 mm spacer with a plastic ring to fix the Master Brick.</p></figcaption></figure>
 
@@ -116,7 +114,7 @@ Turn around the device so that you are facing mounting plate 1 with the four 10 
 
 ### 11. Connect Devices With 7-Pole Cables
 
-Finally, we connect the four devices (OLED display, rotary encoder, color sensor, LED) to the Master Brick using the four 7-pole cables. Make sure you attach the OLED display and the rotary encoder to the two 6 cm 7-pole cables. The color sensor and the LED must be connected using the 15 cm 7-pole cables.
+Finally, we connect the four devices (OLED display, rotary encoder, color sensor, LED) to the Master Brick using the four 7-pole cables. Make sure you attach the OLED display to the 6 cm 7-pole cable. The color sensor, LED and the rotary encoder must be connected using the 15 cm 7-pole cables.
 
 <figure><img src="../.gitbook/assets/10_plug_in_cables.jpg" alt=""><figcaption></figcaption></figure>
 
