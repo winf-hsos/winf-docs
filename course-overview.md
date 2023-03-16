@@ -42,3 +42,7 @@ You will notice that some words in this course are highlighted in <mark style="b
 ## Introduction Of Hardware ⚡
 
 We use four different hardware devices during the LiFi-project. They are introduced in a dedicated lesson of the course and are marked with a ⚡, so you can find them easily.
+
+## Credits
+
+This course was written with assistance from [ChatGPT](https://chat.openai.com/) and [DeepL](https://www.deepl.com/translator).

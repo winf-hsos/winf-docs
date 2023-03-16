@@ -6,17 +6,9 @@ description: >-
 
 # 6 - Code Systems ⭐
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+<details>
 
-{% hint style="info" %}
-This lesson is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
-{% endhint %}
-
-> Bytes are dumb. They just contain patterns of ons and offs. If a byte contains 0100 0101, and you send it to the printer, it will print the letter ‘E.’ If you send it to the Instruction Register, the computer will execute a Jump instruction. If you send it to the Memory Address Register, it will select byte number 69 of the RAM. If you send it to one side of the Adder, it will add 69 to whatever is on the other side of the Adder. If you send it to the display screen, it will set three pixels on and five pixels off.
->
-> Source: Scott, J Clark. But How Do It Know? - The Basic Principles of Computers for Everyone
-
-## Summary
+<summary>Summary</summary>
 
 In this section, you'll learn:
 
@@ -25,9 +17,15 @@ In this section, you'll learn:
 * What a code system is and what it is made of.
 * How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
 
+This lesson is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+
+</details>
+
+<img src="../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+
 ## The RGB Code
 
-In the previous section about [the-led.md](the-led.md "mention"), we briefly touched the RGB code and used it to set the LED's color to green. We did this using a function provided by the Tinkerforge <mark style="background-color:green;">**API**</mark> called `set_rgb_value`. When calling this function, we passed three numbers to it:
+In the previous section about [the-led.md](the-led.md "mention"), we briefly touched the RGB code and used it to set the LED's color to green. We did this using a function from the Tinkerforge <mark style="background-color:green;">**API**</mark> called `set_rgb_value`. When calling this function, we passed three numbers to it:
 
 ```python
 led.set_rgb_value(0, 255, 0)
@@ -35,15 +33,15 @@ led.set_rgb_value(0, 255, 0)
 
 ### The RGB Code In A Nutshell
 
-It is now time to understand what these three numbers mean and what values we can assign to each of them. The short answer is: the numbers belong to the RGB code, which is a code system that uses 3 <mark style="background-color:green;">**bytes**</mark> to represent one of roughly 16 million colors. The abbreviation RGB stands for the three colors **r**ed, **g**reen, and **b**lue. The RGB code specifies the intensity for each of these three basic colors to create the desired resulting color. The RGB code reserves one byte for each of the three basic colors, hence 3 bytes in total. Knowing that, we understand why the above code line produces a pure green color. All basic colors are set to zero, except green, which is set to 255, the largest possible number we can store in one byte.
+It is now time to understand what these three numbers mean and what values we can assign to each of them. The short answer is: the numbers belong to the RGB code, which is a <mark style="background-color:green;">**code system**</mark> that uses 3 <mark style="background-color:green;">**bytes**</mark> to represent one of roughly 16 million colors. The abbreviation "RGB" stands for the three colors **r**ed, **g**reen, and **b**lue. The RGB code specifies the intensity for each of these three basic colors to create the desired resulting color. The RGB code reserves one byte for each of the three basic colors, hence 3 bytes in total. Knowing that, we understand why the above code line produces a pure green color. All basic colors are set to zero, except green, which is set to 255, the largest possible number we can store in one byte.
 
 That was a lot! Let's unpack this.
 
 <img src="../.gitbook/assets/file.excalidraw (1) (3).svg" alt="The schema of the RGB code system." class="gitbook-drawing">
 
-### Why \~16 Million Colors?
+### Why 16 Million Colors?
 
-With the RGB code, we can represent exactly $$16,777,216$$ different colors. That's what I meant above by saying "roughly 16 million". The reason is simple mathematics: A color in the RGB code is defined by a mix of the three basic colors red, green, and blue. For each basic color, we can specify an intensity between 0 (none of that color) and 255 (full intensity). This makes 256 possible values for one basic color. Because we can combine all possible values of the three basic colors, and each results in a different color, the RGB code can represent
+With the RGB code, we can represent exactly $$16,777,216$$ different colors. The reason is simple mathematics: a color in the RGB code is defined by a mix of the three basic colors red, green, and blue. For each basic color, we can specify an intensity between 0 (none of that color) and 255 (full intensity). This makes 256 possible values for one basic color. Because we can combine all possible values of the three basic colors, and each results in a different color, the RGB code can represent
 
 $$
 256 \times 256 \times 256 = 16,777,216
@@ -71,11 +69,9 @@ You will learn more about the hexadecimal system when we introduce [binary-numbe
 
 ## Other Code Systems
 
-Although in this project, we use code systems in the context of digital computers, code systems do not necessarily have any relation to ones and zeroes whatsoever. There were code systems invented long before the digital computer. The [Morse code](broken-reference), which we'll explore in more detail in the next section, is a good example. And there are others, was well.
+Although in the LiFi-project, we use code systems in the context of digital computers, code systems do not necessarily have any relation to ones and zeroes whatsoever. There were code systems invented long before the digital computer.
 
-### QR- And Barcodes
-
-#### Barcodes
+### Barcodes
 
 A barcode is a way to represent information using a series of lines and spaces of varying widths and distances. The bars and spaces are arranged in a specific pattern that is read by a barcode scanner, which translates the pattern into a code that can be understood by a computer.
 
@@ -89,7 +85,9 @@ In a barcode, a line or space can be either 1, 2, 3 or 4 units wide. The optical
 
 <img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
 
-#### QR-Codes
+### QR-Codes
+
+QR-codes are ubiquitous today. You can think of a QR-code, which is short for Quick-Response-Code, as a two-dimensional barcode.
 
 <figure><img src="../.gitbook/assets/qr_code_example.jpg" alt=""><figcaption><p>An example of a QR-code. See where it takes you.</p></figcaption></figure>
 

@@ -88,7 +88,7 @@ The illustration below is a schematic version of the same program and highlights
 
 <img src="../.gitbook/assets/file.excalidraw.svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
 
-### Commands
+## Commands
 
 Commands tell a computer to perform some action. A command can be some built-in action that the programming language, such as Python, inherently knows. The `import` command is an example of this type of command. It is just there and belongs to Pythons standard vocabulary.
 
@@ -100,7 +100,7 @@ The second type of command are functions calls. We can further distinguish funct
 
 When we see a command in a Python program, we cannot say for sure which of the above types it is. Calling a function looks the same, regardless of where it was defined. There is a way to find out, though. You can move the cursor somewhere on the command's name and perform a right-click. Now, select the option "Go to Definition" or hit the F12 key. Visual Studio Code will take you to the place where the command - or the function behind the command - was defined.
 
-### Variables
+## Variables
 
 Think of a variable as a box with a label on it. You can put things into the box, and at any time you can ask for its content, given you know the label. You can change the content of the box as you like at any time.
 
@@ -122,7 +122,7 @@ We are more or less free in choosing a variable's name. There are a few rules an
 * Variable names should be speaking so that we can infer what the variable's original intentional use was (_convention_).
 * When a variable name is composed of more than one word, we use an underscore to connect the two (or more) words (as in `last_name`). An alternative would be so-called camel-casing, where the two words are not separated, but a new word starts with a capital letter (e.g., `lastName`). Camel-casing is not conventional in Python.
 
-### Loops
+## Loops
 
 In programming, a loop is a way to repeat a section of code multiple times until a certain condition is met. It is like a computerized version of a repetitive task that humans might do. Loops can save time and effort by automating repetitive tasks, and they are commonly used in programming to perform tasks such as iterating over data or waiting for user input.
 
@@ -140,7 +140,7 @@ The while-loop is well suited if we can specify a condition that must be true to
 
 Overall, loops are an essential type of instruction in any program that can help simplify complex tasks and automate repetitive processes.&#x20;
 
-### Control Structures
+## Control Structures
 
 An <mark style="background-color:green;">**if-statement**</mark> is a type of control structure in programming that allows a program to make decisions based on a condition. In the example code snippet, the if-statement is used to check whether the number entered by the user is negative or not:
 
@@ -156,7 +156,7 @@ An if-statement allows a program to make different decisions based on the values
 
 <img src="../.gitbook/assets/file.excalidraw (3).svg" alt="An if-statement is a type of control structure that branches a program into two or more blocks." class="gitbook-drawing">
 
-### Functions
+## Functions
 
 A function is a block of code that performs a specific task and can be reused throughout the same or even in other programs. It takes optional input parameters, processes them in a set of instructions, and returns a value or performs some action.
 
@@ -203,7 +203,7 @@ sqrt = extract_square_root(another_number)
 print(f"The square root of { another_number } is { sqrt }")
 ```
 
-### Expressions
+## Expressions
 
 Expressions are different from instructions. An expression is merely a set of symbols that can be evaluated to get a result. The symbols used in an expression can be different things:
 
@@ -214,3 +214,5 @@ Expressions are different from instructions. An expression is merely a set of sy
 Instructions make use of expressions for different use cases. A command might require values for some parameters that we can specify using an expression. A while-loop requires an expression that evaluates to either `True` or `False`, thus, a <mark style="background-color:green;">**boolean expression**</mark>. The same is true for control structures like the if-statement.
 
 <img src="../.gitbook/assets/file.excalidraw (2).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
+
+With the five types of instructions and expressions, you know the ingredients for any program you will ever write or encounter. We are now prepared to learn about our first hardware device and how to control it from a program.
