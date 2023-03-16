@@ -85,9 +85,11 @@ In a barcode, a line or space can be either 1, 2, 3 or 4 units wide. The optical
 
 <img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
 
-### QR-Codes
+### QR Codes
 
-QR-codes are ubiquitous today. You can think of a QR-code, which is short for Quick-Response-Code, as a two-dimensional barcode.
+QR codes, short for Quick Response codes, are two-dimensional barcodes that have gained significant popularity in the digital era due to their ability to store a large amount of data in a small, scannable space. Invented in 1994 by the Japanese company Denso Wave, QR codes were originally designed for tracking automotive components during manufacturing. However, their versatility and ease of use have led to widespread adoption across various industries and applications.
+
+QR codes work by encoding data in a grid of black and white squares, which can be scanned using a smartphone or dedicated QR code reader. The data is then extracted and translated into a human-readable format, such as a URL, plain text, contact information, or even a Wi-Fi network's login credentials. This technology has proven especially useful in marketing, where businesses can share website links, promotional materials, or digital coupons with consumers through a simple scan. Additionally, QR codes can be found in applications such as mobile ticketing, product authentication, and even educational resources. By providing a quick and convenient means of accessing digital information, QR codes have become an essential tool in the digitalization landscape.
 
 <figure><img src="../.gitbook/assets/qr_code_example.jpg" alt=""><figcaption><p>An example of a QR-code. See where it takes you.</p></figcaption></figure>
 
