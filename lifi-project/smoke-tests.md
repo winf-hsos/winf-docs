@@ -16,6 +16,8 @@ In this lesson, you'll learn:
 * How the Brick Viewer works and how you can test the hardware components with it.
 * What a smoke test is in engineering and why it's important.
 
+This lesson is relevant for the [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
+
 </details>
 
 <figure><img src="../.gitbook/assets/lifi_smoke_test.jpg" alt=""><figcaption><p>The LiFi prototype while running the program-based smoke test.</p></figcaption></figure>

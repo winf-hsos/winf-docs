@@ -16,7 +16,9 @@ In this lesson, you'll learn:
 * What the five types of instructions are that make up every program.
 * What an expression is and what types exist.
 
-This lesson concerns the question of how we can solve problems with digital computers and adds to your understanding of programming.&#x20;
+This lesson concerns the question of how we can solve problems with digital computers and adds to your understanding of programming.
+
+This lesson is relevant for [Exercise 2: Logic With The LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
 
 </details>
 

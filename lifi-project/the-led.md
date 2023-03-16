@@ -25,6 +25,8 @@ Moreover, you'll understand:
 
 You can find the code example from this lesson in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`examples/rgb_led.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/rgb\_led.py).
 
+This lesson is relevant for [Exercise 2: Logic With The LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+
 </details>
 
 ## <img src="../.gitbook/assets/image (45).png" alt="" data-size="original">

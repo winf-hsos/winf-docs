@@ -18,6 +18,8 @@ In this lesson, you'll learn:
 * What Python is, and why we choose it as our programming language in this project.
 * What Git is and why it is a useful tool in software projects.
 
+This lesson is relevant for the [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
+
 </details>
 
 <img src="../.gitbook/assets/file.excalidraw (2) (3).svg" alt="Overview of the software components we need for the LiFi project." class="gitbook-drawing">

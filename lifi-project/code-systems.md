@@ -17,7 +17,7 @@ In this section, you'll learn:
 * What a code system is and what it is made of.
 * How Morse code and other examples are code systems that originated before the digital computer revolution and have nothing to do with digitalization at all.
 
-This lesson is relevant for [Exercise 2: Logic with the LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+This lesson is relevant for [Exercise 2: Logic With The LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
 
 </details>
 

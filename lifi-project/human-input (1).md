@@ -6,9 +6,9 @@ description: >-
 
 # 8 - The Rotary Encoder ⚡
 
-<img src="../.gitbook/assets/image (1) (2) (1).png" alt="" data-size="original">
+<details>
 
-## Summary
+<summary>Summary</summary>
 
 In this section, you'll learn:
 
@@ -16,13 +16,15 @@ In this section, you'll learn:
 * How to read the current value of the rotary encoder.
 * How to get frequent updates about values changes of the rotary encoder.
 * How to use the button functionality of the rotary encoder.
-* What a callback function is and how it works
+* What a callback function is and how it works.
 
-{% hint style="info" %}
-This section is relevant for [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf).
-{% endhint %}
+This lesson is relevant for [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf).
+
+</details>
 
 ## The Rotary Encoder
+
+<img src="../.gitbook/assets/image (1) (2) (1).png" alt="" data-size="original">
 
 The rotary encoder is a typical control in many hardware applications. A user can turn the knob in both directions, which changes a value represented by the control. Turning it right increases the value, while turning it left decreases it. In addition, the rotary encoder is also a button. When the user presses the knob, this fires an <mark style="background-color:green;">**event**</mark>, and we can perform some action based on that event.
 
