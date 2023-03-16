@@ -85,11 +85,25 @@ For the second part of the smoke test, I provide you with a Python script that y
 
 ## The Program-Based Smoke Test
 
+### Get The Code
+
 The following link leads to the smoke test's code on GitHub. If you haven't done this already, it's now time to use your installation of Git to pull a copy of the repository to your computer.&#x20;
 
 {% embed url="https://github.com/winf-hsos/LiFi-code/blob/main/examples/smoke_test.py" %}
 
-Open the file `examples/smoke_test.py`. For our first program, it looks quite overwhelming, doesn't it? But don't worry: while it looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
+The easiest way to get a copy is to use Git. Make sure you are in the right directory where you want the LiFi-project's code to live, open a new terminal, and type:
+
+```
+git clone https://github.com/winf-hsos/LiFi-code.git
+```
+
+The benefit of using Git is that you can later update your project if any changes have been made. This can happen during a semester, and I encourage you to check for updates frequently. You can do this by typing this:
+
+```
+git pull
+```
+
+Now it's time to open the file `examples/smoke_test.py`. For our first program, it looks quite overwhelming, doesn't it? But don't worry: while it looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
 
 For now, we will only _run_ the code to see how the components work and interact from a Python program. We won't explain any of the code yet. We'll learn the necessary concepts during this course, and we'll come back to this later when we already have a better understanding.
 
