@@ -26,7 +26,7 @@ A program is a set of instructions that are executed by a computer. A program is
 
 When a computer executes a program, it steps through the program one line at a time and does what each line - or <mark style="background-color:green;">**instruction**</mark> - tells it to do. However, sometimes the program has special instructions called <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> that make the computer do things in a different order. These instructions can make the computer repeat certain actions many times, or skip over certain lines of code altogether. Don't worry if you don't understand these concepts yet, we'll be talking more about them soon.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
 
 An instruction is telling the computer what to do. There are different types of instructions, and they are used in combination to solve problems. In a program, we use instructions to tell a computer to:
 
@@ -86,7 +86,7 @@ Try running the program from the command line in Visual Studio Code and enter a 
 
 The illustration below is a schematic version of the same program and highlights the different types of instructions it contains. In the following, I walk you through each type of instruction and explain how it works.
 
-<img src="../.gitbook/assets/file.excalidraw (4) (1).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
 
 ### Commands
 
@@ -129,14 +129,14 @@ In programming, a loop is a way to repeat a section of code multiple times until
 In the code example above, the <mark style="background-color:green;">**while-loop**</mark> is used to calculate the square root of a number. The loop starts with an initial guess for the square root, and then it repeatedly improves the guess until it is within a certain margin of error. The condition for the loop to continue is that the difference between the current guess and the previous guess is greater than a small threshold. The loop ends when the difference is smaller than the threshold, meaning that the guess has converged to the actual square root of the number.
 
 ```python
-while(abs(a - b) > 0.00001):
+while abs(a - b) > 0.00001:
     a = (a + b) / 2
     b = number / a
 ```
 
 The while-loop is well suited if we can specify a condition that must be true to keep looping. Once that condition becomes false, the loop exits and the program continues with the next instruction. An alternative type of loop is the <mark style="background-color:green;">**for-loop**</mark>, which we can use when we can specify the number of times we want to loop through the code. We will use this type of loop later in this course.
 
-<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4) (1).svg" alt="" class="gitbook-drawing">
 
 Overall, loops are an essential type of instruction in any program that can help simplify complex tasks and automate repetitive processes.&#x20;
 
