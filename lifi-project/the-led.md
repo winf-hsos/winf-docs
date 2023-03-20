@@ -37,7 +37,7 @@ The LED plays an important role in our LiFi project and the solution we're build
 
 When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](smoke-tests.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
 
-<img src="../.gitbook/assets/file.excalidraw (7).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (7) (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
 
 ## Connect To The LED
 
@@ -235,7 +235,7 @@ Actuators work in the opposite way. They take a discrete set of values, convert 
 
 The OLED display is another type of actuator, although it may be less obvious. In the LiFi project, it will display information in the form of light. By using sensors and actuators in combination, a cyberphysical system can interact with the physical world and achieve its intended purpose.
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The LED is an actuator because it acts in the analog world by emitting photons." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (4).svg" alt="The LED is an actuator because it acts in the analog world by emitting photons." class="gitbook-drawing">
 
 ## The Light-Emitting Diode (LED)
 

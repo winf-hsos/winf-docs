@@ -28,7 +28,7 @@ A program is a set of instructions that are executed by a computer. A program is
 
 When a computer executes a program, it steps through the program one line at a time and does what each line - or <mark style="background-color:green;">**instruction**</mark> - tells it to do. However, sometimes the program has special instructions called <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> that make the computer do things in a different order. These instructions can make the computer repeat certain actions many times, or skip over certain lines of code altogether. Don't worry if you don't understand these concepts yet, we'll be talking more about them soon.
 
-<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4) (2).svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
 
 An instruction is telling the computer what to do. There are different types of instructions, and they are used in combination to solve problems. In a program, we use instructions to tell a computer to:
 
@@ -156,7 +156,7 @@ Here, the condition being checked is whether the value of the `number` variable 
 
 An if-statement allows a program to make different decisions based on the values of certain variables or other conditions, which essential for controlling the flow of the program.
 
-<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="An if-statement is a type of control structure that branches a program into two or more blocks." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3) (4).svg" alt="An if-statement is a type of control structure that branches a program into two or more blocks." class="gitbook-drawing">
 
 ## Functions
 
@@ -215,6 +215,6 @@ Expressions are different from instructions. An expression is merely a set of sy
 
 Instructions make use of expressions for different use cases. A command might require values for some parameters that we can specify using an expression. A while-loop requires an expression that evaluates to either `True` or `False`, thus, a <mark style="background-color:green;">**boolean expression**</mark>. The same is true for control structures like the if-statement.
 
-<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (1).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
 
 With the five types of instructions and expressions, you know the ingredients for any program you will ever write or encounter. We are now prepared to learn about our first hardware device and how to control it from a program.
