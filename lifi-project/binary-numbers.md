@@ -1,7 +1,7 @@
 ---
 description: >-
-  To understand how computers work, we first must understand how a number system
-  with only ones and zeroes works.
+  To understand how computers work, we must understand how a number system with
+  only ones and zeroes works.
 ---
 
 # 7 - Binary Numbers
