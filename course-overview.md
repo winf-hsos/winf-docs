@@ -27,7 +27,7 @@ To complete this project, you must solve the exercises listed below. Each exerci
 
 * [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf)
 * [Exercise 2: Logic With The LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
-* [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf)
+* [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf)
 * [Exercise 4: Digitizing The Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf)
 * [Exercise 5: Messages At The Speed Of Light](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/05\_exercise\_messages\_speed\_of\_light.pdf)
 * [Exercise 6: Back To SMS](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/06\_exercise\_back\_to\_sms.pdf)

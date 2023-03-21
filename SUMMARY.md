@@ -13,7 +13,7 @@
 * [6 - Code Systems ⭐](lifi-project/code-systems.md)
 * [7 - Binary Numbers](lifi-project/binary-numbers.md)
 * [8 - The Rotary Encoder ⚡](<lifi-project/human-input (1).md>)
-* [9 - Human Input ⭐](lifi-project/human-input.md)
+* [9 - Data Structures ⭐](lifi-project/data-structures.md)
 * [10 - Sensing Light](lifi-project/9-the-color-sensor.md)
 * [11 - The Color Sensor ⚡](lifi-project/the-color-sensor.md)
 * [12 - Digitization ⭐](lifi-project/10-analog-vs.-digital.md)

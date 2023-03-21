@@ -18,7 +18,7 @@ In this section, you'll learn:
 * How to use the button functionality of the rotary encoder.
 * What a callback function is and how it works.
 
-This lesson is relevant for [Exercise 3: The Human Operator](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_human\_operator.pdf).
+This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf).
 
 </details>
 
