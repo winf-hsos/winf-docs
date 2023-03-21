@@ -86,8 +86,6 @@ Now that the Master Brick is tightly attached to the mounting plate, we can add 
 
 <figure><img src="../.gitbook/assets/5_add_7pole_cables.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/5_add_7pole_cables (1).jpg" alt=""><figcaption></figcaption></figure>
-
 ### 7. Connect Mounting Plates
 
 Now, you must put the first mounting plate on top of the second as shown below. Fix the plate with **four screws** and add **plastic rings** to protect the mounting plate's surface.
