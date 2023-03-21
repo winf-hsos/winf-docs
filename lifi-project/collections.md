@@ -223,7 +223,20 @@ Dictionaries in Python support various operations like adding key-value pairs, r
 
 ## Sets
 
+A set is a collection of unique, unordered elements. It is useful in situations where you want to store distinct elements and perform operations like union, intersection, or subtraction.
+
 <img src="../.gitbook/assets/file.excalidraw (13).svg" alt="A set has no order and only unique items." class="gitbook-drawing">
+
+In Python, sets can be created using the `set()` constructor or by using curly braces `{}` with a comma-separated list of unique elements.
+
+```python
+colors = { "orange", "orange", "orange", "green", "green", "green", "blue", "blue" }
+print(colors) # Output: {'blue', 'orange', 'green'}
+
+colors_list = [ "orange", "orange", "orange", "green", "green", "green", "blue", "blue" ]
+colors_set = set(colors_list)
+print(colors_set) # Output: {'blue', 'orange', 'green'}
+```
 
 ## More Collections
 
