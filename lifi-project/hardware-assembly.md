@@ -74,9 +74,9 @@ Now, we add **four 10 mm spacers** to the second mounting plate in the configura
 
 Next, we mount the **Master Brick 3.1** to the **mounting plate 2** using two of the 10 mm spacers on the right side from the previous step. We use **two 12 mm spacers** with screws to fix the Master Brick. Make sure you use **two plastic rings** to protect the Master Brick's board.
 
-In the same step, add **two 12 mm spacers** to the 10 mm spacers on the left side as well. Use **two plastic rings** here, too.
+In the same step, add **two 12 mm spacers** to the 10 mm spacers on the left side as well. Use **two nuts (!)** (see image  below) here instead of the plastic rings.
 
-<figure><img src="../.gitbook/assets/new_step_5_master_brick (1).jpg" alt=""><figcaption><p>The Master Brick 3.1 mounted to two 10 mm spacers using 12 mm spacers.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/lifi_hardware_closeup.jpg" alt=""><figcaption><p>Use two nuts as shown in the image to achieve the correct spacing.</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/4_attach_master_brick_closeup.jpg" alt=""><figcaption><p>Use a 12 mm spacer with a plastic ring to fix the Master Brick.</p></figcaption></figure>
 
