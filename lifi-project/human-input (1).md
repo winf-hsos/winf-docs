@@ -10,7 +10,7 @@ description: >-
 
 <summary>Summary</summary>
 
-In this section, you'll learn:
+In this lesson, you'll learn:
 
 * How to connect to the rotary encoder from a Python program.
 * How to read the current value of the rotary encoder.

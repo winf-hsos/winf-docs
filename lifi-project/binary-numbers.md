@@ -52,7 +52,7 @@ To determine the decimal value of an octal number, we can apply the same schema 
 
 What if someone told us that the $$2023$$ from above was not a base-10 number, but an octal number? What is the value of the octal number $$2023$$ in the decimal system? Well:
 
-<img src="../.gitbook/assets/file.excalidraw (7).svg" alt="The 2023 interpreted as an octal number. We must always specify the base when working with different systems." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (7) (2).svg" alt="The 2023 interpreted as an octal number. We must always specify the base when working with different systems." class="gitbook-drawing">
 
 
 
@@ -68,7 +68,7 @@ A <mark style="background-color:green;">**bit**</mark> is short for <mark style=
 
 The binary system, also known as base-2, uses only two digits: 0 and 1. According to the general schema we introduced above, each position in a binary number represents a power of 2, which is the binary system's base. For example, the binary number $$1101$$ represents the decimal number 13, calculated as:
 
-<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="The binary system is just another number system, but also special, as it is the one with the fewest symbols possible." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4) (3).svg" alt="The binary system is just another number system, but also special, as it is the one with the fewest symbols possible." class="gitbook-drawing">
 
 What if someone told us the number $$2023$$ from above was actually neither decimal nor octal, but binary? We'd call them a liar because the binary system does not know the symbols 2 and 3. It only knows 0 and 1. As an exercise, we could ask the reverse question and transform the decimal number $$2023$$ into is binary representation.
 
