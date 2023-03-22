@@ -24,7 +24,7 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://github.com/
 
 ## Instructions
 
-A program is a set of instructions that are executed by a computer. A program is written as plain text, and we usually use a separate line for a new instruction. To write a program, all we need is a simple text editor, although in the LiFi-project, we prefer a [complete development environment](development-environment.md).&#x20;
+A <mark style="background-color:green;">**program**</mark> is a set of instructions that are executed by a computer. A program is written as plain text, and we usually use a separate line for a new instruction. To write a program, all we need is a simple text editor, although in the LiFi-project, we prefer a [complete development environment](development-environment.md).&#x20;
 
 When a computer executes a program, it steps through the program one line at a time and does what each line - or <mark style="background-color:green;">**instruction**</mark> - tells it to do. However, sometimes the program has special instructions called <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> that make the computer do things in a different order. These instructions can make the computer repeat certain actions many times, or skip over certain lines of code altogether. Don't worry if you don't understand these concepts yet, we'll be talking more about them soon.
 
@@ -80,7 +80,7 @@ print(f"The square root of { number } is { a }")
 ```
 {% endcode %}
 
-The program asks the user for a number and approximates the square root using the [Babylonian root extraction algorithm](https://en.wikipedia.org/wiki/Methods\_of\_computing\_square\_roots). We will talk more about algorithms later in this course. For now, all you need to know is that an <mark style="background-color:green;">**algorithm**</mark> is a recipe to solve a specific problem.
+The program asks the user for a number and approximates the square root using the [Babylonian root extraction algorithm](https://en.wikipedia.org/wiki/Methods\_of\_computing\_square\_roots). We will talk more about algorithms later in this course. For now, all you need to know is that an <mark style="background-color:green;">**algorithm**</mark> is a recipe to solve a specific problem. And a program is the implementation of an algorithm in a specific programming language, ready for a computer to execute.
 
 <img src="../.gitbook/assets/file.excalidraw (3) (1).svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
 
