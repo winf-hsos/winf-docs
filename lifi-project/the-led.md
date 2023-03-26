@@ -179,7 +179,7 @@ input("Please hit ENTER to turn off the LED and exit the program")
 If you add this line at the end of your program, it won't exit unless you hit a key. Since a program is executed from top to bottom, we can place the code to turn the LED off directly behind the input prompt:
 
 ```python
-led.set_rgb_value(0, 255, 0)
+led.set_rgb_value(0, 0, 0)
 ```
 
 Why does this switch the LED off? As you will learn later, the RGB code with all parts set to zero encodes the color black. This effectively emits no light from the LED and thus turns it off.
