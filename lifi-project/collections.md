@@ -240,5 +240,7 @@ print(colors_set) # Output: {'blue', 'orange', 'green'}
 
 ## More Collections
 
-* Queues
+The idea of lists, dictionaries, and sets will be sufficient to improve many of our programs we write during the LiFi project. However, programmers sometimes require more specialized data structures, some of which I list below. Click on the link to find out more about them:&#x20;
+
+* Queue
 * Stack
