@@ -36,7 +36,7 @@ The LiFi hardware prototype contains the following components:
 * 2 x [Mounting Plate 22x10](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-plate-22x10.html)
 * 4 x [Mounting Kit 12 mm](https://www.tinkerforge.com/en/shop/accessories/mounting/mounting-kit-12mm.html)
 
-Make sure your LiFi kit contains all of them in the required amount before you proceed with the following instructions.
+Make sure your LiFi kit contains all components in the required amount before you proceed with the following instructions.
 
 ## Assembly Instructions
 
@@ -66,7 +66,7 @@ Add **four 10 mm spacers** on the first mounting plate in exactly the positions 
 
 ### 4. Attach Spacers To Mounting Plate 2
 
-Now, we add **four 10 mm spacers** to the second mounting plate in the configuration shown below. Note that this time, instead of screws, we use **four 12 mm spacers** which have a screw on one side. Do not use any plastic rings in this step.
+Now, we add **four 10 mm spacers** to the second mounting plate in the configuration shown below. Note that this time, instead of screws, we use **four 12 mm spacers**, which have a screw on one side, and connect them to the 10 mm spacers from the back of plate 2. Do not use any plastic rings in this step.
 
 <figure><img src="../.gitbook/assets/new_step_4_attach_spacers_plate_2.jpg" alt=""><figcaption><p>The 10 mm spacers attached via the 12 mm spacers that have a screw on one side (plate 2).</p></figcaption></figure>
 
