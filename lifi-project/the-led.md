@@ -110,7 +110,7 @@ python rgb_led.py
 
 How do we get access to a terminal? We can do this directly in Visual Studio Code: in the main top menu of Visual Studio Code, click on "Terminal" and then "New Terminal".  A new black pane opens, usually in the lower-right corner of Visual Studio Code. This is the terminal, and if you have worked with the command line (or terminal) in Windows or Mac before, you might recognize it.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Unfortunately, not all terminals are equal, and there are different types. When you open a new terminal in Visual Studio Code, it will open the default type that is currently configured. On Windows, this is often the so-called PowerShell. We want to change this and set the default to the Windows command line (or _cmd_). The easiest way to set the default terminal is:
 
@@ -118,7 +118,7 @@ Unfortunately, not all terminals are equal, and there are different types. When 
 2. In the appearing search bar, type "Select default profile" and click on the first result.
 3. From the list, choose "Command Prompt".
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
 
 Now try to open a new terminal as described above. It should now be of the new default type "Command Prompt". Finally, type the command to run your program into the terminal and hit enter:
 
@@ -129,40 +129,6 @@ python rgb_led.py
 Voilà! The LED lights up in green color.
 
 <figure><img src="../.gitbook/assets/rgb_led_green.jpg" alt=""><figcaption><p>The RGB LED set to the RGB value R = 0, G = 255, B = 0.</p></figcaption></figure>
-
-### Common Errors
-
-In the following, I want to address frequent errors and their solutions when running a Python program from a terminal. There is a great chance you might encounter the one or the other in your first attempts.
-
-#### File Not Found
-
-You might see the following message after you hit enter:
-
-```
-can't open file '...\rgb_led.py': [Errno 2] No such file or directory
-```
-
-Python is telling you it can't find the file you specified, in this case `rgb_led.py`. In most cases, this is because you are not in the same directory as the file you are trying to run. The current directory is displayed in your terminal, usually right before the cursor:
-
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-In my example, I am in the directory `C:\code\LiFi-code`, and if I run `python rgb_led.py`, the Python command will assume the file is in the current directory, which it isn't. It is one folder below in `examples\rgb_led.py`. You can check this on Windows by typing the command `dir`, and on Mac and Linux the equivalent command is `ls`. Both will print all files and directories that are in the current directory.&#x20;
-
-So to solve the above problem, there are three possible solutions:
-
-1. Change to the directory `examples` where the file `rgb_led.py` is saved. On Windows, Mac, and Linux, you can use the `cd` command for that. If you need help with this simple command, ask Google or the chatbot of your choice.
-2. Give Python the full relative path. Instead of typing `python rgb_led.py` , you could specify the subfolder directly: `python examples\rgb_led.py`.&#x20;
-3. Move the file `rgb_led.py` to the directory you are currently in. This makes sense if you accidentally saved a file in the wrong location on your computer. In this case, the file is in the right directory.
-
-#### Wrong UID
-
-Your program runs, but after a couple of seconds, you get a rather large error message with this line at the end?&#x20;
-
-```
-tinkerforge.ip_connection.Error: Did not receive response for function 255 in time (-1)
-```
-
-This usually means that you entered a wrong UID in your `constants.py` and the program can't connect to the LED. Double-check your LED's UID using the Brick Viewer, and correct any misspellings.
 
 ## Turning The LED Off Again
 

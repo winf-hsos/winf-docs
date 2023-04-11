@@ -55,7 +55,7 @@ You can download and install Visual Studio Code for any operating system from th
 
 For features like syntax highlighting or code completion to work when programming in Python, Microsoft provides an extension for Visual Studio Code. You should install the extension from the Visual Studio Code Extensions menu. Click on the symbol that looks like a jigsaw puzzle, and then click in the search field and type "Python". It should be the first result in the list. Click on "Install" and you're done!
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Python
 

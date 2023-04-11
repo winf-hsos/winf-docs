@@ -36,3 +36,4 @@
 ***
 
 * [Literature](literature.md)
+* [Common Errors](common-errors.md)

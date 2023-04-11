@@ -51,7 +51,7 @@ Wait, that's only five. But the list of things a computer can do contains 6 elem
 
 <img src="../.gitbook/assets/file.excalidraw (5) (1).svg" alt="An instruction can be different things in a program." class="gitbook-drawing">
 
-The great news is: Once you understand the concept behind each of the types of instructions and expressions, you can read and write almost any program, no matter the complexity. These concepts are the DNA of every program. Of course, it takes practice. And you may still have to look up specific keywords for the language you are programming in. But that's where [Google](https://app.gitbook.com/u/5a55d1d8d10859002f1ae2f5), [Stack Overflow](https://stackoverflow.com/) or [ChatGPT](https://chat.openai.com/chat) come in. Seriously, they are every programmer's best buddies. Learn to use them.
+The great news is: Once you understand the concept behind each of the types of instructions and expressions, you can read and write almost any program, no matter the complexity. These concepts are the DNA of every program. Of course, it takes practice. And you may still have to look up specific keywords for the language you are programming in. But that's where [Google](http://localhost:5000/u/5a55d1d8d10859002f1ae2f5), [Stack Overflow](https://stackoverflow.com/) or [ChatGPT](https://chat.openai.com/chat) come in. Seriously, they are every programmer's best buddies. Learn to use them.
 
 ## Algorithms And Programs
 
