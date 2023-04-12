@@ -20,6 +20,8 @@ In this lesson, you'll learn:
 
 This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf).
 
+You find the code examples in the [LiFi-code GitHub repository in `collections_examples.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/collections\_examples.py).
+
 </details>
 
 In the world of programming, managing and organizing data is crucial. <mark style="background-color:green;">**Collections**</mark> allow us to efficiently store and manipulate groups of related data. Instead of using multiple variables for individual <mark style="background-color:green;">**data points**</mark>, collections help us to store these data points together, making the code more organized, readable, and scalable. In this lesson, we will explore the concept of collections with a focus on <mark style="background-color:green;">**arrays**</mark>, <mark style="background-color:green;">**dictionaries**</mark>, and <mark style="background-color:green;">**sets**</mark>. We'll learn about the general concepts and how we can use them in Python.
