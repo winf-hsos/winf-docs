@@ -6,6 +6,14 @@ description: >-
 
 # 14 - The OLED Display ⚡
 
+<details>
+
+<summary>Summary</summary>
+
+You find the code examples in the [LiFi-code GitHub repository in `oled_display.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/oled\_display.py).
+
+</details>
+
 {% hint style="warning" %}
 Welcome interesed student of the LiFi-project. I am glad you want to jump ahead, but I am still building this course as we move through the semester, and this part is not ready yet. Please come back later.
 {% endhint %}

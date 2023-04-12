@@ -6,6 +6,14 @@ description: >-
 
 # 11 - The Color Sensor ⚡
 
+<details>
+
+<summary>Summary</summary>
+
+You find the code examples in the [LiFi-code GitHub repository in `color_sensor.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/color\_sensor.py).
+
+</details>
+
 {% hint style="warning" %}
 Welcome interesed student of the LiFi-project. I am glad you want to jump ahead, but I am still building this course as we move through the semester, and this part is not ready yet. Please come back later.
 {% endhint %}
