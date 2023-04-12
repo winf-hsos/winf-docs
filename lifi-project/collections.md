@@ -37,7 +37,7 @@ Consider the example below, in which we want to store the prime numbers below 20
 Creating an array in Python is simple, and we can do it by enclosing a comma-separated list of elements in square brackets:
 
 ```python
-primes =[2, 3, 5, 7, 11, 13, 17, 19]
+primes = [2, 3, 5, 7, 11, 13, 17, 19]
 ```
 
 Having the prime number stored in a list, we can access individual elements using their indices, such as `prime_numbers[0]` for the first element, `prime_numbers[1]` for the second and so on.
@@ -46,7 +46,7 @@ Besides accessing the elements, we can perform various other operations
 
 ### Add Elements
 
-In Python, you can add elements to an array (or a list) in various ways, such as using the `append()`, `extend()`, and `insert()` methods or list concatenation. Let's use the same example of prime numbers below 20 and demonstrate different ways to add elements:
+In Python, you can add elements to an array (or a list) in various ways, such as using the `append`, `extend`, and `insert` methods or list concatenation. Let's use the same example of prime numbers below 20 and demonstrate different ways to add elements:
 
 ```python
 primes = [2, 3, 5, 7, 11, 13, 17, 19]
@@ -70,16 +70,16 @@ print(primes)  # Output: [2, 1, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41]
 
 In this example, we added elements to the `primes` list using four different methods:
 
-1. `append()`: This method adds a single element to the end of the list.
-2. `extend()`: This method appends multiple elements (an iterable) to the end of the list.
-3. `insert()`: This method inserts a single element at a specific position in the list. In this case, we inserted the number 1 at index 1.
+1. `append`: This method adds a single element to the end of the list.
+2. `extend`: This method appends multiple elements (an iterable) to the end of the list.
+3. `insert`: This method inserts a single element at a specific position in the list. In this case, we inserted the number 1 at index 1.
 4. List concatenation: We created a new list by concatenating the `primes` list with another list containing the elements `[37, 41]`.
 
 These methods allow you to add elements to a list in Python, depending on your specific requirements.
 
 ### Remove Elements
 
-In Python, you can remove elements from an array (or a list) in various ways, such as using the `remove()`, `pop()`, and `del` methods or list comprehension. Let's use the example of prime numbers below 20, and demonstrate different ways to remove elements:
+In Python, you can remove elements from an array (or a list) in various ways, such as using the `remove`, `pop`, and `del` methods or list comprehension. Let's use the example of prime numbers below 20, and demonstrate different ways to remove elements:
 
 ```python
 primes = [2, 3, 5, 7, 11, 13, 17, 19]
@@ -105,8 +105,8 @@ print(primes)  # Output: [2, 3, 5, 11, 13, 17, 19]
 
 In this example, we removed elements from the `primes` list using four different methods:
 
-1. `remove()`: This method removes the first occurrence of a specific element by value. In this case, we removed the number 11 from the list.
-2. `pop()`: This method removes and returns an element by index. If no index is provided, it removes the last element of the list. In this case, we removed the element at index 2 (the number 5) from the list.
+1. `remove`: This method removes the first occurrence of a specific element by value. In this case, we removed the number 11 from the list.
+2. `pop`: This method removes and returns an element by index. If no index is provided, it removes the last element of the list. In this case, we removed the element at index 2 (the number 5) from the list.
 3. `del`: This keyword is used to remove an element by index. In this case, we removed the element at index 1 (the number 3) from the list.
 4. List comprehension: We created a new list by iterating through the `primes` list and including only elements that do not meet the specified condition (in this case, the number 7).
 
@@ -114,7 +114,7 @@ These methods allow you to remove elements from a list in Python based on differ
 
 ### Filter
 
-Filtering an array involves selecting elements from the array based on a specific condition or criteria. In Python, you can filter an array (or a list) using list comprehensions or the built-in `filter()` function, which requires a function to define the filtering condition.
+Filtering an array involves selecting elements from the array based on a specific condition or criteria. In Python, you can filter an array (or a list) using list comprehensions or the built-in `filter` function, which requires a function to define the filtering condition.
 
 Let's use the same example of prime numbers below 20 and filter the primes that are greater than 10:
 
@@ -136,7 +136,7 @@ print(filtered_primes)  # Output: [11, 13, 17, 19]
 In this example, we filtered the `primes` array using two methods:
 
 1. List comprehension: We used a compact and readable syntax to create a new list by iterating through the `primes` array and including only elements greater than 10.
-2. `filter()` function: We defined a function `is_greater_than_10` that returns `True` for numbers greater than 10. Then, we used the `filter()` function to apply this condition to the `primes` array. The `filter()` function returns an iterable, so we converted it to a list using the `list()` constructor.
+2. `filter` function: We defined a function `is_greater_than_10` that returns `True` for numbers greater than 10. Then, we used the `filter` function to apply this condition to the `primes` array. The `filter` function returns an iterable, so we converted it to a list using the `list` constructor.
 
 Both methods result in a new filtered list `[11, 13, 17, 19]`, containing prime numbers greater than 10.
 
@@ -166,7 +166,7 @@ In this example, we created three slices of the `primes` array: one containing t
 
 ### Sort
 
-In Python, you can sort the elements in an array (or a list) using the built-in `sorted()` function or the `sort()` method. Let's use a modified version of the prime numbers example, with the elements shuffled:
+In Python, you can sort the elements in an array (or a list) using the built-in `sorted` function or the `sort` method. Let's use a modified version of the prime numbers example, with the elements shuffled:
 
 ```python
 primes = [11, 2, 19, 5, 17, 13, 7, 3]
@@ -190,10 +190,10 @@ print(primes)  # Output: [19, 17, 13, 11, 7, 5, 3, 2]
 
 In this example, we sorted the `primes` list using two different methods:
 
-1. `sorted()`: This function returns a new sorted list from the elements of the given iterable. By default, the sorting is in ascending order. To sort in descending order, you can set the `reverse` parameter to `True`.
-2. `sort()`: This method sorts the elements of a list in-place (i.e., it modifies the original list). Similar to the `sorted()` function, you can use the `reverse` parameter to sort the list in descending order.
+1. `sorted`: This function returns a new sorted list from the elements of the given iterable. By default, the sorting is in ascending order. To sort in descending order, you can set the `reverse` parameter to `True`.
+2. `sort`: This method sorts the elements of a list in-place (i.e., it modifies the original list). Similar to the `sorted` function, you can use the `reverse` parameter to sort the list in descending order.
 
-Both the `sorted()` function and the `sort()` method allow you to sort a list in Python based on the natural order of the elements (i.e., ascending or descending). If you need custom sorting, you can use the `key` parameter to provide a function that determines the sort order.
+Both the `sorted` function and the `sort` method allow you to sort a list in Python based on the natural order of the elements (i.e., ascending or descending). If you need custom sorting, you can use the `key` parameter to provide a function that determines the sort order.
 
 ## Dictionaries
 
@@ -206,7 +206,7 @@ Consider the example of the ASCII codes below. We wish to translate a letter the
 In Python, dictionaries are created using curly braces `{}` or the `dict()` constructor. Let's create the dictionary for the example above:
 
 ```python
-codes = { "A" : "01000001", "B : "01000010", "C" : "01000011" }
+codes = { "A" : "01000001", "B" : "01000010", "C" : "01000011" }
 ```
 
 In this dictionary, the letters "A", "B", and "C" are keys, and the binary codes are the values. You can access individual elements using their keys, such as `codes["A"]` for the binary code of the letter "A".
@@ -215,11 +215,30 @@ Dictionaries in Python support various operations like adding key-value pairs, r
 
 ### Adding Pairs
 
+```python
+codes["D"] = "01000100"
+```
+
 ### Removing Pairs
+
+```python
+removed = codes.pop("D")
+```
 
 ### Updating Values
 
+```python
+codes["C"] = "hello"
+```
+
 ### Check Existence
+
+```python
+if 'D' in codes:
+    print('D is in the dictionary')
+else:
+    print('D does not exist in the dictionary')
+```
 
 ## Sets
 
