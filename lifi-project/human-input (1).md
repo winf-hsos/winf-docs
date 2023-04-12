@@ -20,6 +20,8 @@ In this lesson, you'll learn:
 
 This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf).
 
+You find the code examples in the [LiFi-code GitHub repository in `rotary_encoder.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/rotary\_encoder.py).
+
 </details>
 
 ## The Rotary Encoder
