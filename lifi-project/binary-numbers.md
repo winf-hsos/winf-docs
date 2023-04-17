@@ -56,7 +56,7 @@ What if someone told us that the $$2023$$ from above was not a base-10 number, b
 
 
 
-## The  Binary System
+## The Binary System
 
 Now that we have a grasp of number systems in general, let's delve deeper into the binary system, which is the foundation of the digital world. In this system, we use only zeroes and ones as symbols, but can still represent any data.
 
@@ -101,4 +101,13 @@ The binary system's simplicity makes it ideal for use in digital devices, where 
 Computers utilize the binary system for all operations, including arithmetic, logic, and data storage. While binary numbers might seem less intuitive for humans, they provide the foundation for the digital world that powers our modern technology.
 
 ## Further Reading
+
+I recommend you read the chapter 2 "Bits, Bytes, and Representation of Information" from the book "_Understanding The Digital World_". First, the chapter gives a great introduction to the topic of digitization, which we will address later in this course, and in 2.3 it continues with the binary system and the concepts of bits and bytes.
+
+Further, please read the following chapters from the book "_Code: The Hidden Language of Computer Hardware and Software"._ I can't overstate how well this book is written and illustrative it is:
+
+* Chapter 9 "Our Ten Digits"
+* Chapter 10 "Alternative 10s"
+* Chapter 11 "Bit by Bit by Bit"
+* Chapter 12 "Bytes and Hexadecimal"
 
