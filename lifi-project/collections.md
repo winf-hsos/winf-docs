@@ -203,7 +203,7 @@ A dictionary is another type of collection that stores data in <mark style="back
 
 Consider the example of the ASCII codes below. We wish to translate a letter the user enters via the keyboard into the binary ASCII code, so we can transmit the letter via LiFi. We could say we want to look up the binary code for every letter in the alphabet and use a dictionary for that.
 
-<img src="../.gitbook/assets/file.excalidraw (7).svg" alt="A dictionary stores data as key-value-pairs." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (7) (1).svg" alt="A dictionary stores data as key-value-pairs." class="gitbook-drawing">
 
 In Python, dictionaries are created using curly braces `{}` or the `dict()` constructor. Let's create the dictionary for the example above:
 

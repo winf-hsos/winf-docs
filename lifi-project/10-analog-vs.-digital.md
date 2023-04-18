@@ -4,12 +4,68 @@ description: >-
   processed by a digital computer.
 ---
 
-# 12 - Digitization ⭐
+# 10 - Digitization
 
-{% hint style="warning" %}
-Welcome interesed student of the LiFi-project. I am glad you want to jump ahead, but I am still building this course as we move through the semester, and this part is not ready yet. Please come back later.
-{% endhint %}
+<details>
 
-{% hint style="info" %}
-This section is relevant for [Exercise 4: Digitizing the Pyhsical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
-{% endhint %}
+<summary>Summary</summary>
+
+This lesson is relevant for [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
+
+</details>
+
+## The Analog vs. Digital World
+
+The analog world represents <mark style="background-color:yellow;">**continuous signals**</mark>, while the digital world consists of <mark style="background-color:yellow;">**discrete signals**</mark>. To illustrate this concept, imagine stairs with discrete steps versus an inclined plane with continuous levels where one can stand. The stairs represent the digital world, with each step being a distinct level, while the inclined plane symbolizes the analog world, where any position along the slope can be occupied.
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="The difference between analog and digital: Which is which?" class="gitbook-drawing">
+
+## Digitization
+
+<mark style="background-color:yellow;">**Digitization**</mark> is the process of converting information from the analog world into a digital format. Examples of this process include transforming sound into digital audio files or images into digital pictures. This transformation involves converting continuous signals into discrete data, which can be easily stored, processed, and shared.
+
+### Digitizing Sound
+
+Let's take sound waves as an example. To understand the digitization of sound waves, it is important to first understand the nature of sound and how it travels. Sound is a form of mechanical wave produced by vibrations that propagate through a medium (such as air, water, or solid materials). These vibrations create pressure fluctuations, resulting in compressions and expansions in the medium. When these pressure changes reach our ears, they are detected by the eardrum, which then sends signals to the brain to be processed as sound.
+
+The digitization of sound involves converting these continuous analog sound waves into a digital representation that can be easily stored, manipulated, and transmitted using computers or other digital devices. The process consists of two main steps: <mark style="background-color:yellow;">**sampling**</mark> and <mark style="background-color:yellow;">**quantization**</mark>.
+
+<img src="../.gitbook/assets/file.excalidraw (12).svg" alt="" class="gitbook-drawing">
+
+Sampling is the process of taking periodic snapshots or measurements of an analog sound wave's pressure or amplitude at regular intervals. These intervals are determined by the sampling rate (also known as sample frequency), which is the number of samples taken per second. The higher the sampling rate, the more accurate the digital representation of the sound wave will be.
+
+<img src="../.gitbook/assets/file.excalidraw (7).svg" alt="The idea of sampling a sound wave visually explained, highlighting the loss of information when digitizing an analog signal." class="gitbook-drawing">
+
+According to the [Nyquist-Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon\_sampling\_theorem), the sampling rate should be at least twice the highest frequency present in the sound wave to avoid <mark style="background-color:yellow;">**aliasing**</mark>, which can cause distortion in the digitized sound. For example, the standard sampling rate for CD-quality audio is 44.1 kHz, which means that 44,100 samples are taken per second, enabling the accurate representation of frequencies up to 22.05 kHz (approximately the upper limit of human hearing).
+
+Once the sound wave has been sampled, the next step is quantization. Quantization is the process of assigning a discrete digital value to each sample taken from the continuous analog sound wave. This is accomplished by dividing the range of possible amplitude values into a finite number of levels or steps.
+
+The number of levels is determined by the bit depth, which is the number of bits used to represent each sample. A higher bit depth results in more available levels and increased accuracy in the digital representation of the sound wave's amplitude. For example, a 16-bit system has$$2^{16} = 65,536$$ possible amplitude levels.
+
+During the quantization process, the sampled amplitude values are rounded or approximated to the nearest available level. This introduces quantization error, also known as quantization noise, which can lead to a loss of detail or fidelity in the digitized sound. However, higher bit depths help minimize this error, producing a more accurate digital representation of the analog sound wave.
+
+Once the sound wave has been sampled and quantized, it is converted into a stream of binary data (0s and 1s) that can be stored, manipulated, and transmitted using digital devices. To play back the digitized sound, the binary data is converted back into an analog signal using a digital-to-analog converter (DAC), which drives a speaker or headphones to reproduce the original sound wave.
+
+### Digitizing Images
+
+Digitization of images involves converting continuous analog images, such as photographs or paintings, into a digital representation that can be easily stored, manipulated, and transmitted using computers or other digital devices. Just like in the sound wave example above, the process consists of sampling and quantization.
+
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="When sampling an image, we divide it into a grid of pixels of the same size." class="gitbook-drawing">
+
+Sampling in the context of image digitization refers to dividing the continuous analog image into a grid of discrete points or <mark style="background-color:yellow;">**pixels**</mark> (short for "picture elements"). Each pixel represents a small area of the original image and captures its color and brightness information. The resolution of the digital image, measured in <mark style="background-color:yellow;">**pixels per inch (PPI)**</mark> or <mark style="background-color:yellow;">**dots per inch (DPI)**</mark>, determines the number of pixels used to represent the image and directly impacts the level of detail and quality of the digital representation. A higher resolution results in a more accurate representation of the original image.
+
+Once the image has been divided into a grid of pixels, the next step is again quantization. Here, quantization is the process of assigning a discrete digital value to each pixel, representing the color and brightness information of the corresponding area in the original image. In color images, this information is typically stored as a combination of red, green, and blue components using the <mark style="background-color:yellow;">**RGB code**</mark> we introduced [before](code-systems.md).
+
+<img src="../.gitbook/assets/file.excalidraw (9).svg" alt="Quantization means finding a value to represent the color and brightness for each pixel." class="gitbook-drawing">
+
+The number of distinct colors or brightness levels that can be represented is determined by the bit depth, which is the number of bits used to represent each pixel's color or brightness information. A higher bit depth results in a greater number of available colors or brightness levels, leading to a more accurate and detailed digital representation of the image. For example, an 8-bit image can represent $$2^8 = 256$$ distinct levels for each color channel, while a 24-bit image can represent over 16 million or $$2^{24 }$$ distinct colors.
+
+During the quantization process, the color and brightness values are rounded or approximated to the nearest available level, which introduces quantization error, also known as quantization noise. This can lead to a loss of detail or fidelity in the digitized image. However, higher bit depths help minimize this error, producing a more accurate digital representation of the analog image.
+
+Just as with the sound example, once the image has been sampled and quantized, it is converted into a stream of binary data (0s and 1s) that can be stored, manipulated, and transmitted using digital devices. To display the digitized image, the binary data is converted back into an array of colored pixels, which are rendered on a screen or printed on paper.
+
+### Better Quality = More Data
+
+## Digitization and Digitalization
+
+It is important to distinguish between <mark style="background-color:yellow;">**digitization**</mark> and <mark style="background-color:yellow;">**digitalization**</mark>. Digitization refers to the conversion process from analog to digital, while digitalization is the integration of digital technologies into business processes and strategies.

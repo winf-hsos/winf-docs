@@ -88,7 +88,7 @@ Try running the program from the command line in Visual Studio Code and enter a 
 
 The illustration below is a schematic version of the same program and highlights the different types of instructions it contains. In the following, I walk you through each type of instruction and explain how it works.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
 
 ## Commands
 

@@ -34,7 +34,7 @@ As with real estate, in number systems, location determines the value of a given
 
 The pattern is simple: The rightmost digit is worth $$10^0$$, which is $$1$$. The second digit from the right is worth $$10^1$$, which equals $$10$$. Do you spot the pattern? With every digit we move to the right, the <mark style="background-color:green;">**exponent**</mark> increases by one, while the <mark style="background-color:green;">**base**</mark> stays the same. That's why we call the decimal system the base-10 system.
 
-<img src="../.gitbook/assets/file.excalidraw (9).svg" alt="In the decimal system, the base is 10. The exponent of a digit increases from right to left." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (9) (1).svg" alt="In the decimal system, the base is 10. The exponent of a digit increases from right to left." class="gitbook-drawing">
 
 As an example, let's examine the decimal number $$2023$$, the year in which the LiFi project was launched. We can apply the general schema with the base set to 10 like this:&#x20;
 
@@ -48,7 +48,7 @@ Imagine a cartoon character like Mickey Mouse, who has only four fingers on each
 
 To determine the decimal value of an octal number, we can apply the same schema we introduced above, but exchange the value of the base with 8:
 
-<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="The octal system uses eight as the base value, and everything else works the same." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (4).svg" alt="The octal system uses eight as the base value, and everything else works the same." class="gitbook-drawing">
 
 What if someone told us that the $$2023$$ from above was not a base-10 number, but an octal number? What is the value of the octal number $$2023$$ in the decimal system? Well:
 
@@ -76,11 +76,11 @@ What if someone told us the number $$2023$$ from above was actually neither deci
 
 To transform from decimal to binary is not possible with the schema from above. We need a different approach here.
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="How can we transform from the decimal system to the binary system?" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (5).svg" alt="How can we transform from the decimal system to the binary system?" class="gitbook-drawing">
 
 The question to ask at the beginning is: What is the largest power of the target system's base (here: 2 as in binary) we can fit into the original decimal number 2023? The ascending powers of two are 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048 and so forth. We can stop here because the last number we listed, 2048, is larger than 2023, the number we aim to convert. Therefore, we don't need the digit that is worth 2048, and we can start with the digit to its left, which is $$2^{10} = 1024$$. Including the $$2^0$$, we now know that the decimal number 2023 needs 11 digits for its binary representation:
 
-<img src="../.gitbook/assets/file.excalidraw (12).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (12) (1).svg" alt="" class="gitbook-drawing">
 
 
 
