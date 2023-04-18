@@ -10,6 +10,14 @@ description: >-
 
 <summary>Summary</summary>
 
+In this lesson, you'll learn:
+
+* The difference between the analog and digital world.
+* How we can transform sound and images from an analog to a digital format.
+* What the terms sampling and quantization mean in the context of digitization.
+* The  benefits of digital goods over analog or physical ones.
+* The difference between digitization and digitalization
+
 This lesson is relevant for [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 
 </details>
