@@ -44,7 +44,7 @@ As an example, let's examine the decimal number $$2023$$, the year in which the 
 
 Imagine a cartoon character like Mickey Mouse, who has only four fingers on each hand. In Mickey's world, an <mark style="background-color:green;">**octal**</mark> or <mark style="background-color:green;">**base-8**</mark> system would be more intuitive for counting. This system would use eight symbols (0, 1, 2, 3, 4, 5, 6, and 7) to represent numbers. When Mickey runs out of fingers on one hand, he would start counting on his other hand, just as we do when counting in base-10.
 
-<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="Source: Code: The Hidden Language of Computer Hardware and Software by Charles Petzold, page 101." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3) (2).svg" alt="Source: Code: The Hidden Language of Computer Hardware and Software by Charles Petzold, page 101." class="gitbook-drawing">
 
 To determine the decimal value of an octal number, we can apply the same schema we introduced above, but exchange the value of the base with 8:
 
