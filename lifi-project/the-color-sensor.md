@@ -18,7 +18,7 @@ In this lesson, you'll learn:
 
 This lesson is relevant for [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 
-You find the code examples in the [LiFi-code GitHub repository in `color_sensor.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/color\_sensor.py).
+You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/color_sensor.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/color\_sensor.py).
 
 </details>
 

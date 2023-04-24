@@ -89,9 +89,9 @@ For the second part of the smoke test, I provide you with a Python script that y
 
 ### Get The Code
 
-The following link leads to the smoke test's code on GitHub. If you haven't done this already, it's now time to use your installation of Git to pull a copy of the repository to your computer.&#x20;
+The following link leads to the smoke test's code on GitHub. If you haven't done this already, it's now time to use your installation of Git to pull a copy of the repository to your computer.
 
-{% embed url="https://github.com/winf-hsos/LiFi-code/blob/main/examples/smoke_test.py" %}
+{% embed url="https://github.com/winf-hsos/LiFi-code/blob/main/devices/smoke_test.py" %}
 
 The easiest way to get a copy is to use Git. Make sure you are in the right directory where you want the LiFi-project's code to live, open a new terminal, and type:
 
@@ -105,40 +105,44 @@ The benefit of using Git is that you can later update your project if any change
 git pull
 ```
 
-Now it's time to open the file `examples/smoke_test.py`. For our first program, it looks quite overwhelming, doesn't it? But don't worry: while it looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
+Now it's time to open the file `devices/smoke_test.py`. For our first program, it looks quite overwhelming, doesn't it? But don't worry: while it looks intimidating now, but by the end of this project, you can explain every single line. You can consider this a goal for this course.&#x20;
 
 For now, we will only _run_ the code to see how the components work and interact from a Python program. We won't explain any of the code yet. We'll learn the necessary concepts during this course, and we'll come back to this later when we already have a better understanding.
 
 ### Before You Run The Code
 
-Before you run the code, make sure you insert the UIDs for your hardware devices in the `examples/constants.py`. The UID is a unique identifier for each device that Tinkerforge produces. Your RGB LED will have a different UID than mine, and it will be different for everyone. For the smoke test to run (and for any program we want to use the devices with), we need to know the UID of our devices and add them to the `constants.py` module.&#x20;
+Before you run the code, make sure you insert the UIDs for your hardware devices in the `config.yaml`. The UID is a unique identifier for each device that Tinkerforge produces. Your RGB LED will have a different UID than mine, and it will be different for everyone. For the smoke test to run (and for any program we want to use the devices with), we need to know the UID of our devices and add them to the `constants.py` module.&#x20;
 
 If you don't know how to get your UIDs, see if you can find them using the Brick Viewer. The file looks like this for my personal LiFi-prototype.
 
-```python
-HOST = "localhost"
-PORT = 4223
-UID_MASTER_BRICK = "5VjYhj"
-UID_RGB_LED = "ZFy"
-UID_OLED_DISPLAY = "25zw"
-UID_ROTARY_ENCODER = "XDR"
-UID_COLOR_SENSOR = "WbJ"
+```yaml
+uid_rgb_led: "VRX"
+uid_rotary_encoder: "XCh"
+uid_oled_display: "25yE"
+uid_color_sensor: "Whu"
+uid_master: "6apah5"
+port: 4223
+host: "localhost"
 ```
 
-Next, you need to install the dependencies we have in our smoke test program, which is the Tinkerforge API. When you successfully installed Python, you should have access to the Python package manager `pip` from the command line. We can utilize the `pip` to install external modules. Make sure you are in the root directory of the LiFi-code project, and type the following into the terminal:
+Next, you need to install the dependencies we have in our smoke test program, which is the Tinkerforge API and [PyYAML](https://pypi.org/project/PyYAML/) for  loading the YAML-file. When you successfully installed Python, you should have access to the Python package manager `pip` from the command line. We can utilize the `pip` to install external modules. Make sure you are in the root directory of the LiFi-code project, and type the following into the terminal:
 
 ```
 pip install tinkerforge
 ```
 
-This will download the latest version of the Tinkerforge API and install it on your local Python environment.
+This will download the latest version of the Tinkerforge API and install it on your local Python environment. Finally, type the following and hit enter to install the PyYAML library:
+
+```
+pip install pyyaml
+```
 
 ### Run The Code
 
 Now, run the code by typing the following command in a terminal in Visual Studio Code:
 
 ```
-python examples/smoke_test.py
+python devices/smoke_test.py
 ```
 
 If everything works, you should see a single line that reads "Please hit enter to exit". This means the program is running until you hit enter on your computer's keyboard. While the program is running, try to figure out what the smoke test does. Play around with the hardware and see how changes to the rotary encoder affect the other components. Another way is to have a look at the code, but it's understandable if that doesn't help you much at this point. We'll change that soon, and we start by introducing the LED and how to use it from a Python program in the next lesson of this course.

@@ -20,7 +20,7 @@ In this lesson, you'll learn:
 
 This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf).
 
-You find the code examples in the [LiFi-code GitHub repository in `collections_examples.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/collections\_examples.py).
+You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`introduction/collections_examples.py`](https://github.com/winf-hsos/LiFi-code/blob/main/introduction/collections\_examples.py).
 
 </details>
 

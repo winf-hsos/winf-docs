@@ -10,7 +10,7 @@ description: >-
 
 <summary>Summary</summary>
 
-You find the code examples in the [LiFi-code GitHub repository in `oled_display.py`](https://github.com/winf-hsos/LiFi-code/blob/main/examples/oled\_display.py).
+You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/oled_display.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/oled\_display.py).
 
 </details>
 

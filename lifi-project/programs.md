@@ -55,7 +55,7 @@ The great news is: Once you understand the concept behind each of the types of i
 
 ## Algorithms And Programs
 
-To explain the different types of instructions a program can contain, let's look at a concrete example. You find this example in the [GitHub repository](https://github.com/winf-hsos/LiFi-code/blob/main/examples/square\_root.py) under `examples\square_root.py`:
+To explain the different types of instructions a program can contain, let's look at a concrete example. You find this example in the [GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`problem_solutions\square_root.py`](https://github.com/winf-hsos/LiFi-code/blob/main/problem\_solutions/square\_root.py):
 
 {% code title="square_root.py" lineNumbers="true" %}
 ```python
@@ -72,7 +72,7 @@ if number < 0:
 a = number / 2
 b = number / a
 
-while(abs(a - b) > 0.00001):
+while abs(a - b) > 0.00001:
     a = (a + b) / 2
     b = number / a
 
