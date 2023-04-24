@@ -100,6 +100,12 @@ The binary system's simplicity makes it ideal for use in digital devices, where 
 
 Computers utilize the binary system for all operations, including arithmetic, logic, and data storage. While binary numbers might seem less intuitive for humans, they provide the foundation for the digital world that powers our modern technology.
 
+While computers use binary numbers due to their simplicity and compatibility with electronic devices, it is possible to use other number systems as well. We could imagine computers using the base 3 system or the ternary system, which uses three states to represent information. The states can be denoted as 0, 1, and 2.
+
+To implement a ternary system, we need to be able to divide the electric signal (e.g., voltage spectrum) into three states instead of just two (on/off). This can be achieved by using multiple voltage levels that correspond to the three states. For example, we could use voltage levels of 0 volts, 1 volt, and 2 volts to represent the states 0, 1, and 2 respectively. In this way, we can represent more information with each signal, potentially allowing for faster data transmission or more efficient storage.
+
+However, implementing a ternary system is more difficult than a binary system because it requires more precise voltage levels to be distinguished, which can be more prone to noise and interference. Furthermore, the use of more voltage levels increases the complexity of the hardware needed to distinguish between them, making circuit design more difficult.
+
 ## Further Reading
 
 I recommend you read the chapter 2 "Bits, Bytes, and Representation of Information" from the book "_Understanding The Digital World_". First, the chapter gives a great introduction to the topic of digitization, which we will address later in this course, and in 2.3 it continues with the binary system and the concepts of bits and bytes.

@@ -16,7 +16,7 @@
 * [9 - Collections ⭐](lifi-project/collections.md)
 * [10 - Digitization](lifi-project/10-analog-vs.-digital.md)
 * [11 - The Color Sensor ⚡](lifi-project/the-color-sensor.md)
-* [12 - Sensing Light ⭐](lifi-project/9-the-color-sensor.md)
+* [12 - Signals Over Light ⭐](lifi-project/9-the-color-sensor.md)
 * [13 - Measuring Information](lifi-project/measuring-information.md)
 * [14 - The OLED Display ⚡](lifi-project/the-oled-display.md)
 * [15 - Very Light Messages ⭐](lifi-project/14-send-bytes-over-lifi.md)
