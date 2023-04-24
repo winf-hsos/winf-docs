@@ -23,7 +23,9 @@ At the same time, you will learn how to write programs with the Python programmi
 
 ## Exercises
 
-To complete this project, you must solve the exercises listed below. Each exercise usually subsumes 3 lessons. The lessons marked with a ⭐ indicate the end of such a 3-lesson block. To successfully solve the exercise posted at the end of the ⭐-lesson, you need to have worked through all previous lessons.
+### Mandatory Exercises
+
+To complete this project, you must solve the mandatory exercises listed below. Each exercise usually subsumes 3 lessons. The lessons marked with a ⭐ indicate the end of such a 3-lesson block. To successfully solve the exercise posted at the end of the ⭐-lesson, you need to have worked through all previous lessons.
 
 * [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf)
 * [Exercise 2: Logic With The LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
@@ -34,6 +36,12 @@ To complete this project, you must solve the exercises listed below. Each exerci
 * [Exercise 7: Pixel By Pixel](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/07\_exercise\_pixel\_by\_pixel.pdf)
 * [Exercise 8: No More Rules!](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/08\_exercise\_no\_more\_rules.pdf)
 * [Exercise 9: Our Secret Code](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/09\_exercise\_our\_secret\_code.pdf)
+
+### Additional Exercises
+
+Completing the mandatory exercises listed above may present a challenge, particularly if you have little or no prior experience in programming. To ease into the material, it may be helpful to begin with some simpler exercises. Consider attempting the following exercises:
+
+* [Problem Solving Exercises](https://github.com/winf-hsos/lifi-exercises/raw/main/python\_introduction/lifi\_problem\_solving\_exercises.pdf): As set of simple problems to solve using a Python program.
 
 ## Important Terms And Concepts
 
