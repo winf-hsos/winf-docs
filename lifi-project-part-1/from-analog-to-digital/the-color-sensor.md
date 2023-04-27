@@ -22,6 +22,10 @@ You find the code examples in the [LiFi-code GitHub repository](https://github.c
 
 </details>
 
+In the previous lesson, you were taught the process of converting an analog signal into a digital representation using two techniques, namely sampling and quantization. Sensors operate on the same principle. They measure different physical properties of the world, such as temperature, humidity, or the wavelength of light (which is known as color), and then transform that property into an electric current. This electric current can be quantified and then turned into a series of discrete numbers using an analog-to-digital converter (ADC).
+
+In the upcoming lesson, you will delve deeper into how the color sensor works to measure light. However, this particular lesson's main focus is on teaching you how to use the sensor in your Python programs to build the LiFi prototype.
+
 ![](<../../.gitbook/assets/image (3).png>)
 
 ## Initialize the Sensor
