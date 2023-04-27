@@ -20,7 +20,7 @@
 * [From Analog to Digital](lifi-project-part-1/from-analog-to-digital/README.md)
   * [Digitization](lifi-project-part-1/from-analog-to-digital/digitization.md)
   * [The Color Sensor ⚡](lifi-project-part-1/from-analog-to-digital/the-color-sensor.md)
-  * [Signals Over Light ⭐](lifi-project-part-1/from-analog-to-digital/sensing-light.md)
+  * [Signals Over Light ⭐](lifi-project-part-1/from-analog-to-digital/signals-over-light.md)
 * [Speed of Light](lifi-project-part-1/speed-of-light/README.md)
   * [Measuring Information](lifi-project-part-1/speed-of-light/measuring-information.md)
   * [The OLED Display ⚡](lifi-project-part-1/speed-of-light/the-oled-display.md)

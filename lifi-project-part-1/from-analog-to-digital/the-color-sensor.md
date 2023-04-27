@@ -86,7 +86,7 @@ Finally, we must configure the callback mechanism. In the example below, we ask 
 color_sensor.set_color_callback_configuration(1000, False)
 ```
 
-From now on, we'll get a call to `new_color_value` every second, receiving a new color value. We can decide what we want to do with that value. In the LiFi prototype, we want to convey information using light signals. Using different colors and recognizing them might be useful for that. We'll dwell on this topic in the upcoming lesson [sensing-light.md](sensing-light.md "mention").
+From now on, we'll get a call to `new_color_value` every second, receiving a new color value. We can decide what we want to do with that value. In the LiFi prototype, we want to convey information using light signals. Using different colors and recognizing them might be useful for that. We'll dwell on this topic in the upcoming lesson [signals-over-light.md](signals-over-light.md "mention").
 
 For examples of the other two values, color temperature and illuminance, refer to the [example code in the LiFi repository on GitHub](https://github.com/winf-hsos/LiFi-code/blob/main/examples/color\_sensor.py).
 
