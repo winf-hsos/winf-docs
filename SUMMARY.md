@@ -29,13 +29,13 @@
   * [Text Processing](lifi-project-part-1/short-messages/text-processing.md)
   * [Don't Repeat Yourself](lifi-project-part-1/short-messages/do-not-repeat-yourself.md)
   * [Text Messages ⭐](lifi-project-part-1/short-messages/text-messages.md)
+* [Pixel By Pixel](lifi-project-part-1/pixel-by-pixel/README.md)
+  * [Digital Images](lifi-project-part-1/pixel-by-pixel/digital-images.md)
+  * [Need More Speed?](lifi-project-part-1/pixel-by-pixel/need-more-speed.md)
+  * [Redundancy ⭐](lifi-project-part-1/pixel-by-pixel/redundancy.md)
 
 ## Lifi Project Part 2
 
-* [Pixel By Pixel](lifi-project-part-2/pixel-by-pixel/README.md)
-  * [Digital Images](lifi-project-part-2/pixel-by-pixel/digital-images.md)
-  * [Need More Speed?](lifi-project-part-2/pixel-by-pixel/need-more-speed.md)
-  * [Redundancy ⭐](lifi-project-part-2/pixel-by-pixel/redundancy.md)
 * [No More Rules!](lifi-project-part-2/no-more-rules/README.md)
   * [Too Noisy](lifi-project-part-2/no-more-rules/too-noisy.md)
   * [Learning the Signal](lifi-project-part-2/no-more-rules/learning-the-signal.md)
