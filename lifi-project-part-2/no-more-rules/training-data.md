@@ -1,10 +1,10 @@
 ---
 description: >-
   Supervised machine learning could be a viable approach for improving the
-  robustness of LiFi. But what is machine learning and how does it work?
+  robustness of LiFi. But what is machine learning, and how does it work?
 ---
 
-# 24 - Training Data ⭐
+# Training Data ⭐
 
 {% hint style="warning" %}
 Welcome interesed student of the LiFi-project. I am glad you want to jump ahead, but I am still building this course as we move through the semester, and this part is not ready yet. Please come back later.

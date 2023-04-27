@@ -4,7 +4,7 @@ description: >-
   detect light and transform the measurements into a discrete signal.
 ---
 
-# 12 - Signals Over Light ⭐
+# Signals Over Light ⭐
 
 <details>
 
@@ -30,7 +30,7 @@ The goal of the LiFi project is to transmit data using light. Given that the col
 
 ### Binary Colors
 
-As you learned earlier in [binary-numbers.md](binary-numbers.md "mention"), computers use the binary system because it is straightforward to distinguish between two different states (on/off) using electric circuits. The same reasoning can be applied to encoding information using light.
+As you learned earlier in [binary-numbers.md](../on-and-off/binary-numbers.md "mention"), computers use the binary system because it is straightforward to distinguish between two different states (on/off) using electric circuits. The same reasoning can be applied to encoding information using light.
 
 When communicating with light, it may be easiest to distinguish just two colors from the sensor readings. This would allow us to use binary numbers to represent information. For example, we could assign a white light the value 1 and black the value 0.
 

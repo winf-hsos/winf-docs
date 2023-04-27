@@ -4,7 +4,7 @@ description: >-
   digital computer. It can be used for controlling various aspects of a system.
 ---
 
-# 8 - The Rotary Encoder ⚡
+# The Rotary Encoder ⚡
 
 <details>
 
@@ -26,7 +26,7 @@ This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hso
 
 ## The Rotary Encoder
 
-<img src="../.gitbook/assets/image (1) (2) (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (1) (2) (1).png" alt="" data-size="original">
 
 The rotary encoder is a commonly used control mechanism in a variety of hardware applications. Its operation is relatively simple: the user can rotate the knob in either direction, which in turn changes a numerical value represented by the control. Rotating the knob to the right increases the value, while rotating it to the left decreases it. However, the rotary encoder also has another useful feature: it doubles as a button. When the user presses down on the knob, it triggers an event which can then be used to perform a specific action. This feature can be particularly useful in situations where multiple inputs are required from a single control, or where space is at a premium, and it is desirable to minimize the number of controls used.
 
@@ -41,7 +41,7 @@ rotary = BrickletRotaryEncoderV2("xxx", ipcon)
 ```
 {% endcode %}
 
-Make sure you replace the UID with [your device's UID](the-led.md#how-to-get-a-devices-uid) before you proceed with this lesson.&#x20;
+Make sure you replace the UID with [your device's UID](../logic-with-the-led/the-led.md#how-to-get-a-devices-uid) before you proceed with this lesson.&#x20;
 
 ### Reading The Current Value
 
@@ -60,7 +60,7 @@ While we can read the value of the rotary encoder at any time using the `get_cou
 
 A callback function is a function that is called automatically by the system whenever a specific event occurs, in this case, a change in the encoder value. By registering a callback function with the rotary encoder, we can ensure that our code is notified of changes to the encoder value as soon as they occur, without the need for manual polling.
 
-<img src="../.gitbook/assets/file.excalidraw (3) (3).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (3) (3).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
 
 A good analogy for understanding callback functions is to think of them as a personal assistant. Imagine you're a busy executive with a packed schedule, and you've asked your assistant to keep you updated on any changes to your calendar. When something new is added, your assistant immediately calls you to let you know.
 

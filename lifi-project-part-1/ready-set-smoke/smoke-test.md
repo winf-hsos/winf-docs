@@ -4,7 +4,7 @@ description: >-
   our first tests to see whether everything works properly.
 ---
 
-# 3 - Smoke Test ⭐
+# Smoke Test ⭐
 
 <details>
 
@@ -20,7 +20,7 @@ This lesson is relevant for the [Exercise 1: Ready, Set, Smoke](https://github.c
 
 </details>
 
-<figure><img src="../.gitbook/assets/lifi_smoke_test.jpg" alt=""><figcaption><p>The LiFi prototype while running the program-based smoke test.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/lifi_smoke_test.jpg" alt=""><figcaption><p>The LiFi prototype while running the program-based smoke test.</p></figcaption></figure>
 
 ## What's A Smoke Test For?
 
@@ -43,7 +43,7 @@ To perform the UI-based smoke test, follow these steps:
 
 Open the Brick Viewer software on your computer. On Windows, I find it easiest to type "Brickv" in the search field. You should also find it somewhere in your start menu. Once the software is open, check the left-hand side and find the host and port settings. They should look as follows.
 
-<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption><p>The Brick Viewer on start-up.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption><p>The Brick Viewer on start-up.</p></figcaption></figure>
 
 If the host is "localhost" and the port is the default of 4223, you can click the large "Connect" button above it. Make sure you connect your hardware kit to your computer using the provided USB cable first.
 
@@ -51,7 +51,7 @@ If the host is "localhost" and the port is the default of 4223, you can click th
 
 If the connection was successful, you see a list of connected devices in the Brick Viewer's main area. The list should look very similar to the one in the screenshot, except for different values in the UID-column. The position of each device in the list can also differ, this depends on into which socket you plugged them during [hardware assembly](hardware-assembly.md). The firmware version in the last column could also be slightly different, depending on when you take this course.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p>The Brick Viewer shows a list of connected devices after a connection is established.</p></figcaption></figure>
 
 ### 3. Test Each Device's Functionality
 

@@ -5,7 +5,7 @@ description: >-
   structures for our project.
 ---
 
-# 9 - Collections ⭐
+# Collections ⭐
 
 <details>
 
@@ -32,7 +32,7 @@ An array is a collection of elements, usually of the same data type, stored in c
 
 Consider the example below, in which we want to store the prime numbers below 20. A suitable data structure could be an array, in which each prime number has its fixed place and an <mark style="background-color:green;">**index**</mark> starting at 0 and counting upwards.
 
-<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="An array is an indexed list, which means every item has its place." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (4).svg" alt="An array is an indexed list, which means every item has its place." class="gitbook-drawing">
 
 
 
@@ -203,7 +203,7 @@ A dictionary is another type of collection that stores data in <mark style="back
 
 Consider the example of the ASCII codes below. We wish to translate a letter the user enters via the keyboard into the binary ASCII code, so we can transmit the letter via LiFi. We could say we want to look up the binary code for every letter in the alphabet and use a dictionary for that.
 
-<img src="../.gitbook/assets/file.excalidraw (7) (1).svg" alt="A dictionary stores data as key-value-pairs." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (7) (1).svg" alt="A dictionary stores data as key-value-pairs." class="gitbook-drawing">
 
 In Python, dictionaries are created using curly braces `{}` or the `dict()` constructor. Let's create the dictionary for the example above:
 
@@ -246,7 +246,7 @@ else:
 
 A set is a collection of unique, unordered elements. It is useful in situations where you want to store distinct elements and perform operations like union, intersection, or subtraction.
 
-<img src="../.gitbook/assets/file.excalidraw (13).svg" alt="A set has no order and only unique items." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (13).svg" alt="A set has no order and only unique items." class="gitbook-drawing">
 
 In Python, sets can be created using the `set()` constructor or by using curly braces `{}` with a comma-separated list of unique elements.
 

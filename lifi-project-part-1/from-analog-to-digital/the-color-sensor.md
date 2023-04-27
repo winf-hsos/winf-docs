@@ -4,7 +4,7 @@ description: >-
   when we want to receive messages from a light source.
 ---
 
-# 11 - The Color Sensor ⚡
+# The Color Sensor ⚡
 
 <details>
 
@@ -22,7 +22,7 @@ You find the code examples in the [LiFi-code GitHub repository](https://github.c
 
 </details>
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3).png>)
 
 ## Initialize the Sensor
 
@@ -34,7 +34,7 @@ color_sensor = BrickletColorV2(constants.UID_COLOR_SENSOR, ipcon)
 
 ## Read the Current Measurements
 
-As we have seen with [human-input (1).md](<human-input (1).md> "mention"), instead of being automatically informed of new values using a callback function (push principle), we can read the values directly when we need them:
+As we have seen with [the-rotary-encoder.md](../on-and-off/the-rotary-encoder.md "mention"), instead of being automatically informed of new values using a callback function (push principle), we can read the values directly when we need them:
 
 ```python
 # Read the current measurements (pull principle)
@@ -82,7 +82,7 @@ Finally, we must configure the callback mechanism. In the example below, we ask 
 color_sensor.set_color_callback_configuration(1000, False)
 ```
 
-From now on, we'll get a call to `new_color_value` every second, receiving a new color value. We can decide what we want to do with that value. In the LiFi prototype, we want to convey information using light signals. Using different colors and recognizing them might be useful for that. We'll dwell on this topic in the upcoming lesson [9-the-color-sensor.md](9-the-color-sensor.md "mention").
+From now on, we'll get a call to `new_color_value` every second, receiving a new color value. We can decide what we want to do with that value. In the LiFi prototype, we want to convey information using light signals. Using different colors and recognizing them might be useful for that. We'll dwell on this topic in the upcoming lesson [sensing-light.md](sensing-light.md "mention").
 
 For examples of the other two values, color temperature and illuminance, refer to the [example code in the LiFi repository on GitHub](https://github.com/winf-hsos/LiFi-code/blob/main/examples/color\_sensor.py).
 

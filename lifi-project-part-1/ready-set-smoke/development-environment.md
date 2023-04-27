@@ -4,7 +4,7 @@ description: >-
   testing environment.
 ---
 
-# 2 - Development Environment
+# Development Environment
 
 <details>
 
@@ -22,7 +22,7 @@ This lesson is relevant for the [Exercise 1: Ready, Set, Smoke](https://github.c
 
 </details>
 
-<img src="../.gitbook/assets/file.excalidraw (2) (3).svg" alt="Overview of the software components we need for the LiFi project." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (3).svg" alt="Overview of the software components we need for the LiFi project." class="gitbook-drawing">
 
 ## Brick Viewer and Brick Daemon
 
@@ -55,7 +55,7 @@ You can download and install Visual Studio Code for any operating system from th
 
 For features like syntax highlighting or code completion to work when programming in Python, Microsoft provides an extension for Visual Studio Code. You should install the extension from the Visual Studio Code Extensions menu. Click on the symbol that looks like a jigsaw puzzle, and then click in the search field and type "Python". It should be the first result in the list. Click on "Install" and you're done!
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Python
 
@@ -65,13 +65,13 @@ Python is a widely adopted programming language that is especially well suited f
 
 On Windows, Python comes as an executable file with the extension `.exe`. Save the file anywhere on your hard drive and double-click on it when the download has finished. When you do, the first window appears that looks similar to the one in the screenshot below:
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Make sure you check the two boxes during installation. The, click "Install Now".</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Make sure you check the two boxes during installation. The, click "Install Now".</p></figcaption></figure>
 
 Make sure you check the boxes "_Use admin privileges when installing py.exe_" and "_Add python.exe to PATH_". The former ensures that Python can write anywhere on your computer, which is important when you install packages later. The latter enables you to use Python from anywhere on your computer. We'll use Python mostly from the command line (or terminal), and with this setting, we can type `python` regardless of which folder we are in.
 
 Next, click "Install Now", no need to customize the installation. When the installation has finished, you see the following screen:
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>You successfully installed Python on your computer. Easy, wasn't it?</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>You successfully installed Python on your computer. Easy, wasn't it?</p></figcaption></figure>
 
 Click "Close" and you're done with this step.
 
