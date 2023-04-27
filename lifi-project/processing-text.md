@@ -16,7 +16,7 @@ This section is relevant for [Exercise 6: Back to SMS](https://github.com/winf-h
 
 ## Don't Repeat Yourself!
 
-An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](do-not-repeat-yourself.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
+An important principle in programming is "Don't Repeat Yourself". Code that we need in several places of our program should be given a name and wrapped in a function. We saw how to do this [earlier in this section](processing-text.md#5.-functions). We can simply call functions like any other command from anywhere in our program.&#x20;
 
 ### Modules
 

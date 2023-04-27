@@ -1,7 +1,7 @@
 ---
 description: >-
-  This course has 27 sections on the digital world and programming. Every 3rd
-  section leads to an exercise you need to solve. With the last one, you finish
+  This course has 27 lessons on the digital world and programming. Every 3rd
+  section ends with an exercise for you to solve. With the last one, you finish
   the LiFi-project.
 ---
 
