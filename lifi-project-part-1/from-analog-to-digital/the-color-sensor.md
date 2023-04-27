@@ -30,7 +30,7 @@ In the upcoming lesson, you will delve deeper into how the color sensor works to
 
 ## Initialize the Sensor
 
-As with all devices, we must first initialize it and store a reference on a variable so that we can access it later:
+Like any other device, we need to initialize the sensor and store a reference to it in a variable so that we can access it later. We'll use a variable with the name `color_sensor`:
 
 ```python
 color_sensor = BrickletColorV2(constants.UID_COLOR_SENSOR, ipcon)
@@ -38,7 +38,7 @@ color_sensor = BrickletColorV2(constants.UID_COLOR_SENSOR, ipcon)
 
 ## Read the Current Measurements
 
-As we have seen with [the-rotary-encoder.md](../on-and-off/the-rotary-encoder.md "mention"), instead of being automatically informed of new values using a callback function (push principle), we can read the values directly when we need them:
+Similar to what we learned about [the-rotary-encoder.md](../on-and-off/the-rotary-encoder.md "mention"), we can read values directly when we need them instead of being automatically informed of new values using a callback function (push principle):
 
 ```python
 # Read the current measurements (pull principle)
@@ -55,13 +55,13 @@ print(current_color_temperature)
 # Output: 5097
 ```
 
-This approach of actively asking for the values can be useful in some situations. Most often, however, we wish to be automatically informed about new values. For this, we can apply the concept of callback functions.
+Actively requesting values can be useful in some situations. However, typically, we prefer to be automatically informed about new values. To achieve this, we can use the concept of callback functions.
 
-## Getting New Values Automatically
+## Getting Automatically Informed
 
 Using a callback function involves three steps:
 
-1. Define a callback function with the parameters (if any) for the new values. Note that not all callback functions require a parameter. For example, the rotary encoder's button callbacks do not have any parameters. Calling the function alone is sufficient to indicate that the button was pressed or released.
+1. Define a callback function with the parameters (if any) for the new values. Note that not all callback functions require a parameter. For example, the rotary encoder's button callbacks do not have any parameters. Calling the function alone is sufficient to indicate that the button was pressed or released. This is different for the color sensor.
 2. Register the callback function with the device.
 3. Configure the callback mechanism to set the interval and potential threshold values.
 
@@ -89,4 +89,6 @@ color_sensor.set_color_callback_configuration(1000, False)
 From now on, we'll get a call to `new_color_value` every second, receiving a new color value. We can decide what we want to do with that value. In the LiFi prototype, we want to convey information using light signals. Using different colors and recognizing them might be useful for that. We'll dwell on this topic in the upcoming lesson [sensing-light.md](sensing-light.md "mention").
 
 For examples of the other two values, color temperature and illuminance, refer to the [example code in the LiFi repository on GitHub](https://github.com/winf-hsos/LiFi-code/blob/main/examples/color\_sensor.py).
+
+In the next lesson, we will explore how to use a color sensor not only to measure the wavelength of light, but also to interpret different wavelengths or colors as signals.
 
