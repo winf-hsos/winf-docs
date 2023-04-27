@@ -35,7 +35,7 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://github.com/
 
 The LED plays an important role in our LiFi project and the solution we're building. It acts as the sender for information we share between two robots, which requires a way to control the LED from a program. Luckily, the hardware manufacturer Tinkerforge has provided a way to do exactly that. They wrote an <mark style="background-color:green;">**application programming interface (API)**</mark> for their hardware devices for many modern programming languages, including Python.
 
-When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](smoke-tests.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
+When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](smoke-test.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
 
 <img src="../.gitbook/assets/file.excalidraw (7) (1) (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
 
@@ -62,7 +62,7 @@ from tinkerforge.bricklet_rgb_led_v2 import BrickletRGBLEDV2
 
 This looks a bit different from the first import of the `constants` module. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from two different Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require. With `import constants`, we get everything from the module `constants`, which can be too much if the modules are large.
 
-You will learn more about modules in an [upcoming lesson](programs.md#create-once-use-often).
+You will learn more about modules in an [upcoming lesson](programs-anatomy.md#create-once-use-often).
 
 ### Create The Reference
 
@@ -83,7 +83,7 @@ led = BrickletRGBLEDV2(constants.UID_RGB_LED, ipcon)
 
 The LED is represented in our Python program through an instance of the Python class `BrickletRGBLEDV2`, which is provided by the Tinkerforge API. When we create (or instantiate) this object, we need to provide the UID and an active IP-connection. Because we want to access the LED later in our program, we store the object in a variable with the name `led`.&#x20;
 
-A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](programs.md#1.-variables).
+A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](programs-anatomy.md#1.-variables).
 
 We now have a reference to the LED, which gives us access to all functionalities exposed by the [LED's API](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2\_Bricklet\_Python.html#rgb-led-v2-bricklet-python-api). Let's explore what they are.
 

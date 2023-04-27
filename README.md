@@ -6,7 +6,7 @@ description: >-
 
 # The LiFi-Project
 
-<figure><img src=".gitbook/assets/lifi_project_teaser_small.jpg" alt=""><figcaption><p>An early LiFi prototype device.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/LiFi Project Prototype (1).png" alt=""><figcaption><p>The LiFi Prototype</p></figcaption></figure>
 
 ## The project setup
 
