@@ -38,7 +38,7 @@ The pattern is simple: The rightmost digit is worth $$10^0$$, which is $$1$$. Th
 
 As an example, let's examine the decimal number $$2023$$, the year in which the LiFi project was launched. We can apply the general schema with the base set to 10 like this:&#x20;
 
-<img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="The decimal number 2023 and how it is calculated using the general number system." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (6) (1).svg" alt="The decimal number 2023 and how it is calculated using the general number system." class="gitbook-drawing">
 
 ## The Octal System
 
@@ -64,7 +64,7 @@ In our everyday lives, we encounter numerous instances where the binary concept 
 
 A <mark style="background-color:green;">**bit**</mark> is short for <mark style="background-color:green;">**binary digit**</mark> and represents the smallest unit of data in a computer system. It can take one of two values, 0 or 1, much like the on and off states of a light switch. A <mark style="background-color:green;">**byte**</mark>, on the other hand, consists of 8 bits, allowing for $$2^8=256$$ unique combinations. Bytes are the fundamental building blocks for representing data, such as text, images, or sounds, in a digital computer.
 
-<img src="../../.gitbook/assets/file.excalidraw (11).svg" alt="A light switch has two states, on and off. Just like a binary digit." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (11) (1).svg" alt="A light switch has two states, on and off. Just like a binary digit." class="gitbook-drawing">
 
 The binary system, also known as base-2, uses only two digits: 0 and 1. According to the general schema we introduced above, each position in a binary number represents a power of 2, which is the binary system's base. For example, the binary number $$1101$$ represents the decimal number 13, calculated as:
 
@@ -76,7 +76,7 @@ What if someone told us the number $$2023$$ from above was actually neither deci
 
 To transform from decimal to binary is not possible with the schema from above. We need a different approach here.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (5).svg" alt="How can we transform from the decimal system to the binary system?" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (5) (1).svg" alt="How can we transform from the decimal system to the binary system?" class="gitbook-drawing">
 
 The question to ask at the beginning is: What is the largest power of the target system's base (here: 2 as in binary) we can fit into the original decimal number 2023? The ascending powers of two are 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048 and so forth. We can stop here because the last number we listed, 2048, is larger than 2023, the number we aim to convert. Therefore, we don't need the digit that is worth 2048, and we can start with the digit to its left, which is $$2^{10} = 1024$$. Including the $$2^0$$, we now know that the decimal number 2023 needs 11 digits for its binary representation:
 
@@ -108,7 +108,7 @@ However, implementing a ternary system is more difficult than a binary system be
 
 The problem of incorrect voltage classification can be illustrated using the image below. In this example, the red lines indicate a point in an electric circuit where the current voltage is measured. Based on this voltage reading, the signal is classified as either a 0, 1, or 2. However, at measurement number 4, a disturbance occurs and causes the voltage to fall below the threshold required to classify the signal as a 2. As a result, the measurement is misclassified as a 1, even though the original signal was meant to be a 2. Such disturbances can be caused by various factors, including electromagnetic interference (EMI) from nearby sources like motors, transformers, or power lines, as well as temperature and humidity fluctuations.
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="Interference can lead to a disturbed signal. With more symbols, the voltage intervals become smaller, making it more error-prone." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (5).svg" alt="Interference can lead to a disturbed signal. With more symbols, the voltage intervals become smaller, making it more error-prone." class="gitbook-drawing">
 
 ## Further Reading
 

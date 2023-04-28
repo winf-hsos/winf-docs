@@ -60,7 +60,7 @@ While we can read the value of the rotary encoder at any time using the `get_cou
 
 A callback function is a function that is called automatically by the system whenever a specific event occurs, in this case, a change in the encoder value. By registering a callback function with the rotary encoder, we can ensure that our code is notified of changes to the encoder value as soon as they occur, without the need for manual polling.
 
-<img src="../../.gitbook/assets/file.excalidraw (3) (3).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (3) (3) (1).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
 
 A good analogy for understanding callback functions is to think of them as a personal assistant. Imagine you're a busy executive with a packed schedule, and you've asked your assistant to keep you updated on any changes to your calendar. When something new is added, your assistant immediately calls you to let you know.
 

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [The LiFi-Project](README.md)
+* [The LiFi Project](README.md)
 * [Course Overview](course-overview.md)
 
 ## LiFi Project Part 1

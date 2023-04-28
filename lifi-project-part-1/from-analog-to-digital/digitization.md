@@ -26,7 +26,7 @@ This lesson is relevant for [Exercise 4: Digitizing the Physical World](https://
 
 The analog world represents <mark style="background-color:yellow;">**continuous signals**</mark>, while the digital world consists of <mark style="background-color:yellow;">**discrete signals**</mark>. To illustrate this concept, imagine stairs with discrete steps versus an inclined plane with continuous levels where one can stand. The stairs represent the digital world, with each step being a distinct level, while the inclined plane symbolizes the analog world, where any position along the slope can be occupied.
 
-<img src="../../.gitbook/assets/file.excalidraw.svg" alt="The difference between analog and digital: Which is which?" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="The difference between analog and digital: Which is which?" class="gitbook-drawing">
 
 ## Digitization
 
@@ -58,7 +58,7 @@ Once the sound wave has been sampled and quantized, it is converted into a strea
 
 Digitization of images involves converting continuous analog images, such as photographs or paintings, into a digital representation that can be easily stored, manipulated, and transmitted using computers or other digital devices. Just like in the sound wave example above, the process consists of sampling and quantization.
 
-<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="When sampling an image, we divide it into a grid of pixels of the same size." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="When sampling an image, we divide it into a grid of pixels of the same size." class="gitbook-drawing">
 
 Sampling in the context of image digitization refers to dividing the continuous analog image into a grid of discrete points or <mark style="background-color:yellow;">**pixels**</mark> (short for "picture elements"). Each pixel represents a small area of the original image and captures its color and brightness information. The resolution of the digital image, measured in <mark style="background-color:yellow;">**pixels per inch (PPI)**</mark> or <mark style="background-color:yellow;">**dots per inch (DPI)**</mark>, determines the number of pixels used to represent the image and directly impacts the level of detail and quality of the digital representation. A higher resolution results in a more accurate representation of the original image.
 
@@ -82,7 +82,7 @@ However, improving these features also increases the size of the digital represe
 
 The digital version of things such as sound and images offers numerous benefits over their analog forms. One key advantage is that digitized data can be <mark style="background-color:yellow;">**easily processed, manipulated, and analyzed by computers**</mark>, enabling innovations in fields such as audio engineering, image editing, and artificial intelligence. Digital files also allow for <mark style="background-color:yellow;">**perfect reproduction**</mark>, ensuring that the quality of the content remains intact, regardless of the number of times it is copied or transmitted. This contrasts with analog formats, which are susceptible to degradation with each copy or playback. Furthermore, digitization enables <mark style="background-color:yellow;">**near-zero cost reproduction**</mark> and the creation of <mark style="background-color:yellow;">**infinite copies**</mark>, making digital content more accessible and easily distributable. In economic terms, we say that digital goods are <mark style="background-color:yellow;">**non-rival**</mark>. If one customer buys a digital music album, this doesn't mean that another customer can't.
 
-<img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="For a digital good, there are no variable costs to produce the next unit." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (3) (3).svg" alt="For a digital good, there are no variable costs to produce the next unit." class="gitbook-drawing">
 
 ## Digitization and Digitalization
 

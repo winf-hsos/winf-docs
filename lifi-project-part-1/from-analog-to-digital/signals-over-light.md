@@ -42,9 +42,55 @@ However, using light to transmit binary data comes with its challenges. For exam
 
 In [#why-do-computers-think-binary](../on-and-off/binary-numbers.md#why-do-computers-think-binary "mention"), you learned that computers can use number systems other than binary to represent and process information. This means that computers don't just rely on the presence or absence of a voltage to perform their operations. Instead, using a number system larger than binary requires dividing the magnitude of the voltage into more than two classes, depending on how many symbols beyond 0 and 1 we want to represent. The same principle applies to light and has similar consequences.
 
-Finding a solution for representing information with light might seem more straightforward than for electric current. Rather than relying on just two states of on and off (black/white), we could use the colors red, green, and blue as symbols to represent information using LEDs. This approach may seem less prone to errors, as colors are discrete values that cannot be misclassified. However, it's important to note that the color sensor does not actually see colors in this way. Instead, it measures the intensities of red, green, and blue and the task is to classify these intensities into the corresponding colors. Interference from other light sources can make this task more challenging and even impossible. Using even more symbols and adding colors such as yellow, which is a mix of green and blue, further increases the difficulty of the classification task.
+Finding a solution for representing information with light might seem more straightforward than for electric current. Rather than relying on just two states of "on" and "off" (black/white), we could use the colors red, green, and blue as symbols to represent information using the LED. This approach may seem less prone to errors, as colors are discrete values that cannot be misclassified. The image below depicts how we might think about encoding the symbols 0, 1, and 2 using the LED's colors blue, green, and red.
 
 <img src="../../.gitbook/assets/file.excalidraw (5).svg" alt="Using the LED&#x27;s colors for information representation looks easier than using voltage levels." class="gitbook-drawing">
+
+However, it's important to note that the color sensor does not actually see colors in this way. Instead, it measures the intensities of red, green, and blue in a range of 0 - 255, and the task is to classify these intensities into the corresponding colors. Interference from other light sources can make this task more challenging and even impossible. Using even more symbols and adding colors such as yellow, which is a mix of green and blue, further increases the difficulty of the classification task. The image below illustrates how the sensor sees the colors in its 3 components. It is easy to imagine how an otherwise beautiful sunset could cause a redshift in the light and lead to inaccurate classifications of the signal.
+
+<img src="../../.gitbook/assets/file.excalidraw (11).svg" alt="From the color sensor&#x27;s perspective, the problem looks more difficult." class="gitbook-drawing">
+
+### Filtering Background Noise
+
+So, how can we come up with a solution to recognize the signals in the light from a Python program? In a perfect environment, which we could create if we put both the sensor and the LED in a light-secure tube, the solution would be easier. In this case, the RGB values measured by the sensor should almost perfectly match those emitted by the LED. To distinguish between red, green, and blue, a simple control structure would do the trick.
+
+<img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="In a perfect world, and with only three colors, we could simply determine the largest intensity." class="gitbook-drawing">
+
+However, external light sources such as the sun or a light bulb in the room can create noise that makes it difficult to distinguish between the colors. The type of noise and whether it is constant or appears abruptly determine the appropriate solution.
+
+For constant noise, such as that produced by a light bulb in a room, a simple solution is to subtract the noise from the measurement to obtain the true signal. To achieve this, we first determine the level of noise by measuring the intensities of red, green, and blue when the LED is turned off and only the light bulb is measured.
+
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="The constant background light should show as constant lines across time." class="gitbook-drawing">
+
+Once we have the noise values, we remember them and subtract them from the measurements when receiving signals from the LED. To account for changing environments, we measure the background noise frequently, for example, every time before receiving data.
+
+<img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="Subtracting constant background noise from a signal should improve our classification results." class="gitbook-drawing">
+
+### Unexpected Noise
+
+However, unexpected noise is a much more difficult issue to handle, and filtering it out completely is nearly impossible. This type of noise can suddenly appear and interfere with our LiFi communication. While we cannot completely filter out this type of noise, we can be prepared to handle it. We can at least recognize when unexpected noise is interfering with the signal and inform the other side that we are having trouble understanding the signal. This can help prevent miscommunication and allow for a more efficient resolution of the issue.
+
+How can we recognize unexpected noise? To identify when something unexpected happens, we must define what the set of expected events is. All other events are unexpected.
+
+<img src="../../.gitbook/assets/file.excalidraw (14).svg" alt="We must define the set of expected events to identify unexpected events." class="gitbook-drawing">
+
+In our example with the 3 colors red, green and blue to encode 0, 1, and 2, the expected events are  defined by the three colors we want to recognize.
+
+<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="We expect to see the events &#x22;red&#x22;, &#x22;green&#x22;, and &#x22;blue&#x22;." class="gitbook-drawing">
+
+An unexpected event would then be a color measurement that deviates too much from our definition of the three colors red, green, and blue. For example, orange, purple, pink, or gray would definitely fall into the set of unexpected colors.
+
+<img src="../../.gitbook/assets/file.excalidraw (15).svg" alt="We do not expect to see orange, purple, pink, or gray. Theses would be unexpected events." class="gitbook-drawing">
+
+To handle unexpected noise in our LiFi communication, we need to identify reliable rules to distinguish expected events from unexpected ones and code them into our Python program. However, our previous approach of simply checking which color intensity is largest no longer works. For any of the unexpected events, except for gray, one of the intensities will be larger than the other two, and our algorithm would not detect any irregularities.
+
+To improve our algorithm, we can define expected values for red, green, and blue for all three colors and add some tolerance resulting in intervals. Any events for which the red, green, and blue components do not fall within these intervals are treated as unexpected. By defining expected values and tolerances, we can create a more robust algorithm that is better equipped to handle unexpected noise and accurately identify when it is interfering with the signal.
+
+<img src="../../.gitbook/assets/file.excalidraw (16).svg" alt="Event B is unexpected because the intensity of red is too low." class="gitbook-drawing">
+
+
+
+Note that the measurements and intervals must always be adjusted for the [measured background noise](signals-over-light.md#filtering-background-noise). In the exercise, you can try to find suiting intervals for your LiFi prototype and see if you can simulate and identify unexpected events.
 
 ## Further Reading
 
