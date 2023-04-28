@@ -106,6 +106,10 @@ To implement a ternary system, we need to be able to divide the electric signal 
 
 However, implementing a ternary system is more difficult than a binary system because it requires more precise voltage levels to be distinguished, which can be more prone to noise and interference. Furthermore, the use of more voltage levels increases the complexity of the hardware needed to distinguish between them, making circuit design more difficult.
 
+The problem of incorrect voltage classification can be illustrated using the image below. In this example, the red lines indicate a point in an electric circuit where the current voltage is measured. Based on this voltage reading, the signal is classified as either a 0, 1, or 2. However, at measurement number 4, a disturbance occurs and causes the voltage to fall below the threshold required to classify the signal as a 2. As a result, the measurement is misclassified as a 1, even though the original signal was meant to be a 2. Such disturbances can be caused by various factors, including electromagnetic interference (EMI) from nearby sources like motors, transformers, or power lines, as well as temperature and humidity fluctuations.
+
+<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="Interference can lead to a disturbed signal. With more symbols, the voltage intervals become smaller, making it more error-prone." class="gitbook-drawing">
+
 ## Further Reading
 
 I recommend you read the chapter 2 "Bits, Bytes, and Representation of Information" from the book "_Understanding The Digital World_". First, the chapter gives a great introduction to the topic of digitization, which we will address later in this course, and in 2.3 it continues with the binary system and the concepts of bits and bytes.
