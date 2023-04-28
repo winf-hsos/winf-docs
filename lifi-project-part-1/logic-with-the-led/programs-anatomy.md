@@ -49,7 +49,7 @@ The above list of things a computer can do translate into five general types of 
 
 Wait, that's only five. But the list of things a computer can do contains 6 elements. So, what about the first one: _calculate things_? Calculations are an important part of any instruction, and in programming perform calculations using <mark style="background-color:green;">**expressions**</mark>. Depending on the outcome, we can distinguish different types of expressions, which we'll introduce later.
 
-<img src="../../.gitbook/assets/file.excalidraw (5) (1).svg" alt="An instruction can be different things in a program." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (5) (1) (2).svg" alt="An instruction can be different things in a program." class="gitbook-drawing">
 
 The great news is: Once you understand the concept behind each of the types of instructions and expressions, you can read and write almost any program, no matter the complexity. These concepts are the DNA of every program. Of course, it takes practice. And you may still have to look up specific keywords for the language you are programming in. But that's where [Google](http://localhost:5000/u/5a55d1d8d10859002f1ae2f5), [Stack Overflow](https://stackoverflow.com/) or [ChatGPT](https://chat.openai.com/chat) come in. Seriously, they are every programmer's best buddies. Learn to use them.
 
@@ -106,7 +106,7 @@ When we see a command in a Python program, we cannot say for sure which of the a
 
 Think of a variable as a box with a label on it. You can put things into the box, and at any time you can ask for its content, given you know the label. You can change the content of the box as you like at any time.
 
-<img src="../../.gitbook/assets/file.excalidraw (5).svg" alt="Variables are like boxes with a label. We can put things into them and take them out as needed." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (5) (1).svg" alt="Variables are like boxes with a label. We can put things into them and take them out as needed." class="gitbook-drawing">
 
 In a program, a variable is really a pointer to an address in the computer's <mark style="background-color:green;">**main memory**</mark>. By calling the variable by its name, you are taken to this particular location in the computer's memory, and you can access whatever has been stored there. You can also overwrite the memory location with a value of your choice. A memory address is simply a number that identifies a specific location in memory. Variables allow us to utilize the computer's memory to store and access things we need in our program.&#x20;
 

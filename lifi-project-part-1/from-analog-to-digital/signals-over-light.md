@@ -44,6 +44,8 @@ In [#why-do-computers-think-binary](../on-and-off/binary-numbers.md#why-do-compu
 
 Finding a solution for representing information with light might seem more straightforward than for electric current. Rather than relying on just two states of on and off (black/white), we could use the colors red, green, and blue as symbols to represent information using LEDs. This approach may seem less prone to errors, as colors are discrete values that cannot be misclassified. However, it's important to note that the color sensor does not actually see colors in this way. Instead, it measures the intensities of red, green, and blue and the task is to classify these intensities into the corresponding colors. Interference from other light sources can make this task more challenging and even impossible. Using even more symbols and adding colors such as yellow, which is a mix of green and blue, further increases the difficulty of the classification task.
 
+<img src="../../.gitbook/assets/file.excalidraw (5).svg" alt="Using the LED&#x27;s colors for information representation looks easier than using voltage levels." class="gitbook-drawing">
+
 ## Further Reading
 
 I highly recommend you read (and view, it's highly illustrative) the chapter "Digital Cameras" from the book "How Technology Works". The chapter gives a great visual overview of how light is measured and converted into a digital form.
