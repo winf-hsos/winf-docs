@@ -4,7 +4,7 @@ description: >-
   the example of a research & development project.
 ---
 
-# The LiFi-Project
+# The LiFi Project
 
 <figure><img src=".gitbook/assets/LiFi Project Prototype (1).png" alt=""><figcaption><p>The LiFi Prototype</p></figcaption></figure>
 
@@ -32,3 +32,5 @@ If the answer is yes, then the following questions arise:
 We are faced with a significant limitation, as we are required to address these questions using the hardware provided to us, which consists of an LED, color sensor, rotary encoder with button functionality, and a 128 by 64 pixel OLED display.
 
 By the end of this project, you will have solved the engineering problem and found answers to all of the above questions! And as a welcome side effect, you'll know a lot about the digital world and gain basic programming skills. Sounds good? Let's go!
+
+<figure><img src=".gitbook/assets/lifi_greenhouse.jpg" alt="" width="375"><figcaption><p>A robot equipped with LiFi working in a greenhouse, created by Bing Image Creator.</p></figcaption></figure>

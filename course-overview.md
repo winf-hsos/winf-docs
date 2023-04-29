@@ -53,4 +53,4 @@ We use four different hardware devices during the LiFi-project. They are introdu
 
 ## Credits
 
-This course was written with assistance from [ChatGPT](https://chat.openai.com/) and [DeepL](https://www.deepl.com/translator).
+This course was written with assistance from [ChatGPT](https://chat.openai.com/) and [DeepL](https://www.deepl.com/translator). Most of the drawings were created with [Excalidraw](https://excalidraw.com/). Some images were generated with [Bing Image Creator](https://www.bing.com/images/create).
