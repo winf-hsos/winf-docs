@@ -33,4 +33,12 @@ We are faced with a significant limitation, as we are required to address these 
 
 By the end of this project, you will have solved the engineering problem and found answers to all of the above questions! And as a welcome side effect, you'll know a lot about the digital world and gain basic programming skills. Sounds good? Let's go!
 
-<figure><img src=".gitbook/assets/lifi_greenhouse.jpg" alt="" width="375"><figcaption><p>A robot equipped with LiFi working in a greenhouse, created by Bing Image Creator.</p></figcaption></figure>
+<div>
+
+<figure><img src=".gitbook/assets/lifi_greenhouse.jpg" alt="" width="375"><figcaption><p>A LiFi-equipped robot in a green house.</p></figcaption></figure>
+
+ 
+
+<figure><img src=".gitbook/assets/lifi_underwater.jpg" alt="" width="375"><figcaption><p>A LiFi-equipped robot underwater.</p></figcaption></figure>
+
+</div>
