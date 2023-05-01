@@ -27,7 +27,7 @@ If the answer is yes, then the following questions arise:
 * **How reliable is the data transfer?**
 * **Over what distance can we transfer data?**
 * **Under what environmental conditions does the setup work properly?**
-* **How can we make our data transfer secure?**
+* **How can we secure our data transfer?**
 
 We are faced with a significant limitation, as we are required to address these questions using the hardware provided to us, which consists of an LED, color sensor, rotary encoder with button functionality, and a 128 by 64 pixel OLED display.
 
