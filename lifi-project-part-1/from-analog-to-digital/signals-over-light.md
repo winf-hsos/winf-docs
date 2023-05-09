@@ -34,7 +34,7 @@ As you learned earlier in [binary-numbers.md](../on-and-off/binary-numbers.md "m
 
 When communicating with light, it may be easiest to distinguish just two colors from the sensor readings. This would allow us to use binary numbers to represent information. For example, we could assign a white light the value 1 and black the value 0.
 
-To implement binary data transmission using light, the LED would be turned on and off at a defined interval, and the sensor would measure the intensity of the light at the same interval. By interpreting the sensor readings, we can determine whether the LED is emitting light or not, and hence decode the transmitted binary data. We must make sure that the sender and receiver are both aware of the chosen interval and change the LED and read the values at the same pace to ensure proper synchronization.
+To implement binary data transmission using light, the LED could be turned on and off at a defined interval, and the sensor could measure the intensity of the light at the same interval. By interpreting the sensor readings, we can determine whether the LED is emitting light or not, and hence decode the transmitted binary data. We must make sure that the sender and receiver are both aware of the chosen interval and change the LED and read the values at the same pace to ensure proper synchronization.
 
 However, using light to transmit binary data comes with its challenges. For example, external factors such as ambient light and distance can affect the reliability of the transmitted data. Knowing this, we cannot expect the signal to be as clear as it would be under perfect circumstances: All RGB values 0 for an LED that is turned off, and all at highest intensity for an LED with white light. We have to factor in the environment and the ambient light present when we communicate over light. You'll have the chance to hands-on experience and solve this problem when you tackle the exercise "Color Detector" from [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 
@@ -84,9 +84,9 @@ An unexpected event would then be a color measurement that deviates too much fro
 
 To handle unexpected noise in our LiFi communication, we need to identify reliable rules to distinguish expected events from unexpected ones and code them into our Python program. However, our previous approach of simply checking which color intensity is largest no longer works. For any of the unexpected events, except for gray, one of the intensities will be larger than the other two, and our algorithm would not detect any irregularities.
 
-To improve our algorithm, we can define expected values for red, green, and blue for all three colors and add some tolerance resulting in intervals. Any events for which the red, green, and blue components do not fall within these intervals are treated as unexpected. By defining expected values and tolerances, we can create a more robust algorithm that is better equipped to handle unexpected noise and accurately identify when it is interfering with the signal.
+To improve our algorithm, we can define expected values for red, green, and blue for all three colors and add some tolerance, resulting in intervals. Any events for which the red, green, and blue components do not fall within these intervals are treated as unexpected. By defining expected values and tolerances, we can create a more robust algorithm that is better equipped to handle unexpected noise and accurately identify when something is interfering with the signal.
 
-<img src="../../.gitbook/assets/file.excalidraw (16).svg" alt="Event B is unexpected because the intensity of red is too low." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (16).svg" alt="Event B is unexpected because the intensity of red is too high for blue." class="gitbook-drawing">
 
 
 
