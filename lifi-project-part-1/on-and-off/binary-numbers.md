@@ -64,7 +64,7 @@ In our everyday lives, we encounter numerous instances where the binary concept 
 
 A <mark style="background-color:green;">**bit**</mark> is short for <mark style="background-color:green;">**binary digit**</mark> and represents the smallest unit of data in a computer system. It can take one of two values, 0 or 1, much like the on and off states of a light switch. A <mark style="background-color:green;">**byte**</mark>, on the other hand, consists of 8 bits, allowing for $$2^8=256$$ unique combinations. Bytes are the fundamental building blocks for representing data, such as text, images, or sounds, in a digital computer.
 
-<img src="../../.gitbook/assets/file.excalidraw (11) (1).svg" alt="A light switch has two states, on and off. Just like a binary digit." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (11) (1) (1).svg" alt="A light switch has two states, on and off. Just like a binary digit." class="gitbook-drawing">
 
 The binary system, also known as base-2, uses only two digits: 0 and 1. According to the general schema we introduced above, each position in a binary number represents a power of 2, which is the binary system's base. For example, the binary number $$1101$$ represents the decimal number 13, calculated as:
 

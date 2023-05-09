@@ -48,7 +48,7 @@ Finding a solution for representing information with light might seem more strai
 
 However, it's important to note that the color sensor does not actually see colors in this way. Instead, it measures the intensities of red, green, and blue in a range of 0 - 255, and the task is to classify these intensities into the corresponding colors. Interference from other light sources can make this task more challenging and even impossible. Using even more symbols and adding colors such as yellow, which is a mix of green and blue, further increases the difficulty of the classification task. The image below illustrates how the sensor sees the colors in its 3 components. It is easy to imagine how an otherwise beautiful sunset could cause a redshift in the light and lead to inaccurate classifications of the signal.
 
-<img src="../../.gitbook/assets/file.excalidraw (11).svg" alt="From the color sensor&#x27;s perspective, the problem looks more difficult." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (11) (1).svg" alt="From the color sensor&#x27;s perspective, the problem looks more difficult." class="gitbook-drawing">
 
 ### Filtering Background Noise
 
@@ -72,7 +72,7 @@ However, unexpected noise is a much more difficult issue to handle, and filterin
 
 How can we recognize unexpected noise? To identify when something unexpected happens, we must define what the set of expected events is. All other events are unexpected.
 
-<img src="../../.gitbook/assets/file.excalidraw (14).svg" alt="We must define the set of expected events to identify unexpected events." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (14) (1).svg" alt="We must define the set of expected events to identify unexpected events." class="gitbook-drawing">
 
 In our example with the 3 colors red, green and blue to encode 0, 1, and 2, the expected events are  defined by the three colors we want to recognize.
 
