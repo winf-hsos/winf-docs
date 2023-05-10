@@ -15,6 +15,6 @@ In this lesson, you'll learn:
 * ...
 * ...
 
-This section is relevant for [Exercise 6: Back to SMS](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/06\_exercise\_back\_to\_sms.pdf).
+This lesson is relevant for [Exercise 6: Text Messages](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/winf-hsos/lifi-exercises/master/exercises/06\_exercise\_text\_messages.pdf).
 
 </details>
