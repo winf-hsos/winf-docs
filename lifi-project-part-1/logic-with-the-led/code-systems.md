@@ -83,7 +83,7 @@ Barcodes are commonly used in a variety of industries, including retail, healthc
 
 In a barcode, a line or space can be either 1, 2, 3 or 4 units wide. The optical scanner can distinguish the widths and decode the digit. One digit is always represented by alternating lines and spaces that make up a width of 7 units in total.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (2).svg" alt="" class="gitbook-drawing">
 
 ### QR Codes
 

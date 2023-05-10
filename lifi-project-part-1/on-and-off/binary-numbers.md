@@ -38,7 +38,7 @@ The pattern is simple: The rightmost digit is worth $$10^0$$, which is $$1$$. Th
 
 As an example, let's examine the decimal number $$2023$$, the year in which the LiFi project was launched. We can apply the general schema with the base set to 10 like this:&#x20;
 
-<img src="../../.gitbook/assets/file.excalidraw (6) (1).svg" alt="The decimal number 2023 and how it is calculated using the general number system." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (6) (1) (1).svg" alt="The decimal number 2023 and how it is calculated using the general number system." class="gitbook-drawing">
 
 ## The Octal System
 

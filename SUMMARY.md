@@ -28,7 +28,7 @@
 * [Short Messages](lifi-project-part-1/short-messages/README.md)
   * [Text Messages](lifi-project-part-1/short-messages/text-messages.md)
   * [Logic and Arithmetic](lifi-project-part-1/short-messages/text-processing.md)
-  * [Don't Repeat Yourself](lifi-project-part-1/short-messages/do-not-repeat-yourself.md)
+  * [Message History ⭐](lifi-project-part-1/short-messages/message-history.md)
 * [Pixel By Pixel](lifi-project-part-1/pixel-by-pixel/README.md)
   * [Digital Images](lifi-project-part-1/pixel-by-pixel/digital-images.md)
   * [Need More Speed?](lifi-project-part-1/pixel-by-pixel/need-more-speed.md)
@@ -44,7 +44,8 @@
   * [Remember](lifi-project-part-2/classified/remember.md)
   * [Interception](lifi-project-part-2/classified/interception.md)
   * [Encrypted LiFi ⭐](lifi-project-part-2/classified/encrypted-lifi.md)
-* [Cooperation](lifi-project-part-2/cooperation.md)
+* [Cooperation](lifi-project-part-2/cooperation/README.md)
+  * [Don't Repeat Yourself](lifi-project-part-2/cooperation/do-not-repeat-yourself.md)
 
 ## First Steps with Python
 

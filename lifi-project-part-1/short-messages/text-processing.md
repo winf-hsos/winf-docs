@@ -13,8 +13,10 @@ description: >-
 
 In this lesson, you'll learn:
 
-* ...
-* ...
+* How you can use simple addition to convert ASCII letters to lowercase.
+* That computers use small devices called logic gates in large quantity to perform all information processing.
+* How logic gates can be built from even smaller things.
+* How binary addition is possible with only logic gates.
 
 This section is relevant for [Exercise 6: Back to SMS](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/06\_exercise\_back\_to\_sms.pdf).
 
@@ -39,4 +41,19 @@ To convert a given string into lowercase letters using a custom `to_lower` funct
 5. After all characters have been processed, the function returns the result variable containing the converted string.
 
 I encourage you to try this as an exercise to strengthen your programming skills. You find a solution to this problem in the [LiFi code GitHub-Repository](https://github.com/winf-hsos/LiFi-code/blob/main/problem\_solutions/to\_lower.py).
+
+## Logic Gates
+
+<img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="The four basic logic gates." class="gitbook-drawing">
+
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="The AND- and OR-gate combined with the NOT-gate result in NAND and NOR-gates." class="gitbook-drawing">
+
+## Binary Addition
+
+## Further Reading
+
+I recommend the great book _Code: The Hidden Language of Computer Hardware and Software_ by Charles Petzold to learn more about how computers process information. He covers logic gates and binary addition in the following chapters, which I provide to all students taking my course at the University of Applied Sciences in Osnabrück:
+
+* Chapter 8 "Relays and Gates"
+* Chapter 14 "Adding with Logic Gates"
 
