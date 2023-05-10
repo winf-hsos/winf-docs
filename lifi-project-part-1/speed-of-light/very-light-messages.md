@@ -33,7 +33,7 @@ In the diagram, each colored circle represents the current state of the LED, whi
 
 
 
-<img src="../../.gitbook/assets/file.excalidraw (17).svg" alt="A protocol based on three states to encode bits." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (17) (1).svg" alt="A protocol based on three states to encode bits." class="gitbook-drawing">
 
 We can represent this protocol as a transition table, which can be used to decode the bit that's been transmitted. To do so, you locate the color that the LED was previously in along the table's rows and then identify the color that it has moved to along the columns. The value in the cell where the row and column intersect denotes the bit that's been encoded through this transition.
 

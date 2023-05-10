@@ -215,6 +215,6 @@ Expressions are different from instructions. An expression is merely a set of sy
 
 Instructions make use of expressions for different use cases. A command might require values for some parameters that we can specify using an expression. A while-loop requires an expression that evaluates to either `True` or `False`, thus, a <mark style="background-color:green;">**boolean expression**</mark>. The same is true for control structures like the if-statement.
 
-<img src="../../.gitbook/assets/file.excalidraw (2) (1) (2).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1) (2) (1).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
 
 With the five types of instructions and expressions, you know the ingredients for any program you will ever write or encounter. We are now prepared to learn about our first hardware device and how to control it from a program.

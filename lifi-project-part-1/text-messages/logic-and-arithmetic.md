@@ -44,9 +44,23 @@ I encourage you to try this as an exercise to strengthen your programming skills
 
 ## Logic Gates
 
+<img src="../../.gitbook/assets/file.excalidraw (17).svg" alt="Most logic gates have two inputs and one output. They combine the inputs to produce the output following a specific logic." class="gitbook-drawing">
+
+### Types of Gates
+
 <img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="The four basic logic gates." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw.svg" alt="The AND- and OR-gate combined with the NOT-gate result in NAND and NOR-gates." class="gitbook-drawing">
+The basic logic gates can be combined with a NOT-gate to create new types of logic gates. These inverted gates represent the opposite logic of the original gate, and they can be identified by a small circle on the output side of the gate.
+
+For example, by combining a NOT-gate with an AND-gate, we can create a NAND-gate, which outputs a low signal only when both inputs are high. Similarly, by combining a NOT-gate with an OR-gate, we can create a NOR-gate, which outputs a low signal only when both inputs are low.
+
+The small circle on the output side of the inverted gate indicates that the output signal is the opposite of what would be expected from the original gate. In other words, if the original gate outputted a high signal for a particular input combination, the inverted gate will output a low signal for the same input combination, and vice versa.
+
+By using these inverted gates, we can create more complex logic circuits that can perform a wide range of operations, such as arithmetic, memory, and communication.
+
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="The AND- and OR-gate combined with the NOT-gate result in an NAND- and NOR-gate." class="gitbook-drawing">
+
+<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
 
 ## Binary Addition
 
