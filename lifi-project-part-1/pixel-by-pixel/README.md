@@ -8,6 +8,6 @@
 [need-more-speed.md](need-more-speed.md)
 {% endcontent-ref %}
 
-{% content-ref url="redundancy.md" %}
-[redundancy.md](redundancy.md)
+{% content-ref url="../../lifi-project-part-2/cooperation/redundancy.md" %}
+[redundancy.md](../../lifi-project-part-2/cooperation/redundancy.md)
 {% endcontent-ref %}

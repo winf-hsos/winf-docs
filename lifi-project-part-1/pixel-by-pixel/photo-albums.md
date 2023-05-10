@@ -4,7 +4,7 @@ description: >-
   we gave them. But how does this work on the levels of bits and bytes?
 ---
 
-# Message History ⭐
+# Photo Albums
 
 <details>
 
@@ -15,6 +15,6 @@ In this lesson, you'll learn:
 * ...
 * ...
 
-This lesson is relevant for [Exercise 6: Text Messages](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/winf-hsos/lifi-exercises/master/exercises/06\_exercise\_text\_messages.pdf).
+This lesson is relevant for [Exercise 7: Pixel By Pixel](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/07\_exercise\_pixel\_by\_pixel.pdf).
 
 </details>
