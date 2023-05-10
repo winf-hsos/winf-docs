@@ -80,7 +80,7 @@ In our example with the 3 colors red, green and blue to encode 0, 1, and 2, the 
 
 An unexpected event would then be a color measurement that deviates too much from our definition of the three colors red, green, and blue. For example, orange, purple, pink, or gray would definitely fall into the set of unexpected colors.
 
-<img src="../../.gitbook/assets/file.excalidraw (15).svg" alt="We do not expect to see orange, purple, pink, or gray. Theses would be unexpected events." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (15) (1).svg" alt="We do not expect to see orange, purple, pink, or gray. Theses would be unexpected events." class="gitbook-drawing">
 
 To handle unexpected noise in our LiFi communication, we need to identify reliable rules to distinguish expected events from unexpected ones and code them into our Python program. However, our previous approach of simply checking which color intensity is largest no longer works. For any of the unexpected events, except for gray, one of the intensities will be larger than the other two, and our algorithm would not detect any irregularities.
 
