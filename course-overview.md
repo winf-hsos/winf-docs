@@ -27,15 +27,20 @@ At the same time, you will learn how to write programs with the Python programmi
 
 To complete this project, you must solve the mandatory exercises listed below. Each exercise usually subsumes 3 lessons. The lessons marked with a ⭐ indicate the end of such a 3-lesson block. To successfully solve the exercise posted at the end of the ⭐-lesson, you need to have worked through all previous lessons.
 
-* [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf)
-* [Exercise 2: Logic With The LED](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
-* [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/03\_exercise\_on\_and\_off.pdf)
-* [Exercise 4: Digitizing The Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf)
-* [Exercise 5: Speed Of Light](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/05\_exercise\_speed\_of\_light.pdf)
-* [Exercise 6: Back To SMS](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/06\_exercise\_back\_to\_sms.pdf)
-* [Exercise 7: Pixel By Pixel](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/07\_exercise\_pixel\_by\_pixel.pdf)
-* [Exercise 8: No More Rules!](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/08\_exercise\_no\_more\_rules.pdf)
-* [Exercise 9: Our Secret Code](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/09\_exercise\_our\_secret\_code.pdf)
+#### Part 1
+
+* [Exercise 1: Ready, Set, Smoke](https://winf-hsos.github.io/lifi-exercises/exercises/01\_exercise\_ready\_set\_smoke.pdf)
+* [Exercise 2: Logic With The LED](https://winf-hsos.github.io/lifi-exercises/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
+* [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03\_exercise\_on\_and\_off.pdf)
+* [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf)
+* [Exercise 5: Speed Of Light](https://winf-hsos.github.io/lifi-exercises/exercises/05\_exercise\_speed\_of\_light.pdf)
+* [Exercise 6: Text Messages](https://winf-hsos.github.io/lifi-exercises/exercises/06\_exercise\_text\_messages.pdf)
+
+#### Part 2
+
+* Exercise 7: Pixel By Pixel
+* Exercise 8: No More Rules!
+* Exercise 9: Our Secret Code
 
 ### Additional Exercises
 
