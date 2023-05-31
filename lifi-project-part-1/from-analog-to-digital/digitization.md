@@ -18,7 +18,7 @@ In this lesson, you'll learn:
 * The  benefits of digital goods over analog or physical ones.
 * The difference between digitization and digitalization
 
-This lesson is relevant for [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
+This lesson is relevant for [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 
 </details>
 

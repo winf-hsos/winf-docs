@@ -16,7 +16,7 @@ In this lesson, you'll learn:
 * How to read the different values measured by the sensor.
 * How to apply the concept of callback functions to be notified of new values.
 
-This lesson is relevant for [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
+This lesson is relevant for [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 
 You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/color_sensor.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/color\_sensor.py).
 

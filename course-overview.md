@@ -35,10 +35,10 @@ To complete this project, you must solve the mandatory exercises listed below. E
 * [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf)
 * [Exercise 5: Speed Of Light](https://winf-hsos.github.io/lifi-exercises/exercises/05\_exercise\_speed\_of\_light.pdf)
 * [Exercise 6: Text Messages](https://winf-hsos.github.io/lifi-exercises/exercises/06\_exercise\_text\_messages.pdf)
+* Exercise 7: Pixel By Pixel
 
 #### Part 2
 
-* Exercise 7: Pixel By Pixel
 * Exercise 8: No More Rules!
 * Exercise 9: Our Secret Code
 
@@ -46,7 +46,7 @@ To complete this project, you must solve the mandatory exercises listed below. E
 
 Completing the mandatory exercises listed above may present a challenge, particularly if you have little or no prior experience in programming. To ease into the material, it may be helpful to begin with some simpler exercises. Consider attempting the following exercises:
 
-* [Problem Solving Exercises](https://github.com/winf-hsos/lifi-exercises/raw/main/python\_introduction/lifi\_problem\_solving\_exercises.pdf): As set of simple problems to solve using a Python program.
+* [Problem Solving Exercises](https://winf-hsos.github.io/lifi-exercises/python\_introduction/lifi\_problem\_solving\_exercises.pdf): As set of simple problems to solve using a Python program.
 
 ## Important Terms And Concepts
 

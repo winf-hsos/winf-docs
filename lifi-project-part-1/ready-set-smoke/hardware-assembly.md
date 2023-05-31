@@ -15,7 +15,7 @@ In this lesson, you'll learn:
 * Which hardware components are required for the LiFi-project.
 * How the components must be assembled for the LiFi hardware prototype.
 
-This lesson is relevant for the [Exercise 1: Ready, Set, Smoke](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/01\_exercise\_ready\_set\_smoke.pdf).
+This lesson is relevant for the [Exercise 1: Ready, Set, Smoke](https://winf-hsos.github.io/lifi-exercises/exercises/01\_exercise\_ready\_set\_smoke.pdf).
 
 </details>
 

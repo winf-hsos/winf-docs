@@ -20,7 +20,7 @@ In this lesson, you'll learn:
 
 You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/rotary_encoder.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/rotary\_encoder.py).
 
-This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf).
+This lesson is relevant for [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03\_exercise\_on\_and\_off.pdf).
 
 </details>
 

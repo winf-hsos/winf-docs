@@ -10,7 +10,13 @@ description: >-
 
 <summary>Summary</summary>
 
-This lesson is relevant for [Exercise 4: Digitizing the Physical World](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
+In this lesson, you'll learn:
+
+* How light can be transformed into a digital representation.
+* Ways to encode information with light signals.
+* Ideas how to deal with background noise in signals, specifically light signals.
+
+This lesson is relevant for [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
 
 </details>
 

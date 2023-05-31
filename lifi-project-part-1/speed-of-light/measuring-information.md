@@ -17,7 +17,7 @@ In this lesson, you'll learn:
 * How you apply this concept to determine the number of bits required for a message with a given length and set of symbols.
 * What formula you can use to determine the size of a message.
 
-This lesson is relevant for [Exercise 5: Speed Of Light](https://github.com/winf-hsos/lifi-exercises/raw/main/exercises/05\_exercise\_speed\_of\_light.pdf).
+This lesson is relevant for [Exercise 5: Speed Of Light](https://winf-hsos.github.io/lifi-exercises/exercises/05\_exercise\_speed\_of\_light.pdf).
 
 </details>
 

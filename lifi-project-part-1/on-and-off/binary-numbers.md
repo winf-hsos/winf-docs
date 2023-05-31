@@ -10,7 +10,7 @@ description: >-
 
 <summary>Summary</summary>
 
-This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf).
+This lesson is relevant for [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03\_exercise\_on\_and\_off.pdf).
 
 </details>
 

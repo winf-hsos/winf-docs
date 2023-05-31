@@ -18,7 +18,7 @@ In this lesson, you'll learn:
 * The idea of a _set_ is and when it's useful.
 * Which other useful data structures exist and what they are good for.
 
-This lesson is relevant for [Exercise 3: On and Off](https://github.com/winf-hsos/lifi-exercises/blob/main/exercises/03\_exercise\_on\_and\_off.pdf).
+This lesson is relevant for [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03\_exercise\_on\_and\_off.pdf).
 
 You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`introduction/collections_examples.py`](https://github.com/winf-hsos/LiFi-code/blob/main/introduction/collections\_examples.py).
 
