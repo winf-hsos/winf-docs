@@ -21,7 +21,7 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.g
 
 </details>
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1) (2).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
 
 ## The RGB Code
 

@@ -66,11 +66,11 @@ However, external light sources such as the sun or a light bulb in the room can 
 
 For constant noise, such as that produced by a light bulb in a room, a simple solution is to subtract the noise from the measurement to obtain the true signal. To achieve this, we first determine the level of noise by measuring the intensities of red, green, and blue when the LED is turned off and only the light bulb is measured.
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="The constant background light should show as constant lines across time." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="The constant background light should show as constant lines across time." class="gitbook-drawing">
 
 Once we have the noise values, we remember them and subtract them from the measurements when receiving signals from the LED. To account for changing environments, we measure the background noise frequently, for example, every time before receiving data.
 
-<img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="Subtracting constant background noise from a signal should improve our classification results." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (3) (3).svg" alt="Subtracting constant background noise from a signal should improve our classification results." class="gitbook-drawing">
 
 ### Unexpected Noise
 
@@ -82,7 +82,7 @@ How can we recognize unexpected noise? To identify when something unexpected hap
 
 In our example with the 3 colors red, green and blue to encode 0, 1, and 2, the expected events are  defined by the three colors we want to recognize.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="We expect to see the events &#x22;red&#x22;, &#x22;green&#x22;, and &#x22;blue&#x22;." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="We expect to see the events &#x22;red&#x22;, &#x22;green&#x22;, and &#x22;blue&#x22;." class="gitbook-drawing">
 
 An unexpected event would then be a color measurement that deviates too much from our definition of the three colors red, green, and blue. For example, orange, purple, pink, or gray would definitely fall into the set of unexpected colors.
 

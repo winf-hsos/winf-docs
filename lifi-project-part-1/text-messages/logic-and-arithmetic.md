@@ -42,11 +42,9 @@ To convert a given string into lowercase letters using a custom `to_lower` funct
 
 I encourage you to try this as an exercise to strengthen your programming skills. You find a solution to this problem in the [LiFi code GitHub-Repository](https://github.com/winf-hsos/LiFi-code/blob/main/problem\_solutions/to\_lower.py).
 
-## Logic Gates
+## Types of Logic Gates
 
 <img src="../../.gitbook/assets/file.excalidraw (17).svg" alt="Most logic gates have two inputs and one output. They combine the inputs to produce the output following a specific logic." class="gitbook-drawing">
-
-### Types of Gates
 
 <img src="../../.gitbook/assets/file.excalidraw (6).svg" alt="The four basic logic gates." class="gitbook-drawing">
 
@@ -58,11 +56,23 @@ The small circle on the output side of the inverted gate indicates that the outp
 
 By using these inverted gates, we can create more complex logic circuits that can perform a wide range of operations, such as arithmetic, memory, and communication.
 
-<img src="../../.gitbook/assets/file.excalidraw.svg" alt="The AND- and OR-gate combined with the NOT-gate result in an NAND- and NOR-gate." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="The AND- and OR-gate combined with the NOT-gate result in an NAND- and NOR-gate." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
 
-## Binary Addition
+## Nothing But Switches
+
+A relay is a switch that can be controlled by electricity rather than our fingers.
+
+<img src="../../.gitbook/assets/file.excalidraw (18).svg" alt="An electromagnetic relay." class="gitbook-drawing">
+
+<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="Two relays connected in series make an AND-gate." class="gitbook-drawing">
+
+<img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="Turning on the first switch won&#x27;t turn on the bulb." class="gitbook-drawing">
+
+<img src="../../.gitbook/assets/file.excalidraw (10).svg" alt="Turning on the second switch won&#x27;t light the bulb either." class="gitbook-drawing">
+
+<img src="../../.gitbook/assets/file.excalidraw (19).svg" alt="Only when both switches are turned on the bulb lights up. The logic of the AND-gate built out of relays." class="gitbook-drawing">
 
 ## Further Reading
 

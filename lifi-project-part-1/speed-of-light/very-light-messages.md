@@ -37,7 +37,7 @@ In the diagram, each colored circle represents the current state of the LED, whi
 
 We can represent this protocol as a transition table, which can be used to decode the bit that's been transmitted. To do so, you locate the color that the LED was previously in along the table's rows and then identify the color that it has moved to along the columns. The value in the cell where the row and column intersect denotes the bit that's been encoded through this transition.
 
-<img src="../../.gitbook/assets/file.excalidraw (10).svg" alt="The protocol as a transition table between states." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (10) (1).svg" alt="The protocol as a transition table between states." class="gitbook-drawing">
 
 With this protocol, the timing of when the color sensor of the receiving robot reads the next value is irrelevant. The color sensor can continuously detect the color, and as long as it stays the same, no bit has been received. Only when the color sensor detects a color that's different from the previous one, it decodes the corresponding bit using the protocol and adds it to the overall message.
 

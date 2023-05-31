@@ -30,7 +30,7 @@ The <mark style="background-color:green;">**decimal system**</mark>, also known 
 
 As with real estate, in number systems, location determines the value of a given symbol. What does that mean? In the decimal system, each position in a number represents a power of 10. For example, in the number 395, the digit 3 represents $$3\times 10^2$$, 9 represents $$9\times 10^1$$, and 5 represents $$5\times 10^0$$.
 
-<img src="../../.gitbook/assets/file.excalidraw (10) (1).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (10) (1) (1).svg" alt="" class="gitbook-drawing">
 
 The pattern is simple: The rightmost digit is worth $$10^0$$, which is $$1$$. The second digit from the right is worth $$10^1$$, which equals $$10$$. Do you spot the pattern? With every digit we move to the right, the <mark style="background-color:green;">**exponent**</mark> increases by one, while the <mark style="background-color:green;">**base**</mark> stays the same. That's why we call the decimal system the base-10 system.
 
