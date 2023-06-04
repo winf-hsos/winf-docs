@@ -21,6 +21,6 @@ This lesson is relevant for [Exercise 6: Text Messages](https://winf-hsos.github
 
 ## Designing a Code System
 
-In the lesson about measuring information, we learned a way to figure out how many bits we need to save or send a message with a certain message space. This means the symbols we have and how long our message is.
+In the lesson about [measuring information](../speed-of-light/measuring-information.md), we learned a way to figure out how many bits we need to save or send a message with a certain message space. This means the symbols we have and how long our message is.
 
 <img src="../../.gitbook/assets/file.excalidraw.svg" alt="The schema of the ASCII code system." class="gitbook-drawing">
