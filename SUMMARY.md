@@ -26,7 +26,7 @@
   * [The OLED Display ⚡](lifi-project-part-1/speed-of-light/the-oled-display.md)
   * [Very Light Messages ⭐](lifi-project-part-1/speed-of-light/very-light-messages.md)
 * [Text Messages](lifi-project-part-1/text-messages/README.md)
-  * [Coding Text](lifi-project-part-1/text-messages/coding-text.md)
+  * [Coding Letters](lifi-project-part-1/text-messages/coding-text.md)
   * [Logic and Arithmetic](lifi-project-part-1/text-messages/logic-and-arithmetic.md)
   * [Binary Addition ⭐](lifi-project-part-1/text-messages/binary-addition.md)
 * [Pixel By Pixel](lifi-project-part-1/pixel-by-pixel/README.md)

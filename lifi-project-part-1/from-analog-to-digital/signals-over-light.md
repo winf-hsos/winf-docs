@@ -78,7 +78,7 @@ However, unexpected noise is a much more difficult issue to handle, and filterin
 
 How can we recognize unexpected noise? To identify when something unexpected happens, we must define what the set of expected events is. All other events are unexpected.
 
-<img src="../../.gitbook/assets/file.excalidraw (14) (1).svg" alt="We must define the set of expected events to identify unexpected events." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (14) (1) (1).svg" alt="We must define the set of expected events to identify unexpected events." class="gitbook-drawing">
 
 In our example with the 3 colors red, green and blue to encode 0, 1, and 2, the expected events are  defined by the three colors we want to recognize.
 

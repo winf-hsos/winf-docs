@@ -49,7 +49,7 @@ There are different ways to address this problem, but for the LiFi prototype, we
 
 To signal that it's about to start transmitting a message, the sending robot can turn its LED yellow. After this signal, it can only switch the LED to red; all other colors are invalid. This serves as a safety mechanism, and the receiving robot will discard any signals that don't follow this protocol. The yellow signal will be an indicator of a new message, and the receiving robot can start decoding the transmitted bits.
 
-<img src="../../.gitbook/assets/file.excalidraw (14).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (14) (1).svg" alt="" class="gitbook-drawing">
 
 With the addition of the fourth color, any robot that arrives at a conversation late can simply wait for the LED to turn yellow and know that a new message is about to be transmitted. Similarly, if a robot misses a bit due to a sensor failure or an unexpected event, it can wait for the sender to start transmitting again. The yellow light will serve as an indicator for when the next message transmission will start. At the same time, it also indicated the end of a message.&#x20;
 
