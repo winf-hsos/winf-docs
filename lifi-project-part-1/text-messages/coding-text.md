@@ -1,7 +1,7 @@
 ---
 description: >-
-  How can we receive a message of zeroes and ones that encodes ASCII text and
-  translate them into a meaningful representation on our display?
+  How can we transform a text message into a stream of zeroes and ones, send and
+  receive it via LiFi, and then translate it back to letters from A to Z?
 ---
 
 # Coding Letters
