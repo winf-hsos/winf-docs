@@ -54,7 +54,7 @@ Finding a solution for representing information with light might seem more strai
 
 However, it's important to note that the color sensor does not actually see colors in this way. Instead, it measures the intensities of red, green, and blue in a range of 0 - 255, and the task is to classify these intensities into the corresponding colors. Interference from other light sources can make this task more challenging and even impossible. Using even more symbols and adding colors such as yellow, which is a mix of green and blue, further increases the difficulty of the classification task. The image below illustrates how the sensor sees the colors in its 3 components. It is easy to imagine how an otherwise beautiful sunset could cause a redshift in the light and lead to inaccurate classifications of the signal.
 
-<img src="../../.gitbook/assets/file.excalidraw (11) (1).svg" alt="From the color sensor&#x27;s perspective, the problem looks more difficult." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (11) (1) (1).svg" alt="From the color sensor&#x27;s perspective, the problem looks more difficult." class="gitbook-drawing">
 
 ### Filtering Background Noise
 
@@ -66,7 +66,7 @@ However, external light sources such as the sun or a light bulb in the room can 
 
 For constant noise, such as that produced by a light bulb in a room, a simple solution is to subtract the noise from the measurement to obtain the true signal. To achieve this, we first determine the level of noise by measuring the intensities of red, green, and blue when the LED is turned off and only the light bulb is measured.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="The constant background light should show as constant lines across time." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="The constant background light should show as constant lines across time." class="gitbook-drawing">
 
 Once we have the noise values, we remember them and subtract them from the measurements when receiving signals from the LED. To account for changing environments, we measure the background noise frequently, for example, every time before receiving data.
 
@@ -82,7 +82,7 @@ How can we recognize unexpected noise? To identify when something unexpected hap
 
 In our example with the 3 colors red, green and blue to encode 0, 1, and 2, the expected events are  defined by the three colors we want to recognize.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="We expect to see the events &#x22;red&#x22;, &#x22;green&#x22;, and &#x22;blue&#x22;." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1) (3).svg" alt="We expect to see the events &#x22;red&#x22;, &#x22;green&#x22;, and &#x22;blue&#x22;." class="gitbook-drawing">
 
 An unexpected event would then be a color measurement that deviates too much from our definition of the three colors red, green, and blue. For example, orange, purple, pink, or gray would definitely fall into the set of unexpected colors.
 
@@ -92,7 +92,7 @@ To handle unexpected noise in our LiFi communication, we need to identify reliab
 
 To improve our algorithm, we can define expected values for red, green, and blue for all three colors and add some tolerance, resulting in intervals. Any events for which the red, green, and blue components do not fall within these intervals are treated as unexpected. By defining expected values and tolerances, we can create a more robust algorithm that is better equipped to handle unexpected noise and accurately identify when something is interfering with the signal.
 
-<img src="../../.gitbook/assets/file.excalidraw (16).svg" alt="Event B is unexpected because the intensity of red is too high for blue." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (16) (1).svg" alt="Event B is unexpected because the intensity of red is too high for blue." class="gitbook-drawing">
 
 
 

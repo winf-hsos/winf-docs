@@ -64,9 +64,9 @@ By using these inverted gates, we can create more complex logic circuits that ca
 
 A relay is a switch that can be controlled by electricity rather than our fingers.
 
-<img src="../../.gitbook/assets/file.excalidraw (18).svg" alt="An electromagnetic relay." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (18) (1).svg" alt="An electromagnetic relay." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="Two relays connected in series make an AND-gate." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="Two relays connected in series make an AND-gate." class="gitbook-drawing">
 
 <img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="Turning on the first switch won&#x27;t turn on the bulb." class="gitbook-drawing">
 
