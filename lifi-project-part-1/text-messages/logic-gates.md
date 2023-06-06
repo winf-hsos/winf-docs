@@ -5,7 +5,7 @@ description: >-
   information processing along the way.
 ---
 
-# Logic and Arithmetic
+# Logic Gates
 
 <details>
 
@@ -56,9 +56,9 @@ The small circle on the output side of the inverted gate indicates that the outp
 
 By using these inverted gates, we can create more complex logic circuits that can perform a wide range of operations, such as arithmetic, memory, and communication.
 
-<img src="../../.gitbook/assets/file.excalidraw (2).svg" alt="The AND- and OR-gate combined with the NOT-gate result in an NAND- and NOR-gate." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="The AND- and OR-gate combined with the NOT-gate result in an NAND- and NOR-gate." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1) (1).svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
 
 ## Nothing But Switches
 

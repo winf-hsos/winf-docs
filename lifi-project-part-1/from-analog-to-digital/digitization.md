@@ -26,7 +26,7 @@ This lesson is relevant for [Exercise 4: Digitizing The Physical World](https://
 
 The analog world represents <mark style="background-color:yellow;">**continuous signals**</mark>, while the digital world consists of <mark style="background-color:yellow;">**discrete signals**</mark>. To illustrate this concept, imagine stairs with discrete steps versus an inclined plane with continuous levels where one can stand. The stairs represent the digital world, with each step being a distinct level, while the inclined plane symbolizes the analog world, where any position along the slope can be occupied.
 
-<img src="../../.gitbook/assets/file.excalidraw (2) (1) (1).svg" alt="The difference between analog and digital: Which is which?" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (2) (1) (1) (1).svg" alt="The difference between analog and digital: Which is which?" class="gitbook-drawing">
 
 ## Digitization
 
