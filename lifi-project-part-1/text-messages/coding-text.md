@@ -12,8 +12,8 @@ description: >-
 
 In this lesson, you'll learn:
 
-* ...
-* ...
+* How you can design your own code system for a set of symbols.
+* How to encode and decode a message using your new code system.
 
 This lesson is relevant for [Exercise 6: Text Messages](https://winf-hsos.github.io/lifi-exercises/exercises/06\_exercise\_text\_messages.pdf).
 
