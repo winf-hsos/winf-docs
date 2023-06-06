@@ -1,7 +1,7 @@
 # Text Messages
 
-{% content-ref url="logic-and-arithmetic.md" %}
-[logic-and-arithmetic.md](logic-and-arithmetic.md)
+{% content-ref url="logic-gates.md" %}
+[logic-gates.md](logic-gates.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../lifi-project-part-2/cooperation/do-not-repeat-yourself.md" %}

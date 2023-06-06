@@ -27,7 +27,7 @@
   * [Very Light Messages ⭐](lifi-project-part-1/speed-of-light/very-light-messages.md)
 * [Text Messages](lifi-project-part-1/text-messages/README.md)
   * [Coding Letters](lifi-project-part-1/text-messages/coding-text.md)
-  * [Logic and Arithmetic](lifi-project-part-1/text-messages/logic-and-arithmetic.md)
+  * [Logic Gates](lifi-project-part-1/text-messages/logic-gates.md)
   * [Binary Addition ⭐](lifi-project-part-1/text-messages/binary-addition.md)
 * [Pixel By Pixel](lifi-project-part-1/pixel-by-pixel/README.md)
   * [Digital Images](lifi-project-part-1/pixel-by-pixel/digital-images.md)
