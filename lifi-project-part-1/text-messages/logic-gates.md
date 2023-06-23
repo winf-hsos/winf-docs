@@ -58,7 +58,7 @@ By using these inverted gates, we can create more complex logic circuits that ca
 
 <img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="The AND- and OR-gate combined with the NOT-gate result in an NAND- and NOR-gate." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw (2) (1) (1).svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
 
 ## Nothing But Switches
 
@@ -66,7 +66,7 @@ A relay is a switch that can be controlled by electricity rather than our finger
 
 <img src="../../.gitbook/assets/file.excalidraw (18) (1).svg" alt="An electromagnetic relay." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="Two relays connected in series make an AND-gate." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (3).svg" alt="Two relays connected in series make an AND-gate." class="gitbook-drawing">
 
 <img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="Turning on the first switch won&#x27;t turn on the bulb." class="gitbook-drawing">
 
