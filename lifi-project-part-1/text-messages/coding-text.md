@@ -27,7 +27,7 @@ In the lesson about [measuring-information.md](../speed-of-light/measuring-infor
 
 Recall from the lesson [code-systems.md](../logic-with-the-led/code-systems.md "mention")that there already exists a code system that, among other characters, contains encodings for the letters A to Z: The [ASCII code system](../logic-with-the-led/code-systems.md#ascii-code). Why don't we simply use this code system? We certainly could, but it wouldn't satisfy our requirement to be as efficient as possible. The ASCII code uses 7 bits to encode a total of 128 characters, including uppercase and lowercase letters, numbers, punctuation and some invisible characters, such as line breaks. We don't need all that, all we need is the 26 capital letters from A to Z.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="The ASCII code system uses 7 bits to encode 128 characters. Too much for our LiFi-prototype." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (3).svg" alt="The ASCII code system uses 7 bits to encode 128 characters. Too much for our LiFi-prototype." class="gitbook-drawing">
 
 But how many bits do we need for that? We can calculate the answer using the formula we introduced earlier:
 
@@ -89,7 +89,7 @@ Given the code table of our code system and the fact that it is a fixed-length c
 
 When encoding the message in binary, we must step through each symbol and look up its binary code:
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="Binary encoding of the message &#x22;LIFI&#x22; using the code table." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="Binary encoding of the message &#x22;LIFI&#x22; using the code table." class="gitbook-drawing">
 
 Decoding a message works the other way around. We receive a stream of bits, e.g., using signals from the LED and the [three-color-protocol](../speed-of-light/very-light-messages.md#an-alternative-approach). To decode the original message, we need to know the encoding that was used to create the stream of bits. Knowing it, we split the bits into chunks of the size the code system uses and find the symbol for a chunk. In our case, the chunk size is 5 bits.
 
