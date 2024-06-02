@@ -2,6 +2,7 @@
 
 * [The LiFi Project](README.md)
 * [Course Overview](course-overview.md)
+* [Information](information.md)
 
 ## LiFi Project Part 1
 
