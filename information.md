@@ -34,9 +34,9 @@ $$
 I = H_0 - H_1
 $$
 
-Information is thus the amount of reduced uncertainty. But if we need to subtract two uncertainties to calclate the information content, how can we measure uncertainty?
+Information is thus the amount of reduced uncertainty. But if we subtract two uncertainties to calculate the information content, how can we measure uncertainty in the first place?
 
-A simple and naive approach no measure uncertainty would to use the inverse probabilty of a correct guess given the current possibilities left. What does that mean? Let's consider our number guessing game to clarify this. At the beginning of the game, there are 16 possible numbers I could be thinking of. I you made a random guess, what is your chance of guessing the correct number?
+A simple and naive approach to measure uncertainty would be to use the inverse probabilty of a correct guess, given the current possibilities left. What does that mean? Let's consider our number guessing game to clarify this. At the beginning of the game, there are 16 possible numbers I could be thinking of. I you made a random guess, what is your chance of guessing the correct number?
 
 $$
 P(correct) = \frac{1}{16}
