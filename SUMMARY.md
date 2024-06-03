@@ -2,6 +2,10 @@
 
 * [The LiFi Project](README.md)
 * [Course Overview](course-overview.md)
+* [Problem Solving](problem-solving/README.md)
+  * [In-And-Out](problem-solving/in-and-out.md)
+  * [Strategies](problem-solving/strategies.md)
+  * [Programs](problem-solving/programs.md)
 * [Information](information.md)
 
 ## LiFi Project Part 1
