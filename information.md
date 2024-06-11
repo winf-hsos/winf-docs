@@ -1,6 +1,18 @@
+---
+description: >-
+  The LiFi appliance's task is to convey information via light signals. But what
+  exactly is information, and how can we measure it?
+---
+
 # Information
 
-Imagine we are playing a number guessing game. I am thinking of a number between 1 and 16, and your goal is to guess it. The catch is that you can only ask for a specific number once, but you can narrow down the possibilities with questions in the form of "Is it greater than X". For each question, I will tell you "yes" or "no", effectively narrowing down the options you are left with. With each answer you get, your uncertainty about my number decreases because you can rule out some of the possible numbers. This process of systematically narrowing down the possibilities is at the heart of information theory. By reducing uncertainty, you gather more information with each guess. But how much information do you get with each answer? And how can we measure this?
+Imagine solving a key challenge we encounter daily, especially when working with computers: transmitting information over a distance, from a sender to a receiver. This is where our LiFi appliance comes into play, as this happens to be one of our major objectives in this project.
+
+But what exactly is information in this context? "Information" is such a broad term that it warrants a closer look. We need a precise definition to quantify information. This will be crucial when determining how much information our LiFi appliance can send within a given time span. Let's dive into the details and uncover the essence of information.
+
+## Guessing Numbers
+
+Imagine we are playing a number guessing game. I am thinking of a number between 1 and 16, and your goal is to guess it. The catch is that you can only ask for a specific number once, but you can narrow down the possibilities with questions in the form of "Is it greater than X". For each question, I will tell you "yes" or "no", effectively narrowing down the options you are left with. With each answer you get, your uncertainty about my number decreases because you can rule out some possible numbers. This process of systematically narrowing down the possibilities is at the heart of information theory. By reducing uncertainty, you gather more information with each guess. But how much information do you get with each answer? And how can we measure this?
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/number_guessing_game_1.png" %}
 
