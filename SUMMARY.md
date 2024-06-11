@@ -7,6 +7,7 @@
   * [Strategies](problem-solving/strategies.md)
   * [Programs](problem-solving/programs.md)
 * [Information](information.md)
+* [Code Systems](code-systems.md)
 
 ## LiFi Project Part 1
 
