@@ -56,65 +56,91 @@ It takes 4 yes/no questions to reduce the options from 16 to a single one.
 
 ## Uncertainty
 
-We just learned that with each yes/no question that removes half of the possibilities, we gain one bit of information. If $$H_0$$ is the uncertainty before we receive the answer to our question, and $$H_1$$ is the uncertainty after we considered the answer, then the  information $$I$$ we gained with this answer is the difference between both uncertainties:
+We've just learned that with each yes/no question that eliminates half of the possibilities, we gain one bit of information. But how do we quantify this concept of uncertainty mathematically? Let's break it down step-by-step.
+
+Imagine you are at the beginning of our number guessing game. There are 16 possible numbers I could be thinking of, so your probability of guessing the correct number on the first try is quite low:
+
+$$
+P_{correct} = \frac{1}{16}
+$$
+
+That's a mere 0.0625 probability—definitely not in your favor. Suppose you ask a question that narrows down the possibilities to half. Now, your chance of guessing correctly improves:
+
+$$
+P_{correct} = \frac{1}{8}
+$$
+
+With each successive question, this probability doubles, while your uncertainty halves. But is probability the best way to measure uncertainty? If we want our measure of uncertainty to decrease as we gather more information, it makes sense to use the inverse of probability.
+
+Initially, there are 16 possibilities, so the uncertainty starts at 16. After the first question, it drops to 8, then to 4, 2, and finally 1. However, even if only one option remains, this measure would tell us there is still some uncertainty (1), which doesn't quite fit our intuitive understanding.
+
+Claude Shannon, the pioneering figure in information theory, proposed a different approach. He suggested measuring uncertainty using the base-2 logarithm of the number of possibilities:
+
+$$
+H = \log_2 (N)
+$$
+
+This method has several advantages. Firstly, if there's only one possible answer (N=1), the uncertainty is zero, which aligns with our intuition:
+
+$$
+\log_2 (1) = 0
+$$
+
+Another advantage is the simplicity in calculations, especially when dealing with multiple independent uncertainties. Let's say the game changes: now I am thinking of two independent numbers between 1 and 16. Before asking any questions, your uncertainty for each number is:
+
+$$
+\log_2 (16) = 4 \text{ bits}
+$$
+
+The total uncertainty for both numbers is just the sum of their individual uncertainties:
+
+$$
+\log_2 (16) + \log_2 (16) = 4 + 4 = 8 \text{ bits}
+$$
+
+If we use probabilities instead, we would multiply the chances to find the probability of guessing both numbers correctly:
+
+$$
+P_{correct, correct} = \frac{1}{16} \times \frac{1}{16} = \frac{1}{256}
+$$
+
+So, with both numbers, there are 256 possibilities. Using Shannon's method, we get the same result:
+
+$$
+\log_2 (256) = 8 \text{ bits}
+$$
+
+As you can see, using logarithms simplifies our calculations, especially when dealing with multiple sources of uncertainty. This clarity and simplicity are why Shannon's approach has become fundamental in the field of information theory.
+
+## Information
+
+If $$H_0$$ is the uncertainty before we receive the answer to our question, and $$H_1$$ is the uncertainty after we considered the answer, then the  information $$I$$ we gained with this answer is the difference between both uncertainties:
 
 $$
 I = H_0 - H_1
 $$
 
-Information is thus the amount of reduced uncertainty. But if we subtract two uncertainties to calculate the information content, how can we measure uncertainty in the first place?
+Information is thus the amount of reduced uncertainty.
 
-A simple and naive approach to measure uncertainty would be to use the inverse probabilty of a correct guess, given the current possibilities left. What does that mean? Let's consider our number guessing game to clarify this. At the beginning of the game, there are 16 possible numbers I could be thinking of. I you made a random guess, what is your chance of guessing the correct number?
-
-$$
-P(correct) = \frac{1}{16}
-$$
-
-Guessing with no hints gives you a 0,0625 probability of being right. Not too high of a chance. So maybe you should ask the first question to eliminate half of the possibilities. This increases your probability:
+With this formula, we can easily calculate the information we get for any question we ask, regardless of whether it eliminates half or less of the remaining possibilities. Let's consider the example when our first question is "Is your number greater than 12?" and the answer is "no". We are left with the number 1 through 12, and only 4 possible numbers are removed:
 
 $$
-P(correct) = \frac{2}{16}  = \frac{1}{8}
+I = log_2(16) - log_2(12) = 4 - 3.6124 =  0.3876
 $$
 
-That's better. With every subsequent questions, your chance doubles and your uncertainty halves. But if we wanted to use the probability of a correct guess as our measure for uncertainty, that measure must decrease and not increase with new information. To achieve this, we could simply invert the probabilty. Assuming this, our uncertainty from the outset would be 16. After the first question, it would be 8, then 4, 2, and finally 1.
+With around 0.39 bits, the answer gave us less than one bit of information.&#x20;
 
-Can you spot the problem? Even if we know the answer for sure, because only one option is left, the uncertainty would still be 1. That doesn't sound right. Claude Shannon, the father of information theory, proposed to measure uncertainty as the base-2 logarithm of the number of possibilities:&#x20;
-
-$$
-H = log_2(N)
-$$
-
-This has a number of desireable properties. Firstly, when $$N = 1$$, then the uncertainty becomes zero, as one would anticipate:
+What if the answer was "yes"? We would then be left with the possible numbers 13, 14, 15, and 16, which are four possible options:
 
 $$
-log_2(1) = 0
+I = log_2(16) - log_2(4) = 4 - 2 = 2\text{ bits}
 $$
 
-Furthermore, calculating with uncertainties is simplified when using logarithms. Logarithms turn products into sums when we have two independent events about which we are uncertain of their outcome. Imagine I change the game and I now come up with two numbers between 1 and 16 and  I choose both independent from each other. If you haven't asked any question yet, your uncertainty for each number is 4 bits, because:
+Nice - this answer actually yielded more than one bit, namely 2 bits. How can this be?
 
-$$
-log_2(16) = 4
-$$
+## Less Likely Answers
 
-We can say that the that the total uncertainty regarding both number is 8, because we can simply add the two logarithms:
 
-$$
-log_2(16) + log_2(16) = 4+4 = 8
-$$
-
-With probabilites, we would have to multiply the values to calculate the probability of you guessing both numbers correctly:
-
-$$
-P(correct, correct) = \frac{1}{16}\times\frac{1}{16}= \frac{1}{256}
-$$
-
-So basically, we multiplied the number of possibilities for both numbers, which is 256. We can see that using the base-2 logarithm is equivalent, because:
-
-$$
-log_2(256) = 8
-$$
-
-As you can see, using the logarithm leads to the same result, but is much simpler to calculate with, especially when we have many uncertainties we want to add up.
 
 ## The Father of Information Theory
 
