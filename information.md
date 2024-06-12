@@ -6,11 +6,11 @@ description: >-
 
 # Information
 
-Imagine solving a key challenge we encounter daily, especially when working with computers: transmitting information over a distance, from a sender to a receiver. Whenever you type a message in WhatsApp and send it, information is traveling over different media until it arrives at the recipient's smartphone.&#x20;
+A key challenge with computers is the transmission of information over a distance, from a sender to a receiver. Whenever you type a message in WhatsApp and send it, information is traveling over different media until it arrives at the recipient's smartphone. The same is true for e-mails, sharing files, streaming videos, or listening to podcasts.&#x20;
 
-Transmitting information happens to be the  major objective of the LiFi project. The particularity is that we want to use light signals as the medium for the transmission of information.
+In the LiFi project, we aim to gain an understanding of how the transmission of information works. In fact, the LiFi appliance's major goal is the transmission of any information using nothing but light signals. For that, we must have an understanding of  how information can be represented so that it can be stored and processed by a digital computer and shared among different devices. This begins with the question of what information is in this context.
 
-But what exactly is information in this context? "Information" is such a broad term that it warrants a closer look. We need a precise definition to quantify information. This will be crucial when determining how much information our LiFi appliance can send within a given time span. Let's dive into the details and uncover the essence of information.
+So what is "Information" in the context of computers? We need a precise definition of the term, and we need a way to quantify information. This will be crucial when determining how much information our LiFi appliance can send within a given time span. Let's dive into the details and uncover the essence of information.
 
 ## Guessing Numbers
 
