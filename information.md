@@ -6,9 +6,9 @@ description: >-
 
 # Information
 
-One fascinating aspects of computers and information technology is their ability to transmit information over distances, from one sender to a receiver. Think about the last time you sent a message via WhatsApp. As soon as you hit 'send,' your message traveled through various media before arriving at your friend's smartphone. This process is not limited to messaging; it also happens when you send emails, share files, stream videos, or listen to music or podcasts.
+One fascinating aspect of computers and information technology is their ability to transmit information over distances, from one sender to a receiver. Think about the last time you sent a message via WhatsApp. As soon as you hit 'send,' your message traveled through various media (e.g., electromagnetic waves, copper cables, fiber optic cables) before arriving at your friend's smartphone. This process is not limited to messaging; it also happens when you send emails, share files, stream videos, or listen to music or podcasts.
 
-In the LiFi project, we aim to understand how this transmission of information works. What sets LiFi apart is the medium over which information travels: information should be transmitted using nothing but light signals. To comprehend this, we need to understand how information is represented, stored, and processed by digital computers, and how it is shared among different devices. This journey begins with a fundamental question: what exactly is information in the context of computers?
+In the LiFi project, we aim to understand how this transmission of information works. What sets LiFi apart is the medium over which information travels: information should be transmitted using only light signals. To comprehend this, we need to understand how information is represented, stored, and processed by digital computers, and how it is shared among different devices. This journey begins with a fundamental question: what exactly is information in the context of computers?
 
 In this chapter, we will define the term “information” and introduce a way to quantify it. This understanding is essential, especially when determining how much information our LiFi appliance can send within a given time frame. Let's dive into the details and uncover the essence of information, as this will be crucial for our exploration of the digital world.
 
