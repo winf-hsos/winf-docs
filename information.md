@@ -6,7 +6,9 @@ description: >-
 
 # Information
 
-Imagine solving a key challenge we encounter daily, especially when working with computers: transmitting information over a distance, from a sender to a receiver. This is where our LiFi appliance comes into play, as this happens to be one of our major objectives in this project.
+Imagine solving a key challenge we encounter daily, especially when working with computers: transmitting information over a distance, from a sender to a receiver. Whenever you type a message in WhatsApp and send it, information is traveling over different media until it arrives at the recipient's smartphone.&#x20;
+
+Transmitting information happens to be the  major objective of the LiFi project. The particularity is that we want to use light signals as the medium for the transmission of information.
 
 But what exactly is information in this context? "Information" is such a broad term that it warrants a closer look. We need a precise definition to quantify information. This will be crucial when determining how much information our LiFi appliance can send within a given time span. Let's dive into the details and uncover the essence of information.
 
