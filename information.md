@@ -14,27 +14,41 @@ In this chapter, we will define the term “information” and introduce a way t
 
 ## Guessing Numbers
 
-Let's start with a thought experiment. Imagine we are playing a number guessing game. I am thinking of a number between 1 and 16, and your goal is to guess it. The catch is that you can only ask for a specific number once, but you can narrow down the possibilities beforehand with questions in the form of "Is it greater than X". For each question, I will tell you "yes" or "no", effectively reducing the options you are left with. With each answer you get, your uncertainty about my number decreases because you can rule out some possible numbers. This process of systematically narrowing down the possibilities is at the heart of information theory. By reducing uncertainty, you gather more information with each guess. But how much information do you get with each answer? And how can we measure this?
+Let's start with a thought experiment. Imagine we are playing a number guessing game. I am thinking of a number between 1 and 16, and your goal is to guess it. The catch is that you have only one guess to get the right number, but you can narrow down the possibilities beforehand with questions in the form of "Is the number greater than X". For each question, I will tell you "yes" or "no", effectively reducing the options you are left with.&#x20;
+
+With each question you ask and answer you get, your knowledge about my number increases, which means your <mark style="background-color:blue;">**uncertainty**</mark> decreases. You can rule out some possible numbers when you receive a new answer.&#x20;
+
+This process of systematically narrowing down the possibilities is at the heart of <mark style="background-color:blue;">**information theory**</mark>. By reducing uncertainty, you gather more <mark style="background-color:blue;">**information**</mark> with each guess. But how much information do you get with each answer? And how can we measure this?
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/number_guessing_game_1.png" %}
+I am thinking of a number between 1 and 16. Your task is to guess the number with the fewest questions possible.
+{% endembed %}
 
-## Definition and Measurement of Information
+## Bits of Information
 
-In computer science, information can be defined as _"that which allows you to make a correct prediction with accuracy better than chance" <mark style="background-color:orange;">\[CITE]</mark>_. In information theory, this simply means reducing uncertainty. Or, in other words: reducing the number possible options.&#x20;
+In computer science, information can be defined as "that which allows you to make a correct prediction with accuracy better than chance" \[<mark style="background-color:orange;">CITE</mark>]. In more straightforward terms, this means reducing uncertainty or, in other words, narrowing down the number of possible options.
 
-With that in mind, let’s revisit our number guessing game. Each answer you receive narrows down the range of possible numbers. This reduction of uncertainty can be measured, and the unit we use is called a bit. A bit, short for binary digit, is the **basic unit of information** and represents a reduction of uncertainty - or the number of options left - by half.
+With this in mind, let’s revisit our number guessing game. Imagine you are trying to guess a number, and each answer you receive narrows down the range of possible numbers. This reduction of uncertainty can be measured using a unit called a <mark style="background-color:blue;">**bit**</mark>. A bit, which stands for <mark style="background-color:blue;">**binary digit**</mark>, is the fundamental unit of information. It indicates a reduction of uncertainty by half. In simpler terms, if a new answer leaves us with half as many options as before, it provides us with one bit of information.
 
-But if a bit of information is equal to eliminating half the possible numbers, then not all questions give you one bit of information. If your first question is "Is your number greater than 12?", and I say "no", then you are left with the numbers 1 thorugh 12, which leaves you with 12 options and is more than half of the original 16 numbers. To receive one bit of information, your first question should be: "Is your number greater than 8?". When the answer is "yes", you are left with 8 options: 9 through 16. When the answer is "no", you are also left with 8 options: 1 through 8. In any case, half of the options from before are removed. You reduced your uncertainty by one bit.
+However, not all questions will provide exactly one bit of information. For example, if your first question in the guessing game is, "Is your number greater than 12?" and the answer is "no," you’re left with the numbers 1 through 12. This means you have 12 options remaining out of the original 16, which doesn't quite halve the uncertainty.
+
+To receive one bit of information, you should aim to eliminate exactly half the possible numbers with each question. For instance, asking "Is your number greater than 8?" ensures that whether the answer is "yes" or "no," you are left with 8 possible numbers either way. If the answer is "yes," the remaining numbers are 9 through 16. If the answer is "no," the remaining numbers are 1 through 8. In both scenarios, your uncertainty is reduced by half, or one bit.
+
+By carefully choosing your questions to cut the remaining options in half each time, you effectively reduce your uncertainty bit by bit, making it easier and faster to zero in on the correct number.
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/number_guessing_game_2.png" %}
 Your questions should cut the number of possibilties in half.
 {% endembed %}
 
-Assume the answer to your first question was "No". I am sure you can figure out the next question that maximizes the reduction in uncertainty - or information. You're right, it's: "Is it greater than 4". No matter the answer, you will always be left with 4 possible numbers: 5 through 8 when the answer is "Yes", and 1 through 4 when it's "No". Again, we gained one bit of information.
+Assume the answer to your first question, "Is your number greater than 8?" was "no." What should your next question be to continue reducing uncertainty effectively? The best strategy is to ask, "Is it greater than 4?" This approach ensures that you will always be left with only four possible numbers: either 1 through 4 if the answer is "no", or 5 through 8 if the answer is "yes". Again, this cuts the remaining options in half, providing exactly one bit of information.
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/number_guessing_game_3.png" %}
+After two questions, you are left with 4 possible numbers.
+{% endembed %}
 
-We can go on and ask questions in this manner. Finally, we will be left with only one option, which reduces the uncertainity to zero. There are no options left to choose from. Note that with 16 options, arriving at only 1 takes 4 questions.
+Let's continue with this method. Suppose your second question "Is it greater than 4?" receives a "no" as the answer. Your new pool of numbers is limited to 1, 2, 3, and 4. To keep reducing uncertainty, the next logical question would be, "Is it greater than 2?" This leaves you either with the numbers 1 and 2 or 3 and 4, depending on the answer.
+
+By continuing to ask questions that systematically halve the remaining options, you can see how we gradually reduce uncertainty bit by bit. Eventually, after just four questions, you will narrow it down to exactly one number, knowing there are no other possibilities left. This means you've reduced the uncertainty to zero.
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/number_guessing_game_6.png" %}
 It takes 4 yes/no questions to reduce the options from 16 to a single one.
@@ -42,7 +56,7 @@ It takes 4 yes/no questions to reduce the options from 16 to a single one.
 
 ## Uncertainty
 
-We just learned that with each yes/no question that removes half of the possibilites, we gain one bit of information. If $$H_0$$ is the uncertainty before we receive the answer to our question, and $$H_1$$ is the uncertainty after we considered the answer, then the  information $$I$$ we gained with this answer is the difference between both uncertainties:
+We just learned that with each yes/no question that removes half of the possibilities, we gain one bit of information. If $$H_0$$ is the uncertainty before we receive the answer to our question, and $$H_1$$ is the uncertainty after we considered the answer, then the  information $$I$$ we gained with this answer is the difference between both uncertainties:
 
 $$
 I = H_0 - H_1
