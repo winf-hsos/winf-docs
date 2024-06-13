@@ -186,6 +186,10 @@ Now that we've established how to measure information through targeted questions
 
 ## The Smallest Unit of Information
 
+Expanding on the idea of bits, we measure information using bits because they represent the most basic, binary choice: yes or no, 0 or 1. Every digital communication, whether it's text, audio, or video, breaks down into binary digits.
+
+In our previous example, every yes/no question we asked in our guessing game can be thought of as a bit of information. When we generalize this process for any form of data transmission – whether through text messages, streaming videos, or even controlling smart devices – we are continually breaking down and managing bits of information.
+
 {% embed url="https://winf-hsos.github.io/university-docs/images/permutations_a_no_information.png" %}
 With only the symbol A, no variation and thus no information is possible.
 {% endembed %}
