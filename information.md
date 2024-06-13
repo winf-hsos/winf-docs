@@ -8,7 +8,7 @@ description: >-
 
 One fascinating aspect of computers and information technology is their ability to transmit information over distances, from one sender to a receiver. Think about the last time you sent a message via WhatsApp. As soon as you hit 'send,' your message traveled through various media (e.g., electromagnetic waves, copper cables, fiber optic cables) before arriving at your friend's smartphone. This process is not limited to messaging; it happens when you send emails, share files, stream videos, or listen to music or podcasts.
 
-In the LiFi project, we aim to understand how this transmission of information works. What sets LiFi apart is the medium over which information travels: information should be transmitted using only light signals. To comprehend this, we need to understand how information is represented, stored, and processed by digital computers, and how it is shared among different devices. This journey begins with a fundamental question: what exactly is information in the context of computers?
+Understanding how information is transmitted is essential for various technologies, including the LiFi project. What sets LiFi apart is the medium over which information travels: information should be transmitted using only light signals. To comprehend this, we need to understand how information is represented, stored, and processed by digital computers, and how it is shared among different devices. This journey begins with a fundamental question: what exactly is information in the context of computers?
 
 In this chapter, we will define the term “information” and introduce a way to quantify it. This understanding is essential, especially when determining how much information our LiFi appliance can send within a given time frame. Let's dive into the details and uncover the essence of information, as this will be crucial for our exploration of the digital world.
 
@@ -16,9 +16,9 @@ In this chapter, we will define the term “information” and introduce a way t
 
 Let's start with a thought experiment. Imagine we are playing a number guessing game. I am thinking of a number between 1 and 16, and your goal is to guess it. The catch is that you have only one guess to get the right number, but you can narrow down the possibilities beforehand with questions in the form of "Is the number greater than X". For each question, I will tell you "yes" or "no", effectively reducing the options you are left with.&#x20;
 
-With each question you ask and answer you get, your knowledge about my number increases, which means your <mark style="background-color:blue;">**uncertainty**</mark> decreases. You can rule out some possible numbers when you receive a new answer.&#x20;
+With each answer you get, your knowledge about my number increases, which means your <mark style="background-color:blue;">**uncertainty**</mark> decreases. You can rule out some possible numbers when you receive a new answer.&#x20;
 
-This process of systematically narrowing down the possibilities is at the heart of <mark style="background-color:blue;">**information theory**</mark>. By reducing uncertainty, you gather more <mark style="background-color:blue;">**information**</mark> with each guess. But how much information do you get with each answer? And how can we measure this?
+Now that we've seen how systematically narrowing down possibilities reduces uncertainty, let's explore how this concept forms the basis of information theory. By reducing uncertainty, you gather more <mark style="background-color:blue;">**information**</mark> with each guess. But how much information do you get with each answer? And how can we measure this?
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/number_guessing_game_1.png" %}
 I am thinking of a number between 1 and 16. Your task is to guess the number with the fewest questions possible.
@@ -26,7 +26,7 @@ I am thinking of a number between 1 and 16. Your task is to guess the number wit
 
 ## Bits of Information
 
-In computer science, information can be defined as "that which allows you to make a correct prediction with accuracy better than chance" \[<mark style="background-color:orange;">CITE</mark>]. In more straightforward terms, this means reducing uncertainty or, in other words, narrowing down the number of possible options.
+In computer science, information can be defined as "that which allows you to make a correct prediction with accuracy better than chance" \[<mark style="background-color:orange;">CITE</mark>]. In more straightforward terms, this means reducing uncertainty by narrowing down the number of possible options.
 
 With this in mind, let’s revisit our number guessing game. Imagine you are trying to guess a number, and each answer you receive narrows down the range of possible numbers. This reduction of uncertainty can be measured using a unit called a <mark style="background-color:blue;">**bit**</mark>. A bit, which stands for <mark style="background-color:blue;">**binary digit**</mark>, is the fundamental unit of information. It indicates a reduction of uncertainty by half. In simpler terms, if a new answer leaves us with half as many options as before, it provides us with one bit of information.
 
@@ -70,7 +70,7 @@ $$
 P_{correct} = \frac{1}{8}
 $$
 
-With each successive question, this probability doubles, while your uncertainty halves. But is probability the best way to measure uncertainty? If we want our measure of uncertainty to decrease as we gather more information, it makes sense to use the inverse of probability.
+With each successive question, this probability doubles, while your uncertainty halves. Is probability the best way to measure uncertainty? If we want our measure of uncertainty to decrease as we gather more information, it makes sense to use the inverse of probability.
 
 Initially, there are 16 possibilities, so the uncertainty starts at 16. After the first question, it drops to 8, then to 4, 2, and finally 1. However, even if only one option remains, this measure would tell us there is still some uncertainty (1), which doesn't quite fit our intuitive understanding.
 
@@ -104,7 +104,7 @@ $$
 P_{correct, correct} = \frac{1}{16} \times \frac{1}{16} = \frac{1}{256}
 $$
 
-So, with both numbers, there are 256 possibilities. Using Shannon's method, we get the same result:
+With both numbers, there are 256 possibilities. Using Shannon's method, we get the same result:
 
 $$
 \log_2 (256) = 8 \text{ bits}
@@ -122,7 +122,7 @@ $$
 
 Information is thus the amount of reduced uncertainty.
 
-With this formula, we can easily calculate the information we get for any question we ask, regardless of whether it eliminates half or less of the remaining possibilities. Let's consider the example when our first question is "Is your number greater than 12?" and the answer is "no". We are left with the number 1 through 12, and only 4 possible numbers are removed:
+With this formula, we can easily calculate the information we get for any question we ask, regardless of whether it eliminates half or less of the remaining possibilities. Let's consider the example when our first question is "Is your number greater than 12?" and the answer is "no". We are left with the numbers 1 through 12, and only 4 possible numbers are removed:
 
 $$
 I = log_2(16) - log_2(12) = 4 - 3.6124 =  0.3876
@@ -136,7 +136,7 @@ $$
 I = log_2(16) - log_2(4) = 4 - 2 = 2\text{ bits}
 $$
 
-Nice - this answer actually yielded more than one bit, namely 2 bits. How can this be?
+This answer yielded more than one bit, namely 2 bits. How can this be?
 
 ## Less Likely Answers
 
