@@ -178,13 +178,7 @@ $$
 
 ## From Questions to Symbols
 
-## The Father of Information Theory
-
-It was Claude Shannon, an American mathematician and electrical engineer, who transformed how we think about and handle information. Born in 1916, Shannon's most influential work came during his time at Bell Labs. In 1948, he published "A Mathematical Theory of Communication," which laid the groundwork for information theory. His pioneering ideas made it possible to compress data, detect and correct errors, and improve digital communication systems. These contributions are fundamental to the digital age, influencing everything from smartphones to satellite communications.
-
-Information theory is essential for understanding and managing the transfer and storage of information in modern systems. Think about how you use the internet daily – streaming videos, sending emails, or downloading files. All these activities rely on efficient data communication. Information theory provides the tools to compress data to save storage space, correct errors during data transmission, and optimize communication channels for speed and reliability. Without Shannon’s theories, our current technology, like smartphones and data encryption methods, would be far less efficient and reliable.
-
-## Bit - The Smallest Unit of Information
+## The Smallest Unit of Information
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/permutations_a_no_information.png" %}
 With only the symbol A, no variation and thus no information is possible.
