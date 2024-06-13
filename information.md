@@ -182,6 +182,8 @@ This calculation confirms that targeted questions eliminating half the possibili
 
 ## From Questions to Symbols
 
+Now that we've established how to measure information through targeted questions, let's delve into another integral aspect of information theory: symbols. In real-world applications, information isn't just conveyed through yes/no questions but also through a variety of symbols and signals.
+
 ## The Smallest Unit of Information
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/permutations_a_no_information.png" %}
