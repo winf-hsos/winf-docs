@@ -140,8 +140,6 @@ This answer gave us more than one bit, specifically 2 bits. Why is there such a 
 
 ## Less Likely Answers
 
-REWRITE FROM HERE
-
 The difference in information comes down to the likelihood of receiving each answer. When a question eliminates half the possibilities, each possible answer ("yes" or "no") has an equal probability of 50%. This balance simplifies the calculation, yielding exactly one bit of information.
 
 However, asking "Is your number greater than 12?" is less balanced. There are 12 possible numbers that give a "no" and only 4 that give a "yes", giving probabilities of 75% for "no" and 25% for "yes." The "yes" answer is less likely and thus more surprising – it provides more information. As we calculated, a "yes" yields 2 bits of information, whereas a "no" provides 0.415 bits.
