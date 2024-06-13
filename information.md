@@ -125,10 +125,10 @@ Information is thus the amount of reduced uncertainty.
 With this formula, we can easily calculate the information we get for any question we ask, regardless of whether it eliminates half or less of the remaining possibilities. Let's consider the example when our first question is "Is your number greater than 12?" and the answer is "no". We are left with the numbers 1 through 12, and only 4 possible numbers are removed:
 
 $$
-I = log_2(16) - log_2(12) = 4 - 3.6124 =  0.3876
+I = log_2(16) - log_2(12) = 4 - 3.585 =  0.415
 $$
 
-With around 0.39 bits, the answer gave us less than one bit of information.&#x20;
+With around 0.415 bits, the answer gave us less than one bit of information.&#x20;
 
 What if the answer was "yes"? We would then be left with the possible numbers 13, 14, 15, and 16, which are four possible options:
 
@@ -140,7 +140,43 @@ This answer yielded more than one bit, namely 2 bits. How can this be?
 
 ## Less Likely Answers
 
+The answer lies in the probability of the answer you receive. If you ask a question that eliminates half the possibilities, your probability of receiving as "yes" is the same as "no". Both answers have a chance of 50%. That is, if the number was randomly chosen, which we assume here.&#x20;
 
+However, asking "Is the number greater than 12?" will more likely be answered with "no" than with "yes". There are 12 numbers that would yield a "no", and only 4 that would yield a "yes".  Therefore, the chances are 75% for "no" and only 25% for "yes".
+
+A "yes" would be more surprising to you than a "no", simply because it is less likely. We can say that the degree of surprise is equal to the amount of information you get. A "yes" is more surprising and thus contains more information. How much? Well, as we saw, 2 bits compared to 0.415 bits.&#x20;
+
+The answer "no" is less surprising compared to the "yes". And compared to a situation where both answers are equally likely, when we ask a question that halves the possibilities, where we get exactly one bit.
+
+I told you earlier that asking the kind of questions that systematically remove exactly half the possibilities is maximizing our information gain. Why? We could calculate the average amount of information we get, or the expected amount, by weighting the bits we get with their respective probabilities:
+
+$$
+E[I] = (0.25 \times 2) + (0.75 \times 0.415) = 0.811 \text{ bits}
+$$
+
+We can generalize this formula for any number of answers with different probabilities as follows:
+
+$$
+E[I] = -\sum_{i=1}^{S}p(x_i)\times log_2(p(x_i))
+$$
+
+Let's replace the values with the one from the example:
+
+$$
+E[I] = -[p(\text{yes})\times log_2(p(\text{yes})) + p(\text{no})\times log_2(p(\text{no}))]
+$$
+
+Which makes:
+
+$$
+E[I] = -[0.25\times log_2(0.25)) + 0.75\times log_2(0.75))]
+$$
+
+$$
+E[I] = -[-0.5 - 0.311)] = 0.811
+$$
+
+## From Questions to Symbols
 
 ## The Father of Information Theory
 
