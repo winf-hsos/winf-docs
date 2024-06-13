@@ -114,21 +114,21 @@ As you can see, using logarithms simplifies our calculations, especially when de
 
 ## Information
 
-If $$H_0$$ is the uncertainty before we receive the answer to our question, and $$H_1$$ is the uncertainty after we considered the answer, then the  information $$I$$ we gained with this answer is the difference between both uncertainties:
+If we begin by considering the uncertainty before asking a question, we assign it a value $$H_0$$. After receiving an answer, we measure the new level of uncertainty as $$H_1$$. The amount of information $$I$$ we gain from the answer is simply the difference between these two uncertainties:
 
 $$
 I = H_0 - H_1
 $$
 
-Information is thus the amount of reduced uncertainty.
+In essence, information is the reduction in uncertainty.
 
-With this formula, we can easily calculate the information we get for any question we ask, regardless of whether it eliminates half or less of the remaining possibilities. Let's consider the example when our first question is "Is your number greater than 12?" and the answer is "no". We are left with the numbers 1 through 12, and only 4 possible numbers are removed:
+This formula allows us to compute the information obtained from any question, regardless of how many possibilities it eliminates. Let's revisit our number guessing game to see this in action. Suppose your first question is, "Is your number greater than 12?" If the answer is "no," you are left with numbers 1 through 12. Here’s how we calculate the information gained:
 
 $$
 I = log_2(16) - log_2(12) = 4 - 3.585 =  0.415
 $$
 
-With around 0.415 bits, the answer gave us less than one bit of information.&#x20;
+In this case, the answer provided around 0.415 bits of information, which is less than one bit.
 
 What if the answer was "yes"? We would then be left with the possible numbers 13, 14, 15, and 16, which are four possible options:
 
@@ -136,47 +136,49 @@ $$
 I = log_2(16) - log_2(4) = 4 - 2 = 2\text{ bits}
 $$
 
-This answer yielded more than one bit, namely 2 bits. How can this be?
+This answer gave us more than one bit, specifically 2 bits. Why is there such a disparity?
 
 ## Less Likely Answers
 
 REWRITE FROM HERE
 
-The answer lies in the probability of the answer you receive. If you ask a question that eliminates half the possibilities, your probability of receiving as "yes" is the same as "no". Both answers have a chance of 50%. That is, if the number was randomly chosen, which we assume here.&#x20;
+The difference in information comes down to the likelihood of receiving each answer. When a question eliminates half the possibilities, each possible answer ("yes" or "no") has an equal probability of 50%. This balance simplifies the calculation, yielding exactly one bit of information.
 
-However, asking "Is the number greater than 12?" will more likely be answered with "no" than with "yes". There are 12 numbers that would yield a "no", and only 4 that would yield a "yes".  Therefore, the chances are 75% for "no" and only 25% for "yes".
+However, asking "Is your number greater than 12?" is less balanced. There are 12 possible numbers that give a "no" and only 4 that give a "yes", giving probabilities of 75% for "no" and 25% for "yes." The "yes" answer is less likely and thus more surprising – it provides more information. As we calculated, a "yes" yields 2 bits of information, whereas a "no" provides 0.415 bits.
 
-A "yes" would be more surprising to you than a "no", simply because it is less likely. We can say that the degree of surprise is equal to the amount of information you get. A "yes" is more surprising and thus contains more information. How much? Well, as we saw, 2 bits compared to 0.415 bits.&#x20;
+This surprise factor ties directly into information theory: the less likely an event, the more informative its occurrence. Conversely, a "no" answer is less surprising and therefore provides less information.
 
-The answer "no" is less surprising compared to the "yes". And compared to a situation where both answers are equally likely, when we ask a question that halves the possibilities, where we get exactly one bit.
-
-I told you earlier that asking the kind of questions that systematically remove exactly half the possibilities is maximizing our information gain. Why? We could calculate the average amount of information we get, or the expected amount, by weighting the bits we get with their respective probabilities:
+So, why do we aim to ask questions that evenly halve the possibilities? Because it maximizes our expected information gain. Let’s calculate the expected information from our earlier question:
 
 $$
 E[I] = (0.25 \times 2) + (0.75 \times 0.415) = 0.811 \text{ bits}
 $$
 
-We can generalize this formula for any number of answers with different probabilities as follows:
+This isn't as efficient as consistently gaining one bit per question. We can generalize this calculation for any number of answers with varying probabilities using the formula:
 
 $$
 E[I] = -\sum_{i=1}^{S}p(x_i)\times log_2(p(x_i))
 $$
 
-Let's replace the values with the one from the example:
+For our example, this becomes:
 
 $$
 E[I] = -[p(\text{yes})\times log_2(p(\text{yes})) + p(\text{no})\times log_2(p(\text{no}))]
 $$
 
-Which makes:
+Substituting the probabilities, we get:
 
 $$
 E[I] = -[0.25\times log_2(0.25)) + 0.75\times log_2(0.75))]
 $$
 
+Simplifying further:
+
 $$
 E[I] = -[-0.5 - 0.311)] = 0.811
 $$
+
+This calculation confirms that targeted questions eliminating half the possibilities indeed maximize our information gain.
 
 ## From Questions to Symbols
 
