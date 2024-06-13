@@ -140,7 +140,7 @@ This answer yielded more than one bit, namely 2 bits. How can this be?
 
 ## Less Likely Answers
 
-\[REWRITE FROM HERE]
+REWRITE FROM HERE
 
 The answer lies in the probability of the answer you receive. If you ask a question that eliminates half the possibilities, your probability of receiving as "yes" is the same as "no". Both answers have a chance of 50%. That is, if the number was randomly chosen, which we assume here.&#x20;
 
