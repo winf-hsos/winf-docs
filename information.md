@@ -180,7 +180,19 @@ This calculation confirms that targeted questions eliminating half the possibili
 
 ## From Questions to Symbols
 
-Now that we've established how to measure information through targeted questions, let's delve into another integral aspect of information theory: symbols. In real-world applications, information isn't just conveyed through yes/no questions but also through a variety of symbols and signals.
+Now that we know how to measure information through targeted questions, let's learn about another integral aspect of information theory: symbols. In real-world applications, information isn't just conveyed through yes/no questions, but we typically send and receive information through symbols. What does this mean?
+
+We can connect the idea of symbols to our number guessing game. Assume we always ask questions in the same form of "Is your number greater than X?", where X is the number that sits in the middle of the remaining possibilities. We learned that each answer will give us one bit of information. Consider I am thinking of the number 5, then you would arrive at this number with exactly four questions. Specifically, the following series of questions would follow:
+
+<table><thead><tr><th width="326">Question</th><th width="132">Answer</th><th>Possibilites left</th></tr></thead><tbody><tr><td>Is your number greater than 8?</td><td>no</td><td>1, 2, 3, 4, 5, 6, 7, 8</td></tr><tr><td>Is your number greater than 4?</td><td>yes</td><td>5, 6, 7, 8</td></tr><tr><td>Is your number greater than 6?</td><td>no</td><td>5, 6</td></tr><tr><td>Is your number greater than 5?</td><td>no</td><td>5</td></tr></tbody></table>
+
+After the last question, only the number 5 remains. Note that we always arrive at  the correct number with exactly four questions, no matter the number we are looking for. This is because the uncertainty for N = 16 is 4 bits, and we reduce the uncertainty with each question by 1 bit:
+
+$$
+H = log_2(16) = 4
+$$
+
+
 
 ## The Smallest Unit of Information
 
