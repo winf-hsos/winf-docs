@@ -186,13 +186,7 @@ We can connect the idea of symbols to our number guessing game. Assume we always
 
 <table><thead><tr><th width="326">Question</th><th width="132">Answer</th><th>Possibilites left</th></tr></thead><tbody><tr><td>Is your number greater than 8?</td><td>no</td><td>1, 2, 3, 4, 5, 6, 7, 8</td></tr><tr><td>Is your number greater than 4?</td><td>yes</td><td>5, 6, 7, 8</td></tr><tr><td>Is your number greater than 6?</td><td>no</td><td>5, 6</td></tr><tr><td>Is your number greater than 5?</td><td>no</td><td>5</td></tr></tbody></table>
 
-After the last question, only the number 5 remains. Note that we always arrive at  the correct number with exactly four questions, no matter the number we are looking for. This is because the uncertainty for N = 16 is 4 bits, and we reduce the uncertainty with each question by 1 bit:
-
-$$
-H = log_2(16) = 4
-$$
-
-
+After the last question, only the number 5 remains. Note that we always arrive at  the correct number with exactly four questions, no matter the number we are looking for. This is because the uncertainty for N = 16 is $$log_2(16) = 4$$ bits, and we reduce the uncertainty with each question by 1 bit.
 
 ## The Smallest Unit of Information
 
