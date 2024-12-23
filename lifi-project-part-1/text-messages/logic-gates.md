@@ -18,7 +18,7 @@ In this lesson, you'll learn:
 * How logic gates can be built from even smaller things.
 * How binary addition is possible with only logic gates.
 
-This lesson is relevant for [Exercise 6: Text Messages](https://winf-hsos.github.io/lifi-exercises/exercises/06\_exercise\_text\_messages.pdf).
+This lesson is relevant for [Exercise 6: Text Messages](https://winf-hsos.github.io/lifi-exercises/exercises/06_exercise_text_messages.pdf).
 
 </details>
 
@@ -40,7 +40,7 @@ To convert a given string into lowercase letters using a custom `to_lower` funct
 4. If the character is not an uppercase letter, the function simply adds the character to the result variable without modification.
 5. After all characters have been processed, the function returns the result variable containing the converted string.
 
-I encourage you to try this as an exercise to strengthen your programming skills. You find a solution to this problem in the [LiFi code GitHub-Repository](https://github.com/winf-hsos/LiFi-code/blob/main/problem\_solutions/to\_lower.py).
+I encourage you to try this as an exercise to strengthen your programming skills. You find a solution to this problem in the [LiFi code GitHub-Repository](https://github.com/winf-hsos/LiFi-code/blob/main/problem_solutions/to_lower.py).
 
 ## Types of Logic Gates
 
@@ -58,7 +58,7 @@ By using these inverted gates, we can create more complex logic circuits that ca
 
 <img src="../../.gitbook/assets/file.excalidraw (2) (1).svg" alt="The AND- and OR-gate combined with the NOT-gate result in an NAND- and NOR-gate." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw.svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="Truth table for the AND-gate. It only creates a high signal when both inputs are also high (or on)." class="gitbook-drawing">
 
 ## Nothing But Switches
 
@@ -66,7 +66,7 @@ A relay is a switch that can be controlled by electricity rather than our finger
 
 <img src="../../.gitbook/assets/file.excalidraw (18) (1).svg" alt="An electromagnetic relay." class="gitbook-drawing">
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1) (3) (1).svg" alt="Two relays connected in series make an AND-gate." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (3) (1) (1).svg" alt="Two relays connected in series make an AND-gate." class="gitbook-drawing">
 
 <img src="../../.gitbook/assets/file.excalidraw (3).svg" alt="Turning on the first switch won&#x27;t turn on the bulb." class="gitbook-drawing">
 

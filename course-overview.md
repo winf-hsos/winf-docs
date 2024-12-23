@@ -7,7 +7,7 @@ description: >-
 
 # Course Overview
 
-<img src=".gitbook/assets/file.excalidraw (3) (1) (1) (1).svg" alt="" class="gitbook-drawing">
+<img src=".gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
 ## Key Questions
 
@@ -29,12 +29,12 @@ To complete this project, you must solve the mandatory exercises listed below. E
 
 #### Part 1
 
-* [Exercise 1: Ready, Set, Smoke](https://winf-hsos.github.io/lifi-exercises/exercises/01\_exercise\_ready\_set\_smoke.pdf)
-* [Exercise 2: Logic With The LED](https://winf-hsos.github.io/lifi-exercises/exercises/02\_exercise\_logic\_with\_the\_led.pdf)
-* [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03\_exercise\_on\_and\_off.pdf)
-* [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf)
-* [Exercise 5: Speed Of Light](https://winf-hsos.github.io/lifi-exercises/exercises/05\_exercise\_speed\_of\_light.pdf)
-* [Exercise 6: Text Messages](https://winf-hsos.github.io/lifi-exercises/exercises/06\_exercise\_text\_messages.pdf)
+* [Exercise 1: Ready, Set, Smoke](https://winf-hsos.github.io/lifi-exercises/exercises/01_exercise_ready_set_smoke.pdf)
+* [Exercise 2: Logic With The LED](https://winf-hsos.github.io/lifi-exercises/exercises/02_exercise_logic_with_the_led.pdf)
+* [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03_exercise_on_and_off.pdf)
+* [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04_exercise_digitizing_the_physical_world.pdf)
+* [Exercise 5: Speed Of Light](https://winf-hsos.github.io/lifi-exercises/exercises/05_exercise_speed_of_light.pdf)
+* [Exercise 6: Text Messages](https://winf-hsos.github.io/lifi-exercises/exercises/06_exercise_text_messages.pdf)
 * Exercise 7: Pixel By Pixel
 
 #### Part 2
@@ -46,7 +46,7 @@ To complete this project, you must solve the mandatory exercises listed below. E
 
 Completing the mandatory exercises listed above may present a challenge, particularly if you have little or no prior experience in programming. To ease into the material, it may be helpful to begin with some simpler exercises. Consider attempting the following exercises:
 
-* [Problem Solving Exercises](https://winf-hsos.github.io/lifi-exercises/python\_introduction/lifi\_problem\_solving\_exercises.pdf): As set of simple problems to solve using a Python program.
+* [Problem Solving Exercises](https://winf-hsos.github.io/lifi-exercises/python_introduction/lifi_problem_solving_exercises.pdf): As set of simple problems to solve using a Python program.
 
 ## Important Terms And Concepts
 

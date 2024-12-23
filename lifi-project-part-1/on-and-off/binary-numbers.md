@@ -10,11 +10,11 @@ description: >-
 
 <summary>Summary</summary>
 
-This lesson is relevant for [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03\_exercise\_on\_and\_off.pdf).
+This lesson is relevant for [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03_exercise_on_and_off.pdf).
 
 </details>
 
-In the world of computing, <mark style="background-color:green;">**binary numbers**</mark> play a crucial role as the fundamental language that drives our digital devices. While we're accustomed to using the decimal system for everyday calculations, it is essential to understand the binary system to comprehend how computers process and store data. In this lesson, we will explore the concept of binary numbers, compare them to the <mark style="background-color:green;">**decimal system**</mark>, and delve into the general concept of number systems and their workings.
+In the world of computing, <mark style="background-color:yellow;">**binary numbers**</mark> play a crucial role as the fundamental language that drives our digital devices. While we're accustomed to using the decimal system for everyday calculations, it is essential to understand the binary system to comprehend how computers process and store data. In this lesson, we will explore the concept of binary numbers, compare them to the <mark style="background-color:yellow;">**decimal system**</mark>, and delve into the general concept of number systems and their workings.
 
 ## Number Systems
 

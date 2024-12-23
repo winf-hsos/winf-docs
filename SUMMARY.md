@@ -3,11 +3,9 @@
 * [The LiFi Project](README.md)
 * [Course Overview](course-overview.md)
 * [Problem Solving](problem-solving/README.md)
-  * [In-And-Out](problem-solving/in-and-out.md)
+  * [Input-Compute-Output](problem-solving/input-compute-output.md)
   * [Strategies](problem-solving/strategies.md)
   * [Programs](problem-solving/programs.md)
-* [Information](information.md)
-* [Code Systems](code-systems.md)
 
 ## LiFi Project Part 1
 
@@ -15,6 +13,8 @@
   * [Hardware Assembly](lifi-project-part-1/ready-set-smoke/hardware-assembly.md)
   * [Development Environment](lifi-project-part-1/ready-set-smoke/development-environment.md)
   * [Smoke Test ⭐](lifi-project-part-1/ready-set-smoke/smoke-test.md)
+* [Understanding the Problem](lifi-project-part-1/understanding-the-problem.md)
+* [Information](lifi-project-part-1/information.md)
 * [Logic with the LED](lifi-project-part-1/logic-with-the-led/README.md)
   * [Program's Anatomy](lifi-project-part-1/logic-with-the-led/programs-anatomy.md)
   * [The LED ⚡](lifi-project-part-1/logic-with-the-led/the-led.md)
@@ -57,7 +57,7 @@
 ## First Steps with Python
 
 * [Installing Python](first-steps-with-python/installing-python.md)
-* [Common Errors](common-errors.md)
+* [Troubleshooting](first-steps-with-python/troubleshooting.md)
 
 ***
 

@@ -23,9 +23,9 @@ Moreover, you'll understand:
 * How LEDs work.
 * What the difference between an actuator and a sensor is.
 
-You can find the code example from this lesson in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`devices/rgb_led.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/rgb\_led.py).
+You can find the code example from this lesson in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`devices/rgb_led.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/rgb_led.py).
 
-This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.github.io/lifi-exercises/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.github.io/lifi-exercises/exercises/02_exercise_logic_with_the_led.pdf).
 
 </details>
 
@@ -37,7 +37,7 @@ The LED plays an important role in our LiFi project and the solution we're build
 
 When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](../ready-set-smoke/smoke-test.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
 
-<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
 
 ## Connect To The LED
 
@@ -85,7 +85,7 @@ The LED is represented in our Python program through an instance of the Python c
 
 A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](programs-anatomy.md#1.-variables).
 
-We now have a reference to the LED, which gives us access to all functionalities exposed by the [LED's API](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2\_Bricklet\_Python.html#rgb-led-v2-bricklet-python-api). Let's explore what they are.
+We now have a reference to the LED, which gives us access to all functionalities exposed by the [LED's API](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2_Bricklet_Python.html#rgb-led-v2-bricklet-python-api). Let's explore what they are.
 
 ## Turning On The LED From Python
 
@@ -217,9 +217,9 @@ I recommend the following resources for further reading:
 
 * Page 144/145 on "Electric Lighting" from the book _How Technology Works: The Facts Visually Explained._
 * Pages 152/153 on "Digital cameras" from the book _How Technology Works: The Facts Visually Explained_.
-* [The Wikipedia entry on the "Light-emitting diode"](https://en.wikipedia.org/wiki/Light-emitting\_diode)
+* [The Wikipedia entry on the "Light-emitting diode"](https://en.wikipedia.org/wiki/Light-emitting_diode)
 
 Here is the link to the Python API documentation for the RGB LED:
 
-* [Python API documentation for the RGB LED Bricklet 2.0](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2\_Bricklet\_Python.html#rgb-led-v2-bricklet-python-api)
+* [Python API documentation for the RGB LED Bricklet 2.0](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2_Bricklet_Python.html#rgb-led-v2-bricklet-python-api)
 
