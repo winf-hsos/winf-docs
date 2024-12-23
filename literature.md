@@ -17,10 +17,10 @@ description: >-
 
 ### Python Reference Sheet
 
-You can find a reference sheet tailored to the LiFi project and the command we introduce under the following link: [Python Reference Sheet for the LiFi Project](https://github.com/winf-hsos/lifi-exercises/raw/main/python\_introduction/lifi\_python\_reference\_sheet.pdf)
+You can find a reference sheet tailored to the LiFi project and the command we introduce under the following link: [Python Reference Sheet for the LiFi Project](https://github.com/winf-hsos/lifi-exercises/raw/main/python_introduction/lifi_python_reference_sheet.pdf)
 
 ### Code Examples
 
-The LiFi-code GitHub repository contains all code examples for this project and more. I recommend you check out the repository, so you can run the examples on your local computer. You find the instructions for the necessary software in [development-environment.md](lifi-project-part-1/ready-set-smoke/development-environment.md "mention").
+The LiFi-code GitHub repository contains all code examples for this project and more. I recommend you check out the repository, so you can run the examples on your local computer. You find the instructions for the necessary software in [development-environment.md](lifi-project-part-1/development-environment.md "mention").
 
 {% embed url="https://github.com/winf-hsos/LiFi-code" %}

@@ -18,15 +18,15 @@ In this lesson, you'll learn:
 * How to use the button functionality of the rotary encoder.
 * What a callback function is and how it works.
 
-You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/rotary_encoder.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/rotary\_encoder.py).
+You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/rotary_encoder.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/rotary_encoder.py).
 
-This lesson is relevant for [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03\_exercise\_on\_and\_off.pdf).
+This lesson is relevant for [Exercise 3: On and Off](https://winf-hsos.github.io/lifi-exercises/exercises/03_exercise_on_and_off.pdf).
 
 </details>
 
 ## The Rotary Encoder
 
-<img src="../../.gitbook/assets/image (1) (2) (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (1) (2) (1).png" alt="" data-size="original">
 
 The rotary encoder is a commonly used control mechanism in a variety of hardware applications. Its operation is relatively simple: the user can rotate the knob in either direction, which in turn changes a numerical value represented by the control. Rotating the knob to the right increases the value, while rotating it to the left decreases it. However, the rotary encoder also has another useful feature: it doubles as a button. When the user presses down on the knob, it triggers an event which can then be used to perform a specific action. This feature can be particularly useful in situations where multiple inputs are required from a single control, or where space is at a premium, and it is desirable to minimize the number of controls used.
 
@@ -41,11 +41,11 @@ rotary = BrickletRotaryEncoderV2("xxx", ipcon)
 ```
 {% endcode %}
 
-Make sure you replace the UID with [your device's UID](../logic-with-the-led/the-led.md#how-to-get-a-devices-uid) before you proceed with this lesson.&#x20;
+Make sure you replace the UID with [your device's UID](../lifi-project-part-1/the-led.md#how-to-get-a-devices-uid) before you proceed with this lesson.&#x20;
 
 ### Reading The Current Value
 
-After storing a reference to the device in the `rotary` variable, we gain access to the device's functions. To learn about the available functions, we can consult the [official Python API documentation for the specific device](https://www.tinkerforge.com/en/doc/Software/Bricklets/RotaryEncoderV2\_Bricklet\_Python.html) on the Tinkerforge website.
+After storing a reference to the device in the `rotary` variable, we gain access to the device's functions. To learn about the available functions, we can consult the [official Python API documentation for the specific device](https://www.tinkerforge.com/en/doc/Software/Bricklets/RotaryEncoderV2_Bricklet_Python.html) on the Tinkerforge website.
 
 In the case of the Rotary Encoder Bricklet 2.0, we can find a function called `get_count`. According to the documentation, this function _"returns the current count of the encoder_". Let's try using it:
 
@@ -60,7 +60,7 @@ While we can read the value of the rotary encoder at any time using the `get_cou
 
 A callback function is a function that is called automatically by the system whenever a specific event occurs, in this case, a change in the encoder value. By registering a callback function with the rotary encoder, we can ensure that our code is notified of changes to the encoder value as soon as they occur, without the need for manual polling.
 
-<img src="../../.gitbook/assets/file.excalidraw (3) (3) (1) (1).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3) (3) (1) (1).svg" alt="The mechanism of a callback function." class="gitbook-drawing">
 
 A good analogy for understanding callback functions is to think of them as a personal assistant. Imagine you're a busy executive with a packed schedule, and you've asked your assistant to keep you updated on any changes to your calendar. When something new is added, your assistant immediately calls you to let you know.
 
@@ -84,7 +84,7 @@ rotary.set_count_callback_configuration(10, True, "x", 0, 0)
 ```
 {% endcode %}
 
-The event is passed via a constant named `CALLBACK_COUNT` from the `BrickletRotaryEncoderV2` object. As we can read in the [API documentation](https://www.tinkerforge.com/en/doc/Software/Bricklets/RotaryEncoderV2\_Bricklet\_Python.html#rotary-encoder-v2-bricklet-python-callbacks), this event can be used to be notified about the current value (count) of the rotary encoder. To be notified only when someone turns the rotary encoder in either direction, and thus changes the value, we instruct the rotary encoder by passing a callback-configuration (line 7). In the example above, we wish to be updated in a 10 ms interval (first parameter), but only if the value has changed (second parameter, which is `True`). The "x" means we do not specify a threshold, and the two following zeroes are placeholders for the minimum and maximum values if we actually wanted to specify a threshold.
+The event is passed via a constant named `CALLBACK_COUNT` from the `BrickletRotaryEncoderV2` object. As we can read in the [API documentation](https://www.tinkerforge.com/en/doc/Software/Bricklets/RotaryEncoderV2_Bricklet_Python.html#rotary-encoder-v2-bricklet-python-callbacks), this event can be used to be notified about the current value (count) of the rotary encoder. To be notified only when someone turns the rotary encoder in either direction, and thus changes the value, we instruct the rotary encoder by passing a callback-configuration (line 7). In the example above, we wish to be updated in a 10 ms interval (first parameter), but only if the value has changed (second parameter, which is `True`). The "x" means we do not specify a threshold, and the two following zeroes are placeholders for the minimum and maximum values if we actually wanted to specify a threshold.
 
 The callback function `count_changed` must be defined **before** the callback registration. In the example above, the function merely prints the current value to the console.
 
@@ -100,4 +100,4 @@ It does not classify as an actuator because it cannot act in the real world in a
 
 ## Further Reading
 
-* [Python API documentation for the Rotary Encoder Bricklet 2.0](https://www.tinkerforge.com/de/doc/Software/Bricklets/RotaryEncoderV2\_Bricklet\_Python.html#api)
+* [Python API documentation for the Rotary Encoder Bricklet 2.0](https://www.tinkerforge.com/de/doc/Software/Bricklets/RotaryEncoderV2_Bricklet_Python.html#api)

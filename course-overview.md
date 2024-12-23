@@ -54,7 +54,19 @@ You will notice that some words in this course are highlighted in <mark style="b
 
 ## Introduction Of Hardware ⚡
 
-We use four different hardware devices during the LiFi-project. They are introduced in a dedicated lesson of the course and are marked with a ⚡, so you can find them easily.
+We use three different hardware devices during the LiFi-project. They are introduced in a dedicated lesson of the course and are marked with a ⚡, so you can find them easily.
+
+{% content-ref url="lifi-project-part-1/the-led.md" %}
+[the-led.md](lifi-project-part-1/the-led.md)
+{% endcontent-ref %}
+
+{% content-ref url="lifi-project-part-1/the-color-sensor.md" %}
+[the-color-sensor.md](lifi-project-part-1/the-color-sensor.md)
+{% endcontent-ref %}
+
+{% content-ref url="lifi-project-part-1/the-oled-display.md" %}
+[the-oled-display.md](lifi-project-part-1/the-oled-display.md)
+{% endcontent-ref %}
 
 ## Credits
 

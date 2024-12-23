@@ -4,7 +4,7 @@ description: >-
   when we want to receive messages from a light source.
 ---
 
-# The Color Sensor ⚡
+# 9 The Color Sensor ⚡
 
 <details>
 
@@ -16,9 +16,9 @@ In this lesson, you'll learn:
 * How to read the different values measured by the sensor.
 * How to apply the concept of callback functions to be notified of new values.
 
-This lesson is relevant for [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04\_exercise\_digitizing\_the\_physical\_world.pdf).
+This lesson is relevant for [Exercise 4: Digitizing The Physical World](https://winf-hsos.github.io/lifi-exercises/exercises/04_exercise_digitizing_the_physical_world.pdf).
 
-You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/color_sensor.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/color\_sensor.py).
+You find the code examples in the [LiFi-code GitHub repository](https://github.com/winf-hsos/LiFi-code) in [`devices/color_sensor.py`](https://github.com/winf-hsos/LiFi-code/blob/main/devices/color_sensor.py).
 
 </details>
 
@@ -26,7 +26,7 @@ In the previous lesson, you were taught the process of converting an analog sign
 
 In the upcoming lesson, you will delve deeper into how the color sensor works to measure light. However, this particular lesson's main focus is on teaching you how to use the sensor in your Python programs to build the LiFi prototype.
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3).png>)
 
 ## Initialize the Sensor
 
@@ -38,7 +38,7 @@ color_sensor = BrickletColorV2(constants.UID_COLOR_SENSOR, ipcon)
 
 ## Read the Current Measurements
 
-Similar to what we learned about [the-rotary-encoder.md](../on-and-off/the-rotary-encoder.md "mention"), we can read values directly when we need them instead of being automatically informed of new values using a callback function (push principle):
+Similar to what we learned about [the-rotary-encoder.md](../archive/the-rotary-encoder.md "mention"), we can read values directly when we need them instead of being automatically informed of new values using a callback function (push principle):
 
 ```python
 # Read the current measurements (pull principle)
@@ -65,7 +65,7 @@ Using a callback function involves three steps:
 2. Register the callback function with the device.
 3. Configure the callback mechanism to set the interval and potential threshold values.
 
-Let's look at how this can be done for the color values of the sensor. The sensor measures 4 different aspects of the color, which according to the [Tinkerforge API documentation](https://www.tinkerforge.com/en/doc/Software/Bricklets/ColorV2\_Bricklet\_Python.html#color-v2-bricklet-python-api) translates to four parameters:
+Let's look at how this can be done for the color values of the sensor. The sensor measures 4 different aspects of the color, which according to the [Tinkerforge API documentation](https://www.tinkerforge.com/en/doc/Software/Bricklets/ColorV2_Bricklet_Python.html#color-v2-bricklet-python-api) translates to four parameters:
 
 ```python
 # 1. Define the callback function
@@ -88,7 +88,7 @@ color_sensor.set_color_callback_configuration(1000, False)
 
 From now on, we'll get a call to `new_color_value` every second, receiving a new color value. We can decide what we want to do with that value. In the LiFi prototype, we want to convey information using light signals. Using different colors and recognizing them might be useful for that. We'll dwell on this topic in the upcoming lesson [signals-over-light.md](signals-over-light.md "mention").
 
-For examples of the other two values, color temperature and illuminance, refer to the [example code in the LiFi repository on GitHub](https://github.com/winf-hsos/LiFi-code/blob/main/examples/color\_sensor.py).
+For examples of the other two values, color temperature and illuminance, refer to the [example code in the LiFi repository on GitHub](https://github.com/winf-hsos/LiFi-code/blob/main/examples/color_sensor.py).
 
 In the next lesson, we will explore how to use a color sensor not only to measure the wavelength of light, but also to interpret different wavelengths or colors as signals.
 

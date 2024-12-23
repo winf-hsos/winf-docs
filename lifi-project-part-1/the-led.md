@@ -5,7 +5,7 @@ description: >-
   concepts.
 ---
 
-# The LED ⚡
+# 4 The LED ⚡
 
 <details>
 
@@ -29,15 +29,15 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.g
 
 </details>
 
-## <img src="../../.gitbook/assets/image (45).png" alt="" data-size="original">
+## <img src="../.gitbook/assets/image (45).png" alt="" data-size="original">
 
 ## Talking to Hardware
 
 The LED plays an important role in our LiFi project and the solution we're building. It acts as the sender for information we share between two robots, which requires a way to control the LED from a program. Luckily, the hardware manufacturer Tinkerforge has provided a way to do exactly that. They wrote an <mark style="background-color:green;">**application programming interface (API)**</mark> for their hardware devices for many modern programming languages, including Python.
 
-When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](../ready-set-smoke/smoke-test.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
+When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](smoke-test.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
 
 ## Connect To The LED
 
@@ -62,7 +62,7 @@ from tinkerforge.bricklet_rgb_led_v2 import BrickletRGBLEDV2
 
 This looks a bit different from the first import of the `constants` module. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from two different Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require. With `import constants`, we get everything from the module `constants`, which can be too much if the modules are large.
 
-You will learn more about modules in an [upcoming lesson](programs-anatomy.md#create-once-use-often).
+You will learn more about modules in an [upcoming lesson](../first-steps-with-python/programs-anatomy.md#create-once-use-often).
 
 ### Create The Reference
 
@@ -83,7 +83,7 @@ led = BrickletRGBLEDV2(constants.UID_RGB_LED, ipcon)
 
 The LED is represented in our Python program through an instance of the Python class `BrickletRGBLEDV2`, which is provided by the Tinkerforge API. When we create (or instantiate) this object, we need to provide the UID and an active IP-connection. Because we want to access the LED later in our program, we store the object in a variable with the name `led`.&#x20;
 
-A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](programs-anatomy.md#1.-variables).
+A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](../first-steps-with-python/programs-anatomy.md#1.-variables).
 
 We now have a reference to the LED, which gives us access to all functionalities exposed by the [LED's API](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2_Bricklet_Python.html#rgb-led-v2-bricklet-python-api). Let's explore what they are.
 
@@ -100,7 +100,7 @@ The line above set the LED's color to green by using the corresponding <mark sty
 
 ## Running The Program
 
-We are now ready to execute the program to see if it actually works. But how do we execute a Python program? With the installation of [#python-as-our-programming-language](../ready-set-smoke/development-environment.md#python-as-our-programming-language "mention"), we can run a command named `python` from our <mark style="background-color:green;">**terminal**</mark> (or <mark style="background-color:green;">**command line**</mark>). As the first and only <mark style="background-color:green;">**argument**</mark>, we need to specify the file that contains the program we want to execute. When we are in the folder where the program file is located, we simply type the filename `rgb_led.py` after the `python` command and separate both with a space:
+We are now ready to execute the program to see if it actually works. But how do we execute a Python program? With the installation of [#python-as-our-programming-language](development-environment.md#python-as-our-programming-language "mention"), we can run a command named `python` from our <mark style="background-color:green;">**terminal**</mark> (or <mark style="background-color:green;">**command line**</mark>). As the first and only <mark style="background-color:green;">**argument**</mark>, we need to specify the file that contains the program we want to execute. When we are in the folder where the program file is located, we simply type the filename `rgb_led.py` after the `python` command and separate both with a space:
 
 ```bash
 python rgb_led.py
@@ -110,7 +110,7 @@ python rgb_led.py
 
 How do we get access to a terminal? We can do this directly in Visual Studio Code: in the main top menu of Visual Studio Code, click on "Terminal" and then "New Terminal".  A new black pane opens, usually in the lower-right corner of Visual Studio Code. This is the terminal, and if you have worked with the command line (or terminal) in Windows or Mac before, you might recognize it.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Unfortunately, not all terminals are equal, and there are different types. When you open a new terminal in Visual Studio Code, it will open the default type that is currently configured. On Windows, this is often the so-called PowerShell. We want to change this and set the default to the Windows command line (or _cmd_). The easiest way to set the default terminal is:
 
@@ -118,7 +118,7 @@ Unfortunately, not all terminals are equal, and there are different types. When 
 2. In the appearing search bar, type "Select default profile" and click on the first result.
 3. From the list, choose "Command Prompt".
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
 
 Now try to open a new terminal as described above. It should now be of the new default type "Command Prompt". Finally, type the command to run your program into the terminal and hit enter:
 
@@ -128,7 +128,7 @@ python rgb_led.py
 
 Voilà! The LED lights up in green color.
 
-<figure><img src="../../.gitbook/assets/rgb_led_green.jpg" alt=""><figcaption><p>The RGB LED set to the RGB value R = 0, G = 255, B = 0.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/rgb_led_green.jpg" alt=""><figcaption><p>The RGB LED set to the RGB value R = 0, G = 255, B = 0.</p></figcaption></figure>
 
 ## Turning The LED Off Again
 
@@ -201,7 +201,7 @@ Actuators work in the opposite way. They take a discrete set of values, convert 
 
 The OLED display is another type of actuator, although it may be less obvious. In the LiFi project, it will display information in the form of light. By using sensors and actuators in combination, a cyberphysical system can interact with the physical world and achieve its intended purpose.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (4).svg" alt="The LED is an actuator because it acts in the analog world by emitting photons." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (4).svg" alt="The LED is an actuator because it acts in the analog world by emitting photons." class="gitbook-drawing">
 
 ## The Light-Emitting Diode (LED)
 

@@ -4,7 +4,7 @@ description: >-
   But what exactly is an instruction? And what different kinds exist?
 ---
 
-# Program's Anatomy
+# Programs
 
 <details>
 
@@ -18,17 +18,17 @@ In this lesson, you'll learn:
 
 This lesson concerns the question of how we can solve problems with digital computers and adds to your understanding of programming.
 
-This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.github.io/lifi-exercises/exercises/02\_exercise\_logic\_with\_the\_led.pdf).
+This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.github.io/lifi-exercises/exercises/02_exercise_logic_with_the_led.pdf).
 
 </details>
 
 ## Instructions
 
-A <mark style="background-color:green;">**program**</mark> is a set of instructions that are executed by a computer. A program is written as plain text, and we usually use a separate line for a new instruction. To write a program, all we need is a simple text editor, although in the LiFi-project, we prefer a [complete development environment](../ready-set-smoke/development-environment.md).&#x20;
+A <mark style="background-color:green;">**program**</mark> is a set of instructions that are executed by a computer. A program is written as plain text, and we usually use a separate line for a new instruction. To write a program, all we need is a simple text editor, although in the LiFi-project, we prefer a [complete development environment](../lifi-project-part-1/development-environment.md).&#x20;
 
 When a computer executes a program, it steps through the program one line at a time and does what each line - or <mark style="background-color:green;">**instruction**</mark> - tells it to do. However, sometimes the program has special instructions called <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> that make the computer do things in a different order. These instructions can make the computer repeat certain actions many times, or skip over certain lines of code altogether. Don't worry if you don't understand these concepts yet, we'll be talking more about them soon.
 
-<img src="../../.gitbook/assets/file.excalidraw (4) (2).svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4) (2).svg" alt="A program is a set of instructions that are executed from top to bottom." class="gitbook-drawing">
 
 An instruction is telling the computer what to do. There are different types of instructions, and they are used in combination to solve problems. In a program, we use instructions to tell a computer to:
 
@@ -49,13 +49,13 @@ The above list of things a computer can do translate into five general types of 
 
 Wait, that's only five. But the list of things a computer can do contains 6 elements. So, what about the first one: _calculate things_? Calculations are an important part of any instruction, and in programming perform calculations using <mark style="background-color:green;">**expressions**</mark>. Depending on the outcome, we can distinguish different types of expressions, which we'll introduce later.
 
-<img src="../../.gitbook/assets/file.excalidraw (5) (1) (2).svg" alt="An instruction can be different things in a program." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (5) (1) (2).svg" alt="An instruction can be different things in a program." class="gitbook-drawing">
 
 The great news is: Once you understand the concept behind each of the types of instructions and expressions, you can read and write almost any program, no matter the complexity. These concepts are the DNA of every program. Of course, it takes practice. And you may still have to look up specific keywords for the language you are programming in. But that's where [Google](https://app.gitbook.com/u/5a55d1d8d10859002f1ae2f5), [Stack Overflow](https://stackoverflow.com/) or [ChatGPT](https://chat.openai.com/chat) come in. Seriously, they are every programmer's best buddies. Learn to use them.
 
 ## Algorithms And Programs
 
-To explain the different types of instructions a program can contain, let's look at a concrete example. You find this example in the [GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`problem_solutions\square_root.py`](https://github.com/winf-hsos/LiFi-code/blob/main/problem\_solutions/square\_root.py):
+To explain the different types of instructions a program can contain, let's look at a concrete example. You find this example in the [GitHub repository](https://github.com/winf-hsos/LiFi-code) under [`problem_solutions\square_root.py`](https://github.com/winf-hsos/LiFi-code/blob/main/problem_solutions/square_root.py):
 
 {% code title="square_root.py" lineNumbers="true" %}
 ```python
@@ -80,15 +80,15 @@ print(f"The square root of { number } is { a }")
 ```
 {% endcode %}
 
-The program asks the user for a number and approximates the square root using the [Babylonian root extraction algorithm](https://en.wikipedia.org/wiki/Methods\_of\_computing\_square\_roots). We will talk more about algorithms later in this course. For now, all you need to know is that an <mark style="background-color:green;">**algorithm**</mark> is a recipe to solve a specific problem. And a program is the implementation of an algorithm in a specific programming language, ready for a computer to execute.
+The program asks the user for a number and approximates the square root using the [Babylonian root extraction algorithm](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots). We will talk more about algorithms later in this course. For now, all you need to know is that an <mark style="background-color:green;">**algorithm**</mark> is a recipe to solve a specific problem. And a program is the implementation of an algorithm in a specific programming language, ready for a computer to execute.
 
-<img src="../../.gitbook/assets/file.excalidraw (3) (1).svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3) (1).svg" alt="An algorithm is a step-by-step recipe to solve a specific problem. A program can implement an algorithm to make it executable." class="gitbook-drawing">
 
 Try running the program from the command line in Visual Studio Code and enter a positive number. The program should output the approximate square root of that number. Run it again, but this time enter a negative number and see what happens.
 
 The illustration below is a schematic version of the same program and highlights the different types of instructions it contains. In the following, I walk you through each type of instruction and explain how it works.
 
-<img src="../../.gitbook/assets/file.excalidraw (1) (6).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (6).svg" alt="The example program contains all five different types of instructions." class="gitbook-drawing">
 
 ## Commands
 
@@ -97,7 +97,7 @@ Commands tell a computer to perform some action. A command can be some built-in 
 The second type of command are functions calls. We can further distinguish functions into different types, depending on their source:
 
 * A function can be imported from an <mark style="background-color:green;">**internal module**</mark>. An example is the `sys` module used in the program above.  The [`sys` module](https://docs.python.org/3/library/sys.html) allows accessing "_system-specific parameters and functions_", such as the `exit` function we applied above. Another example for an internal module is `time`. A list of all Python-internal modules can be found [online](https://docs.python.org/3/py-modindex.html).
-* Alternatively, a function can be imported from an <mark style="background-color:green;">**external module**</mark>. These are modules that don't belong to the internal core of the Python programming language, but are rather written and published by a third party. An example is the [Tinkerforge Python API](https://www.tinkerforge.com/en/doc/Software/API\_Bindings\_Python.html), which we'll learn about in the next lesson when we use it to control the LED.
+* Alternatively, a function can be imported from an <mark style="background-color:green;">**external module**</mark>. These are modules that don't belong to the internal core of the Python programming language, but are rather written and published by a third party. An example is the [Tinkerforge Python API](https://www.tinkerforge.com/en/doc/Software/API_Bindings_Python.html), which we'll learn about in the next lesson when we use it to control the LED.
 * A command can also be a function we wrote and call in our program. We call these functions custom- or <mark style="background-color:green;">**user-defined functions**</mark>.
 
 When we see a command in a Python program, we cannot say for sure which of the above types it is. Calling a function looks the same, regardless of where it was defined. There is a way to find out, though. You can move the cursor somewhere on the command's name and perform a right-click. Now, select the option "Go to Definition" or hit the F12 key. Visual Studio Code will take you to the place where the command - or the function behind the command - was defined.
@@ -106,7 +106,7 @@ When we see a command in a Python program, we cannot say for sure which of the a
 
 Think of a variable as a box with a label on it. You can put things into the box, and at any time you can ask for its content, given you know the label. You can change the content of the box as you like at any time.
 
-<img src="../../.gitbook/assets/file.excalidraw (5) (1).svg" alt="Variables are like boxes with a label. We can put things into them and take them out as needed." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (5) (1).svg" alt="Variables are like boxes with a label. We can put things into them and take them out as needed." class="gitbook-drawing">
 
 In a program, a variable is really a pointer to an address in the computer's <mark style="background-color:green;">**main memory**</mark>. By calling the variable by its name, you are taken to this particular location in the computer's memory, and you can access whatever has been stored there. You can also overwrite the memory location with a value of your choice. A memory address is simply a number that identifies a specific location in memory. Variables allow us to utilize the computer's memory to store and access things we need in our program.&#x20;
 
@@ -138,7 +138,7 @@ while abs(a - b) > 0.00001:
 
 The while-loop is well suited if we can specify a condition that must be true to keep looping. Once that condition becomes false, the loop exits and the program continues with the next instruction. An alternative type of loop is the <mark style="background-color:green;">**for-loop**</mark>, which we can use when we can specify the number of times we want to loop through the code. We will use this type of loop later in this course.
 
-<img src="../../.gitbook/assets/file.excalidraw (4) (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (4) (1).svg" alt="" class="gitbook-drawing">
 
 Overall, loops are an essential type of instruction in any program that can help simplify complex tasks and automate repetitive processes.&#x20;
 
@@ -156,7 +156,7 @@ Here, the condition being checked is whether the value of the `number` variable 
 
 An if-statement allows a program to make different decisions based on the values of certain variables or other conditions, which essential for controlling the flow of the program.
 
-<img src="../../.gitbook/assets/file.excalidraw (3) (4).svg" alt="An if-statement is a type of control structure that branches a program into two or more blocks." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (3) (4).svg" alt="An if-statement is a type of control structure that branches a program into two or more blocks." class="gitbook-drawing">
 
 ## Functions
 
@@ -215,6 +215,6 @@ Expressions are different from instructions. An expression is merely a set of sy
 
 Instructions make use of expressions for different use cases. A command might require values for some parameters that we can specify using an expression. A while-loop requires an expression that evaluates to either `True` or `False`, thus, a <mark style="background-color:green;">**boolean expression**</mark>. The same is true for control structures like the if-statement.
 
-<img src="../../.gitbook/assets/file.excalidraw (2) (1) (2) (1).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (1) (2) (1).svg" alt="Expressions can be literal values or literal values connected by operators." class="gitbook-drawing">
 
 With the five types of instructions and expressions, you know the ingredients for any program you will ever write or encounter. We are now prepared to learn about our first hardware device and how to control it from a program.

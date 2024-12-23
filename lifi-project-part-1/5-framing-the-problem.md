@@ -5,7 +5,9 @@ description: >-
   computation, and outputs.
 ---
 
-# Understanding the Problem
+# 5 Framing the Problem ⭐
+
+
 
 <details>
 
@@ -26,6 +28,15 @@ The LiFi project presents a complex problem to solve, perhaps even too complex. 
 <figure><img src="https://winf-hsos.github.io/university-docs/images/large_complex_problem_4_smaller_problems.png" alt=""><figcaption><p>Breaking down a complex problem into smaller problems is a viable strategy.</p></figcaption></figure>
 
 <figure><img src="https://winf-hsos.github.io/university-docs/images/large_complex_problem_5_smaller_problems.png" alt=""><figcaption><p>We can sometimes break down smaller problems into even smaller problems. </p></figcaption></figure>
+
+* Divide and Conquer
+* Distribution and Parallelization
+* Dynamic Programming
+* Greedy Strategies
+* Recursion
+* Brute Force
+* Randomization
+* Heuristics and Approximation
 
 ## Deepen your understanding
 
