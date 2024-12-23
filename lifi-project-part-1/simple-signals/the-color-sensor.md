@@ -4,7 +4,7 @@ description: >-
   when we want to receive messages from a light source.
 ---
 
-# 9 The Color Sensor ⚡
+# The Color Sensor ⚡
 
 <details>
 
@@ -26,7 +26,7 @@ In the previous lesson, you were taught the process of converting an analog sign
 
 In the upcoming lesson, you will delve deeper into how the color sensor works to measure light. However, this particular lesson's main focus is on teaching you how to use the sensor in your Python programs to build the LiFi prototype.
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3).png>)
 
 ## Initialize the Sensor
 
@@ -38,7 +38,7 @@ color_sensor = BrickletColorV2(constants.UID_COLOR_SENSOR, ipcon)
 
 ## Read the Current Measurements
 
-Similar to what we learned about [the-rotary-encoder.md](../archive/the-rotary-encoder.md "mention"), we can read values directly when we need them instead of being automatically informed of new values using a callback function (push principle):
+Similar to what we learned about [the-rotary-encoder.md](../../archive/the-rotary-encoder.md "mention"), we can read values directly when we need them instead of being automatically informed of new values using a callback function (push principle):
 
 ```python
 # Read the current measurements (pull principle)

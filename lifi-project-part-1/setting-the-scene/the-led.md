@@ -5,7 +5,7 @@ description: >-
   concepts.
 ---
 
-# 4 The LED ⚡
+# The LED ⚡
 
 <details>
 
@@ -29,7 +29,7 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.g
 
 </details>
 
-## <img src="../.gitbook/assets/image (45).png" alt="" data-size="original">
+## <img src="../../.gitbook/assets/image (45).png" alt="" data-size="original">
 
 ## Talking to Hardware
 
@@ -37,7 +37,7 @@ The LED plays an important role in our LiFi project and the solution we're build
 
 When we write a Python program in Visual Studio Code, and we need access to the Tinkerforge devices, we can utilize the Tinkerforge Python API for that. And even if we are doing the same from the Brick Viewer (as we did in the [first of the two smoke tests](smoke-test.md#the-ui-based-smoke-test)), we are still going through that same Python API. The reason is that the Brick Viewer is written in Python, too. If it were written in another programming language, like Java, it would use the respective API for that language.
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1).svg" alt="We use the Tinkerforge Python API to establish an IP-connection with the Brick Daemon, who acts as a bridge to the hardware." class="gitbook-drawing">
 
 ## Connect To The LED
 
@@ -62,7 +62,7 @@ from tinkerforge.bricklet_rgb_led_v2 import BrickletRGBLEDV2
 
 This looks a bit different from the first import of the `constants` module. This because in the two lines above, we only want to import two specific <mark style="background-color:green;">**objects**</mark> from two different Tinkerforge modules. In that case, we can use the `from` keyword together with `import` followed by a list of the specific objects we require. With `import constants`, we get everything from the module `constants`, which can be too much if the modules are large.
 
-You will learn more about modules in an [upcoming lesson](../first-steps-with-python/programs-anatomy.md#create-once-use-often).
+You will learn more about modules in an [upcoming lesson](../../first-steps-with-python/programs-anatomy.md#create-once-use-often).
 
 ### Create The Reference
 
@@ -83,7 +83,7 @@ led = BrickletRGBLEDV2(constants.UID_RGB_LED, ipcon)
 
 The LED is represented in our Python program through an instance of the Python class `BrickletRGBLEDV2`, which is provided by the Tinkerforge API. When we create (or instantiate) this object, we need to provide the UID and an active IP-connection. Because we want to access the LED later in our program, we store the object in a variable with the name `led`.&#x20;
 
-A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](../first-steps-with-python/programs-anatomy.md#1.-variables).
+A variable is an important concept in programming, and it allows us to store things in memory for later use. You will learn more about variables in an [upcoming lesson](../../first-steps-with-python/programs-anatomy.md#1.-variables).
 
 We now have a reference to the LED, which gives us access to all functionalities exposed by the [LED's API](https://www.tinkerforge.com/en/doc/Software/Bricklets/RGBLEDV2_Bricklet_Python.html#rgb-led-v2-bricklet-python-api). Let's explore what they are.
 
@@ -96,7 +96,7 @@ One major function of an LED is to change its color. To start with, we will set 
 led.set_rgb_value(0, 255, 0)
 ```
 
-The line above set the LED's color to green by using the corresponding <mark style="background-color:green;">**RGB code**</mark>. We'll address the RGB code in detail in the section about [code-systems.md](code-systems.md "mention"). To understand the above line of code, all we need to know is that the three parameters are for the red, green, and blue parts of the color. All parts are set to zero, except for the green part. The value 255 happens to be the largest value a part can have, so thus it resolves to pure, bright green.
+The line above set the LED's color to green by using the corresponding <mark style="background-color:green;">**RGB code**</mark>. We'll address the RGB code in detail in the section about [code-systems.md](../simple-signals/code-systems.md "mention"). To understand the above line of code, all we need to know is that the three parameters are for the red, green, and blue parts of the color. All parts are set to zero, except for the green part. The value 255 happens to be the largest value a part can have, so thus it resolves to pure, bright green.
 
 ## Running The Program
 
@@ -110,7 +110,7 @@ python rgb_led.py
 
 How do we get access to a terminal? We can do this directly in Visual Studio Code: in the main top menu of Visual Studio Code, click on "Terminal" and then "New Terminal".  A new black pane opens, usually in the lower-right corner of Visual Studio Code. This is the terminal, and if you have worked with the command line (or terminal) in Windows or Mac before, you might recognize it.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Unfortunately, not all terminals are equal, and there are different types. When you open a new terminal in Visual Studio Code, it will open the default type that is currently configured. On Windows, this is often the so-called PowerShell. We want to change this and set the default to the Windows command line (or _cmd_). The easiest way to set the default terminal is:
 
@@ -118,7 +118,7 @@ Unfortunately, not all terminals are equal, and there are different types. When 
 2. In the appearing search bar, type "Select default profile" and click on the first result.
 3. From the list, choose "Command Prompt".
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (2) (1).png" alt=""><figcaption><p>There are different terminal profiles we can set as default.</p></figcaption></figure>
 
 Now try to open a new terminal as described above. It should now be of the new default type "Command Prompt". Finally, type the command to run your program into the terminal and hit enter:
 
@@ -128,7 +128,7 @@ python rgb_led.py
 
 Voilà! The LED lights up in green color.
 
-<figure><img src="../.gitbook/assets/rgb_led_green.jpg" alt=""><figcaption><p>The RGB LED set to the RGB value R = 0, G = 255, B = 0.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rgb_led_green.jpg" alt=""><figcaption><p>The RGB LED set to the RGB value R = 0, G = 255, B = 0.</p></figcaption></figure>
 
 ## Turning The LED Off Again
 
@@ -201,7 +201,7 @@ Actuators work in the opposite way. They take a discrete set of values, convert 
 
 The OLED display is another type of actuator, although it may be less obvious. In the LiFi project, it will display information in the form of light. By using sensors and actuators in combination, a cyberphysical system can interact with the physical world and achieve its intended purpose.
 
-<img src="../.gitbook/assets/file.excalidraw (1) (4).svg" alt="The LED is an actuator because it acts in the analog world by emitting photons." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (4).svg" alt="The LED is an actuator because it acts in the analog world by emitting photons." class="gitbook-drawing">
 
 ## The Light-Emitting Diode (LED)
 

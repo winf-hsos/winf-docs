@@ -4,7 +4,7 @@ description: >-
   computer stores and processes for us. Let's explore how they work
 ---
 
-# 7 Code Systems ⭐
+# Code Systems
 
 <details>
 
@@ -21,11 +21,11 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.g
 
 </details>
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (1) (2).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (1) (2).svg" alt="The general schema of how code systems work." class="gitbook-drawing">
 
 ## The RGB Code
 
-In the previous section about [the-led.md](the-led.md "mention"), we briefly touched the RGB code and used it to set the LED's color to green. We did this using a function from the Tinkerforge <mark style="background-color:green;">**API**</mark> called `set_rgb_value`. When calling this function, we passed three numbers to it:
+In the previous section about [the-led.md](../setting-the-scene/the-led.md "mention"), we briefly touched the RGB code and used it to set the LED's color to green. We did this using a function from the Tinkerforge <mark style="background-color:green;">**API**</mark> called `set_rgb_value`. When calling this function, we passed three numbers to it:
 
 ```python
 led.set_rgb_value(0, 255, 0)
@@ -37,7 +37,7 @@ It is now time to understand what these three numbers mean and what values we ca
 
 That was a lot! Let's unpack this.
 
-<img src="../.gitbook/assets/file.excalidraw (1) (3).svg" alt="The schema of the RGB code system." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (3).svg" alt="The schema of the RGB code system." class="gitbook-drawing">
 
 ### Why 16 Million Colors?
 
@@ -65,7 +65,7 @@ You will learn more about the hexadecimal system when we introduce [binary-numbe
 
 ## ASCII Code
 
-<img src="../.gitbook/assets/file.excalidraw (5) (1) (1).svg" alt="The schema of the ASCII code system." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (5) (1) (1).svg" alt="The schema of the ASCII code system." class="gitbook-drawing">
 
 ## Other Code Systems
 
@@ -79,11 +79,11 @@ Each barcode represents a unique set of numbers, known as a Universal Product Co
 
 Barcodes are commonly used in a variety of industries, including retail, healthcare, and logistics. They provide a cheap, fast and accurate way to collect and track data.
 
-<figure><img src="../.gitbook/assets/barcode.gif" alt=""><figcaption><p>An example of a barcode encoding an EAN-13.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/barcode.gif" alt=""><figcaption><p>An example of a barcode encoding an EAN-13.</p></figcaption></figure>
 
 In a barcode, a line or space can be either 1, 2, 3 or 4 units wide. The optical scanner can distinguish the widths and decode the digit. One digit is always represented by alternating lines and spaces that make up a width of 7 units in total.
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (2).svg" alt="" class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (2).svg" alt="" class="gitbook-drawing">
 
 ### QR Codes
 
@@ -91,7 +91,7 @@ QR codes, short for Quick Response codes, are two-dimensional barcodes that have
 
 QR codes work by encoding data in a grid of black and white squares, which can be scanned using a smartphone or dedicated QR code reader. The data is then extracted and translated into a human-readable format, such as a URL, plain text, contact information, or even a Wi-Fi network's login credentials. This technology has proven especially useful in marketing, where businesses can share website links, promotional materials, or digital coupons with consumers through a simple scan. Additionally, QR codes can be found in applications such as mobile ticketing, product authentication, and even educational resources. By providing a quick and convenient means of accessing digital information, QR codes have become an essential tool in the digitalization landscape.
 
-<figure><img src="../.gitbook/assets/qr_code_example.jpg" alt=""><figcaption><p>An example of a QR-code. See where it takes you.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/qr_code_example.jpg" alt=""><figcaption><p>An example of a QR-code. See where it takes you.</p></figcaption></figure>
 
 ### Braille Code
 
@@ -101,7 +101,7 @@ For example, the letter "A" is represented by a single dot in the upper-left cor
 
 Here's an example of the word "hello" in braille (created with [https://www.brailletranslator.org](https://www.brailletranslator.org/)):
 
-<figure><img src="../.gitbook/assets/hello_braille.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hello_braille.png" alt=""><figcaption></figcaption></figure>
 
 Each letter is represented by a combination of dots, and the letters are arranged in left-to-right order, just like in regular text.
 
@@ -109,7 +109,7 @@ Each letter is represented by a combination of dots, and the letters are arrange
 
 The genetic code is the set of rules that determines how nucleotide triplets (codons) in DNA and RNA encode the 20 standard amino acids that make up proteins. There are $$4^3 = 64$$ possible codons, but only 20 different amino acids to code for. This means that the code is degenerate, meaning that multiple codons can encode for the same amino acid. For example, the amino acid leucine can be coded for by six different codons: UUA, UUG, CUU, CUC, CUA, and CUG.
 
-<figure><img src="../.gitbook/assets/genetic_code.jpg" alt=""><figcaption><p>The encoding of the 20 standard amino acids through triplets of nucleotide bases (codons). Source: <a href="https://www.genome.gov/">https://www.genome.gov</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/genetic_code.jpg" alt=""><figcaption><p>The encoding of the 20 standard amino acids through triplets of nucleotide bases (codons). Source: <a href="https://www.genome.gov/">https://www.genome.gov</a></p></figcaption></figure>
 
 The genetic code is read by cellular machinery called ribosomes, which are large molecular complexes made up of RNA and protein. The ribosome reads the codons in the messenger RNA (mRNA) and uses them to assemble a chain of amino acids in the correct order to make a protein. The process of assembling a protein from the genetic code is called translation.
 
@@ -119,7 +119,7 @@ The genetic code is universal, meaning that the same code is used by all living 
 
 Anyone into making music? If so, you are using code systems fairly regularly. The system of music notation uses a set of five horizontal lines and four spaces, on which these symbols are placed. Each line and space represents a different pitch, and the symbols placed on them indicate the duration and timing of the note. For example, a solid black circle placed on the second line from the bottom represents a note played at a specific pitch and held for a specific length of time. The position of the note on the staff and the symbols used to represent it create a code that musicians can read to play the correct notes at the correct time. By combining different notes in specific patterns, musicians can create melodies and harmonies that make up the music we hear.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Some random music notation generated by <a href="http://www.randomsheetmusic.com/">http://www.randomsheetmusic.com</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Some random music notation generated by <a href="http://www.randomsheetmusic.com/">http://www.randomsheetmusic.com</a></p></figcaption></figure>
 
 Notes are the basic symbols used to represent musical sounds in music notation. Different types of notes, such as whole notes, half notes, quarter notes, and so on, are used to represent different durations of sound. But the music notation system encodes more than just notes:
 
@@ -137,7 +137,7 @@ For example, the letter "A" in Morse code is represented by a short signal (dot)
 
 Morse code is a useful system for communication in situations where speech or text-based messages may not be possible or practical. It was originally used for long-distance communication through telegraph lines, and later adapted for use in radio communication. Today, it is still used by some amateur radio operators and in certain specialized fields, such as aviation and emergency services.
 
-<figure><img src="../.gitbook/assets/International_Morse_Code.svg" alt=""><figcaption><p>The international Morse code. Source: <a href="https://en.wikipedia.org/wiki/Morse_code">https://en.wikipedia.org/wiki/Morse_code</a> </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/International_Morse_Code.svg" alt=""><figcaption><p>The international Morse code. Source: <a href="https://en.wikipedia.org/wiki/Morse_code">https://en.wikipedia.org/wiki/Morse_code</a> </p></figcaption></figure>
 
 ## Further reading
 

@@ -4,7 +4,7 @@ description: >-
   receive it via LiFi, and then translate it back to letters from A to Z?
 ---
 
-# 14 Coding Letters
+# Coding Letters
 
 <details>
 
@@ -21,13 +21,13 @@ This lesson is relevant for [Exercise 6: Text Messages](https://winf-hsos.github
 
 ## Designing a Code System
 
-In the lesson about [measuring-information.md](../archive/measuring-information.md "mention"), we learned a way to figure out how many bits we need to save or send a message with a certain message space. This means the symbols we have and how long our message is. In this lesson, we want to develop a code system to communicate messages that contain the letters from A to Z as efficient as possible. When we speak of efficiency in this context, we mean a solution that requires the minimum number of bits and therefore signals over LiFi.
+In the lesson about [measuring-information.md](../../archive/measuring-information.md "mention"), we learned a way to figure out how many bits we need to save or send a message with a certain message space. This means the symbols we have and how long our message is. In this lesson, we want to develop a code system to communicate messages that contain the letters from A to Z as efficient as possible. When we speak of efficiency in this context, we mean a solution that requires the minimum number of bits and therefore signals over LiFi.
 
 ### How Many Bits?
 
-Recall from the lesson [code-systems.md](code-systems.md "mention")that there already exists a code system that, among other characters, contains encodings for the letters A to Z: The [ASCII code system](code-systems.md#ascii-code). Why don't we simply use this code system? We certainly could, but it wouldn't satisfy our requirement to be as efficient as possible. The ASCII code uses 7 bits to encode a total of 128 characters, including uppercase and lowercase letters, numbers, punctuation and some invisible characters, such as line breaks. We don't need all that, all we need is the 26 capital letters from A to Z.
+Recall from the lesson [code-systems.md](../simple-signals/code-systems.md "mention")that there already exists a code system that, among other characters, contains encodings for the letters A to Z: The [ASCII code system](../simple-signals/code-systems.md#ascii-code). Why don't we simply use this code system? We certainly could, but it wouldn't satisfy our requirement to be as efficient as possible. The ASCII code uses 7 bits to encode a total of 128 characters, including uppercase and lowercase letters, numbers, punctuation and some invisible characters, such as line breaks. We don't need all that, all we need is the 26 capital letters from A to Z.
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (3) (1).svg" alt="The ASCII code system uses 7 bits to encode 128 characters. Too much for our LiFi-prototype." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (3) (1).svg" alt="The ASCII code system uses 7 bits to encode 128 characters. Too much for our LiFi-prototype." class="gitbook-drawing">
 
 But how many bits do we need for that? We can calculate the answer using the formula we introduced earlier:
 
@@ -57,9 +57,9 @@ $$
 
 ### Some Buffer
 
-Five bits, that's the answer to the question: How many bits do we require to encode 26 capital letters? From the lesson [binary-numbers.md](binary-numbers.md "mention"), we know that we can encode exactly 32 symbols with 5 bits because $$2^5 = 32$$. Applying our schema from back then, we can see that the largest decimal number we can represent with 5 bits is 31. Including 0, this makes 32 distinct numbers or codes we can assign meaning to.
+Five bits, that's the answer to the question: How many bits do we require to encode 26 capital letters? From the lesson [binary-numbers.md](../simple-signals/binary-numbers.md "mention"), we know that we can encode exactly 32 symbols with 5 bits because $$2^5 = 32$$. Applying our schema from back then, we can see that the largest decimal number we can represent with 5 bits is 31. Including 0, this makes 32 distinct numbers or codes we can assign meaning to.
 
-<img src="../.gitbook/assets/file.excalidraw (14).svg" alt="With 5 bits, we can represent the decimal numbers 0 through 31." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (14).svg" alt="With 5 bits, we can represent the decimal numbers 0 through 31." class="gitbook-drawing">
 
 We only need 26 codes, which means we will have 6 unused codes in our code system. This can be useful if we need to extend our code system later on and add more symbols to it. Similar, the [Unicode Standard](https://en.wikipedia.org/wiki/Unicode) currently defines around 150,000 characters, which includes characters from all languages worldwide as well as emojis. The [UTF-8 encoding](https://en.wikipedia.org/wiki/UTF-8), a specific code system that implements the Unicode Standard, uses up to 4 bytes (or 32 bits) to represent characters. As you can quickly calculate, this leaves a vast amount of space for further symbols:
 
@@ -73,11 +73,11 @@ This value is only theoretical, as the UTF-8 encoding is a variable-length code 
 
 Now that we sized our code system, it's time to assign the symbols a code. While we could arbitrarily assign symbols to codes, for the letters A to Z it makes sense to assign codes in order. Our code system could look something like this:
 
-<img src="../.gitbook/assets/file.excalidraw (18).svg" alt="Our 5-bit code system for the uppercase letters A to Z." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (18).svg" alt="Our 5-bit code system for the uppercase letters A to Z." class="gitbook-drawing">
 
 We did not yet assign symbols to the bits sequences `11010` (26) through `11111` (31). Theses are our buffer for symbols we might need in the future. Anticipating that we want to send messages that contain more than a single word, we could already assign the next code point to the space-character. A space indicates the start of a new word.
 
-<img src="../.gitbook/assets/file.excalidraw (11).svg" alt="Our extended 5-bit code system, including the SPACE character." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (11).svg" alt="Our extended 5-bit code system, including the SPACE character." class="gitbook-drawing">
 
 ## Encoding and Decoding
 
@@ -89,10 +89,10 @@ Given the code table of our code system and the fact that it is a fixed-length c
 
 When encoding the message in binary, we must step through each symbol and look up its binary code:
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1) (3).svg" alt="Binary encoding of the message &#x22;LIFI&#x22; using the code table." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (1) (1) (3).svg" alt="Binary encoding of the message &#x22;LIFI&#x22; using the code table." class="gitbook-drawing">
 
 Decoding a message works the other way around. We receive a stream of bits, e.g., using signals from the LED and the [three-color-protocol](very-light-messages.md#an-alternative-approach). To decode the original message, we need to know the encoding that was used to create the stream of bits. Knowing it, we split the bits into chunks of the size the code system uses and find the symbol for a chunk. In our case, the chunk size is 5 bits.
 
-<img src="../.gitbook/assets/file.excalidraw (16).svg" alt="Decoding the stream of bits using the same code system." class="gitbook-drawing">
+<img src="../../.gitbook/assets/file.excalidraw (16).svg" alt="Decoding the stream of bits using the same code system." class="gitbook-drawing">
 
 We have successfully created our custom code system for uppercase letters. You are now ready to write a program to send and receive corresponding messages over LiFi. Give it a try!
