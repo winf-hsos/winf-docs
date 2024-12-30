@@ -24,7 +24,7 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.g
 
 ## Instructions
 
-A <mark style="background-color:green;">**program**</mark> is a set of instructions that are executed by a computer. A program is written as plain text, and we usually use a separate line for a new instruction. To write a program, all we need is a simple text editor, although in the LiFi-project, we prefer a [complete development environment](../lifi-project-part-1/setting-the-scene/development-environment.md).&#x20;
+A <mark style="background-color:green;">**program**</mark> is a set of instructions that are executed by a computer. A program is written as plain text, and we usually use a separate line for a new instruction. To write a program, all we need is a simple text editor, although in the LiFi-project, we prefer a [complete development environment](../lifi-project-part-1/v0-setup/development-environment.md).&#x20;
 
 When a computer executes a program, it steps through the program one line at a time and does what each line - or <mark style="background-color:green;">**instruction**</mark> - tells it to do. However, sometimes the program has special instructions called <mark style="background-color:green;">**loops**</mark>, <mark style="background-color:green;">**control structures**</mark>, and <mark style="background-color:green;">**functions**</mark> that make the computer do things in a different order. These instructions can make the computer repeat certain actions many times, or skip over certain lines of code altogether. Don't worry if you don't understand these concepts yet, we'll be talking more about them soon.
 

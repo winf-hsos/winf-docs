@@ -25,7 +25,7 @@ This lesson is relevant for [Exercise 2: Logic With The LED](https://winf-hsos.g
 
 ## The RGB Code
 
-In the previous section about [the-led.md](../setting-the-scene/the-led.md "mention"), we briefly touched the RGB code and used it to set the LED's color to green. We did this using a function from the Tinkerforge <mark style="background-color:green;">**API**</mark> called `set_rgb_value`. When calling this function, we passed three numbers to it:
+In the previous section about [the-led.md](../v0-setup/the-led.md "mention"), we briefly touched the RGB code and used it to set the LED's color to green. We did this using a function from the Tinkerforge <mark style="background-color:green;">**API**</mark> called `set_rgb_value`. When calling this function, we passed three numbers to it:
 
 ```python
 led.set_rgb_value(0, 255, 0)

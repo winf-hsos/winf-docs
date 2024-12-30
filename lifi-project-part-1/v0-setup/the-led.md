@@ -96,7 +96,7 @@ One major function of an LED is to change its color. To start with, we will set 
 led.set_rgb_value(0, 255, 0)
 ```
 
-The line above set the LED's color to green by using the corresponding <mark style="background-color:green;">**RGB code**</mark>. We'll address the RGB code in detail in the section about [code-systems.md](../simple-signals/code-systems.md "mention"). To understand the above line of code, all we need to know is that the three parameters are for the red, green, and blue parts of the color. All parts are set to zero, except for the green part. The value 255 happens to be the largest value a part can have, so thus it resolves to pure, bright green.
+The line above set the LED's color to green by using the corresponding <mark style="background-color:green;">**RGB code**</mark>. We'll address the RGB code in detail in the section about [code-systems.md](../v1-sending-signals/code-systems.md "mention"). To understand the above line of code, all we need to know is that the three parameters are for the red, green, and blue parts of the color. All parts are set to zero, except for the green part. The value 255 happens to be the largest value a part can have, so thus it resolves to pure, bright green.
 
 ## Running The Program
 

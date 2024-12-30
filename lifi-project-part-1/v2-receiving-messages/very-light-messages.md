@@ -21,7 +21,7 @@ This lesson is relevant for [Exercise 5: Speed Of Light](https://winf-hsos.githu
 
 ## The Synchronization Problem
 
-In the lesson [signals-over-light.md](../simple-signals/signals-over-light.md "mention"), you learned that we can use three colors of the LED to represent three distinct symbols, enabling us to encode our messages using the ternary system with a base of three. To achieve this, it's essential that the sender robot using the LED and the receiver using the color sensor synchronize and agree on a specific time interval for transmitting and receiving signals.&#x20;
+In the lesson [signals-over-light.md](../v1-sending-signals/signals-over-light.md "mention"), you learned that we can use three colors of the LED to represent three distinct symbols, enabling us to encode our messages using the ternary system with a base of three. To achieve this, it's essential that the sender robot using the LED and the receiver using the color sensor synchronize and agree on a specific time interval for transmitting and receiving signals.&#x20;
 
 Although it's straightforward to identify a common interval (by programming the robots to use the same interval), getting two independent robots to concur on a start time for transmitting and receiving presents an additional challenge. This challenge, however, can be overcome, and you can attempt to solve it as an exercise.
 

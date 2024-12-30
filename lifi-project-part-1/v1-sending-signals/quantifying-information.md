@@ -4,7 +4,7 @@ description: >-
   exactly is information, and how can we measure it?
 ---
 
-# Information
+# Quantifying Information
 
 <details>
 
@@ -28,9 +28,9 @@ In this lesson, we define the term “information” and introduce a way to quan
 
 Let's start with a thought experiment. Imagine we are playing a number guessing game. I am thinking of a number between 1 and 16, and your goal is to guess it. The catch is that you have only one guess to get the right number, but you can narrow down the possibilities beforehand with questions in the form of "Is the number greater than X". For each question, I will tell you "yes" or "no", effectively reducing the options you are left with.&#x20;
 
-With each answer you get, your knowledge about my number increases, which means your <mark style="background-color:blue;">**uncertainty**</mark> decreases. You can rule out some possible numbers when you receive a new answer.&#x20;
+With each answer you get, your knowledge about my number increases, which means your **uncertainty** decreases. You can rule out some possible numbers when you receive a new answer.&#x20;
 
-Now that we've seen how systematically narrowing down possibilities reduces uncertainty, let's explore how this concept forms the basis of information theory. By reducing uncertainty, you gather more <mark style="background-color:blue;">**information**</mark> with each guess. But how much information do you get with each answer? And how can we measure this?
+Now that we've seen how systematically narrowing down possibilities reduces uncertainty, let's explore how this concept forms the basis of information theory. By reducing uncertainty, you gather more <mark style="background-color:yellow;">**information**</mark> with each guess. But how much information do you get with each answer? And how can we measure this?
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/number_guessing_game_1.png" %}
 I am thinking of a number between 1 and 16. Your task is to guess the number with the fewest questions possible.
@@ -204,8 +204,23 @@ After the last question, only the number 5 remains. Note that we always arrive a
 
 Expanding on the idea of bits, we measure information using bits because they represent the most basic, binary choice: yes or no, 0 or 1. Every digital communication, whether it's text, audio, or video, breaks down into binary digits.
 
-In our previous example, every yes/no question we asked in our guessing game can be thought of as a bit of information. When we generalize this process for any form of data transmission – whether through text messages, streaming videos, or even controlling smart devices – we are continually breaking down and managing bits of information.
+In our previous example, every yes/no question we asked in our guessing game can be thought of as a bit of information. When we generalize this process to any form of data transmission – whether through text messages, streaming videos, or even controlling smart devices – we are continually breaking down and managing bits of information.
 
 {% embed url="https://winf-hsos.github.io/university-docs/images/permutations_a_no_information.png" %}
 With only the symbol A, no variation and thus no information is possible.
 {% endembed %}
+
+<details>
+
+<summary>Dig deeper</summary>
+
+Consider the following resources if you are eager to learn more about the topic:
+
+* Take a look at the paper ["What is Information?" by Christopher Adami](https://adamilab.msu.edu/wp-content/uploads/Adami2016.pdf) from Michigan State University for a good read on information.
+* A visual introduction to information theory and the concepts explained in this lesson is given in the paper ["A visual introduction to information theory](https://arxiv.org/pdf/2206.07867)" by Henry Pinkard and Laura Walker.
+* Another interesting paper explores the rate at which we humans process information, which appears to be only 10 bits/s. Very interesting application of information theory: ["The Unbearable Slowness of Being: Why do we live at 10 bits/s?"](https://arxiv.org/pdf/2408.10234)
+
+
+
+</details>
+

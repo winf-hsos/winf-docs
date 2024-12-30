@@ -25,7 +25,7 @@ In the lesson about [measuring-information.md](../../archive/measuring-informati
 
 ### How Many Bits?
 
-Recall from the lesson [code-systems.md](../simple-signals/code-systems.md "mention")that there already exists a code system that, among other characters, contains encodings for the letters A to Z: The [ASCII code system](../simple-signals/code-systems.md#ascii-code). Why don't we simply use this code system? We certainly could, but it wouldn't satisfy our requirement to be as efficient as possible. The ASCII code uses 7 bits to encode a total of 128 characters, including uppercase and lowercase letters, numbers, punctuation and some invisible characters, such as line breaks. We don't need all that, all we need is the 26 capital letters from A to Z.
+Recall from the lesson [code-systems.md](../v1-sending-signals/code-systems.md "mention")that there already exists a code system that, among other characters, contains encodings for the letters A to Z: The [ASCII code system](../v1-sending-signals/code-systems.md#ascii-code). Why don't we simply use this code system? We certainly could, but it wouldn't satisfy our requirement to be as efficient as possible. The ASCII code uses 7 bits to encode a total of 128 characters, including uppercase and lowercase letters, numbers, punctuation and some invisible characters, such as line breaks. We don't need all that, all we need is the 26 capital letters from A to Z.
 
 <img src="../../.gitbook/assets/file.excalidraw (1) (1) (3) (1).svg" alt="The ASCII code system uses 7 bits to encode 128 characters. Too much for our LiFi-prototype." class="gitbook-drawing">
 
@@ -57,7 +57,7 @@ $$
 
 ### Some Buffer
 
-Five bits, that's the answer to the question: How many bits do we require to encode 26 capital letters? From the lesson [binary-numbers.md](../simple-signals/binary-numbers.md "mention"), we know that we can encode exactly 32 symbols with 5 bits because $$2^5 = 32$$. Applying our schema from back then, we can see that the largest decimal number we can represent with 5 bits is 31. Including 0, this makes 32 distinct numbers or codes we can assign meaning to.
+Five bits, that's the answer to the question: How many bits do we require to encode 26 capital letters? From the lesson [binary-numbers.md](../v1-sending-signals/binary-numbers.md "mention"), we know that we can encode exactly 32 symbols with 5 bits because $$2^5 = 32$$. Applying our schema from back then, we can see that the largest decimal number we can represent with 5 bits is 31. Including 0, this makes 32 distinct numbers or codes we can assign meaning to.
 
 <img src="../../.gitbook/assets/file.excalidraw (14).svg" alt="With 5 bits, we can represent the decimal numbers 0 through 31." class="gitbook-drawing">
 

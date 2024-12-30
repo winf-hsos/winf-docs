@@ -41,7 +41,7 @@ rotary = BrickletRotaryEncoderV2("xxx", ipcon)
 ```
 {% endcode %}
 
-Make sure you replace the UID with [your device's UID](../lifi-project-part-1/setting-the-scene/the-led.md#how-to-get-a-devices-uid) before you proceed with this lesson.&#x20;
+Make sure you replace the UID with [your device's UID](../lifi-project-part-1/v0-setup/the-led.md#how-to-get-a-devices-uid) before you proceed with this lesson.&#x20;
 
 ### Reading The Current Value
 
