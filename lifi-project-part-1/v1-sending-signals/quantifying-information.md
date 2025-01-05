@@ -18,6 +18,8 @@ In this lesson, you'll learn:
 
 </details>
 
+If we want to transmit information using light, one question immediately arises: **How fast can we transfer information?** This question implies that we can measure information. Only then can we make a statement about how many units of information we can transmit per unit of time.  But what is the unit of information, and how is it defined?
+
 One fascinating aspect of computers and information technology is their ability to transmit information over distances, from one sender to a receiver. Think about the last time you sent a message via WhatsApp. As soon as you hit 'send,' your message traveled through various media (e.g., electromagnetic waves, copper cables, fiber optic cables) before arriving at your friend's smartphone. This process is not limited to messaging; it happens when you send emails, share files, stream videos, or listen to music or podcasts.
 
 Understanding how information is transmitted is essential for various technologies, including the LiFi project. What sets LiFi apart is the medium over which information travels: information should be transmitted using only light signals. To comprehend this, we need to understand how information is represented, stored, and processed by digital computers, and how it is shared among different devices. This journey begins with a fundamental question: what exactly is information in the context of computers?

@@ -23,7 +23,7 @@ The LiFi-project is a typical engineering problem. It involves hardware and soft
 If the answer is yes, then the following questions arise:
 
 * **What is the best protocol for data transmission using an LED?**
-* **How fast can we transmit information?**
+* **How fast can we transmit how much information?**
 * **How reliable is the data transfer?**
 * **Over what distance can we transfer data?**
 * **Under what environmental conditions does the setup work properly?**
